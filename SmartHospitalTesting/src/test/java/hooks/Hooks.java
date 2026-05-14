@@ -6,9 +6,9 @@ import io.cucumber.java.Before;
 
 public class Hooks {
 	
-	@Before 
+	@Before
 	public void setup() {
-		Driver.getDriver();
+	    new Driver();
 	}
 	
 	@After
