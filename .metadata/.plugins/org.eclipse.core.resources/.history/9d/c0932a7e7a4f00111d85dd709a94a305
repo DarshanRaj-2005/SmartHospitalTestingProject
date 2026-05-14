@@ -1,0 +1,14 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class LoginPage {
+
+	
+	public static By adminLogin = By.xpath("/html/body/div[1]/div/div/div/div[1]/div/div[2]/p[1]/a[1]");
+	public static By superAdmin = By.xpath( "/html/body/div[1]/div/div/div/div[1]/div/div[2]/div[1]/a[1]");
+	public static By signin = By.xpath("\"/html/body/div[1]/div/div/div/div[1]/div/div[2]/form/button\")");
+
+}
