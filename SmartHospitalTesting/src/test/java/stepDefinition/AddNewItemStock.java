@@ -17,7 +17,6 @@ public class AddNewItemStock {
 
     @When("the user clicks the Add Item Stock button")
     public void the_user_clicks_the_add_item_stock_button() {
-
         addNewStockActions.clickAddItemStockButton();
     }
 
