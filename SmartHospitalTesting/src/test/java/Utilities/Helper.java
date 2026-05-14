@@ -1,19 +1,14 @@
 package Utilities;
 
 import java.time.Duration;
-
 import org.openqa.selenium.By;
-
 import org.openqa.selenium.WebElement;
-
 import org.openqa.selenium.support.ui.ExpectedConditions;
-
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import driver.Driver;
 
 public class Helper {
-
+	
 	public static void click(By locator) {
 		Driver.getDriver().findElement(locator).click();
 	}
@@ -48,3 +43,5 @@ public class Helper {
 		wait.until(ExpectedConditions.elementToBeClickable(locator));
 	}
 }
+
+
