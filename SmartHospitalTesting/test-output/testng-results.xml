@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-14T20:11:13 IST" name="Suite" finished-at="2026-05-14T20:11:43 IST" duration-ms="30138">
+  <suite started-at="2026-05-14T21:45:16 IST" name="Suite" finished-at="2026-05-14T21:45:43 IST" duration-ms="27073">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestNGRunner@821330f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-05-14T20:11:13 IST" name="Test" finished-at="2026-05-14T20:11:43 IST" duration-ms="30138">
+    <test started-at="2026-05-14T21:45:16 IST" name="Test" finished-at="2026-05-14T21:45:43 IST" duration-ms="27073">
       <class name="runner.TestNGRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestNGRunner@821330f]" started-at="2026-05-14T20:11:13 IST" name="setUpClass" finished-at="2026-05-14T20:11:14 IST" duration-ms="720" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestNGRunner@821330f]" started-at="2026-05-14T21:45:16 IST" name="setUpClass" finished-at="2026-05-14T21:45:17 IST" duration-ms="625" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3a3b10f4]]>
+                <![CDATA[org.testng.TestRunner@2b53840a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestNGRunner@821330f]" started-at="2026-05-14T20:11:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-14T20:11:43 IST" duration-ms="29218" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestNGRunner@821330f]" started-at="2026-05-14T21:45:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-14T21:45:43 IST" duration-ms="26324" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,38 +34,10 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //a[contains(@href,'itemstock') and .//span[text()='Inventory']] to be clickable, but the element was not visible.
-(tried for 10 seconds with 500 milliseconds interval)
-Build info: version: '4.43.0', revision: 'dd0f534'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.97, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\TAMILA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62773}, goog:processID: 24724, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62773/devtoo..., se:cdpVersion: 148.0.7778.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5a3cadc736738e254cf1493925f67514]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //a[contains(@href,'itemstock') and .//span[text()='Inventory']] to be clickable, but the element was not visible.
-(tried for 10 seconds with 500 milliseconds interval)
-Build info: version: '4.43.0', revision: 'dd0f534'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.97, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\TAMILA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62773}, goog:processID: 24724, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62773/devtoo..., se:cdpVersion: 148.0.7778.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5a3cadc736738e254cf1493925f67514
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
-at Utilities.Helper.waitForElementClickable(Helper.java:43)
-at pages.AddNewStockPage.clickInventory(AddNewStockPage.java:25)
-at actions.AddNewStock.clickInventory(AddNewStock.java:12)
-at stepDefinition.AddNewItemStock.the_user_clicks_on_inventory(AddNewItemStock.java:15)
-at ✽.the user clicks on Inventory(file:///D:/-----------------seleniumproject-----------------------/SmartHospitalTestingProject/SmartHospitalTesting/src/test/resources/Tamilarasu/AddNewStock.feature:12)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestNGRunner@821330f]" started-at="2026-05-14T20:11:43 IST" name="tearDownClass" finished-at="2026-05-14T20:11:43 IST" duration-ms="140" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestNGRunner@821330f]" started-at="2026-05-14T21:45:43 IST" name="tearDownClass" finished-at="2026-05-14T21:45:43 IST" duration-ms="69" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
