@@ -1,0 +1,54 @@
+package stepDefinition;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+
+import Utilities.ConfigReader;
+import actions.LoginAction;
+import driver.Driver;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class LoginStepDefinition {
+	
+	WebDriver driver = Driver.getDriver();
+	
+	@Given("the user is on the login page")
+	public void the_user_is_on_the_login_page() {
+	   driver.get(ConfigReader.getUrl());
+	}
+
+	@When("the user clicks Admin Login link")
+	public void the_user_clicks_admin_login_link() {
+	   LoginAction.clickadminLogin();
+	}
+
+	@Then("the user should be redirected to Admin Login page")
+	public void the_user_should_be_redirected_to_admin_login_page() {
+	    driver.switchTo().window("https://demo.smart-hospital.in/site/login");
+	    WebElement admin = driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div[1]/div/div[2]/h3"));
+	    String text = "Admin Login";
+	    
+	    Assert.assertEquals(admin, text);
+	}
+
+	@Then("the user clicks Super Admin button")
+	public void the_user_clicks_super_admin_button() {
+		LoginAction.clicksuperAdmin();
+	}
+
+	@Then("the user clicks the Sign in button")
+	public void the_user_clicks_the_sign_in_button() {
+	    LoginAction.clicksignIn();
+	}
+
+	@Then("the user should be redirected to super admin dashboard")
+	public void the_user_should_be_redirected_to_super_admin_dashboard() {
+	    String url = driver.getCurrentUrl();
+	    Assert.assertEquals(url, "https://demo.smart-hospital.in/admin/admin/dashboard");
+	}
+
+}

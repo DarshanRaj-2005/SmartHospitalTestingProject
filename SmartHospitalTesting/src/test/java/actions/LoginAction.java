@@ -11,4 +11,11 @@ public class LoginAction {
 	public void clicksignIn() {
 		Helper.click(LoginPage.signin);
 	}
+	
+	public String message() {
+		return Helper.getText(LoginPage.text);
+	}
+	public String messages() {
+		return Helper.getText(LoginPage.texts);
+	}
 }

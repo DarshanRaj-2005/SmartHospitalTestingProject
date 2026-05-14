@@ -1,0 +1,14 @@
+package actions;
+
+import Utilities.Helper;
+import pages.LoginPage;
+
+public class LoginAction {
+	public void clicksuperAdmin() {
+		Helper.click(LoginPage.superAdmin);
+	}
+	
+	public void clicksignIn() {
+		Helper.click(LoginPage.signin);
+	}
+}
