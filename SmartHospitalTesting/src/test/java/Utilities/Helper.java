@@ -42,6 +42,10 @@ public class Helper {
 
 		wait.until(ExpectedConditions.elementToBeClickable(locator));
 	}
+	
+	
+	
+	
 }
 
 
