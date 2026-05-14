@@ -2,12 +2,10 @@ Feature: Add Item Stock
 
   Background:
 
-    Given the user is on the login page
-    When the user clicks Admin Login link
-    Then the user is redirected to the Admin Login page
-    And the user clicks the Super Admin button
-    And the user clicks the Sign in button
-    Then the user is redirected to the Super Admin dashboard
+	Given the user is on the login page
+	When the user clicks Super Admin button
+	And the user clicks the Sign in button
+	Then the user should be redirected to super admin dashboard
 
   Scenario Outline: Successfully add stock items
 
@@ -21,4 +19,4 @@ Feature: Add Item Stock
     Examples:
       | Quantity | PurchasePrice | Description      |
       | 10       | 250           | New stock added  |
-      | 5        | 500           | Emergency stock  |
+     

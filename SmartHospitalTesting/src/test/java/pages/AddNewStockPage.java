@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import Utilities.*;
 public class AddNewStockPage {
 	//buttons 
-	By InventoryBar =By.xpath("//li[@class='treeview active']//a");
+	By InventoryBar = By.xpath("//span[normalize-space()='Inventory']");
 	By Addnewstock = By.xpath("//a[@class='btn btn-primary btn-sm additemstock']");		
 	// select 
     By itemCategory = By.xpath("//select[@id='item_category_id']");
@@ -21,12 +21,14 @@ public class AddNewStockPage {
     
    //click  
     public void clickInventory() {
+    	Helper.waitForElementClickable(InventoryBar);
 
-        Helper.click(InventoryBar);
+    	 Helper.click(InventoryBar);
     }
 
     public void clickAddItemStock() {
-
+    	
+    	Helper.waitForElementClickable(Addnewstock);
         Helper.click(Addnewstock);
     }
 
