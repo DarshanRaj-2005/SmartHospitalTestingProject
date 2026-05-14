@@ -22,8 +22,11 @@ public class ConfigReader {
 
 			e.printStackTrace();
 		}
-
 		return properties;
+	}
+	
+	public static String getUrl() {
+		return getProperties().getProperty("url");
 	}
 
 }
