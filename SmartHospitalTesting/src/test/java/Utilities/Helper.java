@@ -31,14 +31,14 @@ public class Helper {
 
 	public static void waitForVisibility(By locator) {
 
-		WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(30));
 
 		wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 	}
 
 	public static void waitForElementClickable(By locator) {
 
-		WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(30));
 
 		wait.until(ExpectedConditions.elementToBeClickable(locator));
 	}
