@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="runner.TestNGRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Successfully add stock items&quot;, &quot;Add Item Stock&quot;)">runScenario("Successfully add stock items", "Add Item Stock")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,9 +118,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">runner.TestNGRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -130,28 +130,12 @@
                   </a> <!-- runScenario("Successfully add stock items", "Add Item Stock") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Successfully add stock items","Add Item Stock")</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //a[contains(@href,&apos;itemstock&apos;) and .//span[text()=&apos;Inventory&apos;]] to be clickable, but the element was not visible.
-(tried for 10 seconds with 500 milliseconds interval)
-Build info: version: &apos;4.43.0&apos;, revision: &apos;dd0f534&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.97, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\TAMILA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62773}, goog:processID: 24724, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62773/devtoo..., se:cdpVersion: 148.0.7778.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5a3cadc736738e254cf1493925f67514
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
-	at Utilities.Helper.waitForElementClickable(Helper.java:43)
-	at pages.AddNewStockPage.clickInventory(AddNewStockPage.java:25)
-	at actions.AddNewStock.clickInventory(AddNewStock.java:12)
-	at stepDefinition.AddNewItemStock.the_user_clicks_on_inventory(AddNewItemStock.java:15)
-	at ✽.the user clicks on Inventory(file:///D:/-----------------seleniumproject-----------------------/SmartHospitalTestingProject/SmartHospitalTesting/src/test/resources/Tamilarasu/AddNewStock.feature:12)
-
-</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -216,12 +200,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runner.TestNGRunner')
-data.setCell(0, 3, 29218);
+data.setCell(0, 3, 26324);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 29 seconds</span>
+              <span class="suite-total-time">Total running time: 26 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -249,18 +233,16 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">runner.TestNGRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@3a3b10f4)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@2b53840a)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">runScenario("Successfully add stock items", "Add Item Stock")</span>
-                <span class="method-start">732 ms</span>
+                <span class="method-start">639 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">29962 ms</span>
+                <span class="method-start">26967 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
