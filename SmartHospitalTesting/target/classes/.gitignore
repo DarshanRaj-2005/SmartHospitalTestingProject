@@ -1,1 +1,45 @@
-/META-INF/
+# =========================
+# Eclipse / IntelliJ IDE
+# =========================
+.metadata/
+.classpath
+.project
+.settings/
+.factorypath
+*.iml
+.idea/
+
+# =========================
+# Maven / Build output
+# =========================
+target/
+**/target/
+
+# =========================
+# Test Reports
+# =========================
+test-output/
+allure-results/
+allure-report/
+
+# Cucumber Reports
+cucumber-report.html
+cucumber-report.json
+target/cucumber-report.html
+target/cucumber.json
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# TestNG Runner (Ignored)
+# =========================
+src/test/java/runner/TestNGRunner.java
