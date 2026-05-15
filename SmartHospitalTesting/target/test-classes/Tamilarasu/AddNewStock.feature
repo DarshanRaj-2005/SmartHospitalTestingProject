@@ -24,7 +24,7 @@ Feature:  Tamilarsu K 14-4-2026 Add Item Stock
       
       Scenario Outline: add stock without  items
 
-    When the user clicks on Inventory
+    When the user clicks on Inventory``````
     And the user clicks the Add Item Stock button
     And the user selects Item Category, Item, Supplier, and Store
     And the user fills the details such as Quantity "<Quantity>" and Purchase Price "<PurchasePrice>" and Description "<Description>"
