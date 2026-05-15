@@ -7,24 +7,16 @@ import io.cucumber.testng.CucumberOptions;
 
         features = {
 
-                "src/test/resources/feature_files"
+                "src/test/resources/feature_files/Harini/DonorManagement.feature"
         },
 
         glue = {"stepDefinition", "hooks"},
 
         plugin = {
                 "pretty",
-
-                // Cucumber HTML Report
                 "html:target/cucumber-report.html",
-
-                // Cucumber JSON Report
                 "json:target/cucumber-report.json",
-
-                // Extent Report
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
-
-                // Allure Report
                 "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
         },
 
