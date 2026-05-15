@@ -21,7 +21,7 @@ import io.cucumber.testng.CucumberOptions;
                 "json:target/cucumber-report.json",
 
                 // Extent Report
-             
+                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 
                 // Allure Report
                 "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"

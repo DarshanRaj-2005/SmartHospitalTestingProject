@@ -1,4 +1,4 @@
-Feature: Add Item Stock
+Feature:  Tamilarsu K 14-4-2026 Add Item Stock
 
   Background:
 
@@ -19,4 +19,18 @@ Feature: Add Item Stock
     Examples:
       | Quantity | PurchasePrice | Description      |
       | 10       | 250           | New stock added  |
+      
+      
+      
+      Scenario Outline: add stock without  items
+
+    When the user clicks on Inventory
+    And the user clicks the Add Item Stock button
+    And the user selects Item Category, Item, Supplier, and Store
+    And the user fills the details such as Quantity "<Quantity>" and Purchase Price "<PurchasePrice>" and Description "<Description>"
+    And the user clicks the Save button
+    Then the item stock should be added successfully
+      Examples:
+      | Quantity | PurchasePrice | Description      |
+      |        |              |                  |
      
