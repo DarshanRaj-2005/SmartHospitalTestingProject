@@ -31,10 +31,11 @@ public class DonorManagementSteps {
 	@Then("the donor details page should be displayed")
 	public void the_donor_details_page_should_be_displayed() {
 
-		Assert.assertTrue(
-				Helper.isDisplayed(DonorManagementPages.addBloodDonor));
-	}
+	    Helper.waitForVisibility(DonorManagementPages.addBloodDonor);
 
+	    Assert.assertTrue(
+	            Helper.isDisplayed(DonorManagementPages.addBloodDonor));
+	}
 	@Then("the user should be able to view all donor records")
 	public void the_user_should_be_able_to_view_all_donor_records() {
 
@@ -58,48 +59,37 @@ public class DonorManagementSteps {
 		Assert.assertTrue(
 				Helper.isDisplayed(DonorManagementPages.addDonorPopup));
 	}
-	@When("the user enters donor name {string}")
-	public void the_user_enters_donor_name(String donorName) {
+	@When("the user enters donor name {string} and date of birth {string} and blood group {string} and gender {string} and father name {string} and contact number {string} and address {string}")
+	public void the_user_enters_complete_donor_details(String donorName,
+	                                                   String dob,
+	                                                   String bloodGroup,
+	                                                   String gender,
+	                                                   String fatherName,
+	                                                   String contactNumber,
+	                                                   String address) {
 
-		donor.enterDonorName(donorName);
+	    donor.enterDonorName(donorName);
+	    donor.enterDateOfBirth(dob);
+	    donor.enterBloodGroup(bloodGroup);
+	    donor.enterGender(gender);
+	    donor.enterFatherName(fatherName);
+	    donor.enterContactNumber(contactNumber);
+	    donor.enterAddress(address);
 	}
 
-	@When("the user enters date of birth {string}")
-	public void the_user_enters_date_of_birth(String dob) {
+	@When("the user enters donor name {string} and date of birth {string} and blood group {string} and gender {string}")
+	public void the_user_enters_mandatory_donor_details(String donorName,
+	                                                    String dob,
+	                                                    String bloodGroup,
+	                                                    String gender) {
 
-		donor.enterDateOfBirth(dob);
+	    donor.enterDonorName(donorName);
+	    donor.enterDateOfBirth(dob);
+	    donor.enterBloodGroup(bloodGroup);
+	    donor.enterGender(gender);
 	}
 
-	@When("the user enters blood group {string}")
-	public void the_user_enters_blood_group(String bloodGroup) {
-
-		donor.enterBloodGroup(bloodGroup);
-	}
-
-	@When("the user enters gender {string}")
-	public void the_user_enters_gender(String gender) {
-
-		donor.enterGender(gender);
-	}
-
-	@When("the user enters father name {string}")
-	public void the_user_enters_father_name(String fatherName) {
-
-		donor.enterFatherName(fatherName);
-	}
-
-	@When("the user enters contact number {string}")
-	public void the_user_enters_contact_number(String contactNumber) {
-
-		donor.enterContactNumber(contactNumber);
-	}
-
-	@When("the user enters address {string}")
-	public void the_user_enters_address(String address) {
-
-		donor.enterAddress(address);
-	}
-
+	
 	@When("the user clicks on Save button")
 	public void the_user_clicks_on_save_button() {
 
@@ -113,3 +103,4 @@ public class DonorManagementSteps {
 				Helper.isDisplayed(DonorManagementPages.donorName));
 	}
 }
+	

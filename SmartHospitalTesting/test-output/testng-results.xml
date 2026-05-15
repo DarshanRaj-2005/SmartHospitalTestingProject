@@ -1,43 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-14T17:11:21 IST" name="Default suite" finished-at="2026-05-14T17:11:49 IST" duration-ms="27892">
+  <suite started-at="2026-05-15T10:07:55 IST" name="Default suite" finished-at="2026-05-15T10:08:29 IST" duration-ms="33842">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestNGRunner@821330f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestNGRunner@7c3fdb62]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-05-14T17:11:21 IST" name="Default test" finished-at="2026-05-14T17:11:49 IST" duration-ms="27892">
+    <test started-at="2026-05-15T10:07:55 IST" name="Default test" finished-at="2026-05-15T10:08:29 IST" duration-ms="33842">
       <class name="runner.TestNGRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestNGRunner@821330f]" started-at="2026-05-14T17:11:21 IST" name="setUpClass" finished-at="2026-05-14T17:11:22 IST" duration-ms="526" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestNGRunner@7c3fdb62]" started-at="2026-05-15T10:07:55 IST" name="setUpClass" finished-at="2026-05-15T10:07:56 IST" duration-ms="394" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3a3ed300]]>
+                <![CDATA[org.testng.TestRunner@7926352f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestNGRunner@821330f]" started-at="2026-05-14T17:11:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-14T17:11:49 IST" duration-ms="27285" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestNGRunner@7c3fdb62]" started-at="2026-05-15T10:07:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-15T10:08:14 IST" duration-ms="18025" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Successfully add stock items"]]>
+                <![CDATA["Add donor with valid details"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Add Item Stock"]]>
+                <![CDATA["Donor Management Functionality"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestNGRunner@821330f]" started-at="2026-05-14T17:11:49 IST" name="tearDownClass" finished-at="2026-05-14T17:11:49 IST" duration-ms="26" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestNGRunner@7c3fdb62]" started-at="2026-05-15T10:08:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-15T10:08:29 IST" duration-ms="15348" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add donor with mandatory fields"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Donor Management Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestNGRunner@7c3fdb62]" started-at="2026-05-15T10:08:29 IST" name="tearDownClass" finished-at="2026-05-15T10:08:29 IST" duration-ms="30" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

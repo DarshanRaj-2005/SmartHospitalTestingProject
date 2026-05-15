@@ -11,7 +11,7 @@ public class DonorManagementPages {
 			By.xpath("//a[contains(text(),'Donor Details')]");
 
 	public static By addBloodDonor =
-			By.xpath("//a[@onclick=\"holdModal('myModal')\"]");
+			By.xpath("//a[contains(@onclick,'myModal')]");
 	public static By addDonorPopup =
 			By.xpath("//h4[text()='Add Donor Details']");
 
