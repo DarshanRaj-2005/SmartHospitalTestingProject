@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
 
         features = {
                
-                "src\\test\\resources\\feature_files\\darshan_raj\\login.feature"
+        		"src/test/resources/feature_files/Harini/DonorManagement.feature"
         },
 
         glue = {"stepDefinition", "hooks"},
