@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
 
         features = {
                
-                "src/test/resources/Tamilarasu/AddNewStock.feature"
+                "src\\test\\resources\\feature_files\\darshan_raj\\login.feature"
         },
 
         glue = {"stepDefinition", "hooks"},
