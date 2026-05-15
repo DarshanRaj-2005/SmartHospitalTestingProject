@@ -37,11 +37,22 @@ public class LoginStepDefinition {
 	    String url = Driver.getDriver().getCurrentUrl();
 	    Assert.assertEquals(url, "https://demo.smart-hospital.in/admin/admin/dashboard");
 	}
-	@Then("the validation message {string} should be displayed")
-	public void the_validation_message_should_be_displayed(String validationMessage) {
+	
+	@When("the user enters invalid {string} and valid password")
+	public void the_user_enters_invalid_and_valid_password(String string) {
+	    Helper.type(LoginPage.email, string);
+	}
 
-		Assert.assertTrue(
-				Driver.getDriver().getPageSource().contains(validationMessage));
+	@Then("the system should show a message {string}")
+	public void the_system_should_show_a_message(String string) {
+		String text = la.message();
+	    Assert.assertEquals(text, "Invalid Username or Password");
+	}
+
+	@Then("the system should show username and password required messages")
+	public void the_system_should_show_username_and_password_required_messages() {
+	    String texts = la.messages();
+	    Assert.assertEquals(texts,"Username field is required");
 	}
 
 }
