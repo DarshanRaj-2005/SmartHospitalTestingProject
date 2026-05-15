@@ -1,0 +1,27 @@
+# Eclipse / IDE
+.metadata/
+.classpath
+.project
+.settings/
+*.iml
+.idea/
+
+# Maven build output
+target/
+**/target/
+
+# Test reports
+test-output/
+allure-results/
+allure-report/
+
+# Cucumber reports
+cucumber-report.html
+cucumber-report.json
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
