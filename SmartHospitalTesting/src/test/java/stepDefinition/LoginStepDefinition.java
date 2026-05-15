@@ -37,5 +37,11 @@ public class LoginStepDefinition {
 	    String url = Driver.getDriver().getCurrentUrl();
 	    Assert.assertEquals(url, "https://demo.smart-hospital.in/admin/admin/dashboard");
 	}
+	@Then("the validation message {string} should be displayed")
+	public void the_validation_message_should_be_displayed(String validationMessage) {
+
+		Assert.assertTrue(
+				Driver.getDriver().getPageSource().contains(validationMessage));
+	}
 
 }
