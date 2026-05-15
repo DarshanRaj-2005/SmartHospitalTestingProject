@@ -84,7 +84,6 @@ INDEX VERSION 1.134+C:\Users\dhars\Documents\SmartHospitalTestingProject\.metada
 2157934380.index
 1741897277.index
 1746018856.index
-41289737.index
 3758922087.index
 2995240718.index
 2930534847.index
