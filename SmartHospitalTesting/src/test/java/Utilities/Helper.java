@@ -58,7 +58,7 @@ public class Helper {
 	    WebElement element =
 	            wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 
-	    // Scroll into view first
+	    // Scroll into view first aiiiii
 	    ((JavascriptExecutor) driver)
 	            .executeScript("arguments[0].scrollIntoView(true);", element);
 
