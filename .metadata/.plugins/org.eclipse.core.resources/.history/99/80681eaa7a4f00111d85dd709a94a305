@@ -1,0 +1,12 @@
+package actions;
+
+import Utilities.Helper;
+import pages.LoginPage;
+
+public class LoginAction {
+	
+	public void clickadminLogin() {
+		Helper.click(LoginPage.adminLogin);
+	}
+
+}
