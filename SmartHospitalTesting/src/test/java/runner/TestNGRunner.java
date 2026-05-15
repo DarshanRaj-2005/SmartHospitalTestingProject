@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 
         features = {
-                "src/test/resources/Tamilarasu/AddNewStock.feature"
+                "src/test/resources/feature_files"
         },
 
         glue = {"stepDefinition", "hooks"},
