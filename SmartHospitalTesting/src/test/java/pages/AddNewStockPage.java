@@ -5,7 +5,7 @@ import Utilities.*;
 public class AddNewStockPage {
 	//buttons 
 	By InventoryBar =
-	        By.xpath("//a[contains(@href,'itemstock') and .//span[text()='Inventory']]");
+	        By.xpath("//span[contains(text(),'Inventory')]");
 	By Addnewstock = By.xpath("//a[@class='btn btn-primary btn-sm additemstock']");		
 	// select 
     By itemCategory = By.xpath("//select[@id='item_category_id']");
@@ -22,9 +22,7 @@ public class AddNewStockPage {
     
    //click  
     public void clickInventory() {
-    	Helper.waitForElementClickable(InventoryBar);
-
-    	 Helper.click(InventoryBar);
+    	Helper.moveToElementAndClick(InventoryBar);
     }
 
     public void clickAddItemStock() {
