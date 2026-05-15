@@ -7,14 +7,15 @@ import io.cucumber.testng.CucumberOptions;
 
         features = {
                
-                "src/test/resources/Tamilarasu/AddNewStock.feature"
+                "src\\test\\resources\\feature_files\\Janani_Sri\\Add_Patient.feature"
         },
 
         glue = {"stepDefinition", "hooks"},
 
         plugin = {
                 "pretty",
-                "html:target/cucumber-report.html"
+                "html:target/cucumber-report.html",
+               
         }
 )
 

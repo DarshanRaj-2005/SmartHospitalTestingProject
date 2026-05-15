@@ -2,50 +2,56 @@ package Utilities;
 
 import java.time.Duration;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import driver.Driver;
 
 public class Helper {
-	
-	public static void click(By locator) {
-		Driver.getDriver().findElement(locator).click();
-	}
 
-	public static void type(By locator, String value) {
-		Driver.getDriver().findElement(locator).sendKeys(value);
-	}
+    public static void click(By locator) {
+        Driver.getDriver().findElement(locator).click();
+    }
 
-	public static String getText(By locator) {
-		return Driver.getDriver().findElement(locator).getText();
-	}
+    public static void type(By locator, String value) {
+        Driver.getDriver().findElement(locator).sendKeys(value);
+    }
 
-	public static boolean isDisplayed(By locator) {
-		return Driver.getDriver().findElement(locator).isDisplayed();
-	}
+    public static String getText(By locator) {
+        return Driver.getDriver().findElement(locator).getText();
+    }
 
-	public static WebElement getElement(By locator) {
-		return Driver.getDriver().findElement(locator);
-	}
+    public static boolean isDisplayed(By locator) {
+        return Driver.getDriver().findElement(locator).isDisplayed();
+    }
 
-	public static void waitForVisibility(By locator) {
+    public static WebElement getElement(By locator) {
+        return Driver.getDriver().findElement(locator);
+    }
 
-		WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
+    public static void waitForVisibility(By locator) {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(15));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
 
-		wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-	}
+    public static void waitForElementClickable(By locator) {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(15));
+        wait.until(ExpectedConditions.elementToBeClickable(locator));
+    }
 
-	public static void waitForElementClickable(By locator) {
+    public static WebElement waitForElementEnabled(By locator) {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(15));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        wait.until(ExpectedConditions.elementToBeClickable(locator));
+        return Driver.getDriver().findElement(locator);
+    }
 
-		WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
+    public static void jsType(By locator, String value) {
+        WebElement element = waitForElementEnabled(locator);
+        JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
+        js.executeScript("arguments[0].value='';", element);
+        element.sendKeys(value);
+    }
 
-		wait.until(ExpectedConditions.elementToBeClickable(locator));
-	}
-	
-	
-	
-	
 }
-
-
