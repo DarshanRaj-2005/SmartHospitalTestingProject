@@ -35,6 +35,7 @@ public class LoginStepDefinition {
 	@Then("the user should be redirected to super admin dashboard")
 	public void the_user_should_be_redirected_to_super_admin_dashboard() {
 	    String url = Driver.getDriver().getCurrentUrl();
+	    //System.out.println(url);
 	    Assert.assertEquals(url, "https://demo.smart-hospital.in/admin/admin/dashboard");
 	}
 	
