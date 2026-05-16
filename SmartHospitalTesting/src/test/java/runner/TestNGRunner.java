@@ -6,6 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 
         features = {
+
                 "src/test/resources/feature_files"
         },
 
@@ -18,7 +19,7 @@ import io.cucumber.testng.CucumberOptions;
                 "html:target/cucumber-report.html",
 
                 // Cucumber JSON Report
-                "json:target/cucumber-report.json",
+                "json:target/cucumber.json",
 
                 // Extent Report
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
@@ -30,7 +31,5 @@ import io.cucumber.testng.CucumberOptions;
         monochrome = true
 )
 
-public class TestNGRunner
-        extends AbstractTestNGCucumberTests {
-
+public class TestNGRunner extends AbstractTestNGCucumberTests {
 }
