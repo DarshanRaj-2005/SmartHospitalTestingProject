@@ -34,9 +34,7 @@ public class LoginStepDefinition {
 
 	@Then("the user should be redirected to super admin dashboard")
 	public void the_user_should_be_redirected_to_super_admin_dashboard() {
-	    String url = Driver.getDriver().getCurrentUrl();
-	    //System.out.println(url);
-	    Assert.assertEquals(url, "https://demo.smart-hospital.in/admin/admin/dashboard");
+		Assert.assertTrue(la.isDashboardDisplayed());
 	}
 	
 	@When("the user enters invalid {string} and valid password")
@@ -46,12 +44,14 @@ public class LoginStepDefinition {
 
 	@Then("the system should show a message {string}")
 	public void the_system_should_show_a_message(String string) {
+		Helper.waitForVisibility(LoginPage.text);
 		String text = la.message();
 	    Assert.assertEquals(text, "Invalid Username or Password");
 	}
 
 	@Then("the system should show username and password required messages")
 	public void the_system_should_show_username_and_password_required_messages() {
+		Helper.waitForVisibility(LoginPage.texts);
 	    String texts = la.messages();
 	    Assert.assertEquals(texts,"Username field is required");
 	}
