@@ -53,7 +53,7 @@ public class AddPatientPage {
 
     
     By patientListTable =
-            By.xpath("//div[@class='box box-info']");
+            By.xpath("//div[@class='box-body']");
 
    
     public void clickPatientCategory() {
@@ -165,17 +165,13 @@ public class AddPatientPage {
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
-        // Step 1: Wait for modal to close after save
         try {
             wait.until(ExpectedConditions.invisibilityOfElementLocated(modalNameInput));
         } catch (Exception ignored) {
-            // Modal may have already closed
+     
         }
 
-        // Step 2: Wait for the patient list table to be visible
         wait.until(ExpectedConditions.visibilityOfElementLocated(patientListTable));
-
-        // Step 3: Search all table cells for the patient name
         By tableRows = By.xpath(
                 "//table[contains(@id,'patient') or contains(@class,'patient') "
               + "or ancestor::div[@id='patient_list'] "
@@ -188,14 +184,12 @@ public class AddPatientPage {
         List<WebElement> cells = driver.findElements(tableRows);
         for (WebElement cell : cells) {
             if (cell.getText().trim().equalsIgnoreCase(expectedPatientName.trim())) {
-                return true;   // Patient name found in the list
+                return true;   
             }
         }
-        return false;          // Patient name not found
+        return false;         
     }
-
-    // Keep this method for backward compatibility — delegates to list check
-    public boolean verifySuccessMessage() {
+ public boolean verifySuccessMessage() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         try {
             wait.until(ExpectedConditions.invisibilityOfElementLocated(modalNameInput));

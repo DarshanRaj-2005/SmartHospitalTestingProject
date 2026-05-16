@@ -23,8 +23,6 @@ public class AddPatientAction {
         addPatientPage.clickAddNewPatientButton();
     }
 
-    // ==================== Form Actions ====================
-
     public void waitForModalToLoad() {
         addPatientPage.waitForModalToLoad();
     }
