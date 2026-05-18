@@ -98,7 +98,7 @@ public class InventorySearchActions {
             System.out.println("🔍 Searching invalid: " + searchItem);
 
             Helper.waitForVisibility(InventorySearchPage.searchBox);
-            Helper.getElement(InventorySearchPage.searchBox).clear();
+            Helper.getElements(InventorySearchPage.searchBox).clear();
             Helper.type(InventorySearchPage.searchBox, searchItem);
 
             try {
