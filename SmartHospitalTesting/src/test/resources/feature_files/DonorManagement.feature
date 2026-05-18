@@ -9,12 +9,11 @@ Feature: Donor Management Functionality
     And the user clicks on Donor Details
     Then the donor details page should be displayed
     And the user should be able to view all donor records
+    When the user clicks on Add Blood Donor
+    Then the Add Donor Details popup should be displayed
 
   @AddDonorValid
   Scenario Outline: Add donor with valid details
-
-    When the user clicks on Add Blood Donor
-    Then the Add Donor Details popup should be displayed
     When the user enters donor name "<DonorName>" and date of birth "<DateOfBirth>" and blood group "<BloodGroup>" and gender "<Gender>" and father name "<FatherName>" and contact number "<ContactNumber>" and address "<Address>"
     And the user clicks on Save button
     Then the newly added donor record should be visible in donor details list
@@ -25,9 +24,6 @@ Feature: Donor Management Functionality
 
   @AddDonorMandatory
   Scenario Outline: Add donor with mandatory fields
-
-    When the user clicks on Add Blood Donor
-    Then the Add Donor Details popup should be displayed
     When the user enters donor name "<DonorName>" and date of birth "<DateOfBirth>" and blood group "<BloodGroup>" and gender "<Gender>"
     And the user clicks on Save button
     Then the newly added donor record should be visible in donor details list
@@ -35,3 +31,12 @@ Feature: Donor Management Functionality
     Examples:
       | DonorName | DateOfBirth | BloodGroup | Gender |
       | Rahul     | 12/05/1998  | B+         | Male   |
+
+  @AllFieldsEmpty
+  Scenario: Validate donor creation with all mandatory fields empty
+    And the user clicks on Save button
+    Then the donor validation messages should be displayed
+      | Donor Name field is required    |
+      | Date Of Birth field is required |
+      | Blood Group field is required   |
+      | Gender field is required        |
