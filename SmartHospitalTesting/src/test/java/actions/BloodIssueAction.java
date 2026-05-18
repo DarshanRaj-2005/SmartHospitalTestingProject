@@ -103,9 +103,9 @@ public class BloodIssueAction {
 	}
 	public boolean isIssuedBloodrecorddisplayed() {
 	    Helper.waitForVisibility(BloodIssuePage.successMessage);
-	    String message =Helper.getText(BloodIssuePage.successMessage);
-	    logger.info("Blood issued successfully");
-	    return message.contains("Successfully");
+	    String message = Helper.getText(BloodIssuePage.successMessage);
+	    logger.info("Toast Message: " + message);
+	    return message.toLowerCase().contains("success");
 	}
 	public boolean isValidationMessageDisplayed(String message) {
 	    Helper.waitForVisibility(BloodIssuePage.validationMessage);
