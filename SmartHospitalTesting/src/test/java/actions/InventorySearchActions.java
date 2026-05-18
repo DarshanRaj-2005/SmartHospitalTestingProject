@@ -26,7 +26,7 @@ public class InventorySearchActions {
         String path = System.getProperty("user.dir") +
                 "/src/test/resources/test_datas/Tamilarasu_data/Search_item_data.xlsx";
 
-        String[][] data = Data_Provider.getData(path, "Sheet1");
+        String[][] data = Data_Provider.getExcelData(path, "Sheet1");
 
         for (int i = 0; i < data.length; i++) {
 
@@ -89,7 +89,7 @@ public class InventorySearchActions {
         String path = System.getProperty("user.dir") +
                 "/src/test/resources/test_datas/Tamilarasu_data/Search_item_data.xlsx";
 
-        String[][] data = Data_Provider.getData(path, "Sheet2");
+        String[][] data = Data_Provider.getExcelData(path, "Sheet2");
 
         for (int i = 0; i < data.length; i++) {
 
