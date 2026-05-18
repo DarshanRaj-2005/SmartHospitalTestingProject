@@ -14,8 +14,6 @@ import io.cucumber.testng.CucumberOptions;
 
         plugin = {
                 "pretty",
-
-                // Cucumber HTML Report
                 "html:target/cucumber-report.html",
 
                 // Cucumber JSON Report
@@ -23,8 +21,6 @@ import io.cucumber.testng.CucumberOptions;
 
                 // Extent Report
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
-
-                // Allure Report
                 "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
         },
 
