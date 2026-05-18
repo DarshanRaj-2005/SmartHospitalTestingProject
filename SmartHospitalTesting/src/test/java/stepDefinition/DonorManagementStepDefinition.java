@@ -17,7 +17,6 @@ public class DonorManagementStepDefinition {
 	DonorManagementAction donor = new DonorManagementAction();
 	@When("the user clicks on the Blood Bank menu")
 	public void the_user_clicks_on_the_blood_bank_menu() {
-		logger.info("Navigating to Blood Bank menu");
 		Helper.waitForElementClickable(DonorManagementPage.bloodBankMenu);
 		donor.clickBloodBankMenu();
 	}
@@ -30,7 +29,6 @@ public class DonorManagementStepDefinition {
 
 	@Then("the donor details page should be displayed")
 	public void the_donor_details_page_should_be_displayed() {
-		logger.info("Donor Details page displayed.");
 	    Helper.waitForVisibility(DonorManagementPage.addBloodDonor);
 	    Assert.assertTrue(Helper.isDisplayed(DonorManagementPage.addBloodDonor));
 	}
@@ -47,7 +45,6 @@ public class DonorManagementStepDefinition {
 
 	@Then("the Add Donor Details popup should be displayed")
 	public void the_add_donor_details_popup_should_be_displayed() {
-		logger.info("Add Donor Popup is displayed.");
 		Helper.waitForVisibility(DonorManagementPage.addDonorPopup);
 		Assert.assertTrue(Helper.isDisplayed(DonorManagementPage.addDonorPopup));
 	}
@@ -74,7 +71,7 @@ public class DonorManagementStepDefinition {
 	                                                    String dob,
 	                                                    String bloodGroup,
 	                                                    String gender) {
-		logger.info("Enter the details: ");
+		logger.info("Enter the details");
 	    donor.enterDonorName(donorName);
 	    donor.enterDateOfBirth(dob);
 	    donor.enterBloodGroup(bloodGroup);

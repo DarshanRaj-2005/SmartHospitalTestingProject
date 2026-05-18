@@ -4,15 +4,20 @@ import java.util.List;
 import Utilities.Helper;
 import driver.Driver;
 import pages.DonorManagementPage;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class DonorManagementAction {
+	 Logger logger = LogManager.getLogger(DonorManagementAction.class);
 	public void clickBloodBankMenu() {
+		logger.info("Navigated to Blood Bank module");
 		Helper.click(DonorManagementPage.bloodBankMenu);
 	}
 	public void clickDonorDetails() {
 		Helper.click(DonorManagementPage.donorDetails);
 	}
 	public void clickAddBloodDonor() {
+		logger.info("Blood Donor popup is opened.");
 		Helper.click(DonorManagementPage.addBloodDonor);
 	}
 	public void enterDonorName(String donorname) {
@@ -37,6 +42,7 @@ public class DonorManagementAction {
 		Helper.type(DonorManagementPage.address, address);
 	}
 	public void clickSaveButton() {
+		 logger.info("Clicked Save Button");
 		Helper.click(DonorManagementPage.saveButton);
 	}
 	public List<String> getValidationMessages() {
