@@ -7,6 +7,7 @@ import io.cucumber.java.en.When;
 import java.util.List;
 import java.util.Map;
 
+import Utilities.ExcelReader;
 import actions.AddambulanceAction;
 
 public class AddambulanceStepDefinition {
@@ -33,17 +34,33 @@ public class AddambulanceStepDefinition {
 	}
 
 	@Then("the user enters ambulance call details")
-	public void the_user_enters_ambulance_call_details(DataTable dataTable){
+	public void the_user_enters_ambulance_call_details(DataTable dataTable) throws InterruptedException {
 
 		List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
 
 		Map<String, String> ambulance = data.get(0);
 
-		AddambulanceAction.enterAmbulanceDetail(
+		String patient = ambulance.get("patient");
+		String vehicleModel = ambulance.get("vehicleModel");
+		String date = ambulance.get("date");
+		String chargeCategory = ambulance.get("chargeCategory");
+		String chargeName = ambulance.getOrDefault("chargeName", "");
+		String note = ambulance.get("note");
+		String paymentMode = ambulance.get("paymentMode");
 
-				ambulance.get("patient"), ambulance.get("vehicleModel"), ambulance.get("date"),
-				ambulance.get("chargeCategory"), ambulance.get("chargeName"), ambulance.get("note"),
-				ambulance.get("paymentMode"));
+		AddambulanceAction.enterAmbulanceDetail(patient, vehicleModel, date, chargeCategory, chargeName, note,
+				paymentMode);
+	}
+
+	@Then("the user enters ambulance call details from excel {string}")
+	public void the_user_enters_ambulance_call_details_from_excel(String testcase) {
+		String patient = ExcelReader.getData(testcase, "patient").trim();
+		String vehicleModel = ExcelReader.getData(testcase, "vehicleModel").trim();
+		String note = ExcelReader.getData(testcase, "note").trim();
+		String date = ExcelReader.getData(testcase, "date").trim();
+		String chargeCategory = ExcelReader.getData(testcase, "chargeCategory").trim();
+
+		AddambulanceAction.enterAmbulanceDetail(patient, vehicleModel, date, chargeCategory, note);
 	}
 
 	@Then("the user clicks save button")
