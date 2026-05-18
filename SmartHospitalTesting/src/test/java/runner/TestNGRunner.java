@@ -7,12 +7,8 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
         features = {
-                "src/test/resources/feature_files/Tamilarasu/AddNewStock.feature",
-                "src/test/resources/feature_files/Tamilarasu/IssueItem.feature",
-                "src/test/resources/feature_files/Tamilarasu/InventorySearch.feature",
-                "src/test/resources/feature_files/Tamilarasu/AddItems.feature",
-                "src/test/resources/feature_files/Tamilarasu/complain.feature",
-                "src/test/resources/feature_files/Tamilarasu/Contactus.feature"
+
+                "src\\test\\resources\\feature_files"
         },
 
         glue = { "stepDefinition", "hooks" },
@@ -21,6 +17,7 @@ import io.cucumber.testng.CucumberOptions;
                 "pretty",
                 "html:target/cucumber-report.html",
                 "json:target/cucumber-report.json",
+
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
                 "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
         },

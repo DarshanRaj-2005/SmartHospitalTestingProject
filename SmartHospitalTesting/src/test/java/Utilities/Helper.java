@@ -16,7 +16,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import driver.Driver;
 
 public class Helper {
-
     // Click (with wait)
     public static void click(By locator) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(20));
@@ -110,6 +109,7 @@ public class Helper {
         try {
             select.selectByVisibleText(value);
         } catch (Exception e) {
+
             JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
             js.executeScript(
                     "for (let i=0; i<arguments[0].options.length; i++) {" +
@@ -135,6 +135,7 @@ public class Helper {
 
     // Overlay wait
     public static void waitForOverlay(WebDriver driver) {
+
         new WebDriverWait(driver, Duration.ofSeconds(20))
                 .until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".modal-backdrop")));
     }
@@ -163,4 +164,5 @@ public class Helper {
     public static String getAlertText() {
         return waitForAlert().getText();
     }
+
 }
