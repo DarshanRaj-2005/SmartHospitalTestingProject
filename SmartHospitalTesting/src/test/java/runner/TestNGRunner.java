@@ -7,8 +7,12 @@ import io.cucumber.testng.CucumberOptions;
 
         features = {
 
-                //"src/test/resources/feature_files/Tamilarasu/AddNewStock.feature",
-                "src/test/resources/feature_files/Tamilarasu/IssueItem.feature"
+               "src/test/resources/feature_files/Tamilarasu/AddNewStock.feature",
+                "src/test/resources/feature_files/Tamilarasu/IssueItem.feature",
+                "src/test/resources/feature_files/Tamilarasu/InventorySearch.feature",        		
+        		"src/test/resources/feature_files/Tamilarasu/AddItems.feature",
+        		"src/test/resources/feature_files/Tamilarasu/complain.feature",
+        		"src/test/resources/feature_files/Tamilarasu/Contactus.feature"
         },
 
         glue = {"stepDefinition", "hooks"},
