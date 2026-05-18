@@ -1,18 +1,20 @@
 Feature: Add and manage medicines in the medicine stock page
-    Background:
+
+  Background:
     Given the user is on the Pharmacy Bill page
     When the user clicks the Medicines button
-    
-    Scenario:Verify whether searched medicine displayed in the table
+
+  Scenario: Verify medicine search using DataTable
     Given the user is on the medicine stock page
-    When the user searches for a medicine by name
+    When the user searches medicine the following medicine
+      | medicineName |
+      | Paracetamol  |
     Then the searched medicine should be displayed in the table
-    
-    Scenario:Delete a particular selected medicine
+
+  Scenario: Delete a selected medicine
     Given the user is on the medicine stock page
-    When the user selects a medicine from the medicine stock list
+    When the user selects the medicine "Amoxicillin" from the medicine stock list
     And clicks the delete Selected button
-    And the pop up appears for the deleting the medicine for confirmation
-    And the user clicks ok 
-    Then the message appears as medicine deleted successfully
-    
+    And the pop up appears for deleting the medicine confirmation
+    And the user clicks ok
+    Then the message displayed as medicine displayed
