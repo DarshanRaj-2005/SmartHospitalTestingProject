@@ -10,7 +10,7 @@ import io.cucumber.testng.CucumberOptions;
 //                "src\\test\\resources\\feature_files\\Janani_Sri\\Add_Patient.feature"
         },
 
-        glue = {"stepDefinition", "hooks"},
+        glue = {"stepDefinition"},
 
         plugin = {
                 "pretty",
