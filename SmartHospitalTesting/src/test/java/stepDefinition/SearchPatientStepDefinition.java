@@ -3,7 +3,7 @@ package stepDefinition;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import actions.SearchPatientAction;
+import actions.SearchPatientActions;
 import driver.Driver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -16,8 +16,8 @@ public class SearchPatientStepDefinition {
 
     WebDriver driver = Driver.getDriver();
 
-    SearchPatientAction searchPatientAction =
-            new SearchPatientAction(driver);
+    SearchPatientActions searchPatientAction =
+            new SearchPatientActions(driver);
 
    
     @Given("User is on Patient List page")

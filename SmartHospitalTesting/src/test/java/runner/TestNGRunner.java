@@ -6,8 +6,8 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 
         features = {
-               
-                "src\\test\\resources\\feature_files\\Janani_Sri\\Search_Patient.feature"
+   "src\\test\\resources\\feature_files\\Janani_Sri\\Search_Patient.feature"
+//                "src\\test\\resources\\feature_files\\Janani_Sri\\Add_Patient.feature"
         },
 
         glue = {"stepDefinition", "hooks"},

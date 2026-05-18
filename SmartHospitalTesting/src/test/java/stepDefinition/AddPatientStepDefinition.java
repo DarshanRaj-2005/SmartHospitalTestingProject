@@ -5,7 +5,8 @@ import java.util.Map;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import actions.AddPatientAction;
+
+import actions.AddPatientActions;
 import driver.Driver;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
@@ -19,8 +20,8 @@ public class AddPatientStepDefinition {
 
     WebDriver driver = Driver.getDriver();
 
-    AddPatientAction addPatientAction =
-            new AddPatientAction(driver);
+    AddPatientActions addPatientAction =
+            new AddPatientActions(driver);
    
     @Given("Admin is on the Dashboard page")
     public void admin_is_on_the_dashboard_page() {
