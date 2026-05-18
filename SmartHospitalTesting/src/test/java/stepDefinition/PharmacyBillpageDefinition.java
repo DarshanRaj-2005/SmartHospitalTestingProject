@@ -26,8 +26,7 @@ public class PharmacyBillpageDefinition {
 	@Then("it should move to the Pharmacy Bill page successfully")
 	public void it_should_move_to_the_pharmacy_bill_page_successfully() {
 
-		boolean isDisplayed = Driver.getDriver().findElement(PharmacyBillPage.pharmacyBillPageHeader).isDisplayed();
-
+		boolean isDisplayed=pharmacyAction.pageisDsiplayed();
 		Assert.assertTrue(isDisplayed);
 		System.out.println("successfully moved to the pharmacy bill page");
 	}
