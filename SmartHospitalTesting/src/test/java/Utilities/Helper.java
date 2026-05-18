@@ -43,6 +43,10 @@ public class Helper {
     public static List<WebElement> getElements(By locator) {
         return Driver.getDriver().findElements(locator);
     }
+    
+    public static WebElement getElement(By locator) {
+        return Driver.getDriver().findElement(locator);
+    }
 
     // Is Displayed
     public static boolean isDisplayed(By locator) {

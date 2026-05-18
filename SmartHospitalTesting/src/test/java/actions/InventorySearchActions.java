@@ -35,7 +35,7 @@ public class InventorySearchActions {
             System.out.println("🔍 Searching for: " + searchItem);
 
             Helper.waitForVisibility(InventorySearchPage.searchBox);
-            Helper.getElement(InventorySearchPage.searchBox).clear();
+            Helper.getElements(InventorySearchPage.searchBox).clear();
             Helper.type(InventorySearchPage.searchBox, searchItem);
 
             Thread.sleep(2000);
