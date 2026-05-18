@@ -2,7 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 
-public class DonorManagementPages {
+public class DonorManagementPage {
 
 	public static By bloodBankMenu =By.xpath("//span[text()='Blood Bank']");
 	public static By donorDetails =By.xpath("//a[contains(text(),'Donor Details')]");
