@@ -56,4 +56,11 @@ public class LoginStepDefinition {
 	    Assert.assertEquals(texts,"Username field is required");
 	}
 
+	@Then("the following validation messages should be displayed")
+	public void the_following_validation_messages_should_be_displayed(io.cucumber.datatable.DataTable dataTable) {
+	   
+	}
+
+
+
 }
