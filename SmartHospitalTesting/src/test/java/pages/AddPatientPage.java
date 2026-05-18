@@ -165,7 +165,9 @@ public class AddPatientPage {
             WebDriverWait shortWait = new WebDriverWait(driver, Duration.ofSeconds(5));
             shortWait.until(ExpectedConditions.visibilityOfElementLocated(Message));
             return true;
-        } catch (TimeoutException ignored) {}
+        } catch (TimeoutException ignored) {
+        	
+        }
 
     
         try {
@@ -195,7 +197,9 @@ public class AddPatientPage {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
             wait.until(ExpectedConditions.visibilityOfElementLocated(validationErrorText));
             return true;
-        } catch (TimeoutException ignored) {}
+        } catch (TimeoutException ignored) {
+        	
+        }
 
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
