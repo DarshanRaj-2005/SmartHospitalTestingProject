@@ -7,17 +7,18 @@ import io.cucumber.testng.CucumberOptions;
 
         features = {
 
-                "src/test/resources/feature_files"
+                "src/test/resources/feature_files/Balamurugan/PharmacyBillpage.feature"
         },
 
         glue = {"stepDefinition", "hooks"},
 
-        plugin = {
+        plugin ={
+
                 "pretty",
                 "html:target/cucumber-report.html",
 
                 // Cucumber JSON Report
-                "json:target/cucumber.json",
+                "json:target/cucumber-report.json",
 
                 // Extent Report
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
@@ -28,4 +29,5 @@ import io.cucumber.testng.CucumberOptions;
 )
 
 public class TestNGRunner extends AbstractTestNGCucumberTests {
+
 }
