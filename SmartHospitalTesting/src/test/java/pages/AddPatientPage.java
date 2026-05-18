@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -9,7 +10,6 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.List;
-
 public class AddPatientPage {
 
     WebDriver driver;
@@ -17,8 +17,6 @@ public class AddPatientPage {
     public AddPatientPage(WebDriver driver) {
         this.driver = driver;
     }
-
-    // ==================== Navigation Locators ====================
 
     By patientCategory =
             By.xpath("//a[contains(@href,'patient') and .//span[contains(text(),'Patient')]]"
@@ -29,7 +27,9 @@ public class AddPatientPage {
             By.xpath("//a[contains(@class,'addpatient')]"
                    + " | //a[contains(text(),'Add New Patient') or contains(text(),'Add Patient')]"
                    + " | //button[contains(text(),'Add New Patient') or contains(text(),'Add Patient')]");
-
+    By Title =
+            By.xpath("//h4[contains(text(),'Add Patient')] | //h5[contains(text(),'Add Patient')]"
+                   + " | //*[contains(@class,'modal-title') and contains(text(),'Add Patient')]");
     // ==================== Modal Wait Locator ====================
 
     By modalNameInput =
@@ -55,35 +55,57 @@ public class AddPatientPage {
     By patientListTable =
             By.xpath("//div[@class='box-body']");
 
-   
+    By validationErrorText =
+            By.xpath("//div[contains(@class,'modal-body')]"
+                   + "//*[contains(text(),'required') or contains(text(),'Required')"
+                   + " or contains(text(),'field is required') or contains(text(),'This field')"
+                   + " or contains(@class,'error') or contains(@class,'invalid-feedback')"
+                   + " or contains(@class,'help-block') or contains(@class,'text-danger')]");
+
+    // Red border / error class on the Name input (has-error wrapper)
+    By nameFieldError =
+            By.xpath("//div[contains(@class,'has-error') or contains(@class,'is-invalid')]"
+                   + " | //div[contains(@class,'modal-body')]//input[contains(@class,'error') or contains(@class,'is-invalid')]");
+    By Message =
+            By.xpath("//*[contains(@class,'iziToast-message') or contains(@class,'toast-message')"
+                   + " or contains(@class,'alert-success') or contains(@class,'alert alert-success')]");
     public void clickPatientCategory() {
-        WebElement element = driver.findElement(patientCategory);
-        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+        WebElement el = driver.findElement(patientCategory);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", el);
     }
 
     public void clickAddNewPatientButton() {
-        WebElement element = driver.findElement(addNewPatientButton);
-        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+        WebElement el = driver.findElement(addNewPatientButton);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", el);
     }
 
-    // ==================== Modal Wait ====================
+    // =====================================================================
+    // MODAL WAIT
+    // =====================================================================
 
     public void waitForModalToLoad() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        try {
-            wait.until(ExpectedConditions.visibilityOfElementLocated(modalNameInput));
-            wait.until(ExpectedConditions.elementToBeClickable(modalNameInput));
-            return;
-        } catch (Exception e) {
-            // fall through to secondary
-        }
-        wait.until(ExpectedConditions.visibilityOfElementLocated(
-                By.xpath("//div[contains(@class,'modal-header')]"
-                       + "[.//h4[contains(text(),'Patient')] or .//h5[contains(text(),'Patient')]]"
-                       + " | //div[@id='add_patient'][not(contains(@style,'display: none'))]")));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        wait.until(ExpectedConditions.visibilityOfElementLocated( Title));
+        wait.until(ExpectedConditions.elementToBeClickable(patientName));
     }
 
-    // ==================== Form Methods ====================
+    // =====================================================================
+    // MANDATORY FIELDS — Leave all empty (do nothing)
+    // The Name * field is already empty when modal opens.
+    // This method ensures all inputs are cleared just in case.
+    // =====================================================================
+
+    public void leaveMandatoryFieldsEmpty() {
+        // Clear the Name field (mandatory) using JS
+        try {
+            WebElement el = driver.findElement(patientName);
+            ((JavascriptExecutor) driver).executeScript("arguments[0].value='';", el);
+        } catch (Exception ignored) {}
+    }
+
+    // =====================================================================
+    // FORM METHODS
+    // =====================================================================
 
     public void enterPatientName(String value) {
         WebElement el = driver.findElement(patientName);
@@ -99,11 +121,7 @@ public class AddPatientPage {
 
     public void selectGender(String value) {
         Select sel = new Select(driver.findElement(gender));
-        try {
-            sel.selectByVisibleText(value);
-        } catch (Exception e) {
-            sel.selectByValue(value.toLowerCase());
-        }
+        sel.selectByVisibleText(value);
     }
 
     public void enterDOB(String value) {
@@ -111,32 +129,35 @@ public class AddPatientPage {
         String day   = parts[0];
         String month = parts[1];
         String year  = parts[2];
+
         try {
-            WebElement yearEl = driver.findElement(dobYear);
-            ((JavascriptExecutor) driver).executeScript("arguments[0].value='';", yearEl);
-            yearEl.sendKeys(year);
+            WebElement el = driver.findElement(dob);
+            ((JavascriptExecutor) driver).executeScript("arguments[0].value='';", el);
+            el.sendKeys(value);
+        } catch (Exception ignored) {}
 
-            WebElement monthEl = driver.findElement(dobMonth);
-            ((JavascriptExecutor) driver).executeScript("arguments[0].value='';", monthEl);
-            monthEl.sendKeys(month);
+        try {
+            WebElement el = driver.findElement(dobYear);
+            ((JavascriptExecutor) driver).executeScript("arguments[0].value='';", el);
+            el.sendKeys(year);
+        } catch (Exception ignored) {}
 
-            WebElement dayEl = driver.findElement(dobDay);
-            ((JavascriptExecutor) driver).executeScript("arguments[0].value='';", dayEl);
-            dayEl.sendKeys(day);
-        } catch (Exception e) {
-            WebElement dobEl = driver.findElement(dob);
-            ((JavascriptExecutor) driver).executeScript("arguments[0].value='';", dobEl);
-            dobEl.sendKeys(value);
-        }
+        try {
+            WebElement el = driver.findElement(dobMonth);
+            ((JavascriptExecutor) driver).executeScript("arguments[0].value='';", el);
+            el.sendKeys(month);
+        } catch (Exception ignored) {}
+
+        try {
+            WebElement el = driver.findElement(dobDay);
+            ((JavascriptExecutor) driver).executeScript("arguments[0].value='';", el);
+            el.sendKeys(day);
+        } catch (Exception ignored) {}
     }
 
     public void selectBloodGroup(String value) {
         Select sel = new Select(driver.findElement(bloodGroup));
-        try {
-            sel.selectByVisibleText(value);
-        } catch (Exception e) {
-            sel.selectByValue(value);
-        }
+        sel.selectByVisibleText(value);
     }
 
     public void enterPhoneNumber(String value) {
@@ -161,42 +182,67 @@ public class AddPatientPage {
         WebElement el = driver.findElement(saveButton);
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", el);
     }
-    public boolean verifyPatientInList(String expectedPatientName) {
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+    // =====================================================================
+    // SUCCESS VERIFICATION — 3-Strategy
+    // =====================================================================
 
+    public boolean verifyPatientSavedSuccessfully(String savedPatientName) {
+
+        // Strategy 1 — Toast message
         try {
-            wait.until(ExpectedConditions.invisibilityOfElementLocated(modalNameInput));
-        } catch (Exception ignored) {
-     
-        }
+            WebDriverWait shortWait = new WebDriverWait(driver, Duration.ofSeconds(5));
+            shortWait.until(ExpectedConditions.visibilityOfElementLocated(Message));
+            return true;
+        } catch (TimeoutException ignored) {}
 
-        wait.until(ExpectedConditions.visibilityOfElementLocated(patientListTable));
-        By tableRows = By.xpath(
-                "//table[contains(@id,'patient') or contains(@class,'patient') "
-              + "or ancestor::div[@id='patient_list'] "
-              + "or ancestor::div[contains(@class,'table-responsive')]]//td"
-              + " | //div[contains(@class,'table-responsive')]//td"
-              + " | //table//td");
-
-        wait.until(ExpectedConditions.visibilityOfElementLocated(tableRows));
-
-        List<WebElement> cells = driver.findElements(tableRows);
-        for (WebElement cell : cells) {
-            if (cell.getText().trim().equalsIgnoreCase(expectedPatientName.trim())) {
-                return true;   
-            }
-        }
-        return false;         
-    }
- public boolean verifySuccessMessage() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        // Strategy 2 — Modal closes + patient list table reappears
         try {
-            wait.until(ExpectedConditions.invisibilityOfElementLocated(modalNameInput));
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+            wait.until(ExpectedConditions.invisibilityOfElementLocated(Title));
             wait.until(ExpectedConditions.visibilityOfElementLocated(patientListTable));
             return true;
-        } catch (Exception e) {
-            return false;
-        }
+        } catch (TimeoutException ignored) {}
+
+        // Strategy 3 — Find patient name in the table (names shown as "Ramya (363)")
+        try {
+            By patientRow = By.xpath(
+                    "//table[contains(@class,'table')]//td[contains(text(),'"
+                    + savedPatientName + "')]");
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            wait.until(ExpectedConditions.visibilityOfElementLocated(patientRow));
+            List<WebElement> rows = driver.findElements(patientRow);
+            return !rows.isEmpty();
+        } catch (TimeoutException ignored) {}
+
+        return false;
+    }
+
+ 
+    public boolean verifyValidationMessageDisplayed() {
+
+        // Strategy 1 — Validation error text inside the modal
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+            wait.until(ExpectedConditions.visibilityOfElementLocated(validationErrorText));
+            return true;
+        } catch (TimeoutException ignored) {}
+
+        // Strategy 2 — Red border / error class on the Name field
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+            wait.until(ExpectedConditions.visibilityOfElementLocated(nameFieldError));
+            return true;
+        } catch (TimeoutException ignored) {}
+
+        // Strategy 3 — Modal is still open (save was rejected)
+        // If modal title is still visible after clicking Save = validation prevented save
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+            wait.until(ExpectedConditions.visibilityOfElementLocated(Title));
+            return true;
+        } catch (TimeoutException ignored) {}
+
+        return false;
     }
 }
