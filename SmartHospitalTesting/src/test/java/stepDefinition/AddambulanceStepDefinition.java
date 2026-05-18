@@ -33,17 +33,29 @@ public class AddambulanceStepDefinition {
 	}
 
 	@Then("the user enters ambulance call details")
-	public void the_user_enters_ambulance_call_details(DataTable dataTable){
+	public void the_user_enters_ambulance_call_details(DataTable dataTable) throws InterruptedException {
 
 		List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
 
 		Map<String, String> ambulance = data.get(0);
 
-		AddambulanceAction.enterAmbulanceDetail(
+		String patient = ambulance.get("patient");
+		String vehicleModel = ambulance.get("vehicleModel");
+		String date = ambulance.get("date");
+		String chargeCategory = ambulance.get("chargeCategory");
+		String note = ambulance.get("note");
+		String paymentMode = ambulance.get("paymentMode");
+		if (ambulance.containsKey("chargeName")) {
 
-				ambulance.get("patient"), ambulance.get("vehicleModel"), ambulance.get("date"),
-				ambulance.get("chargeCategory"), ambulance.get("chargeName"), ambulance.get("note"),
-				ambulance.get("paymentMode"));
+			String chargeName = ambulance.get("chargeName");
+
+			AddambulanceAction.enterAmbulanceDetail(patient, vehicleModel, date, chargeCategory, chargeName, note,
+					paymentMode);
+
+		} else {
+
+			AddambulanceAction.enterAmbulanceDetail(patient, vehicleModel, date, chargeCategory, note, paymentMode);
+		}
 	}
 
 	@Then("the user clicks save button")
