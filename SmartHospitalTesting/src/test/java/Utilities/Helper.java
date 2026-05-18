@@ -1,6 +1,7 @@
 package Utilities;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -15,12 +16,16 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import driver.Driver;
 
 public class Helper {
-
-    // Click
+    // Click (with wait)
     public static void click(By locator) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(20));
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
         element.click();
+    }
+
+    // Clear
+    public static void clear(By locator) {
+        Driver.getDriver().findElement(locator).clear();
     }
 
     // Type
@@ -33,14 +38,18 @@ public class Helper {
         return Driver.getDriver().findElement(locator).getText();
     }
 
+    // Get Elements
+    public static List<WebElement> getElements(By locator) {
+        return Driver.getDriver().findElements(locator);
+    }
+    
+    public static WebElement getElement(By locator) {
+        return Driver.getDriver().findElement(locator);
+    }
+
     // Is Displayed
     public static boolean isDisplayed(By locator) {
         return Driver.getDriver().findElement(locator).isDisplayed();
-    }
-
-    // Get Element
-    public static WebElement getElement(By locator) {
-        return Driver.getDriver().findElement(locator);
     }
 
     // Wait for visibility
@@ -60,7 +69,7 @@ public class Helper {
         WebDriver driver = Driver.getDriver();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
-        WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 
         ((JavascriptExecutor) driver)
                 .executeScript("arguments[0].scrollIntoView(true);", element);
@@ -80,8 +89,7 @@ public class Helper {
 
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 
-        Actions actions = new Actions(driver);
-        actions.moveToElement(element).perform();
+        new Actions(driver).moveToElement(element).perform();
     }
 
     // JS Click
@@ -93,11 +101,7 @@ public class Helper {
 
     // Dropdown select
     public static void selectDropdown(By locator, String value) {
-        selectDropdown(Driver.getDriver(), locator, value);
-    }
-
-    public static void selectDropdown(WebDriver driver, By locator, String value) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(20));
         WebElement dropdown = wait.until(ExpectedConditions.elementToBeClickable(locator));
 
         Select select = new Select(dropdown);
@@ -105,7 +109,8 @@ public class Helper {
         try {
             select.selectByVisibleText(value);
         } catch (Exception e) {
-            JavascriptExecutor js = (JavascriptExecutor) driver;
+
+            JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
             js.executeScript(
                     "for (let i=0; i<arguments[0].options.length; i++) {" +
                             "if (arguments[0].options[i].text.trim() === arguments[1]) {" +
@@ -116,16 +121,23 @@ public class Helper {
         }
     }
 
+    // Wait for elements present
+    public static void waitForElementsPresent(By locator, int timeoutSeconds) {
+        new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(timeoutSeconds))
+                .until(driver -> driver.findElements(locator).size() > 0);
+    }
+
     // Modal wait
     public static void waitForModal(WebDriver driver) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".modal-dialog")));
+        new WebDriverWait(driver, Duration.ofSeconds(20))
+                .until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".modal-dialog")));
     }
 
     // Overlay wait
     public static void waitForOverlay(WebDriver driver) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".modal-backdrop")));
+
+        new WebDriverWait(driver, Duration.ofSeconds(20))
+                .until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".modal-backdrop")));
     }
 
     // Set Date
