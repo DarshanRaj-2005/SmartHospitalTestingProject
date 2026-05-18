@@ -28,7 +28,7 @@ public class Complaintaction {
     public static void fillDetails(String sheetName) throws IOException {
 
         String path = "src/test/resources/test_datas/Tamilarasu_data/Search_item_data.xlsx";
-        String[][] data = Data_Provider.getData(path, sheetName);
+        String[][] data = Data_Provider.getExcelData(path, sheetName);
 
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
 

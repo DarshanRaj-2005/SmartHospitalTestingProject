@@ -7,10 +7,17 @@ import java.io.IOException;
 
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.annotations.DataProvider;
 
 public class Data_Provider {
+	@DataProvider(name = "BloodIssueData", parallel = true)
+	public Object[][] bloodIssueData() throws IOException {
 
-    public static String[][] getData(String filePath, String sheetName) throws IOException {
+	    return getExcelData("src/test/resources/test_datas/Harini/BloodIssueValid.xlsx","validDetails");
+	}
+	
+
+    public static String[][] getExcelData(String filePath, String sheetName) throws IOException {
 
         FileInputStream fis = new FileInputStream(filePath);
         Workbook workbook = new XSSFWorkbook(fis);
