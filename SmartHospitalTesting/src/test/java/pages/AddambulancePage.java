@@ -19,10 +19,20 @@ public class AddambulancePage {
 	public static By patient = By.xpath("//*[@id=\"myModal\"]/div/div/div/div/div[1]/div/span[1]/span[1]/span");
 	public static By patientInput = By.xpath("/html/body/span/span/span[1]/input");
 	public static By successMessage = By.xpath("//*[@id=\"toast-container\"]/div/div");
-	public static By chargeNameOption = By.xpath("//*[@id=\"select2-code-result-vmxq-17\"]");
 	public static By invalidamountmess = By.xpath("//*[@id=\"toast-container\"]/div/div/p[2]");
+	public static By chargeNameDropdown = By.id("select2-code-container");
 	
-	public static By dynamicOption(String option) {
-		return By.xpath("//li[contains(text(),'"+option+"')]");
+	public static By patientOption(String patient) {
+	    return By.xpath(
+	        "//li[contains(@class,'select2-results__option') and contains(text(),'"
+	        + patient + "')]"
+	    );
+	}
+
+	public static By chargeOption(String charge) {
+	    return By.xpath(
+	        "//ul[@id='select2-code-results']//li[contains(text(),'"
+	        + charge + "')]"
+	    );
 	}
 }

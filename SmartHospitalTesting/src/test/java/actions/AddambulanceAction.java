@@ -22,12 +22,16 @@ public class AddambulanceAction {
 	}
 
 	public static void enterAmbulanceDetail(String patient, String vehicleModel, String date, String chargeCategory,
-			String chargeName, String note, String paymentMode) {
+			String chargeName, String note, String paymentMode) throws InterruptedException {
 
 		Helper.click(AddambulancePage.patient);
 		Helper.type(AddambulancePage.patientInput, patient);
-		Helper.waitForElementClickable(AddambulancePage.dynamicOption("(1185)"));
-		Helper.click(AddambulancePage.dynamicOption("(1185)"));
+
+		Helper.waitForElementClickable(
+		        AddambulancePage.patientOption("Ashok (1185)"));
+
+		Helper.click(
+		        AddambulancePage.patientOption("Ashok (1185)"));
 
 		Select s = new Select(Helper.getElement(AddambulancePage.vehicleModal));
 		s.selectByVisibleText(vehicleModel);
@@ -37,20 +41,33 @@ public class AddambulanceAction {
 		Select s2 = new Select(Helper.getElement(AddambulancePage.chargeCategory));
 		s2.selectByVisibleText(chargeCategory);
 
-//		Select s3 = new Select(Helper.getElement(AddambulancePage.chargeName));
-//		Helper.waitForVisibility(AddambulancePage.chargeNameOption);
-//		s3.selectByVisibleText(chargeName);
+		Thread.sleep(2000);
+		
+		Helper.click(AddambulancePage.chargeNameDropdown);
+
+		wait.until(driver ->
+		    Driver.getDriver()
+		          .findElements(
+		              AddambulancePage.chargeOption(chargeName))
+		          .size() > 0
+		);
+
+		Helper.click(
+		        AddambulancePage.chargeOption(chargeName));
 
 		Helper.type(AddambulancePage.note, note);
 	}
 
 	public static void enterAmbulanceDetail(String patient, String vehicleModel, String date, String chargeCategory,
-			String chargeName, String note, String paymentMode, String standardCharge) {
+			String note, String paymentMode) {
 
 		Helper.click(AddambulancePage.patient);
 		Helper.type(AddambulancePage.patientInput, patient);
-		Helper.waitForElementClickable(AddambulancePage.dynamicOption("(1185)"));
-		Helper.click(AddambulancePage.dynamicOption("(1185)"));
+		Helper.waitForElementClickable(
+		        AddambulancePage.patientOption("(1185)"));
+
+		Helper.click(
+		        AddambulancePage.patientOption("(1185)"));
 
 		Select s = new Select(Helper.getElement(AddambulancePage.vehicleModal));
 		s.selectByVisibleText(vehicleModel);
@@ -59,12 +76,6 @@ public class AddambulanceAction {
 
 		Select s2 = new Select(Helper.getElement(AddambulancePage.chargeCategory));
 		s2.selectByVisibleText(chargeCategory);
-
-//		Select s3 = new Select(Helper.getElement(AddambulancePage.chargeName));
-//		Helper.waitForVisibility(AddambulancePage.chargeNameOption);
-//		s3.selectByVisibleText(chargeName);
-
-		Helper.type(AddambulancePage.standardCharge, standardCharge);
 
 		Helper.type(AddambulancePage.note, note);
 	}
