@@ -16,6 +16,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import driver.Driver;
 
 public class Helper {
+
     // Click (with wait)
     public static void click(By locator) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(20));
@@ -42,7 +43,8 @@ public class Helper {
     public static List<WebElement> getElements(By locator) {
         return Driver.getDriver().findElements(locator);
     }
-    
+
+    // Get Single Element
     public static WebElement getElement(By locator) {
         return Driver.getDriver().findElement(locator);
     }
@@ -64,12 +66,25 @@ public class Helper {
         wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
 
+    // Get clickable element
+    public static WebElement getClickableElement(By locator) {
+
+        WebDriverWait wait =
+                new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(20));
+
+        return wait.until(ExpectedConditions.elementToBeClickable(locator));
+    }
+
     // Move and click
     public static void moveToElementAndClick(By locator) {
-        WebDriver driver = Driver.getDriver();
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
-        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        WebDriver driver = Driver.getDriver();
+
+        WebDriverWait wait =
+                new WebDriverWait(driver, Duration.ofSeconds(20));
+
+        WebElement element =
+                wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 
         ((JavascriptExecutor) driver)
                 .executeScript("arguments[0].scrollIntoView(true);", element);
@@ -84,33 +99,51 @@ public class Helper {
 
     // Move only
     public static void moveToElement(By locator) {
+
         WebDriver driver = Driver.getDriver();
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
-        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        WebDriverWait wait =
+                new WebDriverWait(driver, Duration.ofSeconds(20));
 
-        new Actions(driver).moveToElement(element).perform();
+        WebElement element =
+                wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+
+        new Actions(driver)
+                .moveToElement(element)
+                .perform();
     }
 
     // JS Click
     public static void jsClick(By locator) {
+
         WebElement element = waitForVisibility(locator);
-        JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
+
+        JavascriptExecutor js =
+                (JavascriptExecutor) Driver.getDriver();
+
         js.executeScript("arguments[0].click();", element);
     }
 
     // Dropdown select
     public static void selectDropdown(By locator, String value) {
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(20));
-        WebElement dropdown = wait.until(ExpectedConditions.elementToBeClickable(locator));
+
+        WebDriverWait wait =
+                new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(20));
+
+        WebElement dropdown =
+                wait.until(ExpectedConditions.elementToBeClickable(locator));
 
         Select select = new Select(dropdown);
 
         try {
+
             select.selectByVisibleText(value);
+
         } catch (Exception e) {
 
-            JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
+            JavascriptExecutor js =
+                    (JavascriptExecutor) Driver.getDriver();
+
             js.executeScript(
                     "for (let i=0; i<arguments[0].options.length; i++) {" +
                             "if (arguments[0].options[i].text.trim() === arguments[1]) {" +
@@ -123,33 +156,43 @@ public class Helper {
 
     // Wait for elements present
     public static void waitForElementsPresent(By locator, int timeoutSeconds) {
+
         new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(timeoutSeconds))
                 .until(driver -> driver.findElements(locator).size() > 0);
     }
 
     // Modal wait
     public static void waitForModal(WebDriver driver) {
+
         new WebDriverWait(driver, Duration.ofSeconds(20))
-                .until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".modal-dialog")));
+                .until(ExpectedConditions.visibilityOfElementLocated(
+                        By.cssSelector(".modal-dialog")));
     }
 
     // Overlay wait
     public static void waitForOverlay(WebDriver driver) {
 
         new WebDriverWait(driver, Duration.ofSeconds(20))
-                .until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".modal-backdrop")));
+                .until(ExpectedConditions.invisibilityOfElementLocated(
+                        By.cssSelector(".modal-backdrop")));
     }
 
     // Set Date
     public static void setDate(By locator, String value) {
-        WebElement el = Driver.getDriver().findElement(locator);
+
+        WebElement el =
+                Driver.getDriver().findElement(locator);
+
         ((JavascriptExecutor) Driver.getDriver())
                 .executeScript("arguments[0].value='" + value + "';", el);
     }
 
     // Alert Handling
     public static Alert waitForAlert() {
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(20));
+
+        WebDriverWait wait =
+                new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(20));
+
         return wait.until(ExpectedConditions.alertIsPresent());
     }
 
@@ -164,5 +207,4 @@ public class Helper {
     public static String getAlertText() {
         return waitForAlert().getText();
     }
-
 }
