@@ -19,23 +19,15 @@ public class AddPatientPage {
     }
 
     By patientCategory =
-            By.xpath("//a[contains(@href,'patient') and .//span[contains(text(),'Patient')]]"
-                   + " | //a[normalize-space(text())='Patient']"
-                   + " | //span[normalize-space(text())='Patient']/parent::a");
+            By.xpath("//a[@href='https://demo.smart-hospital.in/admin/admin/search']");
 
     By addNewPatientButton =
-            By.xpath("//a[contains(@class,'addpatient')]"
-                   + " | //a[contains(text(),'Add New Patient') or contains(text(),'Add Patient')]"
-                   + " | //button[contains(text(),'Add New Patient') or contains(text(),'Add Patient')]");
+            By.xpath("//div[@class='box-header ptbnull']//a[1]");
     By Title =
-            By.xpath("//h4[contains(text(),'Add Patient')] | //h5[contains(text(),'Add Patient')]"
-                   + " | //*[contains(@class,'modal-title') and contains(text(),'Add Patient')]");
-    // ==================== Modal Wait Locator ====================
+            By.xpath("//h4[contains(text(),'Add Patient')]");
 
     By modalNameInput =
             By.xpath(" //input[@id='name']");
-    // ==================== Form Field Locators ====================
-
     By patientName  = By.id("name");
     By guardianName = By.xpath("//div[@class='col-lg-6 col-md-6 col-sm-6']//input[@name='guardian_name']");
     By gender       = By.xpath("//select[@id='addformgender']");
@@ -62,7 +54,7 @@ public class AddPatientPage {
                    + " or contains(@class,'error') or contains(@class,'invalid-feedback')"
                    + " or contains(@class,'help-block') or contains(@class,'text-danger')]");
 
-    // Red border / error class on the Name input (has-error wrapper)
+ 
     By nameFieldError =
             By.xpath("//div[contains(@class,'has-error') or contains(@class,'is-invalid')]"
                    + " | //div[contains(@class,'modal-body')]//input[contains(@class,'error') or contains(@class,'is-invalid')]");
@@ -78,34 +70,19 @@ public class AddPatientPage {
         WebElement el = driver.findElement(addNewPatientButton);
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", el);
     }
-
-    // =====================================================================
-    // MODAL WAIT
-    // =====================================================================
-
     public void waitForModalToLoad() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
         wait.until(ExpectedConditions.visibilityOfElementLocated( Title));
         wait.until(ExpectedConditions.elementToBeClickable(patientName));
     }
 
-    // =====================================================================
-    // MANDATORY FIELDS — Leave all empty (do nothing)
-    // The Name * field is already empty when modal opens.
-    // This method ensures all inputs are cleared just in case.
-    // =====================================================================
-
     public void leaveMandatoryFieldsEmpty() {
-        // Clear the Name field (mandatory) using JS
+     
         try {
             WebElement el = driver.findElement(patientName);
             ((JavascriptExecutor) driver).executeScript("arguments[0].value='';", el);
         } catch (Exception ignored) {}
     }
-
-    // =====================================================================
-    // FORM METHODS
-    // =====================================================================
 
     public void enterPatientName(String value) {
         WebElement el = driver.findElement(patientName);
@@ -182,21 +159,15 @@ public class AddPatientPage {
         WebElement el = driver.findElement(saveButton);
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", el);
     }
-
-    // =====================================================================
-    // SUCCESS VERIFICATION — 3-Strategy
-    // =====================================================================
-
     public boolean verifyPatientSavedSuccessfully(String savedPatientName) {
 
-        // Strategy 1 — Toast message
         try {
             WebDriverWait shortWait = new WebDriverWait(driver, Duration.ofSeconds(5));
             shortWait.until(ExpectedConditions.visibilityOfElementLocated(Message));
             return true;
         } catch (TimeoutException ignored) {}
 
-        // Strategy 2 — Modal closes + patient list table reappears
+    
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
             wait.until(ExpectedConditions.invisibilityOfElementLocated(Title));
@@ -204,7 +175,6 @@ public class AddPatientPage {
             return true;
         } catch (TimeoutException ignored) {}
 
-        // Strategy 3 — Find patient name in the table (names shown as "Ramya (363)")
         try {
             By patientRow = By.xpath(
                     "//table[contains(@class,'table')]//td[contains(text(),'"
@@ -221,22 +191,19 @@ public class AddPatientPage {
  
     public boolean verifyValidationMessageDisplayed() {
 
-        // Strategy 1 — Validation error text inside the modal
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
             wait.until(ExpectedConditions.visibilityOfElementLocated(validationErrorText));
             return true;
         } catch (TimeoutException ignored) {}
 
-        // Strategy 2 — Red border / error class on the Name field
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
             wait.until(ExpectedConditions.visibilityOfElementLocated(nameFieldError));
             return true;
-        } catch (TimeoutException ignored) {}
-
-        // Strategy 3 — Modal is still open (save was rejected)
-        // If modal title is still visible after clicking Save = validation prevented save
+        } catch (TimeoutException ignored) {
+        	
+        }
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
             wait.until(ExpectedConditions.visibilityOfElementLocated(Title));
