@@ -1,4 +1,4 @@
-Feature: View the Pharmacy Bill page
+Feature:Balamurugan S 15-04-2026 View the Pharmacy Bill page
 
   Background:
     Given the user is on the login page
