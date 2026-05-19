@@ -10,6 +10,9 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 
 import Utilities.ConfigReader;
 import io.github.bonigarcia.wdm.WebDriverManager;
+
+import java.util.Map;
+
 import org.openqa.selenium.WebDriver;
 
 
@@ -33,6 +36,12 @@ public class Driver {
 
 		        WebDriverManager.chromedriver().setup();
 		        ChromeOptions options = new ChromeOptions();
+		        options.addArguments("--disable-notifications");
+
+		        options.setExperimentalOption("prefs", Map.of(
+		            "credentials_enable_service", false,
+		            "profile.password_manager_enabled", false
+		        ));
 
 		        if (headless) {
 		            options.addArguments("--headless=new");

@@ -13,13 +13,6 @@ public class Data_Provider {
 
 	    return getExcelData("src/test/resources/test_datas/Harini/BloodIssueValid.xlsx","validDetails");
 	}
-	
-	@DataProvider(name = "ambulanceData", parallel = true)
-	public Object[][] ambulanceData() throws IOException {
-
-	    return getExcelData("src/test/resources/test_datas/TestData.xlsx","Sheet2");
-	}
-	
 
     public static String[][] getExcelData(String filePath, String sheetName) throws IOException {
 
