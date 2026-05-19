@@ -14,7 +14,7 @@ public class ConfigReader {
 
 		try {
 
-			FileInputStream file = new FileInputStream("src/test/resources/config/config.properties");
+			FileInputStream file = new FileInputStream("src\\test\\resources\\config\\config.properties");
 
 			properties.load(file);
 
@@ -27,6 +27,14 @@ public class ConfigReader {
 	
 	public static String getUrl() {
 		return getProperties().getProperty("url");
+	}
+	
+	public static String getUsername() {
+		return getProperties().getProperty("username");
+	}
+	
+	public static String getPassword() {
+		return getProperties().getProperty("password");
 	}
 
 }
