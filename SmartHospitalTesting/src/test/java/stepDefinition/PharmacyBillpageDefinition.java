@@ -26,7 +26,7 @@ public class PharmacyBillpageDefinition {
 	@Then("it should move to the Pharmacy Bill page successfully")
 	public void it_should_move_to_the_pharmacy_bill_page_successfully() {
 
-		boolean isDisplayed=pharmacyAction.pageisDsiplayed();
+		boolean isDisplayed = pharmacyAction.pageisDisplayed();
 		Assert.assertTrue(isDisplayed);
 		System.out.println("successfully moved to the pharmacy bill page");
 	}
@@ -44,26 +44,25 @@ public class PharmacyBillpageDefinition {
 	@When("the user searches for patient {string}")
 	public void the_user_searches_for_patient(String patient) {
 
-	    pharmacyAction.clickPatientsearchbar();
-	    pharmacyAction.searchName(patient);
-	}
-	@Then("the patient {string} should be displayed in the results")
-	public void the_patient_should_be_displayed_in_the_results(String patient) {
-
-	    String actualName = pharmacyAction.isPatientPresent(patient);
-
-	    System.out.println("Expected patient: " + patient);
-	    System.out.println("Actual patient found: " + actualName);
-
-	    Assert.assertNotNull(actualName,
-	            "Patient not found in results: " + patient);
-
-	    Assert.assertTrue(actualName.toLowerCase().contains(patient.toLowerCase()),
-	            "Patient name mismatch!\n Expected: " + patient + " but found: " + actualName);
+		pharmacyAction.clickPatientsearchbar();
+		pharmacyAction.searchName(patient);
 	}
 
+	@Then("the system should display result as {string}")
+	public void the_system_should_display_result_as(String result) {
 
+		String searchedPatient = Driver.getDriver().findElement(PharmacyBillPage.searchInputbar).getAttribute("value");
 
-	
+		if (result.equalsIgnoreCase("present")) {
+			String actualPatient = pharmacyAction.isPatientPresent(searchedPatient);
+			Assert.assertNotNull(actualPatient);
+			System.out.println("Patient is present");
+
+		} else if (result.equalsIgnoreCase("not found")) {
+			boolean noData = pharmacyAction.isNoDataMessageDisplayed();
+			Assert.assertTrue(noData);
+			System.out.println("Patient not found");
+		}
+	}
 
 }
