@@ -1,5 +1,6 @@
 Feature: Janani_14May2026_Smart_Hospital_Project
-
+   
+  @Jananisri
   Scenario: Successfully add a patient with valid details
     Given Admin is on the Dashboard page
     Then admin clicks the patient category
@@ -10,6 +11,7 @@ Feature: Janani_14May2026_Smart_Hospital_Project
     And clicks on Save button
     Then patient record should be created successfully
 
+@Jananisri
 Scenario: Verify mandatory fields while adding patient
     Given Admin is on the Add Patient page
     When Admin leaves mandatory fields empty
