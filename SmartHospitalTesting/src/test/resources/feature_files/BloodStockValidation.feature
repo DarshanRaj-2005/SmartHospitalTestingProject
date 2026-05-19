@@ -10,6 +10,7 @@ Feature: Blood Stock Status Validation
 
   @BloodGroupSelection
   Scenario Outline: Verify blood stock details for different blood groups
+
     When the user selects blood group "<BloodGroup>"
     Then the corresponding blood bag details should be displayed and the corresponding blood component details should be displayed
 
@@ -22,11 +23,14 @@ Feature: Blood Stock Status Validation
 
   @AddBloodDonorDetails
   Scenario: Verify user is able to add blood donor details
+
     When the user clicks on add icon
     Then the Blood Donor Details popup should be displayed
+
     When the user enters valid blood donor details
-      | BloodDonor | DonateDate | Bag  | ChargeCategory     | ChargeName   |
+      | BloodDonor | DonateDate | Bag | ChargeCategory     | ChargeName   |
       | Riyaz      | 05/18/2026 | 1234 | Packed Blood Cells | Blood Module |
+
     And the user clicks on donor Save button
     Then the blood donor details should be added successfully
   @BloodIssueNavigation
