@@ -8,6 +8,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features = "src/test/resources/feature_files/PharmacyBillpage.feature",
         glue = { "stepDefinition", "hooks" },
+        tags = ("@bala"),
         plugin = {
                 "pretty",
                 "html:target/cucumber-report.html",
