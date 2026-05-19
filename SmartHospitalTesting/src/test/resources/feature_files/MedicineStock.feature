@@ -1,10 +1,15 @@
-Feature: Add and manage medicines in the medicine stock page
+Feature: Balamurugan S 17-5-2026 Add and manage medicines in the medicine stock page
 
   Background:
-    Given the user is on the Pharmacy Bill page
+    Given the user is on the login page
+    When the user clicks Super Admin button
+    And the user clicks the Sign in button
+    Then the user should be redirected to super admin dashboard
+    When the user clicks the Pharmacy
+    Then it should move to the Pharmacy Bill page successfully
     When the user clicks the Medicines button
 
-  Scenario: Verify medicine search 
+  Scenario: Verify medicine search
     Given the user is on the medicine stock page
     When the user searches medicine "Paracetamol"
     Then the searched medicine should be displayed in the table
@@ -15,5 +20,3 @@ Feature: Add and manage medicines in the medicine stock page
     And clicks the delete Selected button
     And the user confirms the alert displayed
     Then the message displayed as medicine deleteted successfully
-
- 
