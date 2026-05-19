@@ -5,7 +5,12 @@ import org.testng.annotations.DataProvider;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
-@CucumberOptions(features = { "src/test/resources/feature_files" },
+@CucumberOptions(features = {   "src/test/resources/feature_files/AddItems.feature",
+	    "src/test/resources/feature_files/complain.feature",
+	    "src/test/resources/feature_files/InventorySearch.feature",
+	    "src/test/resources/feature_files/IssueItem.feature",
+	    "src/test/resources/feature_files/AddNewStock.feature"
+		},
 
 		glue = { "stepDefinition", "hooks" },
 
