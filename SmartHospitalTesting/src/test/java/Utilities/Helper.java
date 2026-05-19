@@ -207,4 +207,71 @@ public class Helper {
     public static String getAlertText() {
         return waitForAlert().getText();
     }
+    
+    
+    public static void waitForDropdownEnabled(By locator) {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(20));
+        wait.until(driver -> {
+            WebElement dropdown = driver.findElement(locator);
+            return !dropdown.getAttribute("disabled").equals("true");
+        });
+    }
+
+    public static boolean isFieldHasError(By fieldLocator) {
+        try {
+            WebElement field = Driver.getDriver().findElement(fieldLocator);
+            String ariaInvalid = field.getAttribute("aria-invalid");
+            return ariaInvalid != null && ariaInvalid.equals("true");
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    public static String getFieldErrorText(By fieldLocator) {
+        try {
+            WebElement field = Driver.getDriver().findElement(fieldLocator);
+            String ariaDescribedBy = field.getAttribute("aria-describedby");
+            if (ariaDescribedBy != null && !ariaDescribedBy.isEmpty()) {
+                WebElement errorElement = Driver.getDriver().findElement(By.id(ariaDescribedBy));
+                return errorElement.getText();
+            }
+        } catch (Exception e) {
+            System.out.println("Error retrieving field error message: " + e.getMessage());
+        }
+        return null;
+    }
+
+    public static void waitForFieldEnabled(By fieldLocator) {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(20));
+        wait.until(driver -> {
+            WebElement field = driver.findElement(fieldLocator);
+            return field.isEnabled();
+        });
+    }
+
+    public static void clearAndEnterText(By fieldLocator, String text) {
+        Helper.waitForVisibility(fieldLocator);
+        Helper.click(fieldLocator);
+        Helper.clear(fieldLocator);
+        Helper.type(fieldLocator, text);
+    }
+    public static void waitForSuccessNotification(By locator) {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(20));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
+    public static void waitForErrorNotification(By locator) {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(20));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
+    public static boolean isFieldRequired(By fieldLocator) {
+        try {
+            WebElement field = Driver.getDriver().findElement(fieldLocator);
+            String requiredAttr = field.getAttribute("required");
+            return requiredAttr != null && requiredAttr.equals("true");
+        } catch (Exception e) {
+            return false;
+        }
+    }
 }
