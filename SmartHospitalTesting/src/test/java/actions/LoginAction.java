@@ -18,8 +18,8 @@ public class LoginAction {
 	public String messages() {
 		return Helper.getText(LoginPage.texts);
 	}
-	
+	                     
 	public boolean isDashboardDisplayed() {
-		return Helper.waitForVisibility(LoginPage.dashboard).getText().equals("maa bharti hospital");
+		return Helper.waitForVisibility(LoginPage.dashboard).getText().equals("Smart Hospital & Research Center");
 	}
 }

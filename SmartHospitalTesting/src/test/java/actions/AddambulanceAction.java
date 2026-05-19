@@ -51,7 +51,7 @@ public class AddambulanceAction {
 		Helper.type(AddambulancePage.note, note);
 	}
 
-	public static void enterAmbulanceDetail(String patient, String vehicleModel, String date, String chargeCategory,
+	public static void enterAmbulanceDetail(String patient, String vehicleModel, String date,
 			String note) {
 
 		Helper.click(AddambulancePage.patient);
@@ -64,11 +64,6 @@ public class AddambulanceAction {
 		
 		//Used Javascript for setting date
 		Helper.setDate(AddambulancePage.date, date);
-
-		Helper.moveToElementAndClick(AddambulancePage.chargeCategory);
-		Helper.type(AddambulancePage.searchBox,chargeCategory);
-		Helper.waitForVisibility(AddambulancePage.selectOption(chargeCategory));
-		Helper.click(AddambulancePage.selectOption(chargeCategory));
 
 		Helper.type(AddambulancePage.note, note);
 	}
@@ -108,10 +103,7 @@ public class AddambulanceAction {
 	public static boolean checkInvalidAmount() {
 		Helper.waitForVisibility(AddambulancePage.invalidamountmess);
 		String text = Helper.getText(AddambulancePage.invalidamountmess);
-		Assert.assertEquals(text, "Charge Name field is required");
+		Assert.assertEquals(text, "Charge Category field is required");
 		return true;
 	}
 }
-
-
-//*[@id="formadd"]/div[2]/div/div[1]/div[8]/div/span[1]/span[1]/span
