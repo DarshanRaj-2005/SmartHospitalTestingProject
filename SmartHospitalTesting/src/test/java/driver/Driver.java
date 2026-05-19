@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
+
 import Utilities.ConfigReader;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -59,10 +60,10 @@ public class Driver {
 		}
 
 	public static void quitDriver() {
-//		if (getDriver() != null) {
-//			getDriver().quit();
-//			driver.remove();
-//		}
+		if (getDriver() != null) {
+			getDriver().quit();
+			driver.remove();
+		}
 	}
 
 }
