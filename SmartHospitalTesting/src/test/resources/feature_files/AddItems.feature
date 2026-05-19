@@ -1,4 +1,7 @@
+@Additems
 Feature: Add New Items in Inventory
+
+
 
 Background:
   Given the user is on the login page
