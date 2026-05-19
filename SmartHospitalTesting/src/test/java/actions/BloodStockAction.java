@@ -73,6 +73,7 @@ public class BloodStockAction {
 	public static void clickSave() {
 		logger.info("Clicked Save Button");
 		Helper.click(BloodStockPage.saveButton);
+		
 	}
 
 	public static void clickCalculateButton() {
