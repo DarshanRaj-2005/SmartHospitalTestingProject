@@ -7,7 +7,6 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
         features = "src/test/resources/feature_files",
-
         tags="@DonorManagement or @BloodIssueManagement or @BloodStockValidation",
         glue = { "stepDefinition", "hooks" },
         plugin = {
