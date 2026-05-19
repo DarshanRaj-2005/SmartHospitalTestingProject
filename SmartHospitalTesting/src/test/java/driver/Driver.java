@@ -59,10 +59,10 @@ public class Driver {
 		}
 
 	public static void quitDriver() {
-		if (getDriver() != null) {
-			getDriver().quit();
-			driver.remove();
-		}
+//		if (getDriver() != null) {
+//			getDriver().quit();
+//			driver.remove();
+//		}
 	}
 
 }
