@@ -36,9 +36,9 @@ public class LoginStepDefinition {
 		Assert.assertTrue(la.isDashboardDisplayed());
 	}
 
-	@When("the user enters invalid {string} and valid password")
-	public void the_user_enters_invalid_and_valid_password(String string) {
-		Helper.type(LoginPage.email, string);
+	@When("the user enters invalid username and valid password")
+	public void the_user_enters_invalid_and_valid_password() {
+		Helper.type(LoginPage.email,ConfigReader.getUsername());
 	}
 
 	@Then("the system should show a message {string}")
@@ -54,15 +54,16 @@ public class LoginStepDefinition {
 		String texts = la.messages();
 		Assert.assertEquals(texts, "Username field is required");
 	}
-
-	@Then("the following validation messages should be displayed")
-	public void the_following_validation_messages_should_be_displayed(io.cucumber.datatable.DataTable dataTable) {
-
+	
+	@When("the user enter invalid {string} and {string}>")
+	public void the_user_enter_invalid_and(String string, String string2) {
+		Helper.type(LoginPage.email,string);
+		Helper.type(LoginPage.password,string2);
 	}
 
-	@When("the user enters valid username and invalid {string}")
-	public void the_user_enters_valid_username_and_invalid(String string) {
-		Helper.type(LoginPage.password, string);
+	@When("the user enters valid username and invalid password")
+	public void the_user_enters_valid_username_and_invalid() {
+		Helper.type(LoginPage.password,ConfigReader.getPassword());
 	}
 
 }

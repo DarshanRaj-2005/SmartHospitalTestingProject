@@ -19,11 +19,10 @@ public class AddambulancePage {
 	public static By successMessage = By.xpath("//*[@id=\"toast-container\"]/div/div");
 	public static By invalidamountmess = By.xpath("//*[@id=\"toast-container\"]/div/div/p[2]");
 	public static By option = By.xpath("//*[@id=\"code\"]/option[2]");
-
-	public static By chargeName = By.xpath("//span[@id='select2-code-container']");
-	public static By chargeCategory = By
-			.xpath("//*[@id=\"formcall\"]/div[1]/div/div/div[1]/div[5]/div/div/span/span[1]/span");
-	public static By chargeInput = By.xpath("//input[@class='select2-search__field']");
+	
+	public static By chargeCategory = By.xpath("//span[contains(@class,'selection')]//span[contains(@class,'select2-selection--single')]//span[contains(text(),'Select')]");
+	public static By chargeName = By.xpath("//*[@id=\"select2-code-container\"]");
+	public static By searchBox = By.xpath("//input[@class='select2-search__field']");
 
 	public static By dynamicOption(String string) {
 		return By.xpath("//li[contains(text(),'" + string + "')]");

@@ -9,6 +9,7 @@ import org.testng.Assert;
 
 import Utilities.Helper;
 import pages.AddambulancePage;
+import pages.BloodStockPage;
 import driver.Driver;
 
 public class AddambulanceAction {
@@ -37,17 +38,18 @@ public class AddambulanceAction {
 		
 		//Used Javascript for setting date
 		Helper.setDate(AddambulancePage.date, date);
-
-		Select s2 = new Select(Helper.getElement(AddambulancePage.chargeCategory));
-		s2.selectByVisibleText(chargeCategory);
 		
-		Helper.waitForElementClickable(AddambulancePage.chargeName);
-		Helper.click(AddambulancePage.chargeName);
-		Helper.waitForVisibility(AddambulancePage.chargeInput);
-		Helper.type(AddambulancePage.chargeInput, chargeName);
-		Helper.waitForElementClickable(AddambulancePage.selectOption(chargeName));
+		Helper.moveToElementAndClick(AddambulancePage.chargeCategory);
+		Helper.type(AddambulancePage.searchBox,chargeCategory);
+		Helper.waitForVisibility(AddambulancePage.selectOption(chargeCategory));
+		Helper.click(AddambulancePage.selectOption(chargeCategory));
+		
+		Helper.moveToElementAndClick(AddambulancePage.chargeName);
+		Helper.type(AddambulancePage.searchBox, chargeName);
+		Helper.waitForElementsPresent(AddambulancePage.selectOption(chargeName), 20);
 		Helper.click(AddambulancePage.selectOption(chargeName));
 	
+		
 		Helper.type(AddambulancePage.note, note);
 	}
 
@@ -65,8 +67,10 @@ public class AddambulanceAction {
 		//Used Javascript for setting date
 		Helper.setDate(AddambulancePage.date, date);
 
-		Select s2 = new Select(Helper.getElement(AddambulancePage.chargeCategory));
-		s2.selectByVisibleText(chargeCategory);
+		Helper.moveToElementAndClick(AddambulancePage.chargeCategory);
+		Helper.type(AddambulancePage.searchBox,chargeCategory);
+		Helper.waitForVisibility(AddambulancePage.selectOption(chargeCategory));
+		Helper.click(AddambulancePage.selectOption(chargeCategory));
 
 		Helper.type(AddambulancePage.note, note);
 	}
