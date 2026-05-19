@@ -20,6 +20,6 @@ public class LoginAction {
 	}
 	
 	public boolean isDashboardDisplayed() {
-		return Helper.waitForVisibility(LoginPage.dashboard).getText().equals("Smart Hospital & Research Center");
+		return Helper.waitForVisibility(LoginPage.dashboard).getText().equals("maa bharti hospital");
 	}
 }
