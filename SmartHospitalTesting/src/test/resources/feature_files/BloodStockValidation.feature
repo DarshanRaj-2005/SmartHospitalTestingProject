@@ -33,9 +33,9 @@ Feature: Blood Stock Status Validation
 
     And the user clicks on donor Save button
     Then the blood donor details should be added successfully
-
   @BloodIssueNavigation
-  Scenario: Verify user navigates to Blood Issue page
-
-    When the user clicks issue button for bag number "56"
-    Then the Blood Issue page should be displayed
+Scenario: Verify user navigates to Blood Issue page
+  When the user clicks issue button for below bag number
+    | Bag |
+    | 56  |
+  Then the Blood Issue page should be displayed
