@@ -55,9 +55,6 @@ public class BloodStockAction {
 		Helper.type(BloodStockPage.bagField, bag);
 	}
 
-	public void clickSaveButton() {
-		Helper.click(BloodStockPage.saveButton);
-	}
 
 	public static void selectChargeCategory(String chargecategory) {
 		Helper.moveToElementAndClick(BloodStockPage.chargeCategory);
@@ -96,5 +93,4 @@ public class BloodStockAction {
 		logger.info("Clicked Issue Button");
 		Helper.click(BloodStockPage.issueButton(bag));
 	}
-
 }
