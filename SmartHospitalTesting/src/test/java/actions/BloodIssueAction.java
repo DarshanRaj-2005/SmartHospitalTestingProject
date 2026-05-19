@@ -13,7 +13,7 @@ import driver.Driver;
 import pages.BloodIssuePage;
 
 public class BloodIssueAction {
-	 Logger logger = LogManager.getLogger(DonorManagementAction.class);
+	 Logger logger = LogManager.getLogger(BloodIssueAction.class);
 	public void clickbloodissueDetails() {
 		logger.info("Navigated to Blood Issue Details Page");
 		Helper.click(BloodIssuePage.bloodIssuedetails);
@@ -38,8 +38,8 @@ public class BloodIssueAction {
 	}
 	public void enterIssueDate(String issueDate) {
 	    Helper.getElement(BloodIssuePage.issuedate).clear();
-	    Helper.type(BloodIssuePage.issuedate, issueDate);
-	    Helper.getElement(BloodIssuePage.issuedate).sendKeys(Keys.TAB);
+	    Helper.setDate(BloodIssuePage.issuedate, issueDate);
+	   // Helper.getElement(BloodIssuePage.issuedate).sendKeys(Keys.TAB);
 	}
 	public void selectdoctor(String doctor) {
 	    Helper.moveToElementAndClick(BloodIssuePage.doctorDropdown);
@@ -104,7 +104,7 @@ public class BloodIssueAction {
 	public boolean isIssuedBloodrecorddisplayed() {
 	    Helper.waitForVisibility(BloodIssuePage.successMessage);
 	    String message = Helper.getText(BloodIssuePage.successMessage);
-	    logger.info("Toast Message: " + message);
+	    logger.info( message);
 	    return message.toLowerCase().contains("success");
 	}
 	public boolean isValidationMessageDisplayed(String message) {
