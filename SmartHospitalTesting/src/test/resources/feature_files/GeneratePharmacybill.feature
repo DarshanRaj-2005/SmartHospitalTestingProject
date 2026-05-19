@@ -9,7 +9,8 @@ Feature: Balamurugan S 18-05-2026 Generate the Pharmacy Bill
     Then it should move to the Pharmacy Bill page successfully
 
   Scenario: Verify whether a user can generate the bill using valid details
-    When the user enters pharmacy bill details
+    When user clicks Generate Bill button
+    And the user enters pharmacy bill details
       | patient     | John              |
       | category    | Syrup             |
       | medicine    | Alprovit          |
