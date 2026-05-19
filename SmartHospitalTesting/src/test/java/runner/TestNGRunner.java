@@ -6,7 +6,8 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-        features = "src/test/resources/feature_files",
+      features = "src/test/resources/feature_files",
+				   tags = "@InventorySerach or @issueitem or @AddNewStock or @Additems or @complain or @Contactus",
         glue = { "stepDefinition", "hooks" },
         plugin = {
                 "pretty",
