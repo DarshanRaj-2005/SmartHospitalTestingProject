@@ -12,27 +12,20 @@ Feature: Harini_13/05/26 Donor Management Functionality
     When the user clicks on Add Blood Donor
     Then the Add Donor Details popup should be displayed
 
-  @AddDonorValid
-  Scenario Outline: Add donor with valid details
-    When the user enters donor name "<DonorName>" and date of birth "<DateOfBirth>" and blood group "<BloodGroup>" and gender "<Gender>" and father name "<FatherName>" and contact number "<ContactNumber>" and address "<Address>"
-    And the user clicks on Save button
-    Then the newly added donor record should be visible in donor details list
-
-    Examples:
-      | DonorName | DateOfBirth | BloodGroup | Gender | FatherName | ContactNumber | Address |
-      | Raja    | 12/05/1998  | B+         | Male   | Ramesh     | 9876543210    | Chennai |
-      |Harini   | 26/12/2004  | A+         |Female   |Suresh      |7639601420    |Salem|
-  @AddDonorMandatory
-  Scenario Outline: Add donor with mandatory fields
-    When the user enters donor name "<DonorName>" and date of birth "<DateOfBirth>" and blood group "<BloodGroup>" and gender "<Gender>"
-    And the user clicks on Save button
-    Then the newly added donor record should be visible in donor details list
-
-    Examples:
-      | DonorName | DateOfBirth | BloodGroup | Gender |
-      | Raja     | 12/05/1998  | B+         | Male   |
-      |Harini   | 26/12/2004  | A+         |Female   |
-
+@AddDonorValid
+Scenario: Verify user is able to add donor with valid details
+  When the user enters valid donor details
+    | DonorName | DateOfBirth | BloodGroup | Gender | FatherName | ContactNumber | Address |
+    | Raja      | 12/05/1998  | B+         | Male   | Ramesh     | 9876543210    | Chennai |
+  And the user clicks on Save button
+  Then the newly added donor record should be visible in donor details list
+ @AddDonorMandatory
+Scenario: Verify user is able to add donor with mandatory fields
+  When the user enters mandatory donor details
+    | DonorName | DateOfBirth | BloodGroup | Gender |
+    | Harini    | 26/12/2004  | A+         | Female |
+  And the user clicks on Save button
+  Then the newly added donor record should be visible in donor details list
   @AllFieldsEmpty
   Scenario: Validate donor creation with all mandatory fields empty
     And the user clicks on Save button

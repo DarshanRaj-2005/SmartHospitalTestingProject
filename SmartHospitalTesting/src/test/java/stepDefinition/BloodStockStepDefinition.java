@@ -74,6 +74,7 @@ public class BloodStockStepDefinition {
 	@Then("the Blood Issue page should be displayed")
 	public void the_blood_issue_page_should_be_displayed() {
 		Assert.assertTrue(BloodStockAction.isBloodIssuePageDisplayed());
+		logger.info("Blood Issue Page is displayed.");
 
 	}
 
@@ -81,5 +82,12 @@ public class BloodStockStepDefinition {
 	public void the_user_clicks_issue_button_for_bag_number(String bag) {
 		BloodStockAction.clickIssueButton(bag);
 	}
+	@When("the user clicks issue button for below bag number")
+	public void the_user_clicks_issue_button_for_below_bag_number(io.cucumber.datatable.DataTable dataTable) {
+		 List<Map<String, String>> data =dataTable.asMaps(String.class, String.class);
+		    String bag =data.get(0).get("Bag");
+		    BloodStockAction.clickIssueButton(bag);
+	}
+
 
 }
