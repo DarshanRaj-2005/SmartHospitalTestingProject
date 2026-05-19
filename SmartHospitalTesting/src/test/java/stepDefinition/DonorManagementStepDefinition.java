@@ -8,6 +8,8 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.DonorManagementPage;
 import java.util.List;
+import java.util.Map;
+
 import io.cucumber.datatable.DataTable;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -95,6 +97,36 @@ public class DonorManagementStepDefinition {
 	    List<String> expectedMessages = dataTable.asList(String.class);
 	    List<String> actualMessages = donor.getValidationMessages();
 	    Assert.assertEquals(actualMessages, expectedMessages);
+	}
+	@When("the user enters valid donor details")
+	public void the_user_enters_valid_donor_details(io.cucumber.datatable.DataTable dataTable) {
+		List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+	    String donorName = data.get(0).get("DonorName");
+	    String dateOfBirth =data.get(0).get("DateOfBirth");
+	    String bloodGroup =data.get(0).get("BloodGroup");
+	    String gender =data.get(0).get("Gender");
+	    String fatherName =data.get(0).get("FatherName");
+	    String contactNumber =data.get(0).get("ContactNumber");
+	    String address = data.get(0).get("Address");
+	    donor.enterDonorName(donorName);
+	    donor.enterDateOfBirth(dateOfBirth);
+	    donor.enterBloodGroup(bloodGroup);
+	    donor.enterGender(gender);
+	    donor.enterFatherName(fatherName);
+	    donor.enterContactNumber(contactNumber);
+	    donor.enterAddress(address);
+	}
+	@When("the user enters mandatory donor details")
+	public void the_user_enters_mandatory_donor_details(io.cucumber.datatable.DataTable dataTable) {
+		List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+	    String donorName = data.get(0).get("DonorName");
+	    String dateOfBirth =data.get(0).get("DateOfBirth");
+	    String bloodGroup =data.get(0).get("BloodGroup");
+	    String gender =data.get(0).get("Gender");
+	    donor.enterDonorName(donorName);
+	    donor.enterDateOfBirth(dateOfBirth);
+	    donor.enterBloodGroup(bloodGroup);
+	    donor.enterGender(gender);	   
 	}
 }
 	
