@@ -1,4 +1,7 @@
+
+@InventorySerach
 Feature: Tamilarsu. K 14-4-2026 Inventory_Search_feature
+
 
 Background:
   Given the user is on the login page

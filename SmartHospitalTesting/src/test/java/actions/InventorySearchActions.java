@@ -35,7 +35,8 @@ public class InventorySearchActions {
             System.out.println("🔍 Searching for: " + searchItem);
 
             Helper.waitForVisibility(InventorySearchPage.searchBox);
-            Helper.getElements(InventorySearchPage.searchBox).clear();
+            Helper.getElements(InventorySearchPage.searchBox);
+            Helper.clear(InventorySearchPage.searchBox);
             Helper.type(InventorySearchPage.searchBox, searchItem);
 
             Thread.sleep(2000);
@@ -98,7 +99,8 @@ public class InventorySearchActions {
             System.out.println("🔍 Searching invalid: " + searchItem);
 
             Helper.waitForVisibility(InventorySearchPage.searchBox);
-            Helper.getElements(InventorySearchPage.searchBox).clear();
+            Helper.getElements(InventorySearchPage.searchBox);
+            Helper.clear(InventorySearchPage.searchBox);
             Helper.type(InventorySearchPage.searchBox, searchItem);
 
             try {

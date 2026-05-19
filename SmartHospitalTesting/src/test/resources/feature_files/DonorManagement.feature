@@ -20,8 +20,8 @@ Feature: Harini_13/05/26 Donor Management Functionality
 
     Examples:
       | DonorName | DateOfBirth | BloodGroup | Gender | FatherName | ContactNumber | Address |
-      | Rahul     | 12/05/1998  | B+         | Male   | Ramesh     | 9876543210    | Chennai |
-
+      | Raja    | 12/05/1998  | B+         | Male   | Ramesh     | 9876543210    | Chennai |
+      |Harini   | 26/12/2004  | A+         |Female   |Suresh      |7639601420    |Salem|
   @AddDonorMandatory
   Scenario Outline: Add donor with mandatory fields
     When the user enters donor name "<DonorName>" and date of birth "<DateOfBirth>" and blood group "<BloodGroup>" and gender "<Gender>"
@@ -30,7 +30,8 @@ Feature: Harini_13/05/26 Donor Management Functionality
 
     Examples:
       | DonorName | DateOfBirth | BloodGroup | Gender |
-      | Rahul     | 12/05/1998  | B+         | Male   |
+      | Raja     | 12/05/1998  | B+         | Male   |
+      |Harini   | 26/12/2004  | A+         |Female   |
 
   @AllFieldsEmpty
   Scenario: Validate donor creation with all mandatory fields empty
