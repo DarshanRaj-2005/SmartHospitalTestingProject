@@ -1,5 +1,6 @@
-Feature: Harini_17/05/2026  Blood Issue Managemen
-t
+@Harini
+@BloodIssueManagement
+Feature: Harini_17/05/2026  Blood Issue Management
 
   Background:
     Given the user is on the login page
