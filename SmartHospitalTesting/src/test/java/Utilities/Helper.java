@@ -207,4 +207,40 @@ public class Helper {
     public static String getAlertText() {
         return waitForAlert().getText();
     }
+    
+    public static void newmoveToElementAndClick(By locator) {
+
+        WebDriver driver = Driver.getDriver();
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+
+        WebElement element =
+                wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+
+        // 1. Scroll using CENTER alignment (IMPORTANT FIX)
+        ((JavascriptExecutor) driver)
+                .executeScript("arguments[0].scrollIntoView({block: 'center', inline: 'nearest'});", element);
+
+        // 2. Small pause for UI rendering (important for React/Angular pages)
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
+
+        // 3. Wait until clickable
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+
+        // 4. Move + click (fallback-safe)
+        try {
+            new Actions(driver)
+                    .moveToElement(element)
+                    .pause(Duration.ofMillis(300))
+                    .click()
+                    .perform();
+        } catch (Exception e) {
+            // fallback click using JS
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+        }
+    }
 }
