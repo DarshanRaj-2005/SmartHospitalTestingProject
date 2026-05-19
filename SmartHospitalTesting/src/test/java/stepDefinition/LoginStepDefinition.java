@@ -1,6 +1,5 @@
 package stepDefinition;
 
-
 import org.testng.Assert;
 
 import Utilities.ConfigReader;
@@ -13,9 +12,9 @@ import io.cucumber.java.en.When;
 import pages.LoginPage;
 
 public class LoginStepDefinition {
-	
+
 	LoginAction la = new LoginAction();
-	
+
 	@Given("the user is on the login page")
 	public void the_user_is_on_the_login_page() {
 		Driver.getDriver().get(ConfigReader.getUrl());
@@ -29,38 +28,42 @@ public class LoginStepDefinition {
 
 	@Then("the user clicks the Sign in button")
 	public void the_user_clicks_the_sign_in_button() {
-	   la.clicksignIn();
+		la.clicksignIn();
 	}
 
 	@Then("the user should be redirected to super admin dashboard")
 	public void the_user_should_be_redirected_to_super_admin_dashboard() {
 		Assert.assertTrue(la.isDashboardDisplayed());
 	}
-	
-	@When("the user enters invalid {string} and valid password")
-	public void the_user_enters_invalid_and_valid_password(String string) {
-	    Helper.type(LoginPage.email, string);
+
+	@When("the user enters invalid username and valid password")
+	public void the_user_enters_invalid_and_valid_password() {
+		Helper.type(LoginPage.email,ConfigReader.getUsername());
 	}
 
 	@Then("the system should show a message {string}")
 	public void the_system_should_show_a_message(String string) {
 		Helper.waitForVisibility(LoginPage.text);
 		String text = la.message();
-	    Assert.assertEquals(text, "Invalid Username or Password");
+		Assert.assertEquals(text, "Invalid Username or Password");
 	}
 
 	@Then("the system should show username and password required messages")
 	public void the_system_should_show_username_and_password_required_messages() {
 		Helper.waitForVisibility(LoginPage.texts);
-	    String texts = la.messages();
-	    Assert.assertEquals(texts,"Username field is required");
+		String texts = la.messages();
+		Assert.assertEquals(texts, "Username field is required");
+	}
+	
+	@When("the user enter invalid {string} and {string}>")
+	public void the_user_enter_invalid_and(String string, String string2) {
+		Helper.type(LoginPage.email,string);
+		Helper.type(LoginPage.password,string2);
 	}
 
-	@Then("the following validation messages should be displayed")
-	public void the_following_validation_messages_should_be_displayed(io.cucumber.datatable.DataTable dataTable) {
-	   
+	@When("the user enters valid username and invalid password")
+	public void the_user_enters_valid_username_and_invalid() {
+		Helper.type(LoginPage.password,ConfigReader.getPassword());
 	}
-
-
 
 }

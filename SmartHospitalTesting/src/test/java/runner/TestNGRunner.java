@@ -16,6 +16,8 @@ import io.cucumber.testng.CucumberOptions;
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
                 "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
         },
+        
+//        tags = "@ValidCredentials",
         monochrome = true
 )
 public class TestNGRunner extends AbstractTestNGCucumberTests {
@@ -25,3 +27,4 @@ public class TestNGRunner extends AbstractTestNGCucumberTests {
         return super.scenarios();
     }
 }
+

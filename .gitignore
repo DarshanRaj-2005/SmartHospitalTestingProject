@@ -1,2 +1,4 @@
 .metadata/
-**/target/
+SmartHospitalTesting/target/
+SmartHospitalTesting/allure-results/
+SmartHospitalTesting/test-output/
