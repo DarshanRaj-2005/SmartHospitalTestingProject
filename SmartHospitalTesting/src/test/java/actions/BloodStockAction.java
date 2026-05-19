@@ -9,21 +9,25 @@ import Utilities.Helper;
 import pages.BloodStockPage;
 
 public class BloodStockAction {
+
 	static Logger logger = LogManager.getLogger(BloodStockAction.class);
 
 	public boolean isBloodStockStatusPageDisplayed() {
 		Helper.waitForVisibility(BloodStockPage.bloodBankStatus);
 		return Helper.isDisplayed(BloodStockPage.bloodBankStatus);
 	}
+
 	public void selectBloodGroup(String bloodGroup) {
 		By bloodGroupOption = BloodStockPage.bloodGroupOption(bloodGroup);
 		Helper.waitForVisibility(bloodGroupOption);
 		Helper.click(bloodGroupOption);
 	}
+
 	public boolean isBloodBagDetailsDisplayed() {
 		Helper.waitForVisibility(BloodStockPage.bloodBagTable);
 		return Helper.isDisplayed(BloodStockPage.bloodBagTable);
 	}
+
 	public boolean isBloodComponentDetailsDisplayed() {
 		Helper.waitForVisibility(BloodStockPage.componentTable);
 		return Helper.isDisplayed(BloodStockPage.componentTable);
@@ -55,7 +59,6 @@ public class BloodStockAction {
 		Helper.type(BloodStockPage.bagField, bag);
 	}
 
-
 	public static void selectChargeCategory(String chargecategory) {
 		Helper.moveToElementAndClick(BloodStockPage.chargeCategory);
 		Helper.type(BloodStockPage.searchBox, chargecategory);
@@ -70,9 +73,15 @@ public class BloodStockAction {
 		Helper.click(BloodStockPage.dynamicOption(chargename));
 	}
 
-	public static void clickSave() {
+	public void clickSaveButton() {
 		logger.info("Clicked Save Button");
 		Helper.click(BloodStockPage.saveButton);
+	}
+
+	public static boolean isBloodDonorAddedSuccessfully() {
+		Helper.waitForVisibility(BloodStockPage.successMessage);
+		String message = Helper.getText(BloodStockPage.successMessage);
+		return message.toLowerCase().contains("success");
 	}
 
 	public static void clickCalculateButton() {
