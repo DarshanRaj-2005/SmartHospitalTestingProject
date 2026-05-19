@@ -53,4 +53,8 @@ public class PharmacyBillpageAction {
 
 		return null;
 	}
+	public boolean pageisDsiplayed() {
+		Helper.waitForVisibility(PharmacyBillPage.pharmacyBillPageHeader);
+		return Helper.isDisplayed(PharmacyBillPage.pharmacyBillPageHeader);
+	}
 }

@@ -11,7 +11,7 @@ public class AddNewStock {
 
 	//click  
     public void clickInventory() {
-    	Helper.moveToElementAndClick(element.InventoryBar);
+    	Helper.newmoveToElementAndClick(element.InventoryBar);
     }
 
     public void clickAddItemStock() {
