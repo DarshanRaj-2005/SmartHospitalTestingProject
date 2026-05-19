@@ -2,15 +2,13 @@ package actions;
 
 import java.time.Duration;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import Utilities.Helper;
-import pages.AddambulancePage;
-import pages.BloodStockPage;
 import driver.Driver;
+import pages.AddambulancePage;
 
 public class AddambulanceAction {
 	public static WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
