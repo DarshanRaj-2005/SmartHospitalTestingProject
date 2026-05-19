@@ -29,7 +29,6 @@ Feature: Blood Stock Status Validation
       | Riyaz      | 05/18/2026 | 1234 | Packed Blood Cells | Blood Module |
     And the user clicks on donor Save button
     Then the blood donor details should be added successfully
-
   @BloodIssueNavigation
   Scenario: Verify user navigates to Blood Issue page
     When the user clicks issue button for bag number "56"
