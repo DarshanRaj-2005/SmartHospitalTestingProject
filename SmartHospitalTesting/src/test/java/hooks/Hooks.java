@@ -32,21 +32,23 @@ public class Hooks {
 		WebDriver driver = Driver.getDriver();
 
 		if (scenario.isFailed()) {
+
 			log.error("Scenario Failed : " + scenario.getName());
 
 			try {
-
+				byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+				scenario.attach(screenshot, "image/png", scenario.getName());
 				long time = System.currentTimeMillis();
 				File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 				File dest = new File("target/screenshots/" + scenario.getName() + "_" + time + ".png");
 				FileUtils.copyFile(src, dest);
 				log.info("Screenshot Saved");
-
 			} catch (Exception e) {
 				log.error("Screenshot Failed " + e);
 			}
+		}
 
-		} else {
+		else {
 			log.info("Scenario Passed : " + scenario.getName());
 		}
 

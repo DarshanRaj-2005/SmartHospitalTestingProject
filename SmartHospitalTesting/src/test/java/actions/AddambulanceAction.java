@@ -2,6 +2,7 @@ package actions;
 
 import java.time.Duration;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -27,21 +28,26 @@ public class AddambulanceAction {
 		Helper.click(AddambulancePage.patient);
 		Helper.type(AddambulancePage.patientInput, patient);
 
-		Helper.waitForElementClickable(AddambulancePage.patientOption("Ashok (1185)"));
+		Helper.waitForElementClickable(AddambulancePage.dynamicOption("Ashok (1185)"));
 
-		Helper.click(AddambulancePage.patientOption("Ashok (1185)"));
+		Helper.click(AddambulancePage.dynamicOption("Ashok (1185)"));
 
 		Select s = new Select(Helper.getElement(AddambulancePage.vehicleModal));
 		s.selectByVisibleText(vehicleModel);
-
-		Helper.type(AddambulancePage.date, date);
+		
+		//Used Javascript for setting date
+		Helper.setDate(AddambulancePage.date, date);
 
 		Select s2 = new Select(Helper.getElement(AddambulancePage.chargeCategory));
-		s2.selectByValue("22");
+		s2.selectByVisibleText(chargeCategory);
 		
-		Select select = new Select(Helper.getElement(AddambulancePage.chargeName));
-		select.selectByValue("23");
-		
+		Helper.waitForElementClickable(AddambulancePage.chargeName);
+		Helper.click(AddambulancePage.chargeName);
+		Helper.waitForVisibility(AddambulancePage.chargeInput);
+		Helper.type(AddambulancePage.chargeInput, chargeName);
+		Helper.waitForElementClickable(AddambulancePage.selectOption(chargeName));
+		Helper.click(AddambulancePage.selectOption(chargeName));
+	
 		Helper.type(AddambulancePage.note, note);
 	}
 
@@ -50,13 +56,14 @@ public class AddambulanceAction {
 
 		Helper.click(AddambulancePage.patient);
 		Helper.type(AddambulancePage.patientInput, patient);
-		Helper.waitForElementClickable(AddambulancePage.patientOption("Ashok (1185)"));
-		Helper.click(AddambulancePage.patientOption("Ashok (1185)"));
+		Helper.waitForElementClickable(AddambulancePage.dynamicOption("Ashok (1185)"));
+		Helper.click(AddambulancePage.dynamicOption("Ashok (1185)"));
 
 		Select s = new Select(Helper.getElement(AddambulancePage.vehicleModal));
 		s.selectByVisibleText(vehicleModel);
-
-		Helper.type(AddambulancePage.date, date);
+		
+		//Used Javascript for setting date
+		Helper.setDate(AddambulancePage.date, date);
 
 		Select s2 = new Select(Helper.getElement(AddambulancePage.chargeCategory));
 		s2.selectByVisibleText(chargeCategory);
@@ -103,3 +110,6 @@ public class AddambulanceAction {
 		return true;
 	}
 }
+
+
+//*[@id="formadd"]/div[2]/div/div[1]/div[8]/div/span[1]/span[1]/span

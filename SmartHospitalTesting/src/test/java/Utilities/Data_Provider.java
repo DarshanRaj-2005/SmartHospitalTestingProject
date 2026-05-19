@@ -1,7 +1,5 @@
 package Utilities;
 
-
-
 import java.io.FileInputStream;
 import java.io.IOException;
 
@@ -14,6 +12,12 @@ public class Data_Provider {
 	public Object[][] bloodIssueData() throws IOException {
 
 	    return getExcelData("src/test/resources/test_datas/Harini/BloodIssueValid.xlsx","validDetails");
+	}
+	
+	@DataProvider(name = "ambulanceData", parallel = true)
+	public Object[][] ambulanceData() throws IOException {
+
+	    return getExcelData("src/test/resources/test_datas/TestData.xlsx","Sheet2");
 	}
 	
 
