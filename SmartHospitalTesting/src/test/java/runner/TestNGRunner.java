@@ -6,9 +6,8 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-        features = "src/test/resources/feature_files/PharmacyBillpage.feature",
+        features = "src/test/resources/feature_files",
         glue = { "stepDefinition", "hooks" },
-        tags = ("@bala"),
         plugin = {
                 "pretty",
                 "html:target/cucumber-report.html",
@@ -20,7 +19,7 @@ import io.cucumber.testng.CucumberOptions;
 )
 public class TestNGRunner extends AbstractTestNGCucumberTests {
 
-    @DataProvider(parallel = false)
+    @DataProvider(parallel = true)
     public Object[][] scenarios() {
         return super.scenarios();
     }
