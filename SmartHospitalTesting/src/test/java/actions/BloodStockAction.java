@@ -73,9 +73,10 @@ public class BloodStockAction {
 		Helper.click(BloodStockPage.dynamicOption(chargename));
 	}
 
-	public void clickSaveButton() {
+	public static void clickSaveButton() {
 		logger.info("Clicked Save Button");
 		Helper.click(BloodStockPage.saveButton);
+		
 	}
 
 	public static boolean isBloodDonorAddedSuccessfully() {
