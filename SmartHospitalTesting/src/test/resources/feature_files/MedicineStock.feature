@@ -12,7 +12,7 @@ Feature: Balamurugan S 17-5-2026 Add and manage medicines in the medicine stock 
   Scenario: Verify medicine search
     Given the user is on the medicine stock page
     When the user searches medicine "Paracetamol"
-    Then the searched medicine should be displayed in the table
+    Then the searched medicine "Paracetamol" should be displayed in the table
 
   Scenario: Delete a selected medicine
     Given the user is on the medicine stock page
