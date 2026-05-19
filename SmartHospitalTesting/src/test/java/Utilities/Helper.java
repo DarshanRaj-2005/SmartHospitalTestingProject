@@ -51,7 +51,11 @@ public class Helper {
 
     // Is Displayed
     public static boolean isDisplayed(By locator) {
-        return Driver.getDriver().findElement(locator).isDisplayed();
+        try {
+            return Driver.getDriver().findElement(locator).isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
     }
 
     // Wait for visibility
@@ -68,10 +72,7 @@ public class Helper {
 
     // Get clickable element
     public static WebElement getClickableElement(By locator) {
-
-        WebDriverWait wait =
-                new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(20));
-
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(20));
         return wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
 
@@ -80,8 +81,7 @@ public class Helper {
 
         WebDriver driver = Driver.getDriver();
 
-        WebDriverWait wait =
-                new WebDriverWait(driver, Duration.ofSeconds(20));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
         WebElement element =
                 wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
@@ -102,8 +102,7 @@ public class Helper {
 
         WebDriver driver = Driver.getDriver();
 
-        WebDriverWait wait =
-                new WebDriverWait(driver, Duration.ofSeconds(20));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
         WebElement element =
                 wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
@@ -136,9 +135,7 @@ public class Helper {
         Select select = new Select(dropdown);
 
         try {
-
             select.selectByVisibleText(value);
-
         } catch (Exception e) {
 
             JavascriptExecutor js =
@@ -156,14 +153,12 @@ public class Helper {
 
     // Wait for elements present
     public static void waitForElementsPresent(By locator, int timeoutSeconds) {
-
         new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(timeoutSeconds))
                 .until(driver -> driver.findElements(locator).size() > 0);
     }
 
     // Modal wait
     public static void waitForModal(WebDriver driver) {
-
         new WebDriverWait(driver, Duration.ofSeconds(20))
                 .until(ExpectedConditions.visibilityOfElementLocated(
                         By.cssSelector(".modal-dialog")));
@@ -171,7 +166,6 @@ public class Helper {
 
     // Overlay wait
     public static void waitForOverlay(WebDriver driver) {
-
         new WebDriverWait(driver, Duration.ofSeconds(20))
                 .until(ExpectedConditions.invisibilityOfElementLocated(
                         By.cssSelector(".modal-backdrop")));
@@ -180,8 +174,7 @@ public class Helper {
     // Set Date
     public static void setDate(By locator, String value) {
 
-        WebElement el =
-                Driver.getDriver().findElement(locator);
+        WebElement el = Driver.getDriver().findElement(locator);
 
         ((JavascriptExecutor) Driver.getDriver())
                 .executeScript("arguments[0].value='" + value + "';", el);
@@ -207,13 +200,15 @@ public class Helper {
     public static String getAlertText() {
         return waitForAlert().getText();
     }
-    
-    
+
+    // ===== FIXED CUSTOM METHODS (KEPT ALL) =====
+
     public static void waitForDropdownEnabled(By locator) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(20));
         wait.until(driver -> {
             WebElement dropdown = driver.findElement(locator);
-            return !dropdown.getAttribute("disabled").equals("true");
+            String disabled = dropdown.getAttribute("disabled");
+            return disabled == null || !disabled.equals("true");
         });
     }
 
@@ -243,26 +238,24 @@ public class Helper {
 
     public static void waitForFieldEnabled(By fieldLocator) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(20));
-        wait.until(driver -> {
-            WebElement field = driver.findElement(fieldLocator);
-            return field.isEnabled();
-        });
+        wait.until(driver -> driver.findElement(fieldLocator).isEnabled());
     }
 
     public static void clearAndEnterText(By fieldLocator, String text) {
-        Helper.waitForVisibility(fieldLocator);
-        Helper.click(fieldLocator);
-        Helper.clear(fieldLocator);
-        Helper.type(fieldLocator, text);
+        waitForVisibility(fieldLocator);
+        click(fieldLocator);
+        clear(fieldLocator);
+        type(fieldLocator, text);
     }
+
     public static void waitForSuccessNotification(By locator) {
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(20));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(20))
+                .until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
     public static void waitForErrorNotification(By locator) {
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(20));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(20))
+                .until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
     public static boolean isFieldRequired(By fieldLocator) {
@@ -272,6 +265,32 @@ public class Helper {
             return requiredAttr != null && requiredAttr.equals("true");
         } catch (Exception e) {
             return false;
+        }
+    }
+
+    // OPTIONAL: your new stable method (kept clean)
+    public static void newmoveToElementAndClick(By locator) {
+
+        WebDriver driver = Driver.getDriver();
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+
+        WebElement element =
+                wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+
+        ((JavascriptExecutor) driver)
+                .executeScript("arguments[0].scrollIntoView({block: 'center'});", element);
+
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+
+        try {
+            new Actions(driver)
+                    .moveToElement(element)
+                    .click()
+                    .perform();
+        } catch (Exception e) {
+            ((JavascriptExecutor) driver)
+                    .executeScript("arguments[0].click();", element);
         }
     }
 }
