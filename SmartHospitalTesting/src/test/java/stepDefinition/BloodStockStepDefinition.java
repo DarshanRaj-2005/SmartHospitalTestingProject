@@ -8,13 +8,15 @@ import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 
 import actions.BloodStockAction;
-import actions.DonorManagementAction;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class BloodStockStepDefinition {
+
 	BloodStockAction StockAction = new BloodStockAction();
-	Logger logger = LogManager.getLogger(DonorManagementAction.class);
+
+	Logger logger = LogManager.getLogger(BloodStockStepDefinition.class);
+
 	String bag;
 
 	@Then("the Blood Stock Status page should be displayed")
@@ -45,13 +47,17 @@ public class BloodStockStepDefinition {
 
 	@When("the user enters valid blood donor details")
 	public void the_user_enters_valid_blood_donor_details(io.cucumber.datatable.DataTable dataTable) {
+
 		logger.info("Enter Blood Donor Details");
+
 		List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+
 		String bloodDonor = data.get(0).get("BloodDonor");
 		String donateDate = data.get(0).get("DonateDate");
 		bag = data.get(0).get("Bag");
 		String chargeCategory = data.get(0).get("ChargeCategory");
 		String chargeName = data.get(0).get("ChargeName");
+
 		BloodStockAction.selectBloodDonor(bloodDonor);
 		BloodStockAction.enterDonateDate(donateDate);
 		BloodStockAction.enterBag(bag);
@@ -74,12 +80,10 @@ public class BloodStockStepDefinition {
 	@Then("the Blood Issue page should be displayed")
 	public void the_blood_issue_page_should_be_displayed() {
 		Assert.assertTrue(BloodStockAction.isBloodIssuePageDisplayed());
-
 	}
 
 	@When("the user clicks issue button for bag number {string}")
 	public void the_user_clicks_issue_button_for_bag_number(String bag) {
 		BloodStockAction.clickIssueButton(bag);
 	}
-
 }
