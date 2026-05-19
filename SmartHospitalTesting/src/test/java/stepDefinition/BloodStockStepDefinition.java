@@ -68,7 +68,7 @@ public class BloodStockStepDefinition {
 	@When("the user clicks on donor Save button")
 	public void the_user_clicks_on_donor_save_button() {
 		BloodStockAction.clickCalculateButton();
-		BloodStockAction.clickSave();
+		BloodStockAction.clickSaveButton();
 	}
 
 	@Then("the blood donor details should be added successfully")
