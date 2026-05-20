@@ -23,7 +23,7 @@ public class MedicinestockAction {
 
 	public String verifySearchedMedicine(String searchedmedicine) {
 		By loc=MedicinestockPage.medicinetext(searchedmedicine);
-		WebElement element=Helper.get;
+//		WebElement element=Helper.get;
 		Helper.waitForVisibility(MedicinestockPage.searchedmedicine);
 		return Helper.getText(MedicinestockPage.searchedmedicine);
 		
