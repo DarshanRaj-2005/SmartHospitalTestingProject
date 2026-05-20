@@ -1,4 +1,4 @@
-@Additems
+@Additems @Tamilarasu
 Feature: Add New Items in Inventory
 
 
@@ -8,7 +8,7 @@ Background:
   When the user clicks Super Admin button
   And the user clicks the Sign in button
   Then the user should be redirected to super admin dashboard
-
+@validScenario
 Scenario Outline: User adds new inventory item successfully
 
   Given the user clicks on Inventory
