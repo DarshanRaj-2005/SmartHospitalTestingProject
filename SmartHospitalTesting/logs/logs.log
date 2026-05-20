@@ -850,3 +850,9 @@ Session ID: 8ebaa434fbf596ce4e68a9e18e3e9a5d
 [INFO ] 2026-05-20 13:43:59.825 [main] Hooks - Browser launched
 [INFO ] 2026-05-20 13:43:59.834 [main] Hooks - Scenario Passed : Login with invalid username and password
 [INFO ] 2026-05-20 13:44:00.027 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 15:54:20.095 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 15:54:20.235 [main] Hooks - Scenario Passed : Verify user is able to add donor with mandatory fields
+[INFO ] 2026-05-20 15:54:20.851 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 15:54:21.819 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 15:54:21.873 [main] Hooks - Scenario Passed : Validate donor creation with all mandatory fields empty
+[INFO ] 2026-05-20 15:54:23.000 [main] Hooks - Browser closed
