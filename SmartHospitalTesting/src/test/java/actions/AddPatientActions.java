@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import pages.AddPatientPage;
 
 public class AddPatientActions{
+    static Logger logger = LogManager.getLogger(AddPatientActions.class);
 
     AddPatientPage addPatientPage;
     private String lastPatientName = "";
@@ -22,6 +23,7 @@ public class AddPatientActions{
     }
 
     public void waitForModalToLoad() {
+        logger.info("Page Loaded");
         addPatientPage.waitForModalToLoad();
     }
     public void enterPatientDetails(List<Map<String, String>> patientData) {
@@ -36,13 +38,17 @@ public class AddPatientActions{
         addPatientPage.enterPhoneNumber(patientData.get(0).get("Phone"));
         addPatientPage.enterEmail(patientData.get(0).get("Email"));
         addPatientPage.enterAddress(patientData.get(0).get("Address"));
+         logger.info("Patient Details Added");
+        
         
     }
     public void leaveMandatoryFieldsEmpty() {
         addPatientPage.leaveMandatoryFieldsEmpty();
+        
     }
     public void clickSaveButton() {
         addPatientPage.clickSaveButton();
+         logger.info("Clicked Save Button");
     }
     public boolean verifyPatientAdded() {
         return addPatientPage.verifyPatientSavedSuccessfully(lastPatientName);
