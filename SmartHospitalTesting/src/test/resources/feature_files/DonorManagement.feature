@@ -19,16 +19,16 @@ Scenario: Verify user is able to add donor with valid details
   When the user enters valid donor details
     | DonorName | DateOfBirth | BloodGroup | Gender | FatherName | ContactNumber | Address |
     | Raja      | 12/05/1998  | B+         | Male   | Ramesh     | 9876543210    | Chennai |
-  And the user clicks on Save button
+  And the user clicks on Save 
   Then the newly added donor record should be visible in donor details list
  @AddDonorMandatory
 Scenario: Verify user is able to add donor with mandatory fields
   When the user enters mandatory donor details from csv
-  And the user clicks on Save button
+  And the user clicks on Save
   Then the newly added donor record should be visible in donor details list
   @AllFieldsEmpty
   Scenario: Validate donor creation with all mandatory fields empty
-    And the user clicks on Save button
+    And the user clicks on Save 
     Then the donor validation messages should be displayed
       | Donor Name field is required    |
       | Date Of Birth field is required |
