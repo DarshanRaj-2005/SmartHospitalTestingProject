@@ -2,6 +2,9 @@ package actions;
 
 import Utilities.Helper;
 import driver.Driver;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -13,8 +16,11 @@ import pages.IssueNewItemPages;
 import java.time.Duration;
 
 public class IssueNewItemActions {
-
+	
+	private static  Logger logger = LogManager.getLogger(Class.class);
+	 
     public void clickIssueButtons() {
+    	  logger.info("Clicking Issue New Item button");
         Helper.waitForVisibility(IssueNewItemPages.issueItemButton);
         Helper.click(IssueNewItemPages.issueItemButton);
 
@@ -64,26 +70,29 @@ public class IssueNewItemActions {
     }
 
     public void clickSubmitButton() {
+        logger.info("Clicking Issue Item button");
         Helper.click(IssueNewItemPages.submitButton);
 
-        // ✅ FIX: Alert may NOT appear on this form — use safe alert handling
-        // If no alert within 5s, skip gracefully instead of crashing
+        
         try {
+        	   logger.info("Waiting for alert after submit");
             WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(5));
             wait.until(ExpectedConditions.alertIsPresent());
             Driver.getDriver().switchTo().alert().accept();
         } catch (Exception e) {
-            // No alert appeared — form submitted directly without JS confirm dialog
+           logger.warn("No alert appeared after submit");
             System.out.println("[INFO] No alert appeared after submit — skipping alert handling.");
         }
     }
 
     public void verifySuccessMessage() {
+    	 logger.info("Verifying success message");
     	System.out.println("item added successfully");
        
     }
     
     public void HandleTheMessage() {
+    	   logger.info("Handling toast message validation");
     	Helper.waitForVisibility(IssueNewItemPages.toastMessage);
         Assert.assertTrue(
             Driver.getDriver().findElement(IssueNewItemPages.toastMessage).isDisplayed()
