@@ -7,11 +7,10 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 
-        features = //"src/test/resources/feature_files",
-    "src/test/resources/feature_files/Search_Patient.feature",
+        features = "src/test/resources/feature_files",
 
        
-        tags="@Jananisri or @SearchPatient",
+        tags="@DonorManagement or @BloodIssueManagement or @BloodStockValidation",
 
         glue = { "stepDefinition", "hooks" },
         plugin = {
@@ -25,7 +24,7 @@ import io.cucumber.testng.CucumberOptions;
         monochrome = true
 )
 public class TestNGRunner extends AbstractTestNGCucumberTests {
-	@DataProvider(parallel = true)
+	@DataProvider(parallel = false)
 	public Object[][] scenarios() {
 	    return super.scenarios();
 	}
