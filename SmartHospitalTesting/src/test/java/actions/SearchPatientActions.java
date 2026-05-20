@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import pages.SearchPatientPage;
 
 public class SearchPatientActions {
+       static Logger logger = LogManager.getLogger(SearchPatientActions.class);
 
     SearchPatientPage searchPatientPage;
     private String lastSearchedName = "";
@@ -19,20 +20,19 @@ public class SearchPatientActions {
     public void waitForPatientListToLoad() {
         searchPatientPage.waitForPatientListToLoad();
     }
-
-    // Old step: "User enters patient name in search box"
     public void enterValidPatientName() {
-        lastSearchedName = "John Marshall";
+       
         searchPatientPage.enterSearchText(lastSearchedName);
+        logger.info("Name Entered ");
     }
 
-    // Old step: "User enters invalid patient name"
     public void enterInvalidPatientName() {
-        lastSearchedName = "XYZ123InvalidPatient";
+    
         searchPatientPage.enterSearchText(lastSearchedName);
+         logger.info("Invalid Name Entered ");
     }
 
-    // New Scenario Outline step: "User searches for patient name {string}"
+ 
     public void searchByName(String patientName) {
         lastSearchedName = patientName;
         searchPatientPage.enterSearchText(patientName);
