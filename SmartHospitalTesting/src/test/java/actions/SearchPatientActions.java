@@ -20,10 +20,19 @@ public class SearchPatientActions {
         searchPatientPage.waitForPatientListToLoad();
     }
 
-    // Receives name from Scenario Outline Examples table
-    public void enterSearchName(String name) {
-        lastSearchedName = name;
-        searchPatientPage.enterSearchText(name);
+    public void enterValidPatientName() {
+        lastSearchedName = "John Marshall";
+        searchPatientPage.enterSearchText(lastSearchedName);
+    }
+
+    public void enterInvalidPatientName() {
+        lastSearchedName = "XYZ123InvalidPatient";
+        searchPatientPage.enterSearchText(lastSearchedName);
+    }
+
+    public void searchByName(String patientName) {
+        lastSearchedName = patientName;
+        searchPatientPage.enterSearchText(patientName);
     }
 
     public void clickSearchButton() {
