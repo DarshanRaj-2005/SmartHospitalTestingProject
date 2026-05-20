@@ -23,9 +23,7 @@ Scenario: Verify user is able to add donor with valid details
   Then the newly added donor record should be visible in donor details list
  @AddDonorMandatory
 Scenario: Verify user is able to add donor with mandatory fields
-  When the user enters mandatory donor details
-    | DonorName | DateOfBirth | BloodGroup | Gender |
-    | Harini    | 26/12/2004  | A+         | Female |
+  When the user enters mandatory donor details from csv
   And the user clicks on Save button
   Then the newly added donor record should be visible in donor details list
   @AllFieldsEmpty
