@@ -30,13 +30,14 @@ public class PharmacyBillpageAction {
 
 	public void searchName(String patient) {
 
-	    Helper.waitForVisibility(PharmacyBillPage.searchInputbar);
+		Helper.waitForVisibility(PharmacyBillPage.searchInputbar);
 
-	    Helper.click(PharmacyBillPage.searchInputbar);
-	    Helper.clear(PharmacyBillPage.searchInputbar);
-	    Helper.type(PharmacyBillPage.searchInputbar, patient);
-	    Helper.waitForElementsPresent(PharmacyBillPage.searchnamerow, 10);
+		Helper.click(PharmacyBillPage.searchInputbar);
+		Helper.clear(PharmacyBillPage.searchInputbar);
+		Helper.type(PharmacyBillPage.searchInputbar, patient);
+		Helper.waitForElementsPresent(PharmacyBillPage.searchnamerow, 10);
 	}
+
 	public String isPatientPresent(String patient) {
 
 		List<WebElement> names = Helper.getElements(PharmacyBillPage.searchnamerow);
@@ -46,15 +47,33 @@ public class PharmacyBillpageAction {
 			String actual = name.getText().trim();
 
 			if (actual.toLowerCase().contains(patient.toLowerCase())) {
-			    actual = actual.replaceAll("\\(.*\\)", "").trim();
+				actual = actual.replaceAll("\\(.*\\)", "").trim();
 				return actual;
 			}
 		}
 
 		return null;
 	}
-	public boolean pageisDsiplayed() {
+
+	public boolean pageisDisplayed() {
 		Helper.waitForVisibility(PharmacyBillPage.pharmacyBillPageHeader);
 		return Helper.isDisplayed(PharmacyBillPage.pharmacyBillPageHeader);
+	}
+
+	public boolean isNoDataMessageDisplayed() {
+
+		try {
+
+			WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
+
+			WebElement message = wait
+					.until(ExpectedConditions.visibilityOfElementLocated(PharmacyBillPage.noDataMessage));
+
+			return message.getText().contains("No data available in table");
+
+		} catch (Exception e) {
+
+			return false;
+		}
 	}
 }

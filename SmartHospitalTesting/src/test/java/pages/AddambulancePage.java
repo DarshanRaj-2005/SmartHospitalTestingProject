@@ -8,8 +8,6 @@ public class AddambulancePage {
 	public static By vehicleModal = By.id("vehicle_no");
 	public static By drivername = By.id("driver_search");
 	public static By date = By.xpath("//*[@id=\"formcall\"]/div[1]/div/div/div[1]/div[3]/div/input");
-	public static By chargeCategory = By.xpath("//*[@id=\"formcall\"]/div[1]/div/div/div[1]/div[4]/div/div/select");
-	public static By chargeName = By.id("code");
 	public static By standardCharge = By.id("standard_charge");
 	public static By note = By.id("note");
 	public static By saveButton = By.id("formcallbtn");
@@ -22,7 +20,15 @@ public class AddambulancePage {
 	public static By invalidamountmess = By.xpath("//*[@id=\"toast-container\"]/div/div/p[2]");
 	public static By option = By.xpath("//*[@id=\"code\"]/option[2]");
 	
-	public static By patientOption(String patient) {
-		return By.xpath("//li[contains(text(),'" + patient + "')]");
+	public static By chargeCategory = By.xpath("//span[contains(@class,'selection')]//span[contains(@class,'select2-selection--single')]//span[contains(text(),'Select')]");
+	public static By chargeName = By.xpath("//*[@id=\"select2-code-container\"]");
+	public static By searchBox = By.xpath("//input[@class='select2-search__field']");
+
+	public static By dynamicOption(String string) {
+		return By.xpath("//li[contains(text(),'" + string + "')]");
+	}
+
+	public static By selectOption(String option) {
+		return By.xpath("//li[contains(@class,'select2-results__option') and contains(text(),'" + option + "')]");
 	}
 }

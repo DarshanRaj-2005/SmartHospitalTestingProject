@@ -12,10 +12,13 @@ public class ConfigReader {
 		properties = new Properties();
 
 		try {
+
 			FileInputStream file = new FileInputStream(
 				System.getProperty("user.dir") +
 				"/src/test/resources/config/config.properties"
 			);
+
+
 
 			properties.load(file);
 
@@ -30,6 +33,14 @@ public class ConfigReader {
 
 	public static String getUrl() {
 		return properties.getProperty("url");
+	}
+	
+	public static String getUsername() {
+		return getProperties().getProperty("username");
+	}
+	
+	public static String getPassword() {
+		return getProperties().getProperty("password");
 	}
 
 	public static String getBrowser() {
