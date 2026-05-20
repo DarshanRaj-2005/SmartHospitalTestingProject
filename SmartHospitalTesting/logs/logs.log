@@ -740,6 +740,7 @@ Session ID: 8ebaa434fbf596ce4e68a9e18e3e9a5d
 [INFO ] 2026-05-20 00:52:49.815 [main] Hooks - Browser closed
 [INFO ] 2026-05-20 00:52:50.774 [main] Hooks - Browser launched
 <<<<<<< HEAD
+<<<<<<< HEAD
 [INFO ] 2026-05-20 07:48:09.616 [main] Hooks - Browser launched
 [ERROR] 2026-05-20 07:48:28.461 [main] Hooks - Scenario Failed : Add Ambulance with valid Details
 [INFO ] 2026-05-20 07:48:28.767 [main] Hooks - Screenshot Saved
@@ -941,3 +942,6 @@ Session ID: 72e841f7813ea6c66ad85aff6b99df95
 =======
 
 >>>>>>> a702584a2aa15cae9681a4db3964ea8571224303
+=======
+
+>>>>>>> c30e0011bb36ed02ee2f149fb6a6254bfa192d97

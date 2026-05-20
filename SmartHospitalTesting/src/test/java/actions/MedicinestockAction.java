@@ -43,8 +43,17 @@ public class MedicinestockAction {
 		Helper.acceptAlert();
 	}
 
-	public String verifyDeleteConfirmation() {
-		Helper.waitForVisibility(MedicinestockPage.deleteConfirmation);
-		return Helper.getText(MedicinestockPage.deleteConfirmation);
-	}
+    public void clickDeleteButton() {
+        Helper.waitForElementClickable(MedicinestockPage.deleteButton);
+        Helper.click(MedicinestockPage.deleteButton);
+    }
+
+    public void clickdeleteConfirm() {
+        Helper.acceptAlert();
+    }
+
+    public String verifyDeleteConfirmation() {
+        Helper.waitForVisibility(MedicinestockPage.deleteConfirmation);
+        return Helper.getText(MedicinestockPage.deleteConfirmation);
+    }
 }
