@@ -941,7 +941,36 @@ Session ID: 72e841f7813ea6c66ad85aff6b99df95
 [INFO ] 2026-05-20 11:39:30.844 [main] Hooks - Browser launched
 =======
 
+<<<<<<< HEAD
 >>>>>>> a702584a2aa15cae9681a4db3964ea8571224303
 =======
 
 >>>>>>> c30e0011bb36ed02ee2f149fb6a6254bfa192d97
+=======
+[INFO ] 2026-05-20 10:54:22.482 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 10:54:33.025 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-20 10:54:34.954 [main] DonorManagementAction - Blood Donor popup is opened.
+[INFO ] 2026-05-20 10:54:35.766 [main] Hooks - Scenario Passed : Verify user is able to add donor with mandatory fields
+[INFO ] 2026-05-20 10:54:36.039 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 10:58:49.348 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 10:58:58.756 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-20 10:59:00.770 [main] DonorManagementAction - Blood Donor popup is opened.
+[INFO ] 2026-05-20 10:59:01.561 [main] DonorManagementAction - Clicked Save Button
+[INFO ] 2026-05-20 10:59:01.718 [main] DonorManagementStepDefinition - The Record is added Succefully.
+[INFO ] 2026-05-20 10:59:01.758 [main] Hooks - Scenario Passed : Verify user is able to add donor with mandatory fields
+[INFO ] 2026-05-20 10:59:02.015 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 11:21:03.899 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 11:21:41.923 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-20 11:21:43.775 [main] DonorManagementAction - Blood Donor popup is opened.
+[INFO ] 2026-05-20 11:21:44.555 [main] DonorManagementAction - Clicked Save Button
+[INFO ] 2026-05-20 11:21:44.689 [main] DonorManagementStepDefinition - The Record is added Succefully.
+[INFO ] 2026-05-20 11:21:44.732 [main] Hooks - Scenario Passed : Verify user is able to add donor with mandatory fields
+[INFO ] 2026-05-20 11:21:44.999 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 11:24:23.050 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 11:24:32.895 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-20 11:24:35.016 [main] DonorManagementAction - Blood Donor popup is opened.
+[INFO ] 2026-05-20 11:24:36.210 [main] DonorManagementAction - Clicked Save Button
+[INFO ] 2026-05-20 11:24:36.362 [main] DonorManagementStepDefinition - The Record is added Succefully.
+[INFO ] 2026-05-20 11:24:36.396 [main] Hooks - Scenario Passed : Verify user is able to add donor with mandatory fields
+[INFO ] 2026-05-20 11:24:36.607 [main] Hooks - Browser closed
+>>>>>>> 4d4391ef95aba01f5006c9e28fcca07952f399a6
