@@ -10,9 +10,10 @@ import java.time.Duration;
 import pages.AddPatientPage;
 import Utilities.Helper;
 import driver.Driver;
-
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 public class AddPatientAction {
-
+   static Logger logger = LogManager.getLogger(SearchPatientActions.class);
     private String lastPatientName = "";
 
     public AddPatientAction(WebDriver driver) {
@@ -38,9 +39,7 @@ public class AddPatientAction {
         }
         Helper.waitForVisibility(
                 org.openqa.selenium.By.xpath(
-                        "//div[contains(@class,'modal-header')]"
-                      + "[.//h4[contains(text(),'Patient')] or .//h5[contains(text(),'Patient')]]"
-                      + " | //div[@id='add_patient'][not(contains(@style,'display: none'))]"));
+                        "//div[contains(@class,'modal-header')]" + " | //div[@id='add_patient'][not(contains(@style,'display: none'))]"));
     }
 
     public void enterPatientDetails(List<Map<String, String>> patientData) {
@@ -54,6 +53,7 @@ public class AddPatientAction {
         Helper.clearAndEnterText(AddPatientPage.phone,        patientData.get(0).get("Phone"));
         Helper.clearAndEnterText(AddPatientPage.email,        patientData.get(0).get("Email"));
         Helper.clearAndEnterText(AddPatientPage.address,      patientData.get(0).get("Address"));
+       
     }
     private void enterDOB(String value) {
         String[] parts = value.split("-");
@@ -91,6 +91,7 @@ public class AddPatientAction {
         for (WebElement cell : cells) {
             if (cell.getText().trim().equalsIgnoreCase(lastPatientName.trim())) {
                 return true;
+                 logger.info("Patient Details Added");
             }
         }
         return false;
