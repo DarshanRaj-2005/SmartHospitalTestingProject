@@ -41,6 +41,8 @@ public class AddambulancePage {
 
 	public static By searchBox = By.xpath("//input[@class='select2-search__field']");
 	
+//	public static By helloField = By.id("//input[contains(@id,'custom_fields[ambulance_call][11]')]");
+	
 	public static By paymentOption = By.xpath("//label[contains(text(),\"Payment Mode\")]/following::select[contains(@class,'payment_mode')][1]");
 
 	public static By dynamicOption(String string) {

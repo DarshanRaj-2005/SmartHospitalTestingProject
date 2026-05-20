@@ -946,3 +946,46 @@ Session ID: 72e841f7813ea6c66ad85aff6b99df95
 [INFO ] 2026-05-20 09:15:56.552 [main] Hooks - Browser launched
 [INFO ] 2026-05-20 09:16:00.632 [main] Hooks - Scenario Passed : Login with invalid username and password
 [INFO ] 2026-05-20 09:16:00.878 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 11:18:44.003 [main] Hooks - Browser launched
+[ERROR] 2026-05-20 11:19:08.248 [main] Hooks - Scenario Failed : Add Ambulance with valid Details
+[INFO ] 2026-05-20 11:19:08.616 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 11:19:08.827 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 11:19:09.635 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 11:24:44.534 [main] Hooks - Browser launched
+[ERROR] 2026-05-20 11:25:24.827 [main] Hooks - Scenario Failed : Add Ambulance with valid Details
+[INFO ] 2026-05-20 11:25:25.069 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 11:25:25.313 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 11:25:26.124 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 11:26:24.463 [main] Hooks - Browser launched
+[ERROR] 2026-05-20 11:26:44.967 [main] Hooks - Scenario Failed : Add Ambulance with valid Details
+[INFO ] 2026-05-20 11:26:45.268 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 11:26:45.268 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 11:26:46.103 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 11:27:03.269 [main] Hooks - Scenario Passed : Add Ambulance with empty fields
+[INFO ] 2026-05-20 11:27:03.270 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 11:27:04.313 [main] Hooks - Browser launched
+[DEBUG] 2026-05-20 11:27:16.008 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-20 11:27:16.011 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[DEBUG] 2026-05-20 11:27:16.012 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[DEBUG] 2026-05-20 11:27:16.599 [main] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+[INFO ] 2026-05-20 11:27:18.679 [main] Hooks - Scenario Passed : Entering character in charge field
+[INFO ] 2026-05-20 11:27:18.680 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 11:27:19.576 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 11:27:29.536 [main] Hooks - Scenario Passed : Login with valid credentials
+[INFO ] 2026-05-20 11:27:29.536 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 11:27:30.452 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 11:27:34.686 [main] Hooks - Scenario Passed : Login with invalid username credentials
+[INFO ] 2026-05-20 11:27:34.687 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 11:27:35.835 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 11:27:39.330 [main] Hooks - Scenario Passed : Login with empty fields
+[INFO ] 2026-05-20 11:27:39.330 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 11:27:40.248 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 11:27:44.257 [main] Hooks - Scenario Passed : Login with invalid password credentials
+[INFO ] 2026-05-20 11:27:44.258 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 11:27:45.134 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 11:28:01.530 [main] Hooks - Scenario Passed : Login with invalid username and password
+[INFO ] 2026-05-20 11:28:01.532 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 11:39:17.501 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 11:39:29.987 [main] Hooks - Scenario Passed : Add Ambulance with valid Details
+[INFO ] 2026-05-20 11:39:29.988 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 11:39:30.844 [main] Hooks - Browser launched
