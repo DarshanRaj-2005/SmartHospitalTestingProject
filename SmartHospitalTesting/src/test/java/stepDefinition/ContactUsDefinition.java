@@ -1,33 +1,28 @@
 package stepDefinition;
 
 import actions.ContactUsAction;
-import driver.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.testng.Assert;
-
-
-
 
 public class ContactUsDefinition {
-	@When("the user clicks on contactUS")
-	public void the_user_clicks_on_contact_us() {
-		 ContactUsAction.clickContactUs();
-	}
 
-	@When("the user enters {string} {string} {string} {string}")
-	public void the_user_enters(String name, String email, String subject, String description) {
+    ContactUsAction action = new ContactUsAction();
 
-	    ContactUsAction.enterdetails(name, email, subject, description);
-	}
-	
-	@Then("the contatus  should be submitted successfully")
-	public void the_contatus_should_be_submitted_successfully() {
-		  ContactUsAction.check();
-	}
+    @When("the user enters contact details from csv file")
+    public void enter_contact_details_from_csv_file() throws Exception {
 
+        action.enterDetailsFromCSV();
+    }
 
+    @When("the user clicks submit button in the contact us")
+    public void click_submit_button_in_contact_us() {
 
-   
-    
+        action.submit();
+    }
+
+    @Then("the contact us should be submitted successfully")
+    public void verify_contact_us_successfully() {
+
+        action.verifySuccess();
+    }
 }
