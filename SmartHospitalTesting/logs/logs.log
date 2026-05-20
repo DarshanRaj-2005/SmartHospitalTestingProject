@@ -766,3 +766,39 @@ Session ID: 8ebaa434fbf596ce4e68a9e18e3e9a5d
 [INFO ] 2026-05-20 11:24:36.362 [main] DonorManagementStepDefinition - The Record is added Succefully.
 [INFO ] 2026-05-20 11:24:36.396 [main] Hooks - Scenario Passed : Verify user is able to add donor with mandatory fields
 [INFO ] 2026-05-20 11:24:36.607 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 11:39:39.337 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 11:39:50.761 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-20 11:39:52.277 [main] BloodIssueAction - Navigated to Blood Issue Details Page
+[INFO ] 2026-05-20 11:39:53.235 [main] BloodIssueAction - Issue Blood popup is displayed.
+[DEBUG] 2026-05-20 11:39:54.244 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-20 11:39:54.250 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[ERROR] 2026-05-20 11:40:15.661 [main] Hooks - Scenario Failed : Issue blood with valid details
+[INFO ] 2026-05-20 11:40:15.898 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 11:40:16.164 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 11:45:24.689 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 11:45:35.585 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-20 11:45:36.679 [main] BloodIssueAction - Navigated to Blood Issue Details Page
+[INFO ] 2026-05-20 11:45:38.104 [main] BloodIssueAction - Issue Blood popup is displayed.
+[DEBUG] 2026-05-20 11:45:39.632 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-20 11:45:39.643 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[INFO ] 2026-05-20 11:46:05.370 [main] BloodIssueAction - Record Saved Successfully
+[INFO ] 2026-05-20 11:46:05.377 [main] Hooks - Scenario Passed : Issue blood with valid details
+[INFO ] 2026-05-20 11:46:05.660 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 11:49:03.704 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 11:49:11.541 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-20 11:49:12.393 [main] BloodIssueAction - Navigated to Blood Issue Details Page
+[INFO ] 2026-05-20 11:49:13.174 [main] BloodIssueAction - Issue Blood popup is displayed.
+[DEBUG] 2026-05-20 11:49:14.093 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-20 11:49:14.099 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[ERROR] 2026-05-20 11:49:38.375 [main] Hooks - Scenario Failed : Issue blood with valid details
+[INFO ] 2026-05-20 11:49:38.619 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 11:49:38.911 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 11:56:39.001 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 11:56:49.073 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-20 11:56:50.104 [main] BloodIssueAction - Navigated to Blood Issue Details Page
+[INFO ] 2026-05-20 11:56:50.953 [main] BloodIssueAction - Issue Blood popup is displayed.
+[DEBUG] 2026-05-20 11:56:52.203 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-20 11:56:52.208 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[ERROR] 2026-05-20 11:57:16.398 [main] Hooks - Scenario Failed : Issue blood with valid details
+[INFO ] 2026-05-20 11:57:16.631 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 11:57:16.901 [main] Hooks - Browser closed
