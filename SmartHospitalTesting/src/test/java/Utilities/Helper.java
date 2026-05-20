@@ -293,4 +293,11 @@ public class Helper {
                     .executeScript("arguments[0].click();", element);
         }
     }
+    public static void waitForInvisibility(By locator) {
+
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(20));
+
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
+    }
+   
 }
