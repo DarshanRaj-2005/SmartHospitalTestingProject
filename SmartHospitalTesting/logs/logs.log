@@ -786,3 +786,8 @@ Session ID: 8ebaa434fbf596ce4e68a9e18e3e9a5d
 [DEBUG] 2026-05-20 00:24:19.535 [main] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
 [INFO ] 2026-05-20 00:24:22.681 [main] Hooks - Scenario Passed : Entering character in charge field
 [INFO ] 2026-05-20 00:24:22.945 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 00:52:31.542 [main] Hooks - Browser launched
+[ERROR] 2026-05-20 00:52:49.117 [main] Hooks - Scenario Failed : Add Ambulance with valid Details
+[INFO ] 2026-05-20 00:52:49.531 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 00:52:49.815 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 00:52:50.774 [main] Hooks - Browser launched
