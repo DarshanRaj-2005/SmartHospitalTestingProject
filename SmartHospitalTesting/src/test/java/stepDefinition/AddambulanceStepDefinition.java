@@ -7,7 +7,7 @@ import io.cucumber.java.en.When;
 import java.util.List;
 import java.util.Map;
 
-import Utilities.ExcelReader;
+import Utilities.Data_Provider;
 import actions.AddambulanceAction;
 
 public class AddambulanceStepDefinition {
@@ -52,17 +52,27 @@ public class AddambulanceStepDefinition {
 				paymentMode);
 	}
 
-	@Then("the user enters ambulance call details from excel {string}")
-	public void the_user_enters_ambulance_call_details_from_excel(String testcase) {
-		String patient = ExcelReader.getData(testcase, "patient").trim();
-		String vehicleModel = ExcelReader.getData(testcase, "vehicleModel").trim();
-		String note = ExcelReader.getData(testcase, "note").trim();
-		String date = ExcelReader.getData(testcase, "date").trim();
-		String chargeCategory = ExcelReader.getData(testcase, "chargeCategory").trim();
+	@Then("the user enters ambulance call details from excel")
+	public void the_user_enters_ambulance_call_details_from_excel() throws Exception {
 
-		AddambulanceAction.enterAmbulanceDetail(patient, vehicleModel, date, chargeCategory, note);
+	    String[][] data = Data_Provider.getExcelData(
+	            "src/test/resources/test_datas/TestData.xlsx",
+	            "Sheet1"
+	    );
+
+	    String patient = data[0][0];
+	    String vehicleModel = data[0][1];
+	    String date = data[0][2];
+	    String note = data[0][3];
+
+	    AddambulanceAction.enterAmbulanceDetail(
+	            patient,
+	            vehicleModel,
+	            date,
+	            note
+	    );
 	}
-
+	
 	@Then("the user clicks save button")
 	public void the_user_clicks_save_button() {
 		AddambulanceAction.clickSave();

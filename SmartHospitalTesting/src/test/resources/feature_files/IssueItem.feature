@@ -1,5 +1,5 @@
 
-@issueitem
+@issueitem   @Tamilarasu
 Feature: Tamilarsu K 14-4-2026 Issue An Item
 
 
@@ -9,7 +9,7 @@ Background:
 	And the user clicks the Sign in button
 	Then the user should be redirected to super admin dashboard
 	When the user clicks on Inventory
-
+@validScenario
 	Scenario: User adds issue item successfully
 
 	When the user clicks the Issue Item button and the Issue New Item button
@@ -23,7 +23,7 @@ Background:
 	Then the issue item should be added successfully
 
 
-
+@invalidScenario
 Scenario: User adds issue item with missing fields shows validation messages
 
 	When the user clicks the Issue Item button and the Issue New Item button

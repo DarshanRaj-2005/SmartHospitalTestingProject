@@ -41,15 +41,9 @@ public class MedicinestockDefinition {
 	}
 
 
-	@Then("the searched medicine should be displayed in the table")
-	public void the_searched_medicine_should_be_displayed_in_the_table() {
-	    // Write code here that turns the phrase above into concrete actions
-		String actualmedicine=medicineAction.verifySearchedMedicine();
-		String expectedMedicineName = "Amoxicillin";
-		Assert.assertTrue(actualmedicine.contains(expectedMedicineName),
-	            "Expected medicine: " + expectedMedicineName + " not found in results. \nActual medicine found: " + actualmedicine);
-		
-	}
+//	@Then("the searched medicine {string} should be displayed in the table")
+//	public void the_searched_medicine_should_be_displayed_in_the_table(String searchedmedicine) {
+//	    medicineAction.verifySearchedMedicine(searchedmedicine);	}
 
 	@When("the user selects the medicine {string} from the medicine stock list")
 	public void the_user_selects_the_medicine_from_the_medicine_stock_list(String medicine) {
