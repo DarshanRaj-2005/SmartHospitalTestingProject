@@ -46,6 +46,8 @@ public class AddambulanceAction {
 		Helper.type(AddambulancePage.searchBox, chargeName);
 		Helper.waitForElementsPresent(AddambulancePage.selectOption(chargeName), 20);
 		Helper.click(AddambulancePage.selectOption(chargeName));
+		
+//		Helper.type(AddambulancePage.helloField, hello);
 
 		Helper.type(AddambulancePage.note, note);
 		
