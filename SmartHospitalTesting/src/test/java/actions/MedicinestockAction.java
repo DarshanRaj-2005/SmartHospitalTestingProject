@@ -39,11 +39,11 @@ public class MedicinestockAction {
 		Helper.click(MedicinestockPage.deleteButton);
 	}
 
-	public void clickdeleteConfirm() {
+	public void clickdeleteConfirm1() {
 		Helper.acceptAlert();
 	}
 
-    public void clickDeleteButton() {
+    public void clickDeleteButton1() {
         Helper.waitForElementClickable(MedicinestockPage.deleteButton);
         Helper.click(MedicinestockPage.deleteButton);
     }
