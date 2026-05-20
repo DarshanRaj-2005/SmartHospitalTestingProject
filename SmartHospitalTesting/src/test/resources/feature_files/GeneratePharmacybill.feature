@@ -7,9 +7,9 @@ Feature: Balamurugan S 18-05-2026 Generate the Pharmacy Bill
     Then the user should be redirected to super admin dashboard
     When the user clicks the Pharmacy
     Then it should move to the Pharmacy Bill page successfully
+    And user clicks Generate Bill button
 
   Scenario: Verify whether a user can generate the bill using valid details
-    When user clicks Generate Bill button
     And the user enters pharmacy bill details
       | patient     | John              |
       | category    | Syrup             |
@@ -23,7 +23,7 @@ Feature: Balamurugan S 18-05-2026 Generate the Pharmacy Bill
     Then the pharmacy bill should be generated successfully
 
   Scenario: Verify error when mandatory fields are missing
-    When the user enters pharmacy bill details
+    And the user enters pharmacy bill details
       | category |   |
       | medicine |   |
     And user clicks the Save button
