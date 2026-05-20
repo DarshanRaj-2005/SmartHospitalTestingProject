@@ -46,9 +46,11 @@ public class AddambulanceAction {
 		Helper.type(AddambulancePage.searchBox, chargeName);
 		Helper.waitForElementsPresent(AddambulancePage.selectOption(chargeName), 20);
 		Helper.click(AddambulancePage.selectOption(chargeName));
-	
-		
+
 		Helper.type(AddambulancePage.note, note);
+		
+		Select s2 = new Select(Helper.getElement(AddambulancePage.paymentOption));
+		s2.selectByVisibleText(paymentMode);
 	}
 
 	public static void enterAmbulanceDetail(String patient, String vehicleModel, String date,
