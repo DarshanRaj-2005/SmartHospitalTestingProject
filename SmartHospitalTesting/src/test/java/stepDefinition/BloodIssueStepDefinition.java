@@ -95,7 +95,6 @@ public class BloodIssueStepDefinition {
 
     @When("the user enters valid blood issue details")
     public void the_user_enters_valid_blood_issue_details() throws IOException {
-
         String[][] data =Data_Provider.getExcelData("src/test/resources/test_datas/BloodIssueValid.xlsx","validDetails") ;
         String patientName = String.valueOf((int) Double.parseDouble(data[0][0]));
         String doctor         = data[0][1];
@@ -110,3 +109,4 @@ public class BloodIssueStepDefinition {
         bloodIssueAction.selectChargeName();
     }
 }
+
