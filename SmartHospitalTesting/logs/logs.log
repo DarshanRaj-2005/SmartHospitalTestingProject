@@ -766,3 +766,93 @@ Session ID: 8ebaa434fbf596ce4e68a9e18e3e9a5d
 [INFO ] 2026-05-20 11:24:36.362 [main] DonorManagementStepDefinition - The Record is added Succefully.
 [INFO ] 2026-05-20 11:24:36.396 [main] Hooks - Scenario Passed : Verify user is able to add donor with mandatory fields
 [INFO ] 2026-05-20 11:24:36.607 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 11:39:39.337 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 11:39:50.761 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-20 11:39:52.277 [main] BloodIssueAction - Navigated to Blood Issue Details Page
+[INFO ] 2026-05-20 11:39:53.235 [main] BloodIssueAction - Issue Blood popup is displayed.
+[DEBUG] 2026-05-20 11:39:54.244 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-20 11:39:54.250 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[ERROR] 2026-05-20 11:40:15.661 [main] Hooks - Scenario Failed : Issue blood with valid details
+[INFO ] 2026-05-20 11:40:15.898 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 11:40:16.164 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 11:45:24.689 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 11:45:35.585 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-20 11:45:36.679 [main] BloodIssueAction - Navigated to Blood Issue Details Page
+[INFO ] 2026-05-20 11:45:38.104 [main] BloodIssueAction - Issue Blood popup is displayed.
+[DEBUG] 2026-05-20 11:45:39.632 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-20 11:45:39.643 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[INFO ] 2026-05-20 11:46:05.370 [main] BloodIssueAction - Record Saved Successfully
+[INFO ] 2026-05-20 11:46:05.377 [main] Hooks - Scenario Passed : Issue blood with valid details
+[INFO ] 2026-05-20 11:46:05.660 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 11:49:03.704 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 11:49:11.541 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-20 11:49:12.393 [main] BloodIssueAction - Navigated to Blood Issue Details Page
+[INFO ] 2026-05-20 11:49:13.174 [main] BloodIssueAction - Issue Blood popup is displayed.
+[DEBUG] 2026-05-20 11:49:14.093 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-20 11:49:14.099 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[ERROR] 2026-05-20 11:49:38.375 [main] Hooks - Scenario Failed : Issue blood with valid details
+[INFO ] 2026-05-20 11:49:38.619 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 11:49:38.911 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 11:56:39.001 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 11:56:49.073 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-20 11:56:50.104 [main] BloodIssueAction - Navigated to Blood Issue Details Page
+[INFO ] 2026-05-20 11:56:50.953 [main] BloodIssueAction - Issue Blood popup is displayed.
+[DEBUG] 2026-05-20 11:56:52.203 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-20 11:56:52.208 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[ERROR] 2026-05-20 11:57:16.398 [main] Hooks - Scenario Failed : Issue blood with valid details
+[INFO ] 2026-05-20 11:57:16.631 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 11:57:16.901 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 13:22:52.846 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 13:22:52.921 [main] Hooks - Scenario Passed : Verify user is able to add donor with mandatory fields
+[INFO ] 2026-05-20 13:22:53.398 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 13:22:54.265 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 13:22:54.283 [main] Hooks - Scenario Passed : Validate donor creation with all mandatory fields empty
+[INFO ] 2026-05-20 13:22:55.357 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 13:23:17.063 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 13:23:17.106 [main] Hooks - Scenario Passed : Verify user is able to add donor with mandatory fields
+[INFO ] 2026-05-20 13:23:17.640 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 13:23:18.553 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 13:23:18.586 [main] Hooks - Scenario Passed : Validate donor creation with all mandatory fields empty
+[INFO ] 2026-05-20 13:23:18.974 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 13:23:37.460 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 13:23:37.490 [main] Hooks - Scenario Passed : Verify user is able to add donor with mandatory fields
+[INFO ] 2026-05-20 13:23:37.752 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 13:23:38.544 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 13:23:38.571 [main] Hooks - Scenario Passed : Validate donor creation with all mandatory fields empty
+[INFO ] 2026-05-20 13:23:38.957 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 13:27:29.268 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 13:27:29.317 [main] Hooks - Scenario Passed : Verify user is able to add donor with mandatory fields
+[INFO ] 2026-05-20 13:27:30.395 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 13:27:31.192 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 13:27:31.244 [main] Hooks - Scenario Passed : Validate donor creation with all mandatory fields empty
+[INFO ] 2026-05-20 13:27:31.405 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 13:42:58.730 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 13:42:58.741 [main] Hooks - Scenario Passed : Login with invalid username credentials
+[INFO ] 2026-05-20 13:42:59.178 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 13:42:59.965 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 13:42:59.980 [main] Hooks - Scenario Passed : Login with empty fields
+[INFO ] 2026-05-20 13:43:00.354 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 13:43:01.182 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 13:43:01.203 [main] Hooks - Scenario Passed : Login with invalid password credentials
+[INFO ] 2026-05-20 13:43:01.650 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 13:43:02.442 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 13:43:02.455 [main] Hooks - Scenario Passed : Login with invalid username and password
+[INFO ] 2026-05-20 13:43:02.807 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 13:43:56.649 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 13:43:56.663 [main] Hooks - Scenario Passed : Login with invalid username credentials
+[INFO ] 2026-05-20 13:43:56.958 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 13:43:57.728 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 13:43:57.745 [main] Hooks - Scenario Passed : Login with empty fields
+[INFO ] 2026-05-20 13:43:57.945 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 13:43:58.781 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 13:43:58.800 [main] Hooks - Scenario Passed : Login with invalid password credentials
+[INFO ] 2026-05-20 13:43:59.012 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 13:43:59.825 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 13:43:59.834 [main] Hooks - Scenario Passed : Login with invalid username and password
+[INFO ] 2026-05-20 13:44:00.027 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 15:54:20.095 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 15:54:20.235 [main] Hooks - Scenario Passed : Verify user is able to add donor with mandatory fields
+[INFO ] 2026-05-20 15:54:20.851 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 15:54:21.819 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 15:54:21.873 [main] Hooks - Scenario Passed : Validate donor creation with all mandatory fields empty
+[INFO ] 2026-05-20 15:54:23.000 [main] Hooks - Browser closed
