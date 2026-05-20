@@ -19,6 +19,7 @@ public class MedicinestockAction {
         Helper.clear(MedicinestockPage.medicineSearchbar);
         Helper.type(MedicinestockPage.medicineSearchbar, medicine);
     }
+
     public String verifySearchedMedicine(String searchedmedicine) {
         By loc = MedicinestockPage.medicinetext(searchedmedicine);
         Helper.waitForVisibility(loc);
@@ -26,7 +27,6 @@ public class MedicinestockAction {
     }
 
     public void selectMedicine(String medicine) {
-
         By locator = MedicinestockPage.medicineCheckbox(medicine);
 
         WebElement element = Helper.getClickableElement(locator);

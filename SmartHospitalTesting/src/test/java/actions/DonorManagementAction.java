@@ -13,8 +13,12 @@ public class DonorManagementAction {
 
 	public void clickBloodBankMenu() {
 		logger.info("Navigated to Blood Bank module");
-		Helper.click(DonorManagementPage.bloodBankMenu);
-	}
+            Helper.waitForVisibility(DonorManagementPage.bloodBankMenu);
+
+		    Helper.waitForElementClickable(DonorManagementPage.bloodBankMenu);
+		    Helper.moveToElementAndClick(DonorManagementPage.bloodBankMenu);
+		}
+	
 
 	public void clickDonorDetails() {
 		Helper.click(DonorManagementPage.donorDetails);
@@ -59,7 +63,6 @@ public class DonorManagementAction {
 	}
 
 	public List<String> getValidationMessages() {
-
 		Helper.waitForVisibility(DonorManagementPage.validationMessages);
 		String text = Driver.getDriver().findElement(DonorManagementPage.validationMessages).getText();
 		return Arrays.asList(text.split("\\n"));

@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 public class DonorManagementPage {
 
-	public static By bloodBankMenu =By.xpath("//span[text()='Blood Bank']");
+	public static By bloodBankMenu =By.xpath("//span[normalize-space()='Blood Bank']");
 	public static By donorDetails =By.xpath("//a[contains(text(),'Donor Details')]");
 	public static By addBloodDonor =By.xpath("//a[contains(@onclick,'myModal')]");
 	public static By addDonorPopup =By.xpath("//h4[text()='Add Donor Details']");
