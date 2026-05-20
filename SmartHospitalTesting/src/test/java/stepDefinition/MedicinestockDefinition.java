@@ -33,13 +33,11 @@ public class MedicinestockDefinition {
         System.out.println("the user moved to the medicine stock page");
     }
 
-    // search medicine
     @When("the user searches medicine {string}")
     public void the_user_searches_medicine(String medicine) {
         medicineAction.searchMedicine(medicine);
     }
 
-    // ✅ KEEP LATEST VERSION (stashed code)
     @Then("the searched medicine {string} should be displayed in the table")
     public void the_searched_medicine_should_be_displayed_in_the_table(String searchedmedicine) {
         String actualMedicine = medicineAction.verifySearchedMedicine(searchedmedicine);
