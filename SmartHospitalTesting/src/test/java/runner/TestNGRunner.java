@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 
         features = //"src/test/resources/feature_files",
-    "src/test/resources/feature_files/Search_Patient.feature",
+    "src/test/resources/feature_files/Add_Patient.feature",
 
        
         tags="@Jananisri or @SearchPatient",
