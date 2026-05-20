@@ -82,10 +82,7 @@ public class DonorManagementStepDefinition {
 	}
 
 	
-	@When("the user clicks on Save button")
-	public void the_user_clicks_on_save_button() {
-		donor.clickSaveButton();
-	}
+
 
 	@Then("the newly added donor record should be visible in donor details list")
 	public void the_newly_added_donor_record_should_be_visible_in_donor_details_list() {
@@ -147,5 +144,12 @@ public class DonorManagementStepDefinition {
 	        donor.enterGender(gender);
 	}
 }
+	@When("the user clicks on Save")
+	public void the_user_clicks_on_save() {
+		donor.clickSaveButton();
+
+	}
+
+
 }
 	

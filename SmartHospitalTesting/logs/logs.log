@@ -856,3 +856,99 @@ Session ID: 8ebaa434fbf596ce4e68a9e18e3e9a5d
 [INFO ] 2026-05-20 15:54:21.819 [main] Hooks - Browser launched
 [INFO ] 2026-05-20 15:54:21.873 [main] Hooks - Scenario Passed : Validate donor creation with all mandatory fields empty
 [INFO ] 2026-05-20 15:54:23.000 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 16:02:03.116 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 16:02:16.807 [main] DonorManagementAction - Navigated to Blood Bank module
+[ERROR] 2026-05-20 16:02:37.022 [main] Hooks - Scenario Failed : Verify user is able to add donor with valid details
+[INFO ] 2026-05-20 16:02:37.366 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 16:02:37.626 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 16:02:38.405 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 16:02:48.019 [main] DonorManagementAction - Navigated to Blood Bank module
+[ERROR] 2026-05-20 16:03:08.209 [main] Hooks - Scenario Failed : Verify user is able to add donor with mandatory fields
+[INFO ] 2026-05-20 16:03:08.519 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 16:03:08.822 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 16:03:09.543 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 16:03:17.879 [main] DonorManagementAction - Navigated to Blood Bank module
+[ERROR] 2026-05-20 16:03:38.017 [main] Hooks - Scenario Failed : Validate donor creation with all mandatory fields empty
+[INFO ] 2026-05-20 16:03:38.431 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 16:03:38.755 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 16:06:08.606 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 16:06:17.154 [main] DonorManagementAction - Navigated to Blood Bank module
+[ERROR] 2026-05-20 16:06:37.465 [main] Hooks - Scenario Failed : Verify user is able to add donor with valid details
+[INFO ] 2026-05-20 16:06:37.741 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 16:06:38.119 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 16:06:38.824 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 16:06:48.386 [main] DonorManagementAction - Navigated to Blood Bank module
+[ERROR] 2026-05-20 16:07:08.543 [main] Hooks - Scenario Failed : Verify user is able to add donor with mandatory fields
+[INFO ] 2026-05-20 16:07:08.925 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 16:07:09.120 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 16:07:09.792 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 16:07:18.784 [main] DonorManagementAction - Navigated to Blood Bank module
+[ERROR] 2026-05-20 16:07:39.421 [main] Hooks - Scenario Failed : Validate donor creation with all mandatory fields empty
+[INFO ] 2026-05-20 16:07:39.832 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 16:07:40.190 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 16:15:09.871 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 16:15:17.578 [main] DonorManagementAction - Navigated to Blood Bank module
+[ERROR] 2026-05-20 16:15:37.836 [main] Hooks - Scenario Failed : Verify user is able to add donor with valid details
+[INFO ] 2026-05-20 16:15:38.271 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 16:15:38.607 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 16:15:39.456 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 16:15:46.912 [main] DonorManagementAction - Navigated to Blood Bank module
+[ERROR] 2026-05-20 16:16:07.194 [main] Hooks - Scenario Failed : Verify user is able to add donor with mandatory fields
+[INFO ] 2026-05-20 16:16:07.566 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 16:16:07.917 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 16:16:08.730 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 16:16:18.680 [main] DonorManagementAction - Navigated to Blood Bank module
+[ERROR] 2026-05-20 16:16:38.931 [main] Hooks - Scenario Failed : Validate donor creation with all mandatory fields empty
+[INFO ] 2026-05-20 16:16:39.275 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 16:16:39.464 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 16:20:21.002 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 16:20:30.623 [main] DonorManagementAction - Navigated to Blood Bank module
+[ERROR] 2026-05-20 16:20:50.776 [main] Hooks - Scenario Failed : Verify user is able to add donor with valid details
+[INFO ] 2026-05-20 16:20:51.176 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 16:20:51.404 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 16:20:52.174 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 16:21:01.878 [main] DonorManagementAction - Navigated to Blood Bank module
+[ERROR] 2026-05-20 16:21:22.182 [main] Hooks - Scenario Failed : Verify user is able to add donor with mandatory fields
+[INFO ] 2026-05-20 16:21:22.574 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 16:21:22.775 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 16:21:23.497 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 16:21:31.957 [main] DonorManagementAction - Navigated to Blood Bank module
+[ERROR] 2026-05-20 16:21:52.087 [main] Hooks - Scenario Failed : Validate donor creation with all mandatory fields empty
+[INFO ] 2026-05-20 16:21:52.416 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 16:21:52.652 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 16:27:44.854 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 16:27:54.320 [main] DonorManagementAction - Navigated to Blood Bank module
+[ERROR] 2026-05-20 16:27:55.208 [main] Hooks - Scenario Failed : Verify user is able to add donor with valid details
+[INFO ] 2026-05-20 16:27:55.601 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 16:27:55.817 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 16:27:56.524 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 16:28:05.186 [main] DonorManagementAction - Navigated to Blood Bank module
+[ERROR] 2026-05-20 16:28:06.331 [main] Hooks - Scenario Failed : Verify user is able to add donor with mandatory fields
+[INFO ] 2026-05-20 16:28:06.817 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 16:28:07.106 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 16:28:08.046 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 16:28:15.792 [main] DonorManagementAction - Navigated to Blood Bank module
+[ERROR] 2026-05-20 16:28:16.853 [main] Hooks - Scenario Failed : Validate donor creation with all mandatory fields empty
+[INFO ] 2026-05-20 16:28:17.331 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 16:28:17.514 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 16:29:34.478 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 16:29:43.247 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-20 16:29:45.336 [main] DonorManagementAction - Blood Donor popup is opened.
+[INFO ] 2026-05-20 16:29:46.960 [main] DonorManagementAction - Clicked Save Button
+[INFO ] 2026-05-20 16:29:47.117 [main] DonorManagementStepDefinition - The Record is added Succefully.
+[INFO ] 2026-05-20 16:29:47.154 [main] Hooks - Scenario Passed : Verify user is able to add donor with valid details
+[INFO ] 2026-05-20 16:29:47.507 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 16:29:48.318 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 16:29:57.064 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-20 16:29:59.416 [main] DonorManagementAction - Blood Donor popup is opened.
+[INFO ] 2026-05-20 16:30:00.884 [main] DonorManagementAction - Clicked Save Button
+[INFO ] 2026-05-20 16:30:01.061 [main] DonorManagementStepDefinition - The Record is added Succefully.
+[INFO ] 2026-05-20 16:30:01.097 [main] Hooks - Scenario Passed : Verify user is able to add donor with mandatory fields
+[INFO ] 2026-05-20 16:30:01.357 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 16:30:02.226 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 16:30:10.433 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-20 16:30:12.351 [main] DonorManagementAction - Blood Donor popup is opened.
+[INFO ] 2026-05-20 16:30:13.155 [main] DonorManagementAction - Clicked Save Button
+[INFO ] 2026-05-20 16:30:13.355 [main] DonorManagementStepDefinition - New Donor is not added.
+[INFO ] 2026-05-20 16:30:13.982 [main] Hooks - Scenario Passed : Validate donor creation with all mandatory fields empty
+[INFO ] 2026-05-20 16:30:14.244 [main] Hooks - Browser closed
