@@ -16,6 +16,9 @@ public class AddPatientActions {
    static Logger logger = LogManager.getLogger(AddPatientActions.class);
     private String lastPatientName = "";
 
+   public AddPatientActions(WebDriver driver) {
+   }
+   
     public void clickPatientCategory() {
         Helper.waitForElementClickable(AddPatientPage.patientCategory);
         Helper.jsClick(AddPatientPage.patientCategory);
@@ -88,7 +91,6 @@ public class AddPatientActions {
         for (WebElement cell : cells) {
             if (cell.getText().trim().equalsIgnoreCase(lastPatientName.trim())) {
                 return true;
-                 logger.info("Patient Details Added");
             }
         }
         return false;
