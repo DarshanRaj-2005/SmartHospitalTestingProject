@@ -53,19 +53,22 @@ public class AddambulanceStepDefinition {
 	}
 
 	@Then("the user enters ambulance call details from excel")
-	public void the_user_enters_ambulance_call_details_from_excel() throws Exception{
-	    Data_Provider excelData = new Data_Provider();
-	    Object[][] data = excelData.ambulanceData();
-	    String patient = data[0][0] == null ? "" : data[0][0].toString();
-	    String vehicleModel = data[0][1] == null ? "" : data[0][1].toString();
-	    String date = data[0][2] == null ? "" : data[0][2].toString();
-	    String chargeCategory = data[0][3] == null ? "" : data[0][3].toString();
-	    String note = data[0][4] == null ? "" : data[0][4].toString();
+	public void the_user_enters_ambulance_call_details_from_excel() throws Exception {
+
+	    String[][] data = Data_Provider.getExcelData(
+	            "src/test/resources/test_datas/TestData.xlsx",
+	            "Sheet1"
+	    );
+
+	    String patient = data[0][0];
+	    String vehicleModel = data[0][1];
+	    String date = data[0][2];
+	    String note = data[0][3];
+
 	    AddambulanceAction.enterAmbulanceDetail(
 	            patient,
 	            vehicleModel,
 	            date,
-	            chargeCategory,
 	            note
 	    );
 	}

@@ -6,8 +6,13 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-        features = "src/test/resources/feature_files",
-        tags="@DonorManagement or @BloodIssueManagement or @BloodStockValidation",
+
+        features = //"src/test/resources/feature_files",
+    "src/test/resources/feature_files/Search_Patient.feature",
+
+       
+        tags="@Jananisri or @SearchPatient",
+
         glue = { "stepDefinition", "hooks" },
         plugin = {
                 "pretty",
@@ -17,14 +22,11 @@ import io.cucumber.testng.CucumberOptions;
                 "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
         },
         
-//        tags = "@ValidCredentials",
         monochrome = true
 )
 public class TestNGRunner extends AbstractTestNGCucumberTests {
-
-    @DataProvider(parallel = false)
-    public Object[][] scenarios() {
-        return super.scenarios();
-    }
+	@DataProvider(parallel = true)
+	public Object[][] scenarios() {
+	    return super.scenarios();
+	}
 }
-

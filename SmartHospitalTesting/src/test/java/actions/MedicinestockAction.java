@@ -20,13 +20,6 @@ public class MedicinestockAction {
 		Helper.type(MedicinestockPage.medicineSearchbar, medicine);
 
 	}
-
-	public String verifySearchedMedicine(String searchedmedicine) {
-		By loc = MedicinestockPage.medicinetext(searchedmedicine);
-		Helper.waitForVisibility(loc);
-		return Helper.getText(loc);
-	}
-
 	public void selectMedicine(String medicine) {
 
 		By locator = MedicinestockPage.medicineCheckbox(medicine);
