@@ -35,7 +35,7 @@ Then the system should show a message "Invalid Password"
 
 @InvalidCredentials
 Scenario Outline: Login with invalid username and password
-And the user enter invalid "<username>" and "<password">
+And the user enter invalid "<username>" and "<password>"
 And the user clicks the Sign in button
 Then the system should show a message "Invalid "
 

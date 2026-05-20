@@ -16,7 +16,7 @@ public class DonorManagementAction {
             Helper.waitForVisibility(DonorManagementPage.bloodBankMenu);
 
 		    Helper.waitForElementClickable(DonorManagementPage.bloodBankMenu);
-		    Helper.moveToElementAndClick(DonorManagementPage.bloodBankMenu);
+		    //Helper.moveToElementAndClick(DonorManagementPage.bloodBankMenu);
 		}
 	
 
