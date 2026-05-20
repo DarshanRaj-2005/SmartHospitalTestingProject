@@ -57,7 +57,6 @@ public class BloodStockStepDefinition {
 		bag = data.get(0).get("Bag");
 		String chargeCategory = data.get(0).get("ChargeCategory");
 		String chargeName = data.get(0).get("ChargeName");
-
 		BloodStockAction.selectBloodDonor(bloodDonor);
 		BloodStockAction.enterDonateDate(donateDate);
 		BloodStockAction.enterBag(bag);
