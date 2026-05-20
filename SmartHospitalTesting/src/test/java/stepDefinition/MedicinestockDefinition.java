@@ -24,7 +24,7 @@ public class MedicinestockDefinition {
     public void the_user_clicks_the_medicines_button() {
         medicineAction.clickmedicinebutton();
     }
-    
+
     @Given("the user is on the medicine stock page")
     public void the_user_is_on_the_medicine_stock_page() {
         String expectedURL = "https://demo.smart-hospital.in/admin/pharmacy/search";
