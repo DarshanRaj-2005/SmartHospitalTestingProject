@@ -22,32 +22,34 @@ public class MedicinestockAction {
 	}
 
 	public String verifySearchedMedicine(String searchedmedicine) {
-		By loc=MedicinestockPage.medicinetext(searchedmedicine);
-		WebElement element=Helper.get
-		Helper.waitForVisibility(MedicinestockPage.searchedmedicine);
-		return Helper.getText(MedicinestockPage.searchedmedicine);
-		
+		By loc = MedicinestockPage.medicinetext(searchedmedicine);
+		Helper.waitForVisibility(loc);
+		return Helper.getText(loc);
 	}
+
 	public void selectMedicine(String medicine) {
 
-	    By locator = MedicinestockPage.medicineCheckbox(medicine);
+		By locator = MedicinestockPage.medicineCheckbox(medicine);
 
-	    WebElement element = Helper.getClickableElement(locator);
+		WebElement element = Helper.getClickableElement(locator);
 
-	    if (!element.isSelected()) {
-	        element.click();
-	    }
+		if (!element.isSelected()) {
+			element.click();
+		}
 	}
+
 	public void clickDeleteButton() {
 		Helper.waitForElementClickable(MedicinestockPage.deleteButton);
 		Helper.click(MedicinestockPage.deleteButton);
 	}
-	public void clickdeleteConfirm(){
+
+	public void clickdeleteConfirm() {
 		Helper.acceptAlert();
 	}
+
 	public String verifyDeleteConfirmation() {
 		Helper.waitForVisibility(MedicinestockPage.deleteConfirmation);
 		return Helper.getText(MedicinestockPage.deleteConfirmation);
-		
+
 	}
 }

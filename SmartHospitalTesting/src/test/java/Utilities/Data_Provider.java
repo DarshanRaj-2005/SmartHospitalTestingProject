@@ -11,7 +11,7 @@ public class Data_Provider {
 	@DataProvider(name = "BloodIssueData", parallel = true)
 	public Object[][] bloodIssueData() throws IOException {
 
-	    return getExcelData("src/test/resources/test_datas/Harini/BloodIssueValid.xlsx","validDetails");
+	    return getExcelData("src/test/resources/test_datas/BloodIssueValid.xlsx","validDetails");
 	}
 	
 	@DataProvider(name = "ambulanceData", parallel = true)
