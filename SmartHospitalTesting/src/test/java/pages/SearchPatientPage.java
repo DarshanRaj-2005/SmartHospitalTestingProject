@@ -1,4 +1,5 @@
 package pages;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -15,6 +16,7 @@ public class SearchPatientPage {
     public SearchPatientPage(WebDriver driver) {
         this.driver = driver;
     }
+
     By patientSidebarLink =
             By.xpath("//ul[contains(@class,'sidebar-menu') or contains(@class,'nav-sidebar') or contains(@class,'side-menu')]"
                    + "//a[normalize-space(.)='Patient' or normalize-space(text())='Patient']");
@@ -41,24 +43,26 @@ public class SearchPatientPage {
         wait.until(ExpectedConditions.visibilityOfElementLocated(searchBox));
         wait.until(ExpectedConditions.visibilityOfElementLocated(tableRows));
     }
+
     public void enterSearchText(String patientName) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.elementToBeClickable(searchBox));
         WebElement el = driver.findElement(searchBox);
+        // click + clear + sendKeys — triggers DataTable keyup listener naturally
         el.click();
-        el.clear(); 
+        el.clear();
         el.sendKeys(patientName);
     }
 
     public void clickSearchButton() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        // Wait for DataTable processing overlay to disappear
         wait.until(ExpectedConditions.invisibilityOfElementLocated(
                 By.xpath("//*[contains(@class,'dataTables_processing')]")));
-        try { Thread.sleep(2000); 
-        } catch (InterruptedException ignored) {
-        	
-        }
+        // Wait for AJAX + DOM re-render
+        try { Thread.sleep(2000); } catch (InterruptedException ignored) {}
     }
+
     public boolean verifyMatchingPatientDisplayed(String patientName) {
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
@@ -75,9 +79,12 @@ public class SearchPatientPage {
         if (rows.size() == 1 && isNoDataRow) {
             return false;
         }
+
+        // Page source check — works regardless of HTML nesting depth
         String pageSource = driver.getPageSource().toLowerCase();
         return pageSource.contains(patientName.toLowerCase());
     }
+
     public boolean verifyNoRecordsFound() {
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -86,10 +93,12 @@ public class SearchPatientPage {
                         ExpectedConditions.visibilityOfElementLocated(noDataRow),
                         ExpectedConditions.numberOfElementsToBeMoreThan(tableRows, 0)
                 ));
+
         List<WebElement> noDataElements = driver.findElements(noDataRow);
         if (!noDataElements.isEmpty()) {
             return noDataElements.get(0).isDisplayed();
         }
+
         List<WebElement> rows = driver.findElements(tableRows);
         if (rows.isEmpty()) return true;
 
