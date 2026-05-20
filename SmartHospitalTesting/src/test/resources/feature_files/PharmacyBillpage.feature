@@ -20,5 +20,4 @@ Feature: Balamurugan S 15-04-2026 View the Pharmacy Bill page
     Examples:
       | patientName  | result    |
       | Ashok        | present   |
-      | Jack Edwards | present   |
-      | ghayathri    | not found |
+      | praveen raj  | not found |
