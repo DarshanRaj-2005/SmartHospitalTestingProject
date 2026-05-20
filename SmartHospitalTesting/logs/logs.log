@@ -918,3 +918,31 @@ Session ID: 72e841f7813ea6c66ad85aff6b99df95
 [INFO ] 2026-05-20 09:08:28.754 [main] Hooks - Browser launched
 [INFO ] 2026-05-20 09:08:32.410 [main] Hooks - Scenario Passed : Login with invalid username and password
 [INFO ] 2026-05-20 09:08:32.596 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 09:14:44.602 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 09:14:58.704 [main] Hooks - Scenario Passed : Add Ambulance with valid Details
+[INFO ] 2026-05-20 09:14:58.967 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 09:14:59.832 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 09:15:10.883 [main] Hooks - Scenario Passed : Add Ambulance with empty fields
+[INFO ] 2026-05-20 09:15:11.130 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 09:15:11.893 [main] Hooks - Browser launched
+[DEBUG] 2026-05-20 09:15:29.456 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-20 09:15:29.459 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[DEBUG] 2026-05-20 09:15:29.461 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[DEBUG] 2026-05-20 09:15:29.958 [main] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+[INFO ] 2026-05-20 09:15:31.981 [main] Hooks - Scenario Passed : Entering character in charge field
+[INFO ] 2026-05-20 09:15:32.284 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 09:15:33.076 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 09:15:40.669 [main] Hooks - Scenario Passed : Login with valid credentials
+[INFO ] 2026-05-20 09:15:40.959 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 09:15:41.811 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 09:15:45.700 [main] Hooks - Scenario Passed : Login with invalid username credentials
+[INFO ] 2026-05-20 09:15:45.959 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 09:15:46.724 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 09:15:50.174 [main] Hooks - Scenario Passed : Login with empty fields
+[INFO ] 2026-05-20 09:15:50.441 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 09:15:51.292 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 09:15:55.445 [main] Hooks - Scenario Passed : Login with invalid password credentials
+[INFO ] 2026-05-20 09:15:55.705 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 09:15:56.552 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 09:16:00.632 [main] Hooks - Scenario Passed : Login with invalid username and password
+[INFO ] 2026-05-20 09:16:00.878 [main] Hooks - Browser closed
