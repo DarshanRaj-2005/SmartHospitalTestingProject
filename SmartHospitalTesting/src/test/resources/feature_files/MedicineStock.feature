@@ -11,12 +11,12 @@ Feature: Balamurugan S 17-5-2026 Add and manage medicines in the medicine stock 
 
   Scenario: Verify medicine search
     Given the user is on the medicine stock page
-    When the user searches medicine "Paracetamol"
-    Then the searched medicine "Paracetamol" should be displayed in the table
+    When the user searches medicine "Cetirizine"
+    Then the searched medicine "Cetirizine" should be displayed in the table
 
   Scenario: Delete a selected medicine
     Given the user is on the medicine stock page
-    When the user selects the medicine "Amoxicillin" from the medicine stock list
+    When the user selects the medicine "Amlodipine" from the medicine stock list
     And clicks the delete Selected button
     And the user confirms the alert displayed
     Then the message displayed as medicine deleteted successfully
