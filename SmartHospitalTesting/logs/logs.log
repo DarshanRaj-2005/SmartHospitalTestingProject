@@ -1,470 +1,4 @@
-[INFO ] 2026-05-18 22:52:11.286 [main] Hooks - Browser launched
-[ERROR] 2026-05-18 22:53:21.154 [main] Hooks - Scenario Failed : Add Ambulance with valid Details
-[ERROR] 2026-05-18 22:53:21.221 [main] Hooks - Screenshot Failed org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: '4.43.0', revision: 'dd0f534'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [793cbc046afd630a519b63280e8e919f, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\dhars\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62823}, goog:processID: 10496, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62823/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 793cbc046afd630a519b63280e8e919f
-[INFO ] 2026-05-18 22:53:21.222 [main] Hooks - Browser closed
-[INFO ] 2026-05-18 22:53:22.130 [main] Hooks - Browser launched
-[INFO ] 2026-05-18 22:53:32.875 [main] Hooks - Browser launched
-[INFO ] 2026-05-18 22:54:18.063 [main] Hooks - Browser launched
-[INFO ] 2026-05-18 22:54:45.317 [main] Hooks - Browser launched
-[INFO ] 2026-05-18 22:55:29.970 [main] Hooks - Browser launched
-[ERROR] 2026-05-18 22:55:47.428 [main] Hooks - Scenario Failed : Add Ambulance with valid Details
-[INFO ] 2026-05-18 22:55:47.615 [main] Hooks - Screenshot Saved
-[INFO ] 2026-05-18 22:55:47.616 [main] Hooks - Browser closed
-[INFO ] 2026-05-18 22:55:48.718 [main] Hooks - Browser launched
-[INFO ] 2026-05-18 22:56:04.849 [main] Hooks - Scenario Passed : Add Ambulance with empty fields
-[INFO ] 2026-05-18 22:56:04.851 [main] Hooks - Browser closed
-[INFO ] 2026-05-18 22:56:06.035 [main] Hooks - Browser launched
-[DEBUG] 2026-05-18 22:56:21.924 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-[DEBUG] 2026-05-18 22:56:21.933 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-[DEBUG] 2026-05-18 22:56:21.936 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-[DEBUG] 2026-05-18 22:56:22.893 [main] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-[DEBUG] 2026-05-18 22:56:23.096 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-[DEBUG] 2026-05-18 22:56:23.099 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-[DEBUG] 2026-05-18 22:56:23.102 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-[DEBUG] 2026-05-18 22:56:23.155 [main] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-[DEBUG] 2026-05-18 22:56:23.215 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-[DEBUG] 2026-05-18 22:56:23.220 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-[DEBUG] 2026-05-18 22:56:23.222 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-[DEBUG] 2026-05-18 22:56:23.264 [main] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-[DEBUG] 2026-05-18 22:56:23.293 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-[DEBUG] 2026-05-18 22:56:23.296 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-[DEBUG] 2026-05-18 22:56:23.298 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-[DEBUG] 2026-05-18 22:56:23.327 [main] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-[DEBUG] 2026-05-18 22:56:23.363 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-[DEBUG] 2026-05-18 22:56:23.367 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-[DEBUG] 2026-05-18 22:56:23.369 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-[DEBUG] 2026-05-18 22:56:23.392 [main] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-[INFO ] 2026-05-18 22:56:26.782 [main] Hooks - Scenario Passed : Entering character in charge field
-[INFO ] 2026-05-18 22:56:26.783 [main] Hooks - Browser closed
-[INFO ] 2026-05-19 09:19:54.128 [TestNG-PoolService-1] Hooks - Browser launched
-[INFO ] 2026-05-19 09:19:54.128 [TestNG-PoolService-2] Hooks - Browser launched
-[INFO ] 2026-05-19 09:19:54.128 [TestNG-PoolService-3] Hooks - Browser launched
-[INFO ] 2026-05-19 09:20:04.964 [TestNG-PoolService-2] Hooks - Scenario Passed : Add Ambulance with empty fields
-[INFO ] 2026-05-19 09:20:05.639 [TestNG-PoolService-2] Hooks - Browser closed
-[DEBUG] 2026-05-19 09:20:07.269 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-[DEBUG] 2026-05-19 09:20:07.272 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-[DEBUG] 2026-05-19 09:20:07.274 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-[DEBUG] 2026-05-19 09:20:07.875 [TestNG-PoolService-3] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-[DEBUG] 2026-05-19 09:20:08.036 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-[DEBUG] 2026-05-19 09:20:08.039 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-[DEBUG] 2026-05-19 09:20:08.040 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-[DEBUG] 2026-05-19 09:20:08.071 [TestNG-PoolService-3] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-[DEBUG] 2026-05-19 09:20:08.112 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-[DEBUG] 2026-05-19 09:20:08.115 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-[DEBUG] 2026-05-19 09:20:08.117 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-[DEBUG] 2026-05-19 09:20:08.146 [TestNG-PoolService-3] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-[DEBUG] 2026-05-19 09:20:08.181 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-[DEBUG] 2026-05-19 09:20:08.183 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-[DEBUG] 2026-05-19 09:20:08.185 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-[DEBUG] 2026-05-19 09:20:08.206 [TestNG-PoolService-3] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-[DEBUG] 2026-05-19 09:20:08.242 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-[DEBUG] 2026-05-19 09:20:08.243 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-[DEBUG] 2026-05-19 09:20:08.246 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-[DEBUG] 2026-05-19 09:20:08.272 [TestNG-PoolService-3] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-[ERROR] 2026-05-19 09:20:09.033 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
-[INFO ] 2026-05-19 09:20:09.384 [TestNG-PoolService-1] Hooks - Screenshot Saved
-[INFO ] 2026-05-19 09:20:09.816 [TestNG-PoolService-1] Hooks - Browser closed
-[INFO ] 2026-05-19 09:20:11.439 [TestNG-PoolService-3] Hooks - Scenario Passed : Entering character in charge field
-[INFO ] 2026-05-19 09:20:11.671 [TestNG-PoolService-3] Hooks - Browser closed
-[INFO ] 2026-05-19 10:33:45.316 [TestNG-PoolService-3] Hooks - Browser launched
-[INFO ] 2026-05-19 10:33:45.338 [TestNG-PoolService-2] Hooks - Browser launched
-[INFO ] 2026-05-19 10:33:45.349 [TestNG-PoolService-1] Hooks - Browser launched
-[DEBUG] 2026-05-19 10:33:58.717 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-[DEBUG] 2026-05-19 10:33:58.728 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-[DEBUG] 2026-05-19 10:33:58.732 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-[DEBUG] 2026-05-19 10:34:00.066 [TestNG-PoolService-3] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-[DEBUG] 2026-05-19 10:34:00.382 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-[DEBUG] 2026-05-19 10:34:00.388 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-[DEBUG] 2026-05-19 10:34:00.391 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-[DEBUG] 2026-05-19 10:34:00.449 [TestNG-PoolService-3] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-[INFO ] 2026-05-19 10:34:00.464 [TestNG-PoolService-2] Hooks - Scenario Passed : Add Ambulance with empty fields
-[DEBUG] 2026-05-19 10:34:00.520 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-[DEBUG] 2026-05-19 10:34:00.524 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-[DEBUG] 2026-05-19 10:34:00.528 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-[DEBUG] 2026-05-19 10:34:00.595 [TestNG-PoolService-3] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-[DEBUG] 2026-05-19 10:34:00.626 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-[DEBUG] 2026-05-19 10:34:00.629 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-[DEBUG] 2026-05-19 10:34:00.631 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-[DEBUG] 2026-05-19 10:34:00.659 [TestNG-PoolService-3] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-[DEBUG] 2026-05-19 10:34:00.699 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-[DEBUG] 2026-05-19 10:34:00.702 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-[DEBUG] 2026-05-19 10:34:00.704 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-[DEBUG] 2026-05-19 10:34:00.729 [TestNG-PoolService-3] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-[INFO ] 2026-05-19 10:34:00.860 [TestNG-PoolService-2] Hooks - Browser closed
-[ERROR] 2026-05-19 10:34:02.357 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
-[INFO ] 2026-05-19 10:34:02.811 [TestNG-PoolService-1] Hooks - Screenshot Saved
-[INFO ] 2026-05-19 10:34:03.191 [TestNG-PoolService-1] Hooks - Browser closed
-[INFO ] 2026-05-19 10:34:03.902 [TestNG-PoolService-3] Hooks - Scenario Passed : Entering character in charge field
-[INFO ] 2026-05-19 10:34:04.223 [TestNG-PoolService-3] Hooks - Browser closed
-[INFO ] 2026-05-19 10:46:21.416 [TestNG-PoolService-10] Hooks - Browser launched
-[INFO ] 2026-05-19 10:46:21.416 [TestNG-PoolService-1] Hooks - Browser launched
-[INFO ] 2026-05-19 10:46:21.416 [TestNG-PoolService-5] Hooks - Browser launched
-[INFO ] 2026-05-19 10:46:21.518 [TestNG-PoolService-9] Hooks - Browser launched
-[INFO ] 2026-05-19 10:46:21.661 [TestNG-PoolService-4] Hooks - Browser launched
-[INFO ] 2026-05-19 10:46:21.719 [TestNG-PoolService-7] Hooks - Browser launched
-[INFO ] 2026-05-19 10:46:21.837 [TestNG-PoolService-6] Hooks - Browser launched
-[INFO ] 2026-05-19 10:46:21.898 [TestNG-PoolService-2] Hooks - Browser launched
-[INFO ] 2026-05-19 10:46:22.000 [TestNG-PoolService-8] Hooks - Browser launched
-[INFO ] 2026-05-19 10:46:22.052 [TestNG-PoolService-3] Hooks - Browser launched
-[INFO ] 2026-05-19 10:47:01.159 [TestNG-PoolService-3] Hooks - Browser launched
-[INFO ] 2026-05-19 10:47:01.185 [TestNG-PoolService-2] Hooks - Browser launched
-[INFO ] 2026-05-19 10:47:01.190 [TestNG-PoolService-1] Hooks - Browser launched
-[DEBUG] 2026-05-19 10:47:14.049 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-[DEBUG] 2026-05-19 10:47:14.061 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-[DEBUG] 2026-05-19 10:47:14.064 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-[DEBUG] 2026-05-19 10:47:15.258 [TestNG-PoolService-3] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-[DEBUG] 2026-05-19 10:47:15.523 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-[DEBUG] 2026-05-19 10:47:15.529 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-[DEBUG] 2026-05-19 10:47:15.536 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-[DEBUG] 2026-05-19 10:47:15.603 [TestNG-PoolService-3] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-[DEBUG] 2026-05-19 10:47:15.657 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-[DEBUG] 2026-05-19 10:47:15.660 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-[DEBUG] 2026-05-19 10:47:15.661 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-[DEBUG] 2026-05-19 10:47:15.696 [TestNG-PoolService-3] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-[DEBUG] 2026-05-19 10:47:15.737 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-[DEBUG] 2026-05-19 10:47:15.739 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-[DEBUG] 2026-05-19 10:47:15.741 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-[DEBUG] 2026-05-19 10:47:15.776 [TestNG-PoolService-3] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-[DEBUG] 2026-05-19 10:47:15.826 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-[DEBUG] 2026-05-19 10:47:15.829 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-[DEBUG] 2026-05-19 10:47:15.831 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-[DEBUG] 2026-05-19 10:47:15.883 [TestNG-PoolService-3] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-[INFO ] 2026-05-19 10:47:15.920 [TestNG-PoolService-2] Hooks - Scenario Passed : Add Ambulance with empty fields
-[INFO ] 2026-05-19 10:47:16.314 [TestNG-PoolService-2] Hooks - Browser closed
-[ERROR] 2026-05-19 10:47:16.816 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
-[INFO ] 2026-05-19 10:47:17.272 [TestNG-PoolService-1] Hooks - Screenshot Saved
-[INFO ] 2026-05-19 10:47:17.628 [TestNG-PoolService-1] Hooks - Browser closed
-[INFO ] 2026-05-19 10:47:18.728 [TestNG-PoolService-3] Hooks - Scenario Passed : Entering character in charge field
-[INFO ] 2026-05-19 10:47:19.053 [TestNG-PoolService-3] Hooks - Browser closed
-[INFO ] 2026-05-19 11:16:46.923 [TestNG-PoolService-3] Hooks - Browser launched
-[INFO ] 2026-05-19 11:16:46.936 [TestNG-PoolService-2] Hooks - Browser launched
-[INFO ] 2026-05-19 11:16:46.937 [TestNG-PoolService-1] Hooks - Browser launched
-[DEBUG] 2026-05-19 11:16:59.244 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-[DEBUG] 2026-05-19 11:16:59.256 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-[DEBUG] 2026-05-19 11:16:59.262 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-[INFO ] 2026-05-19 11:17:00.190 [TestNG-PoolService-2] Hooks - Scenario Passed : Add Ambulance with empty fields
-[DEBUG] 2026-05-19 11:17:00.478 [TestNG-PoolService-3] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-[INFO ] 2026-05-19 11:17:00.590 [TestNG-PoolService-2] Hooks - Browser closed
-[ERROR] 2026-05-19 11:17:02.136 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
-[INFO ] 2026-05-19 11:17:02.552 [TestNG-PoolService-1] Hooks - Screenshot Saved
-[INFO ] 2026-05-19 11:17:02.932 [TestNG-PoolService-1] Hooks - Browser closed
-[INFO ] 2026-05-19 11:17:04.375 [TestNG-PoolService-3] Hooks - Scenario Passed : Entering character in charge field
-[INFO ] 2026-05-19 11:17:04.683 [TestNG-PoolService-3] Hooks - Browser closed
-[INFO ] 2026-05-19 11:20:17.632 [TestNG-PoolService-1] Hooks - Browser launched
-[ERROR] 2026-05-19 11:20:30.717 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
-[INFO ] 2026-05-19 11:20:31.058 [TestNG-PoolService-1] Hooks - Screenshot Saved
-[INFO ] 2026-05-19 11:20:31.365 [TestNG-PoolService-1] Hooks - Browser closed
-[INFO ] 2026-05-19 11:21:28.415 [TestNG-PoolService-1] Hooks - Browser launched
-[ERROR] 2026-05-19 11:21:51.562 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
-[INFO ] 2026-05-19 11:21:51.860 [TestNG-PoolService-1] Hooks - Screenshot Saved
-[INFO ] 2026-05-19 11:21:52.177 [TestNG-PoolService-1] Hooks - Browser closed
-[INFO ] 2026-05-19 11:22:05.772 [TestNG-PoolService-1] Hooks - Browser launched
-[INFO ] 2026-05-19 11:22:05.778 [TestNG-PoolService-2] Hooks - Browser launched
-[ERROR] 2026-05-19 11:22:27.621 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
-[INFO ] 2026-05-19 11:22:28.062 [TestNG-PoolService-1] Hooks - Screenshot Saved
-[INFO ] 2026-05-19 11:22:28.330 [TestNG-PoolService-1] Hooks - Browser closed
-[INFO ] 2026-05-19 11:22:31.296 [TestNG-PoolService-2] Hooks - Scenario Passed : Login with valid credentials
-[INFO ] 2026-05-19 11:22:31.561 [TestNG-PoolService-2] Hooks - Browser closed
-[INFO ] 2026-05-19 11:50:58.922 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 11:51:10.180 [main] Hooks - Scenario Passed : Login with valid credentials
-[INFO ] 2026-05-19 11:51:10.512 [main] Hooks - Browser closed
-[INFO ] 2026-05-19 11:51:11.334 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 11:51:15.805 [main] Hooks - Scenario Passed : Login with invalid username credentials
-[INFO ] 2026-05-19 11:51:16.059 [main] Hooks - Browser closed
-[INFO ] 2026-05-19 11:51:16.994 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 11:51:21.760 [main] Hooks - Scenario Passed : Login with empty fields
-[INFO ] 2026-05-19 11:51:22.045 [main] Hooks - Browser closed
-[INFO ] 2026-05-19 11:51:22.981 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 11:51:26.941 [main] Hooks - Scenario Passed : Login with invalid password credentials
-[INFO ] 2026-05-19 11:51:27.195 [main] Hooks - Browser closed
-[INFO ] 2026-05-19 11:56:27.089 [TestNG-PoolService-1] Hooks - Browser launched
-[INFO ] 2026-05-19 11:56:27.089 [TestNG-PoolService-2] Hooks - Browser launched
-[INFO ] 2026-05-19 11:56:37.547 [TestNG-PoolService-2] Hooks - Scenario Passed : Login with valid credentials
-[INFO ] 2026-05-19 11:56:37.893 [TestNG-PoolService-2] Hooks - Browser closed
-[ERROR] 2026-05-19 11:56:41.720 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
-[INFO ] 2026-05-19 11:56:42.030 [TestNG-PoolService-1] Hooks - Screenshot Saved
-[INFO ] 2026-05-19 11:56:42.338 [TestNG-PoolService-1] Hooks - Browser closed
-[INFO ] 2026-05-19 11:57:02.388 [TestNG-PoolService-1] Hooks - Browser launched
-[INFO ] 2026-05-19 11:57:02.407 [TestNG-PoolService-4] Hooks - Browser launched
-[INFO ] 2026-05-19 11:57:02.415 [TestNG-PoolService-3] Hooks - Browser launched
-[INFO ] 2026-05-19 11:57:02.432 [TestNG-PoolService-2] Hooks - Browser launched
-[ERROR] 2026-05-19 11:57:02.748 [TestNG-PoolService-4] Hooks - Scenario Failed : Login with empty fields
-[INFO ] 2026-05-19 11:57:03.099 [TestNG-PoolService-4] Hooks - Screenshot Saved
-[INFO ] 2026-05-19 11:57:03.471 [TestNG-PoolService-4] Hooks - Browser closed
-[INFO ] 2026-05-19 11:57:09.907 [TestNG-PoolService-3] Hooks - Scenario Passed : Login with invalid username credentials
-[INFO ] 2026-05-19 11:57:10.325 [TestNG-PoolService-3] Hooks - Browser closed
-[DEBUG] 2026-05-19 11:57:16.496 [TestNG-PoolService-2] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-[DEBUG] 2026-05-19 11:57:16.500 [TestNG-PoolService-2] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-[DEBUG] 2026-05-19 11:57:16.502 [TestNG-PoolService-2] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-[DEBUG] 2026-05-19 11:57:16.860 [TestNG-PoolService-2] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-[INFO ] 2026-05-19 11:57:17.035 [TestNG-PoolService-1] Hooks - Scenario Passed : Add Ambulance with empty fields
-[INFO ] 2026-05-19 11:57:17.275 [TestNG-PoolService-1] Hooks - Browser closed
-[INFO ] 2026-05-19 11:57:20.693 [TestNG-PoolService-2] Hooks - Scenario Passed : Entering character in charge field
-[INFO ] 2026-05-19 11:57:20.962 [TestNG-PoolService-2] Hooks - Browser closed
-[INFO ] 2026-05-19 11:58:39.466 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 11:59:14.709 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 11:59:47.871 [TestNG-PoolService-2] Hooks - Browser launched
-[INFO ] 2026-05-19 11:59:47.892 [TestNG-PoolService-1] Hooks - Browser launched
-[INFO ] 2026-05-19 11:59:53.404 [TestNG-PoolService-2] Hooks - Scenario Passed : Login with empty fields
-[INFO ] 2026-05-19 11:59:53.438 [TestNG-PoolService-1] Hooks - Scenario Passed : Login with invalid username credentials
-[INFO ] 2026-05-19 11:59:53.697 [TestNG-PoolService-1] Hooks - Browser closed
-[INFO ] 2026-05-19 11:59:53.699 [TestNG-PoolService-2] Hooks - Browser closed
-[INFO ] 2026-05-19 12:00:43.312 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 12:00:50.005 [main] Hooks - Scenario Passed : Login with invalid username credentials
-[INFO ] 2026-05-19 12:00:50.299 [main] Hooks - Browser closed
-[INFO ] 2026-05-19 12:00:51.091 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 12:00:56.566 [main] Hooks - Scenario Passed : Login with empty fields
-[INFO ] 2026-05-19 12:00:56.824 [main] Hooks - Browser closed
-[INFO ] 2026-05-19 12:00:57.610 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 12:01:02.224 [main] Hooks - Scenario Passed : Login with invalid password credentials
-[INFO ] 2026-05-19 12:01:02.520 [main] Hooks - Browser closed
-[INFO ] 2026-05-19 12:01:16.622 [TestNG-PoolService-2] Hooks - Browser launched
-[INFO ] 2026-05-19 12:01:16.645 [TestNG-PoolService-1] Hooks - Browser launched
-[INFO ] 2026-05-19 12:01:16.645 [TestNG-PoolService-3] Hooks - Browser launched
-[INFO ] 2026-05-19 12:01:21.775 [TestNG-PoolService-1] Hooks - Scenario Passed : Login with invalid username credentials
-[INFO ] 2026-05-19 12:01:21.787 [TestNG-PoolService-2] Hooks - Scenario Passed : Login with empty fields
-[INFO ] 2026-05-19 12:01:22.149 [TestNG-PoolService-2] Hooks - Browser closed
-[INFO ] 2026-05-19 12:01:22.149 [TestNG-PoolService-1] Hooks - Browser closed
-[INFO ] 2026-05-19 12:01:22.200 [TestNG-PoolService-3] Hooks - Scenario Passed : Login with invalid password credentials
-[INFO ] 2026-05-19 12:01:22.473 [TestNG-PoolService-3] Hooks - Browser closed
-[INFO ] 2026-05-19 12:33:56.001 [TestNG-PoolService-1] Hooks - Browser launched
-[ERROR] 2026-05-19 12:34:14.300 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
-[INFO ] 2026-05-19 12:34:14.730 [TestNG-PoolService-1] Hooks - Screenshot Saved
-[INFO ] 2026-05-19 12:34:15.131 [TestNG-PoolService-1] Hooks - Browser closed
-[INFO ] 2026-05-19 12:45:10.414 [TestNG-PoolService-1] Hooks - Browser launched
-[ERROR] 2026-05-19 12:45:25.936 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
-[INFO ] 2026-05-19 12:45:26.284 [TestNG-PoolService-1] Hooks - Screenshot Saved
-[INFO ] 2026-05-19 12:45:26.676 [TestNG-PoolService-1] Hooks - Browser closed
-[INFO ] 2026-05-19 12:46:01.292 [TestNG-PoolService-1] Hooks - Browser launched
-[ERROR] 2026-05-19 12:46:14.481 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
-[INFO ] 2026-05-19 12:46:14.841 [TestNG-PoolService-1] Hooks - Screenshot Saved
-[INFO ] 2026-05-19 12:46:14.842 [TestNG-PoolService-1] Hooks - Browser closed
-[INFO ] 2026-05-19 12:50:43.276 [TestNG-PoolService-1] Hooks - Browser launched
-[ERROR] 2026-05-19 12:50:56.751 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
-[INFO ] 2026-05-19 12:50:57.092 [TestNG-PoolService-1] Hooks - Screenshot Saved
-[INFO ] 2026-05-19 12:50:57.092 [TestNG-PoolService-1] Hooks - Browser closed
-[INFO ] 2026-05-19 12:55:20.672 [TestNG-PoolService-1] Hooks - Browser launched
-[ERROR] 2026-05-19 12:56:14.346 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
-[INFO ] 2026-05-19 12:56:14.622 [TestNG-PoolService-1] Hooks - Screenshot Saved
-[INFO ] 2026-05-19 12:56:14.622 [TestNG-PoolService-1] Hooks - Browser closed
-[INFO ] 2026-05-19 12:57:19.723 [TestNG-PoolService-1] Hooks - Browser launched
-[ERROR] 2026-05-19 12:57:53.926 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
-[INFO ] 2026-05-19 12:57:54.150 [TestNG-PoolService-1] Hooks - Screenshot Saved
-[INFO ] 2026-05-19 12:57:54.151 [TestNG-PoolService-1] Hooks - Browser closed
-[INFO ] 2026-05-19 12:58:50.242 [TestNG-PoolService-1] Hooks - Browser launched
-[ERROR] 2026-05-19 12:59:30.918 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
-[INFO ] 2026-05-19 12:59:31.220 [TestNG-PoolService-1] Hooks - Screenshot Saved
-[INFO ] 2026-05-19 12:59:31.220 [TestNG-PoolService-1] Hooks - Browser closed
-[INFO ] 2026-05-19 13:03:26.686 [TestNG-PoolService-1] Hooks - Browser launched
-[ERROR] 2026-05-19 13:04:04.994 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
-[INFO ] 2026-05-19 13:04:05.350 [TestNG-PoolService-1] Hooks - Screenshot Saved
-[INFO ] 2026-05-19 13:04:05.350 [TestNG-PoolService-1] Hooks - Browser closed
-[INFO ] 2026-05-19 13:06:22.953 [TestNG-PoolService-1] Hooks - Browser launched
-[ERROR] 2026-05-19 13:06:57.350 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
-[INFO ] 2026-05-19 13:06:57.695 [TestNG-PoolService-1] Hooks - Screenshot Saved
-[INFO ] 2026-05-19 13:06:57.695 [TestNG-PoolService-1] Hooks - Browser closed
-[INFO ] 2026-05-19 13:16:10.573 [TestNG-PoolService-1] Hooks - Browser launched
-[ERROR] 2026-05-19 13:16:43.513 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
-[INFO ] 2026-05-19 13:16:43.827 [TestNG-PoolService-1] Hooks - Screenshot Saved
-[INFO ] 2026-05-19 13:16:43.827 [TestNG-PoolService-1] Hooks - Browser closed
-[INFO ] 2026-05-19 13:19:25.423 [TestNG-PoolService-1] Hooks - Browser launched
-[ERROR] 2026-05-19 13:19:56.968 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
-[INFO ] 2026-05-19 13:19:57.206 [TestNG-PoolService-1] Hooks - Screenshot Saved
-[INFO ] 2026-05-19 13:19:57.207 [TestNG-PoolService-1] Hooks - Browser closed
-[INFO ] 2026-05-19 13:25:36.313 [TestNG-PoolService-1] Hooks - Browser launched
-[ERROR] 2026-05-19 13:26:11.127 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
-[INFO ] 2026-05-19 13:26:11.419 [TestNG-PoolService-1] Hooks - Screenshot Saved
-[INFO ] 2026-05-19 13:26:11.419 [TestNG-PoolService-1] Hooks - Browser closed
-[INFO ] 2026-05-19 14:15:24.395 [TestNG-PoolService-1] Hooks - Browser launched
-[ERROR] 2026-05-19 14:15:58.702 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
-[INFO ] 2026-05-19 14:15:59.071 [TestNG-PoolService-1] Hooks - Screenshot Saved
-[INFO ] 2026-05-19 14:15:59.072 [TestNG-PoolService-1] Hooks - Browser closed
-[INFO ] 2026-05-19 14:17:52.259 [TestNG-PoolService-1] Hooks - Browser launched
-[ERROR] 2026-05-19 14:18:25.313 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
-[INFO ] 2026-05-19 14:18:25.553 [TestNG-PoolService-1] Hooks - Screenshot Saved
-[INFO ] 2026-05-19 14:18:25.553 [TestNG-PoolService-1] Hooks - Browser closed
-[INFO ] 2026-05-19 14:22:11.175 [TestNG-PoolService-1] Hooks - Browser launched
-[ERROR] 2026-05-19 14:22:43.401 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
-[INFO ] 2026-05-19 14:22:43.635 [TestNG-PoolService-1] Hooks - Screenshot Saved
-[INFO ] 2026-05-19 14:22:43.635 [TestNG-PoolService-1] Hooks - Browser closed
-[INFO ] 2026-05-19 14:38:46.891 [TestNG-PoolService-1] Hooks - Browser launched
-[ERROR] 2026-05-19 14:39:10.858 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
-[INFO ] 2026-05-19 14:39:11.132 [TestNG-PoolService-1] Hooks - Screenshot Saved
-[INFO ] 2026-05-19 14:39:11.132 [TestNG-PoolService-1] Hooks - Browser closed
-[INFO ] 2026-05-19 14:39:30.274 [TestNG-PoolService-1] Hooks - Browser launched
-[ERROR] 2026-05-19 14:39:53.608 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
-[INFO ] 2026-05-19 14:39:53.904 [TestNG-PoolService-1] Hooks - Screenshot Saved
-[INFO ] 2026-05-19 14:39:53.904 [TestNG-PoolService-1] Hooks - Browser closed
-[INFO ] 2026-05-19 15:10:22.539 [TestNG-PoolService-1] Hooks - Browser launched
-[ERROR] 2026-05-19 15:10:35.605 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
-[INFO ] 2026-05-19 15:10:35.867 [TestNG-PoolService-1] Hooks - Screenshot Saved
-[INFO ] 2026-05-19 15:10:35.867 [TestNG-PoolService-1] Hooks - Browser closed
-[INFO ] 2026-05-19 15:25:35.282 [TestNG-PoolService-1] Hooks - Browser launched
-[ERROR] 2026-05-19 15:26:07.939 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
-[INFO ] 2026-05-19 15:26:08.299 [TestNG-PoolService-1] Hooks - Screenshot Saved
-[INFO ] 2026-05-19 15:26:08.300 [TestNG-PoolService-1] Hooks - Browser closed
-[INFO ] 2026-05-19 15:36:23.109 [TestNG-PoolService-1] Hooks - Browser launched
-[INFO ] 2026-05-19 15:36:36.720 [TestNG-PoolService-1] Hooks - Scenario Passed : Add Ambulance with valid Details
-[INFO ] 2026-05-19 15:36:36.720 [TestNG-PoolService-1] Hooks - Browser closed
-[INFO ] 2026-05-19 15:54:21.057 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 15:54:30.507 [main] Hooks - Scenario Passed : Login with valid credentials
-[INFO ] 2026-05-19 15:54:30.508 [main] Hooks - Browser closed
-[INFO ] 2026-05-19 15:54:31.591 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 15:54:36.189 [main] Hooks - Scenario Passed : Login with invalid username credentials
-[INFO ] 2026-05-19 15:54:36.190 [main] Hooks - Browser closed
-[INFO ] 2026-05-19 15:54:37.374 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 15:54:41.148 [main] Hooks - Scenario Passed : Login with empty fields
-[INFO ] 2026-05-19 15:54:41.148 [main] Hooks - Browser closed
-[INFO ] 2026-05-19 15:54:42.292 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 15:54:46.441 [main] Hooks - Scenario Passed : Login with invalid password credentials
-[INFO ] 2026-05-19 15:54:46.441 [main] Hooks - Browser closed
-[INFO ] 2026-05-19 15:54:47.685 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 15:54:51.132 [main] Hooks - Scenario Passed : Login with invalid username and password
-[INFO ] 2026-05-19 15:54:51.133 [main] Hooks - Browser closed
-[INFO ] 2026-05-19 16:00:44.913 [TestNG-PoolService-1] Hooks - Browser launched
-[INFO ] 2026-05-19 16:00:44.913 [TestNG-PoolService-2] Hooks - Browser launched
-[INFO ] 2026-05-19 16:00:44.922 [TestNG-PoolService-3] Hooks - Browser launched
-[DEBUG] 2026-05-19 16:01:04.742 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-[DEBUG] 2026-05-19 16:01:04.757 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-[DEBUG] 2026-05-19 16:01:04.762 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-[DEBUG] 2026-05-19 16:01:06.417 [TestNG-PoolService-3] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-[INFO ] 2026-05-19 16:01:06.775 [TestNG-PoolService-2] Hooks - Scenario Passed : Add Ambulance with empty fields
-[INFO ] 2026-05-19 16:01:07.339 [TestNG-PoolService-2] Hooks - Browser closed
-[ERROR] 2026-05-19 16:01:08.440 [TestNG-PoolService-3] Hooks - Scenario Failed : Entering character in charge field
-[INFO ] 2026-05-19 16:01:08.740 [TestNG-PoolService-3] Hooks - Screenshot Saved
-[INFO ] 2026-05-19 16:01:09.025 [TestNG-PoolService-3] Hooks - Browser closed
-[INFO ] 2026-05-19 16:01:12.214 [TestNG-PoolService-1] Hooks - Scenario Passed : Add Ambulance with valid Details
-[INFO ] 2026-05-19 16:01:12.498 [TestNG-PoolService-1] Hooks - Browser closed
-[INFO ] 2026-05-19 16:01:44.265 [TestNG-PoolService-2] Hooks - Browser launched
-[INFO ] 2026-05-19 16:01:44.295 [TestNG-PoolService-5] Hooks - Browser launched
-[INFO ] 2026-05-19 16:01:44.312 [TestNG-PoolService-4] Hooks - Browser launched
-[INFO ] 2026-05-19 16:01:44.315 [TestNG-PoolService-3] Hooks - Browser launched
-[INFO ] 2026-05-19 16:01:44.329 [TestNG-PoolService-1] Hooks - Browser launched
-[INFO ] 2026-05-19 16:01:47.677 [TestNG-PoolService-2] Hooks - Scenario Passed : Login with invalid username credentials
-[INFO ] 2026-05-19 16:01:48.390 [TestNG-PoolService-2] Hooks - Browser closed
-[INFO ] 2026-05-19 16:01:48.809 [TestNG-PoolService-3] Hooks - Scenario Passed : Login with empty fields
-[INFO ] 2026-05-19 16:01:49.323 [TestNG-PoolService-3] Hooks - Browser closed
-[INFO ] 2026-05-19 16:01:49.361 [TestNG-PoolService-4] Hooks - Scenario Passed : Login with invalid password credentials
-[INFO ] 2026-05-19 16:01:49.745 [TestNG-PoolService-4] Hooks - Browser closed
-[INFO ] 2026-05-19 16:01:50.395 [TestNG-PoolService-5] Hooks - Scenario Passed : Login with invalid username and password
-[INFO ] 2026-05-19 16:01:50.740 [TestNG-PoolService-5] Hooks - Browser closed
-[INFO ] 2026-05-19 16:01:52.190 [TestNG-PoolService-1] Hooks - Scenario Passed : Login with valid credentials
-[INFO ] 2026-05-19 16:01:52.421 [TestNG-PoolService-1] Hooks - Browser closed
-[INFO ] 2026-05-19 16:02:59.009 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 16:03:14.266 [main] Hooks - Scenario Passed : Login with valid credentials
-[INFO ] 2026-05-19 16:03:14.568 [main] Hooks - Browser closed
-[INFO ] 2026-05-19 16:03:15.393 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 16:03:23.208 [main] Hooks - Scenario Passed : Login with invalid username credentials
-[INFO ] 2026-05-19 16:03:23.497 [main] Hooks - Browser closed
-[INFO ] 2026-05-19 16:03:24.303 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 16:03:28.212 [main] Hooks - Scenario Passed : Login with empty fields
-[INFO ] 2026-05-19 16:03:28.433 [main] Hooks - Browser closed
-[INFO ] 2026-05-19 16:03:29.249 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 16:03:34.195 [main] Hooks - Scenario Passed : Login with invalid password credentials
-[INFO ] 2026-05-19 16:03:34.472 [main] Hooks - Browser closed
-[INFO ] 2026-05-19 16:03:35.400 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 16:03:40.575 [main] Hooks - Scenario Passed : Login with invalid username and password
-[INFO ] 2026-05-19 16:03:40.851 [main] Hooks - Browser closed
-[INFO ] 2026-05-19 16:04:15.506 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 16:04:23.394 [main] Hooks - Scenario Passed : Login with valid credentials
-[INFO ] 2026-05-19 16:04:23.713 [main] Hooks - Browser closed
-[INFO ] 2026-05-19 16:04:24.583 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 16:04:30.136 [main] Hooks - Scenario Passed : Login with invalid username credentials
-[INFO ] 2026-05-19 16:04:30.422 [main] Hooks - Browser closed
-[INFO ] 2026-05-19 16:04:31.344 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 16:04:36.004 [main] Hooks - Scenario Passed : Login with empty fields
-[INFO ] 2026-05-19 16:04:36.203 [main] Hooks - Browser closed
-[INFO ] 2026-05-19 16:04:36.988 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 16:04:41.489 [main] Hooks - Scenario Passed : Login with invalid password credentials
-[INFO ] 2026-05-19 16:04:41.771 [main] Hooks - Browser closed
-[INFO ] 2026-05-19 16:04:42.567 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 16:04:47.292 [main] Hooks - Scenario Passed : Login with invalid username and password
-[INFO ] 2026-05-19 16:04:47.559 [main] Hooks - Browser closed
-[INFO ] 2026-05-19 16:08:43.769 [TestNG-PoolService-3] Hooks - Browser launched
-[INFO ] 2026-05-19 16:08:43.765 [TestNG-PoolService-5] Hooks - Browser launched
-[INFO ] 2026-05-19 16:08:43.761 [TestNG-PoolService-7] Hooks - Browser launched
-[INFO ] 2026-05-19 16:08:43.785 [TestNG-PoolService-2] Hooks - Browser launched
-[INFO ] 2026-05-19 16:08:43.786 [TestNG-PoolService-6] Hooks - Browser launched
-[INFO ] 2026-05-19 16:08:43.786 [TestNG-PoolService-4] Hooks - Browser launched
-[INFO ] 2026-05-19 16:08:43.800 [TestNG-PoolService-8] Hooks - Browser launched
-[INFO ] 2026-05-19 16:08:43.818 [TestNG-PoolService-1] Hooks - Browser launched
-[ERROR] 2026-05-19 16:08:44.410 [TestNG-PoolService-2] Hooks - Scenario Failed : Add Ambulance with empty fields
-[INFO ] 2026-05-19 16:08:45.185 [TestNG-PoolService-2] Hooks - Screenshot Saved
-[INFO ] 2026-05-19 16:08:47.983 [TestNG-PoolService-2] Hooks - Browser closed
-[INFO ] 2026-05-19 16:08:49.634 [TestNG-PoolService-6] Hooks - Scenario Passed : Login with empty fields
-[INFO ] 2026-05-19 16:08:50.511 [TestNG-PoolService-6] Hooks - Browser closed
-[INFO ] 2026-05-19 16:08:51.599 [TestNG-PoolService-7] Hooks - Scenario Passed : Login with invalid password credentials
-[INFO ] 2026-05-19 16:08:51.747 [TestNG-PoolService-5] Hooks - Scenario Passed : Login with invalid username credentials
-[INFO ] 2026-05-19 16:08:52.351 [TestNG-PoolService-8] Hooks - Scenario Passed : Login with invalid username and password
-[INFO ] 2026-05-19 16:08:52.549 [TestNG-PoolService-7] Hooks - Browser closed
-[INFO ] 2026-05-19 16:08:52.635 [TestNG-PoolService-5] Hooks - Browser closed
-[INFO ] 2026-05-19 16:08:53.036 [TestNG-PoolService-8] Hooks - Browser closed
-[INFO ] 2026-05-19 16:08:56.162 [TestNG-PoolService-4] Hooks - Scenario Passed : Login with valid credentials
-[DEBUG] 2026-05-19 16:08:56.381 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-[DEBUG] 2026-05-19 16:08:56.391 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-[DEBUG] 2026-05-19 16:08:56.394 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-[INFO ] 2026-05-19 16:08:56.551 [TestNG-PoolService-4] Hooks - Browser closed
-[DEBUG] 2026-05-19 16:08:57.610 [TestNG-PoolService-3] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-[ERROR] 2026-05-19 16:08:59.736 [TestNG-PoolService-3] Hooks - Scenario Failed : Entering character in charge field
-[INFO ] 2026-05-19 16:08:59.995 [TestNG-PoolService-3] Hooks - Screenshot Saved
-[INFO ] 2026-05-19 16:09:00.415 [TestNG-PoolService-3] Hooks - Browser closed
-[INFO ] 2026-05-19 16:09:03.228 [TestNG-PoolService-1] Hooks - Scenario Passed : Add Ambulance with valid Details
-[INFO ] 2026-05-19 16:09:03.528 [TestNG-PoolService-1] Hooks - Browser closed
-[INFO ] 2026-05-19 16:09:20.531 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 16:09:35.080 [main] Hooks - Scenario Passed : Add Ambulance with valid Details
-[INFO ] 2026-05-19 16:09:35.403 [main] Hooks - Browser closed
-[INFO ] 2026-05-19 16:09:36.231 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 16:09:48.125 [main] Hooks - Scenario Passed : Add Ambulance with empty fields
-[INFO ] 2026-05-19 16:09:48.359 [main] Hooks - Browser closed
-[INFO ] 2026-05-19 16:09:49.226 [main] Hooks - Browser launched
-[DEBUG] 2026-05-19 16:09:59.678 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-[DEBUG] 2026-05-19 16:09:59.686 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-[DEBUG] 2026-05-19 16:09:59.691 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-[DEBUG] 2026-05-19 16:10:00.564 [main] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-[ERROR] 2026-05-19 16:10:02.465 [main] Hooks - Scenario Failed : Entering character in charge field
-[INFO ] 2026-05-19 16:10:02.788 [main] Hooks - Screenshot Saved
-[INFO ] 2026-05-19 16:10:03.045 [main] Hooks - Browser closed
-[INFO ] 2026-05-19 16:10:03.990 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 16:10:14.138 [main] Hooks - Scenario Passed : Login with valid credentials
-[INFO ] 2026-05-19 16:10:14.362 [main] Hooks - Browser closed
-[INFO ] 2026-05-19 16:10:15.185 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 16:10:20.868 [main] Hooks - Scenario Passed : Login with invalid username credentials
-[INFO ] 2026-05-19 16:10:21.073 [main] Hooks - Browser closed
-[INFO ] 2026-05-19 16:10:21.910 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 16:10:27.235 [main] Hooks - Scenario Passed : Login with empty fields
-[INFO ] 2026-05-19 16:10:27.494 [main] Hooks - Browser closed
-[INFO ] 2026-05-19 16:10:28.336 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 16:10:34.080 [main] Hooks - Scenario Passed : Login with invalid password credentials
-[INFO ] 2026-05-19 16:10:34.364 [main] Hooks - Browser closed
-[INFO ] 2026-05-19 16:10:35.228 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 16:10:41.291 [main] Hooks - Scenario Passed : Login with invalid username and password
-[INFO ] 2026-05-19 16:10:41.568 [main] Hooks - Browser closed
-[INFO ] 2026-05-19 16:11:42.427 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 16:19:00.054 [main] Hooks - Browser launched
-[ERROR] 2026-05-19 16:19:43.218 [main] Hooks - Scenario Failed : Add Ambulance with valid Details
-[INFO ] 2026-05-19 16:19:43.472 [main] Hooks - Screenshot Saved
-[INFO ] 2026-05-19 16:19:43.933 [main] Hooks - Browser closed
-[INFO ] 2026-05-19 16:19:45.093 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 16:20:28.596 [main] Hooks - Browser launched
-[ERROR] 2026-05-19 16:21:19.076 [main] Hooks - Scenario Failed : Add Ambulance with valid Details
-[INFO ] 2026-05-19 16:21:19.309 [main] Hooks - Screenshot Saved
-[INFO ] 2026-05-19 16:21:19.309 [main] Hooks - Browser closed
-[INFO ] 2026-05-19 16:21:20.279 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 16:21:40.056 [main] Hooks - Scenario Passed : Login with valid credentials
-[INFO ] 2026-05-19 16:21:40.056 [main] Hooks - Browser closed
-[INFO ] 2026-05-19 16:25:04.232 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 16:26:02.333 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 16:26:57.183 [main] Hooks - Scenario Passed : Add Ambulance with valid Details
-[INFO ] 2026-05-19 16:26:57.184 [main] Hooks - Browser closed
-[INFO ] 2026-05-19 16:26:58.221 [main] Hooks - Browser launched
-[INFO ] 2026-05-19 16:27:47.177 [main] Hooks - Scenario Passed : Login with valid credentials
-[INFO ] 2026-05-19 16:27:47.180 [main] Hooks - Browser closed
+
 [INFO ] 2026-05-19 22:01:05.975 [main] Hooks - Browser launched
 [INFO ] 2026-05-19 22:01:23.798 [main] DonorManagementAction - Navigated to Blood Bank module
 [INFO ] 2026-05-19 22:01:27.117 [main] BloodIssueAction - Navigated to Blood Issue Details Page
@@ -878,3 +412,331 @@ Charge Name field is required
 [ERROR] 2026-05-20 07:46:54.811 [main] Hooks - Scenario Failed : Issue blood with valid details
 [INFO ] 2026-05-20 07:46:55.154 [main] Hooks - Screenshot Saved
 [INFO ] 2026-05-20 07:46:55.455 [main] Hooks - Browser closed
+=======
+[INFO ] 2026-05-19 17:33:36.862 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 17:33:50.618 [main] Hooks - Scenario Passed : Add Ambulance with valid Details
+[INFO ] 2026-05-19 17:33:50.818 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 17:33:51.649 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 17:34:02.654 [main] Hooks - Scenario Passed : Add Ambulance with empty fields
+[INFO ] 2026-05-19 17:34:02.948 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 17:34:03.757 [main] Hooks - Browser launched
+[DEBUG] 2026-05-19 17:34:13.324 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-19 17:34:13.330 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[DEBUG] 2026-05-19 17:34:13.331 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[DEBUG] 2026-05-19 17:34:14.018 [main] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+[ERROR] 2026-05-19 17:34:35.659 [main] Hooks - Scenario Failed : Entering character in charge field
+[INFO ] 2026-05-19 17:34:35.927 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-19 17:34:36.113 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 17:34:36.858 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 17:34:46.799 [main] Hooks - Scenario Passed : Login with valid credentials
+[INFO ] 2026-05-19 17:34:46.980 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 17:34:47.676 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 17:34:52.573 [main] Hooks - Scenario Passed : Login with invalid username credentials
+[INFO ] 2026-05-19 17:34:52.793 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 17:34:53.505 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 17:34:57.453 [main] Hooks - Scenario Passed : Login with empty fields
+[INFO ] 2026-05-19 17:34:57.642 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 17:34:58.360 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 17:35:02.801 [main] Hooks - Scenario Passed : Login with invalid password credentials
+[INFO ] 2026-05-19 17:35:02.981 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 17:35:03.677 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 17:35:07.756 [main] Hooks - Scenario Passed : Login with invalid username and password
+[INFO ] 2026-05-19 17:35:07.963 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 21:55:58.580 [main] Hooks - Browser launched
+[ERROR] 2026-05-19 21:56:24.202 [main] Hooks - Scenario Failed : Add Ambulance with valid Details
+[ERROR] 2026-05-19 21:56:24.256 [main] Hooks - Screenshot Failed org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0ffba8b3ef3a4e0b9e8defaf0b77f562, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\dhars\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61270}, goog:processID: 9992, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61270/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0ffba8b3ef3a4e0b9e8defaf0b77f562
+[INFO ] 2026-05-19 21:56:24.292 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 21:56:25.231 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 21:56:36.527 [main] Hooks - Browser launched
+[ERROR] 2026-05-19 21:57:11.094 [main] Hooks - Scenario Failed : Add Ambulance with valid Details
+[INFO ] 2026-05-19 21:57:11.392 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-19 21:57:11.672 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 21:57:12.502 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 21:57:24.012 [main] Hooks - Scenario Passed : Add Ambulance with empty fields
+[INFO ] 2026-05-19 21:57:24.280 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 21:57:25.140 [main] Hooks - Browser launched
+[DEBUG] 2026-05-19 21:57:39.092 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-19 21:57:39.099 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[DEBUG] 2026-05-19 21:57:39.101 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[DEBUG] 2026-05-19 21:57:40.124 [main] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+[ERROR] 2026-05-19 21:58:02.460 [main] Hooks - Scenario Failed : Entering character in charge field
+[INFO ] 2026-05-19 21:58:02.716 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-19 21:58:03.006 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 21:58:03.794 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 21:58:14.588 [main] Hooks - Scenario Passed : Login with valid credentials
+[INFO ] 2026-05-19 21:58:14.916 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 21:58:15.759 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 21:58:19.556 [main] Hooks - Scenario Passed : Login with invalid username credentials
+[INFO ] 2026-05-19 21:58:19.859 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 21:58:20.635 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 21:58:24.319 [main] Hooks - Scenario Passed : Login with empty fields
+[INFO ] 2026-05-19 21:58:24.586 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 21:58:25.403 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 21:58:29.095 [main] Hooks - Scenario Passed : Login with invalid password credentials
+[INFO ] 2026-05-19 21:58:29.353 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 21:58:30.108 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 21:58:34.366 [main] Hooks - Scenario Passed : Login with invalid username and password
+[INFO ] 2026-05-19 21:58:34.629 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:07:48.564 [main] Hooks - Browser launched
+[ERROR] 2026-05-19 22:08:21.996 [main] Hooks - Scenario Failed : Add Ambulance with valid Details
+[INFO ] 2026-05-19 22:08:22.399 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-19 22:08:22.647 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:08:23.513 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:12:04.518 [main] Hooks - Browser launched
+[ERROR] 2026-05-19 22:12:37.800 [main] Hooks - Scenario Failed : Add Ambulance with valid Details
+[INFO ] 2026-05-19 22:12:38.196 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-19 22:12:38.535 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:12:39.513 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:13:56.172 [main] Hooks - Browser launched
+[ERROR] 2026-05-19 22:14:32.457 [main] Hooks - Scenario Failed : Add Ambulance with valid Details
+[INFO ] 2026-05-19 22:14:32.834 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-19 22:14:32.834 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:14:33.702 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:14:48.574 [main] Hooks - Scenario Passed : Add Ambulance with empty fields
+[INFO ] 2026-05-19 22:14:48.574 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:14:49.535 [main] Hooks - Browser launched
+[DEBUG] 2026-05-19 22:15:01.141 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-19 22:15:01.144 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[DEBUG] 2026-05-19 22:15:01.145 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[DEBUG] 2026-05-19 22:15:01.533 [main] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+[ERROR] 2026-05-19 22:15:23.534 [main] Hooks - Scenario Failed : Entering character in charge field
+[INFO ] 2026-05-19 22:15:23.970 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-19 22:15:23.970 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:15:24.926 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:15:34.827 [main] Hooks - Scenario Passed : Login with valid credentials
+[INFO ] 2026-05-19 22:15:34.828 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:15:35.930 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:15:40.118 [main] Hooks - Scenario Passed : Login with invalid username credentials
+[INFO ] 2026-05-19 22:15:40.118 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:15:41.733 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:15:45.460 [main] Hooks - Scenario Passed : Login with empty fields
+[INFO ] 2026-05-19 22:15:45.460 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:15:46.683 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:15:51.335 [main] Hooks - Scenario Passed : Login with invalid password credentials
+[INFO ] 2026-05-19 22:15:51.336 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:15:52.453 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:15:56.879 [main] Hooks - Scenario Passed : Login with invalid username and password
+[INFO ] 2026-05-19 22:15:56.880 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:18:16.360 [main] Hooks - Browser launched
+[ERROR] 2026-05-19 22:18:56.308 [main] Hooks - Scenario Failed : Add Ambulance with valid Details
+[INFO ] 2026-05-19 22:18:56.631 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-19 22:18:56.631 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:18:57.648 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:19:10.238 [main] Hooks - Scenario Passed : Add Ambulance with empty fields
+[INFO ] 2026-05-19 22:19:10.240 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:19:11.221 [main] Hooks - Browser launched
+[DEBUG] 2026-05-19 22:19:23.100 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-19 22:19:23.106 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[DEBUG] 2026-05-19 22:19:23.110 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[DEBUG] 2026-05-19 22:19:23.964 [main] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+[ERROR] 2026-05-19 22:19:45.608 [main] Hooks - Scenario Failed : Entering character in charge field
+[INFO ] 2026-05-19 22:19:45.839 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-19 22:19:45.839 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:19:46.902 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:19:57.739 [main] Hooks - Scenario Passed : Login with valid credentials
+[INFO ] 2026-05-19 22:19:57.740 [main] Hooks - Browser closed
+[ERROR] 2026-05-19 22:19:59.118 [main] Hooks - Scenario Failed : Login with invalid username credentials
+[INFO ] 2026-05-19 22:19:59.323 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-19 22:19:59.323 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:20:00.463 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:20:04.746 [main] Hooks - Scenario Passed : Login with empty fields
+[INFO ] 2026-05-19 22:20:04.746 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:20:05.786 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:20:10.594 [main] Hooks - Scenario Passed : Login with invalid password credentials
+[INFO ] 2026-05-19 22:20:10.594 [main] Hooks - Browser closed
+[ERROR] 2026-05-19 22:20:11.887 [main] Hooks - Scenario Failed : Login with invalid username and password
+[INFO ] 2026-05-19 22:20:12.062 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-19 22:20:12.063 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:24:14.619 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:24:34.331 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:24:44.043 [main] Hooks - Scenario Passed : Login with valid credentials
+[INFO ] 2026-05-19 22:24:44.044 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:24:45.075 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:24:48.490 [main] Hooks - Scenario Passed : Login with invalid username credentials
+[INFO ] 2026-05-19 22:24:48.491 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:24:49.572 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:24:52.781 [main] Hooks - Scenario Passed : Login with empty fields
+[INFO ] 2026-05-19 22:24:52.782 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:24:53.907 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:24:58.253 [main] Hooks - Scenario Passed : Login with invalid password credentials
+[INFO ] 2026-05-19 22:24:58.254 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:24:59.303 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:25:02.827 [main] Hooks - Scenario Passed : Login with invalid username and password
+[INFO ] 2026-05-19 22:25:02.830 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:25:58.656 [main] Hooks - Browser launched
+[ERROR] 2026-05-19 22:26:35.321 [main] Hooks - Scenario Failed : Add Ambulance with valid Details
+[INFO ] 2026-05-19 22:26:35.654 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-19 22:26:35.654 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:26:36.505 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:26:49.999 [main] Hooks - Scenario Passed : Add Ambulance with empty fields
+[INFO ] 2026-05-19 22:26:50.000 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:26:51.045 [main] Hooks - Browser launched
+[DEBUG] 2026-05-19 22:27:06.338 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-19 22:27:06.349 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[DEBUG] 2026-05-19 22:27:06.351 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[DEBUG] 2026-05-19 22:27:07.184 [main] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+[ERROR] 2026-05-19 22:27:30.791 [main] Hooks - Scenario Failed : Entering character in charge field
+[INFO ] 2026-05-19 22:27:31.085 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-19 22:27:31.086 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:29:03.981 [main] Hooks - Browser launched
+[ERROR] 2026-05-19 22:29:20.590 [main] Hooks - Scenario Failed : Add Ambulance with valid Details
+[INFO ] 2026-05-19 22:29:20.964 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-19 22:29:20.965 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:29:21.938 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:29:33.648 [main] Hooks - Scenario Passed : Add Ambulance with empty fields
+[INFO ] 2026-05-19 22:29:33.649 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:29:34.699 [main] Hooks - Browser launched
+[DEBUG] 2026-05-19 22:29:52.348 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-19 22:29:52.356 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[DEBUG] 2026-05-19 22:29:52.360 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[DEBUG] 2026-05-19 22:29:53.259 [main] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+[ERROR] 2026-05-19 22:30:16.044 [main] Hooks - Scenario Failed : Entering character in charge field
+[INFO ] 2026-05-19 22:30:16.318 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-19 22:30:16.318 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:33:02.001 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:33:18.340 [main] Hooks - Scenario Passed : Add Ambulance with valid Details
+[INFO ] 2026-05-19 22:33:18.340 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:33:19.285 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:33:31.181 [main] Hooks - Scenario Passed : Add Ambulance with empty fields
+[INFO ] 2026-05-19 22:33:31.181 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:33:32.287 [main] Hooks - Browser launched
+[DEBUG] 2026-05-19 22:33:45.663 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-19 22:33:45.672 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[DEBUG] 2026-05-19 22:33:45.675 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[DEBUG] 2026-05-19 22:33:46.537 [main] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+[ERROR] 2026-05-19 22:34:08.941 [main] Hooks - Scenario Failed : Entering character in charge field
+[INFO ] 2026-05-19 22:34:09.277 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-19 22:34:09.277 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:44:53.287 [main] Hooks - Browser launched
+[ERROR] 2026-05-19 22:45:17.197 [main] Hooks - Scenario Failed : Add Ambulance with valid Details
+[ERROR] 2026-05-19 22:45:17.280 [main] Hooks - Screenshot Failed org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [376ce838b9f0b6117b89a44286ff1ac2, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\dhars\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58649}, goog:processID: 24044, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58649/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 376ce838b9f0b6117b89a44286ff1ac2
+[INFO ] 2026-05-19 22:45:17.280 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:45:18.240 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:45:26.901 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:45:53.604 [main] Hooks - Browser launched
+[ERROR] 2026-05-19 22:46:11.470 [main] Hooks - Scenario Failed : Add Ambulance with valid Details
+[INFO ] 2026-05-19 22:46:11.826 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-19 22:46:11.826 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:46:12.912 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:46:25.730 [main] Hooks - Scenario Passed : Add Ambulance with empty fields
+[INFO ] 2026-05-19 22:46:25.731 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:46:26.717 [main] Hooks - Browser launched
+[DEBUG] 2026-05-19 22:46:37.469 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-19 22:46:37.481 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[DEBUG] 2026-05-19 22:46:37.486 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[DEBUG] 2026-05-19 22:46:38.355 [main] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+[ERROR] 2026-05-19 22:46:38.603 [main] Hooks - Scenario Failed : Entering character in charge field
+[INFO ] 2026-05-19 22:46:38.823 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-19 22:46:38.823 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:47:56.127 [main] Hooks - Browser launched
+[ERROR] 2026-05-19 22:48:12.146 [main] Hooks - Scenario Failed : Add Ambulance with valid Details
+[INFO ] 2026-05-19 22:48:12.506 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-19 22:48:12.506 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:48:13.408 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:48:25.415 [main] Hooks - Scenario Passed : Add Ambulance with empty fields
+[INFO ] 2026-05-19 22:48:25.415 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:48:26.482 [main] Hooks - Browser launched
+[DEBUG] 2026-05-19 22:48:40.624 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-19 22:48:40.634 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[DEBUG] 2026-05-19 22:48:40.636 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[DEBUG] 2026-05-19 22:48:41.489 [main] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+[ERROR] 2026-05-19 22:48:41.722 [main] Hooks - Scenario Failed : Entering character in charge field
+[INFO ] 2026-05-19 22:48:41.994 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-19 22:48:41.994 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:50:22.168 [main] Hooks - Browser launched
+[ERROR] 2026-05-19 22:50:52.738 [main] Hooks - Scenario Failed : Add Ambulance with valid Details
+[ERROR] 2026-05-19 22:50:52.796 [main] Hooks - Screenshot Failed org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8ebaa434fbf596ce4e68a9e18e3e9a5d, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\dhars\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63254}, goog:processID: 15424, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63254/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ebaa434fbf596ce4e68a9e18e3e9a5d
+[INFO ] 2026-05-19 22:50:52.796 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:50:53.649 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:51:03.473 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:51:26.235 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:51:50.122 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:52:18.583 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:52:44.683 [main] Hooks - Browser launched
+[ERROR] 2026-05-19 22:53:17.834 [main] Hooks - Scenario Failed : Add Ambulance with valid Details
+[INFO ] 2026-05-19 22:53:18.260 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-19 22:53:18.261 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:53:19.380 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:53:59.574 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:54:28.561 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:55:38.397 [main] Hooks - Browser launched
+[ERROR] 2026-05-19 22:56:11.567 [main] Hooks - Scenario Failed : Add Ambulance with valid Details
+[INFO ] 2026-05-19 22:56:12.184 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-19 22:56:12.185 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:56:15.775 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:56:29.653 [main] Hooks - Scenario Passed : Add Ambulance with empty fields
+[INFO ] 2026-05-19 22:56:29.654 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:56:31.205 [main] Hooks - Browser launched
+[DEBUG] 2026-05-19 22:56:46.227 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-19 22:56:46.235 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[DEBUG] 2026-05-19 22:56:46.239 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[DEBUG] 2026-05-19 22:56:47.206 [main] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+[ERROR] 2026-05-19 22:56:47.477 [main] Hooks - Scenario Failed : Entering character in charge field
+[INFO ] 2026-05-19 22:56:47.769 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-19 22:56:47.769 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:58:04.601 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:58:20.802 [main] Hooks - Scenario Passed : Add Ambulance with valid Details
+[INFO ] 2026-05-19 22:58:20.802 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:58:21.805 [main] Hooks - Browser launched
+[INFO ] 2026-05-19 22:58:32.955 [main] Hooks - Scenario Passed : Add Ambulance with empty fields
+[INFO ] 2026-05-19 22:58:32.955 [main] Hooks - Browser closed
+[INFO ] 2026-05-19 22:58:33.959 [main] Hooks - Browser launched
+[DEBUG] 2026-05-19 22:58:47.575 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-19 22:58:47.584 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[DEBUG] 2026-05-19 22:58:47.587 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[DEBUG] 2026-05-19 22:58:48.470 [main] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+[ERROR] 2026-05-19 22:58:48.767 [main] Hooks - Scenario Failed : Entering character in charge field
+[INFO ] 2026-05-19 22:58:49.070 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-19 22:58:49.070 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 00:20:16.901 [main] Hooks - Browser launched
+[ERROR] 2026-05-20 00:20:57.420 [main] Hooks - Scenario Failed : Add Ambulance with valid Details
+[INFO ] 2026-05-20 00:20:57.808 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 00:20:57.809 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 00:20:58.652 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 00:21:25.289 [main] Hooks - Scenario Passed : Add Ambulance with empty fields
+[INFO ] 2026-05-20 00:21:25.292 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 00:21:26.229 [main] Hooks - Browser launched
+[DEBUG] 2026-05-20 00:21:42.603 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-20 00:21:42.611 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[DEBUG] 2026-05-20 00:21:42.615 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[DEBUG] 2026-05-20 00:21:43.514 [main] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+[ERROR] 2026-05-20 00:21:46.805 [main] Hooks - Scenario Failed : Entering character in charge field
+[INFO ] 2026-05-20 00:21:47.071 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 00:21:47.071 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 00:23:21.570 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 00:23:41.709 [main] Hooks - Scenario Passed : Add Ambulance with valid Details
+[INFO ] 2026-05-20 00:23:42.043 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 00:23:42.900 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 00:23:59.061 [main] Hooks - Scenario Passed : Add Ambulance with empty fields
+[INFO ] 2026-05-20 00:23:59.300 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 00:24:00.167 [main] Hooks - Browser launched
+[DEBUG] 2026-05-20 00:24:18.671 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-20 00:24:18.681 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[DEBUG] 2026-05-20 00:24:18.685 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[DEBUG] 2026-05-20 00:24:19.535 [main] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+[INFO ] 2026-05-20 00:24:22.681 [main] Hooks - Scenario Passed : Entering character in charge field
+[INFO ] 2026-05-20 00:24:22.945 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 00:52:31.542 [main] Hooks - Browser launched
+[ERROR] 2026-05-20 00:52:49.117 [main] Hooks - Scenario Failed : Add Ambulance with valid Details
+[INFO ] 2026-05-20 00:52:49.531 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 00:52:49.815 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 00:52:50.774 [main] Hooks - Browser launched
+
