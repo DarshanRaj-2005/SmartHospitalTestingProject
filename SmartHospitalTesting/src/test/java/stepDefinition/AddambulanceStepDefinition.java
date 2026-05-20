@@ -45,6 +45,7 @@ public class AddambulanceStepDefinition {
 		String date = ambulance.get("date");
 		String chargeCategory = ambulance.get("chargeCategory");
 		String chargeName = ambulance.getOrDefault("chargeName", "");
+//		String hello = ambulance.get("hello");
 		String note = ambulance.get("note");
 		String paymentMode = ambulance.get("paymentMode");
 
