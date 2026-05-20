@@ -16,7 +16,7 @@ public class AddPatientActions {
    static Logger logger = LogManager.getLogger(AddPatientActions.class);
     private String lastPatientName = "";
 
-    public AddPatientAction(WebDriver driver) {
+    public AddPatientActions(WebDriver driver) {
     }
 
     public void clickPatientCategory() {
