@@ -13,7 +13,7 @@ import driver.Driver;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 public class AddPatientAction {
-   static Logger logger = LogManager.getLogger(SearchPatientActions.class);
+   static Logger logger = LogManager.getLogger(AddPatientActions.class);
     private String lastPatientName = "";
 
     public AddPatientAction(WebDriver driver) {
