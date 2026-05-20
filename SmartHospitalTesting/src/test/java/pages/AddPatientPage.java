@@ -54,7 +54,7 @@ public class AddPatientPage {
                    + " | //table//td");
 
     public static By validationMessage =
-            By.xpath("//*[contains(@class,'invalid-feedback') ")
+                By.xpath("//*[contains(@class,'invalid-feedback') and not(contains(@style,'display:none')) and not(contains(@style,'display: none'))]"
                    + " | //*[contains(@class,'help-block') and contains(text(),'required')]"
-                   + " | //*[contains(@class,'error') and string-length(text()) > 0]");
+                   + " | //*[@id='name-error' or @id='name_error']");
 }
