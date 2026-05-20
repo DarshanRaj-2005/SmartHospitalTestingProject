@@ -2,6 +2,8 @@ package actions;
 
 import org.openqa.selenium.WebDriver;
 import pages.SearchPatientPage;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class SearchPatientActions {
        static Logger logger = LogManager.getLogger(SearchPatientActions.class);
