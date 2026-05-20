@@ -6,9 +6,6 @@ import pages.SearchPatientPage;
 public class SearchPatientActions {
 
     SearchPatientPage searchPatientPage;
-    private static final String VALID_PATIENT_NAME   = "John Marshall";
-    private static final String INVALID_PATIENT_NAME = "XYZ123InvalidPatient";
-
     private String lastSearchedName = "";
 
     public SearchPatientActions(WebDriver driver) {
@@ -22,14 +19,11 @@ public class SearchPatientActions {
     public void waitForPatientListToLoad() {
         searchPatientPage.waitForPatientListToLoad();
     }
-    public void enterValidPatientName() {
-        lastSearchedName = VALID_PATIENT_NAME;
-        searchPatientPage.enterSearchText(VALID_PATIENT_NAME);
-    }
 
-    public void enterInvalidPatientName() {
-        lastSearchedName = INVALID_PATIENT_NAME;
-        searchPatientPage.enterSearchText(INVALID_PATIENT_NAME);
+    // Receives name from Scenario Outline Examples table
+    public void enterSearchName(String name) {
+        lastSearchedName = name;
+        searchPatientPage.enterSearchText(name);
     }
 
     public void clickSearchButton() {

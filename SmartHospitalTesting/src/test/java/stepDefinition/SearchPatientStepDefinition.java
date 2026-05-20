@@ -20,45 +20,40 @@ public class SearchPatientStepDefinition {
     @Given("User is on Patient List page")
     public void user_is_on_patient_list_page() {
 
-        // Navigate to the login page URL
         Driver.getDriver().get(ConfigReader.getUrl());
 
-        // Check if already logged in — if Super Admin button is NOT present,
-        // user is already on dashboard (previous scenario left session active)
+        // Wait for page to fully load before checking login state
+        try { Thread.sleep(2000); } catch (InterruptedException ignored) {}
+
+       
         boolean isLoginPage = !Driver.getDriver()
                 .findElements(By.xpath("//*[contains(text(),'Super Admin')]"))
                 .isEmpty();
 
         if (isLoginPage) {
-
-            // Click Super Admin
             Driver.getDriver().findElement(
                     By.xpath("//*[contains(text(),'Super Admin')]")).click();
-
-            // Click Sign In — no Helper.waitForElementClickable needed
-            // because page is already loaded
             Driver.getDriver().findElement(
                     By.xpath("//button[text()='Sign In']")).click();
         }
 
-        // Wait for sidebar Patient link — confirms dashboard is loaded
+        // Wait for sidebar — confirms dashboard loaded
         Helper.waitForVisibility(
                 By.xpath("//ul[contains(@class,'sidebar-menu') or contains(@class,'nav-sidebar') or contains(@class,'side-menu')]"
                        + "//a[normalize-space(.)='Patient' or normalize-space(text())='Patient']"));
 
-        // Click Patient in sidebar
         Helper.waitForElementClickable(
                 By.xpath("//ul[contains(@class,'sidebar-menu') or contains(@class,'nav-sidebar') or contains(@class,'side-menu')]"
                        + "//a[normalize-space(.)='Patient' or normalize-space(text())='Patient']"));
-        getAction().clickPatientSidebarLink();
 
-        // Wait for Patient List page to fully load
+        getAction().clickPatientSidebarLink();
         getAction().waitForPatientListToLoad();
     }
 
-    @When("User enters patient name in search box")
-    public void user_enters_patient_name_in_search_box() {
-        getAction().enterValidPatientName();
+    // Single step receives SearchName from Examples table
+    @When("User searches for patient name {string}")
+    public void user_searches_for_patient_name(String searchName) {
+        getAction().enterSearchName(searchName);
     }
 
     @And("clicks on Search button")
@@ -66,25 +61,19 @@ public class SearchPatientStepDefinition {
         getAction().clickSearchButton();
     }
 
-    @Then("matching patient details should be displayed")
-    public void matching_patient_details_should_be_displayed() {
+    // Single step handles both valid and invalid using ExpectedResult from Examples
+    @Then("{string} result should be displayed")
+    public void result_should_be_displayed(String expectedResult) {
 
-        Assert.assertTrue(
-                getAction().verifyMatchingPatientDisplayed(),
-                "Matching patient details were not displayed after search.");
+        if (expectedResult.equalsIgnoreCase("valid")) {
+            Assert.assertTrue(
+                    getAction().verifyMatchingPatientDisplayed(),
+                    "Matching patient details were not displayed after search.");
+
+        } else if (expectedResult.equalsIgnoreCase("invalid")) {
+            Assert.assertTrue(
+                    getAction().verifyNoRecordsFound(),
+                    "No records found message was not displayed for invalid search.");
+        }
     }
-
-    @When("User enters invalid patient name")
-    public void user_enters_invalid_patient_name() {
-        getAction().enterInvalidPatientName();
-    }
-
-    @Then("no records found message should be displayed")
-    public void no_records_found_message_should_be_displayed() {
-
-        Assert.assertTrue(
-                getAction().verifyNoRecordsFound(),
-                "No records found message was not displayed for invalid search.");
-    }
-
 }
