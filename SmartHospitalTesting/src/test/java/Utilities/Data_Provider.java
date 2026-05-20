@@ -8,12 +8,6 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.DataProvider;
 
 public class Data_Provider {
-	@DataProvider(name = "BloodIssueData", parallel = true)
-	public Object[][] bloodIssueData() throws IOException {
-
-	    return getExcelData("src/test/resources/test_datas/BloodIssueValid.xlsx","validDetails");
-	}
-
     public static String[][] getExcelData(String filePath, String sheetName) throws IOException {
 
         FileInputStream fis = new FileInputStream(filePath);
