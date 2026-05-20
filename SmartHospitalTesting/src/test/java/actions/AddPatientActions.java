@@ -12,12 +12,9 @@ import Utilities.Helper;
 import driver.Driver;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-public class AddPatientAction {
+public class AddPatientActions {
    static Logger logger = LogManager.getLogger(AddPatientActions.class);
     private String lastPatientName = "";
-
-    public AddPatientAction(WebDriver driver) {
-    }
 
     public void clickPatientCategory() {
         Helper.waitForElementClickable(AddPatientPage.patientCategory);
