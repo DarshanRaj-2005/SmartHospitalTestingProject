@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.Map;
 import org.openqa.selenium.WebDriver;
 import pages.AddPatientPage;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class AddPatientActions{
     static Logger logger = LogManager.getLogger(AddPatientActions.class);
