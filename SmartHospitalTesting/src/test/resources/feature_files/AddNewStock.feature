@@ -1,4 +1,4 @@
-@AddNewStock
+@AddNewStock  @Tamilarasu
 Feature:  Tamilarsu K 14-4-2026 Add Item Stock
 
 
@@ -9,6 +9,7 @@ Feature:  Tamilarsu K 14-4-2026 Add Item Stock
 	And the user clicks the Sign in button
 	Then the user should be redirected to super admin dashboard
 
+@validScenario
   Scenario Outline: Successfully add stock items
 
     When the user clicks on Inventory
@@ -21,9 +22,10 @@ Feature:  Tamilarsu K 14-4-2026 Add Item Stock
     Examples:
       | Quantity | PurchasePrice | Description      |
       | 10       | 250           | New stock added  |
+       | 20       | 2500           | New stock added  |
       
       
-    
+@invalidScenario    
       Scenario Outline: New itemstock should not add if any fields are missing
 
     When the user clicks on Inventory
@@ -36,4 +38,6 @@ Feature:  Tamilarsu K 14-4-2026 Add Item Stock
     Examples:
       | Quantity | PurchasePrice | Description      |
       |  123456      |      23456      |       1234567         |
+        |  123456      |      23456      |       1234567         |
+      
       
