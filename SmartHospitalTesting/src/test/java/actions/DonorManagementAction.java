@@ -21,7 +21,7 @@ public class DonorManagementAction {
 
 	public void clickDonorDetails() {
 
-	    Helper.waitForVisibility(DonorManagementPage.donorDetails);
+	    Helper.waitForElementClickable(DonorManagementPage.donorDetails);
 	    Helper.jsClick(DonorManagementPage.donorDetails);
 	}
 
