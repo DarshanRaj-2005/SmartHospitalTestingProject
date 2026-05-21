@@ -1,78 +1,123 @@
 package driver;
 
-import org.openqa.selenium.chrome.ChromeDriver;
+import java.util.Map;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
-
 import Utilities.ConfigReader;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-import java.util.Map;
-
-import org.openqa.selenium.WebDriver;
-
-
 public class Driver {
 
-	private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+    // ThreadLocal for Parallel Execution
+    private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
-	public static WebDriver getDriver() {
+    // Getter Method
+    public static WebDriver getDriver() {
+        return driver.get();
+    }
 
-		return driver.get();
-	}
+    // Constructor
+    public Driver() {
 
-	public Driver() {
+        String browser = ConfigReader.getProperties().getProperty("browser");
+        String headlessValue = ConfigReader.getProperties().getProperty("headless");
 
-		    String browser = ConfigReader.getProperties().getProperty("browser");
-		    String headlessValue = ConfigReader.getProperties().getProperty("headless");
+        boolean headless = headlessValue != null
+                && headlessValue.equalsIgnoreCase("true");
 
-		    boolean headless = headlessValue != null && headlessValue.equalsIgnoreCase("true");
+        // =========================
+        // CHROME
+        // =========================
 
-		    if (browser.equalsIgnoreCase("chrome")) {
+        if (browser.equalsIgnoreCase("chrome")) {
 
-		        WebDriverManager.chromedriver().setup();
-		        ChromeOptions options = new ChromeOptions();
-		        options.addArguments("--disable-notifications");
+            WebDriverManager.chromedriver().setup();
 
-		        options.setExperimentalOption("prefs", Map.of(
-		            "credentials_enable_service", false,
-		            "profile.password_manager_enabled", false
-		        ));
+            ChromeOptions options = new ChromeOptions();
 
-		        if (headless) {
-		            options.addArguments("--headless=new");
-		        }
+            // Disable Notifications
+            options.addArguments("--disable-notifications");
 
-		        driver.set(new ChromeDriver(options));
+            // Disable Password Manager Popup
+            options.setExperimentalOption("prefs", Map.of(
+                    "credentials_enable_service", false,
+                    "profile.password_manager_enabled", false));
 
-		    } else if (browser.equalsIgnoreCase("firefox")) {
+            // HEADLESS SETTINGS
+            if (headless) {
 
-		        WebDriverManager.firefoxdriver().setup();
-		        FirefoxOptions options = new FirefoxOptions();
+                options.addArguments("--headless=new");
 
-		        if (headless) {
-		            options.addArguments("--headless=new");
-		        }
+                // IMPORTANT FOR HEADLESS
+                options.addArguments("--window-size=1920,1080");
 
-		        driver.set(new FirefoxDriver(options));
+                options.addArguments("--disable-gpu");
 
-		    } else {
-		       
-		        throw new RuntimeException("Invalid Browser Name: " + browser);
-		    }
+                options.addArguments("--disable-dev-shm-usage");
 
-		    getDriver().manage().window().maximize();
-		}
+                options.addArguments("--no-sandbox");
+            }
 
-	public static void quitDriver() {
-		if (getDriver() != null) {
-			getDriver().quit();
-			driver.remove();
-		}
-	}
+            driver.set(new ChromeDriver(options));
 
+        }
+
+        // =========================
+        // FIREFOX
+        // =========================
+
+        else if (browser.equalsIgnoreCase("firefox")) {
+
+            WebDriverManager.firefoxdriver().setup();
+
+            FirefoxOptions options = new FirefoxOptions();
+
+            if (headless) {
+
+                options.addArguments("--headless");
+
+                // Firefox Window Size
+                options.addArguments("--width=1920");
+
+                options.addArguments("--height=1080");
+            }
+
+            driver.set(new FirefoxDriver(options));
+
+        }
+
+        // =========================
+        // INVALID BROWSER
+        // =========================
+
+        else {
+
+            throw new RuntimeException("Invalid Browser Name: " + browser);
+        }
+
+        // Maximize only for non-headless
+        if (!headless) {
+            getDriver().manage().window().maximize();
+        }
+
+        // Optional
+        // getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+    }
+
+    // Quit Driver
+    public static void quitDriver() {
+
+        if (getDriver() != null) {
+
+            getDriver().quit();
+
+            driver.remove();
+        }
+    }
 }

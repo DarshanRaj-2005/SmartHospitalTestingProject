@@ -13,13 +13,15 @@ import driver.Driver;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 public class AddPatientActions {
+	
    static Logger logger = LogManager.getLogger(AddPatientActions.class);
     private String lastPatientName = "";
 
-   public AddPatientActions(WebDriver driver) {
-   }
-   
-    public void clickPatientCategory() {
+    public AddPatientActions(WebDriver driver) {
+		
+	}
+
+	public void clickPatientCategory() {
         Helper.waitForElementClickable(AddPatientPage.patientCategory);
         Helper.jsClick(AddPatientPage.patientCategory);
     }
