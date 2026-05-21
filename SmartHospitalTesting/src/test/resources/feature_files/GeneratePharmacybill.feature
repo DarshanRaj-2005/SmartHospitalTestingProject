@@ -8,7 +8,7 @@ Feature: Balamurugan S 18-05-2026 Generate the Pharmacy Bill
     When the user clicks the Pharmacy
     Then it should move to the Pharmacy Bill page successfully
     And user clicks Generate Bill button
-
+  @bala
   Scenario: Verify whether a user can generate the bill using valid details
     And the user enters pharmacy bill details
       | patient     | John              |
@@ -21,7 +21,7 @@ Feature: Balamurugan S 18-05-2026 Generate the Pharmacy Bill
       | amount      | 200               |
     And user clicks the Save button
     Then the pharmacy bill should be generated successfully
-
+  @bala
   Scenario: Verify error when mandatory fields are missing
     And the user enters pharmacy bill details
       | category |   |
