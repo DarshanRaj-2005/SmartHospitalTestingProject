@@ -371,4 +371,5 @@ public class Helper {
 
         wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
     }
+    
 }
