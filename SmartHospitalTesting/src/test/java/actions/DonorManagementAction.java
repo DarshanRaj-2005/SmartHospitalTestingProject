@@ -12,16 +12,17 @@ public class DonorManagementAction {
 	Logger logger = LogManager.getLogger(DonorManagementAction.class);
 
 	public void clickBloodBankMenu() {
-		logger.info("Navigated to Blood Bank module");
-            Helper.waitForVisibility(DonorManagementPage.bloodBankMenu);
 
-		    Helper.waitForElementClickable(DonorManagementPage.bloodBankMenu);
-		    //Helper.moveToElementAndClick(DonorManagementPage.bloodBankMenu);
-		}
+	    logger.info("Navigated to Blood Bank module");
+	    Helper.waitForVisibility( DonorManagementPage.bloodBankMenu);
+	    Helper.click(DonorManagementPage.bloodBankMenu);
+	}
 	
 
 	public void clickDonorDetails() {
-		Helper.click(DonorManagementPage.donorDetails);
+
+	    Helper.waitForElementClickable(DonorManagementPage.donorDetails);
+	    Helper.jsClick(DonorManagementPage.donorDetails);
 	}
 
 	public void clickAddBloodDonor() {
