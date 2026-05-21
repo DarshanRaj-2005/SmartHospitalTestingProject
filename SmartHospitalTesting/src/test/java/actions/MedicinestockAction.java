@@ -8,35 +8,42 @@ import pages.MedicinestockPage;
 
 public class MedicinestockAction {
 
-    public void clickmedicinebutton() {
-        Helper.waitForElementClickable(MedicinestockPage.medicinebutton);
-        Helper.click(MedicinestockPage.medicinebutton);
-    }
+	public void clickmedicinebutton() {
+		Helper.waitForElementClickable(MedicinestockPage.medicinebutton);
+		Helper.click(MedicinestockPage.medicinebutton);
+	}
 
-    public void searchMedicine(String medicine) {
-        Helper.waitForElementClickable(MedicinestockPage.medicineSearchbar);
-        Helper.click(MedicinestockPage.medicineSearchbar);
-        Helper.clear(MedicinestockPage.medicineSearchbar);
-        Helper.type(MedicinestockPage.medicineSearchbar, medicine);
-    }
+	public void searchMedicine(String medicine) {
+		Helper.waitForElementClickable(MedicinestockPage.medicineSearchbar);
+		Helper.click(MedicinestockPage.medicineSearchbar);
+		Helper.clear(MedicinestockPage.medicineSearchbar);
+		Helper.type(MedicinestockPage.medicineSearchbar, medicine);
+	}
 
-    public String verifySearchedMedicine(String searchedmedicine) {
-        By loc = MedicinestockPage.medicinetext(searchedmedicine);
-        Helper.waitForVisibility(loc);
-        return Helper.getText(loc);
-    }
+	public String verifySearchedMedicine(String searchedmedicine) {
+		By loc = MedicinestockPage.medicinetext(searchedmedicine);
+		Helper.waitForVisibility(loc);
+		return Helper.getText(loc);
+	}
 
-    public void selectMedicine(String medicine) {
-        By locator = MedicinestockPage.medicineCheckbox(medicine);
+	public void selectMedicine(String medicine) {
+		By locator = MedicinestockPage.medicineCheckbox(medicine);
+		WebElement element = Helper.getClickableElement(locator);
+		if (!element.isSelected()) {
+			element.click();
+		}
+	}
 
-        WebElement element = Helper.getClickableElement(locator);
+	public void clickDeleteButton() {
+		Helper.waitForElementClickable(MedicinestockPage.deleteButton);
+		Helper.click(MedicinestockPage.deleteButton);
+	}
 
-        if (!element.isSelected()) {
-            element.click();
-        }
-    }
+	public void clickdeleteConfirm1() {
+		Helper.acceptAlert();
+	}
 
-    public void clickDeleteButton() {
+    public void clickDeleteButton1() {
         Helper.waitForElementClickable(MedicinestockPage.deleteButton);
         Helper.click(MedicinestockPage.deleteButton);
     }
