@@ -2,53 +2,109 @@ package actions;
 
 import java.util.List;
 import java.util.Map;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.WebDriver;
+import java.time.Duration;
 import pages.AddPatientPage;
-
-public class AddPatientActions{
-
-    AddPatientPage addPatientPage;
+import Utilities.Helper;
+import driver.Driver;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+public class AddPatientActions {
+	
+   static Logger logger = LogManager.getLogger(AddPatientActions.class);
     private String lastPatientName = "";
 
     public AddPatientActions(WebDriver driver) {
-        addPatientPage = new AddPatientPage(driver);
-    }
-    public void clickPatientCategory() {
-        addPatientPage.clickPatientCategory();
+		
+	}
+
+	public void clickPatientCategory() {
+        Helper.waitForElementClickable(AddPatientPage.patientCategory);
+        Helper.jsClick(AddPatientPage.patientCategory);
     }
 
     public void clickAddNewPatientButton() {
-        addPatientPage.clickAddNewPatientButton();
+        Helper.waitForElementClickable(AddPatientPage.addNewPatientButton);
+        Helper.jsClick(AddPatientPage.addNewPatientButton);
     }
 
     public void waitForModalToLoad() {
-        addPatientPage.waitForModalToLoad();
+        try {
+            Helper.waitForVisibility(AddPatientPage.modalNameInput);
+            Helper.waitForElementClickable(AddPatientPage.modalNameInput);
+            return;
+        } catch (Exception e) {
+         
+        }
+        Helper.waitForVisibility(
+                org.openqa.selenium.By.xpath(
+                        "//div[contains(@class,'modal-header')]" + " | //div[@id='add_patient'][not(contains(@style,'display: none'))]"));
     }
-    public void enterPatientDetails(List<Map<String, String>> patientData) {
 
+    public void enterPatientDetails(List<Map<String, String>> patientData) {
         lastPatientName = patientData.get(0).get("PatientName");
 
-        addPatientPage.enterPatientName(lastPatientName);
-        addPatientPage.enterGuardianName(patientData.get(0).get("GuardianName"));
-        addPatientPage.selectGender(patientData.get(0).get("Gender"));
-        addPatientPage.enterDOB(patientData.get(0).get("DOB"));
-        addPatientPage.selectBloodGroup(patientData.get(0).get("BloodGroup"));
-        addPatientPage.enterPhoneNumber(patientData.get(0).get("Phone"));
-        addPatientPage.enterEmail(patientData.get(0).get("Email"));
-        addPatientPage.enterAddress(patientData.get(0).get("Address"));
-        
+        Helper.clearAndEnterText(AddPatientPage.patientName,  lastPatientName);
+        Helper.clearAndEnterText(AddPatientPage.guardianName, patientData.get(0).get("GuardianName"));
+        Helper.selectDropdown(AddPatientPage.gender,          patientData.get(0).get("Gender"));
+        enterDOB(patientData.get(0).get("DOB"));
+        Helper.selectDropdown(AddPatientPage.bloodGroup,      patientData.get(0).get("BloodGroup"));
+        Helper.clearAndEnterText(AddPatientPage.phone,        patientData.get(0).get("Phone"));
+        Helper.clearAndEnterText(AddPatientPage.email,        patientData.get(0).get("Email"));
+        Helper.clearAndEnterText(AddPatientPage.address,      patientData.get(0).get("Address"));
+       
     }
+    private void enterDOB(String value) {
+        String[] parts = value.split("-");
+        String day   = parts[0];
+        String month = parts[1];
+        String year  = parts[2];
+        try {
+            Helper.clearAndEnterText(AddPatientPage.dobYear,  year);
+            Helper.clearAndEnterText(AddPatientPage.dobMonth, month);
+            Helper.clearAndEnterText(AddPatientPage.dobDay,   day);
+        } catch (Exception e) {
+            Helper.setDate(AddPatientPage.dob, value);
+        }
+    }
+
     public void leaveMandatoryFieldsEmpty() {
-        addPatientPage.leaveMandatoryFieldsEmpty();
+        Helper.waitForVisibility(AddPatientPage.patientName);
+        Helper.clear(AddPatientPage.patientName);
     }
+
     public void clickSaveButton() {
-        addPatientPage.clickSaveButton();
+        Helper.waitForElementClickable(AddPatientPage.saveButton);
+        Helper.jsClick(AddPatientPage.saveButton);
     }
+
     public boolean verifyPatientAdded() {
-        return addPatientPage.verifyPatientSavedSuccessfully(lastPatientName);
+        Helper.waitForInvisibility(AddPatientPage.modalNameInput);
+
+        Helper.waitForVisibility(AddPatientPage.patientListTable);
+
+   
+        Helper.waitForElementsPresent(AddPatientPage.tableCells, 15);
+
+        List<WebElement> cells = Helper.getElements(AddPatientPage.tableCells);
+        for (WebElement cell : cells) {
+            if (cell.getText().trim().equalsIgnoreCase(lastPatientName.trim())) {
+                return true;
+            }
+        }
+        return false;
     }
 
     public boolean verifyValidationMessage() {
-        return addPatientPage.verifyValidationMessageDisplayed();
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
+        try {
+            wait.until(ExpectedConditions.visibilityOfElementLocated(AddPatientPage.validationMessage));
+            return Helper.isDisplayed(AddPatientPage.validationMessage);
+        } catch (Exception e) {
+            return Helper.isFieldHasError(AddPatientPage.patientName);
+        }
     }
 }

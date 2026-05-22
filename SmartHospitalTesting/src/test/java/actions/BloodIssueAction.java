@@ -20,6 +20,7 @@ public class BloodIssueAction {
 
     public void clickbloodissueDetails() {
         logger.info("Navigated to Blood Issue Details Page");
+        Helper.waitForElementClickable(BloodIssuePage.bloodIssuedetails);
         Helper.click(BloodIssuePage.bloodIssuedetails);
     }
 
@@ -138,7 +139,12 @@ public class BloodIssueAction {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
         wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(BloodIssuePage.validationMessage));
         List<WebElement> toasts = Driver.getDriver().findElements(BloodIssuePage.validationMessage); 
-        return toasts.stream().anyMatch(t -> t.getText().contains(message));
+        for (WebElement toast : toasts) {
+            if (toast.getText().contains(message)) {
+                return true;
+            }
+        }
+        return false;
     }
     
 }
