@@ -22,13 +22,12 @@ public class Driver {
 
     public Driver() {
 
-
         String browser = ConfigReader.getProperties().getProperty("browser");
         String headlessValue = ConfigReader.getProperties().getProperty("headless");
 
-        boolean headless = headlessValue != null
-                && headlessValue.equalsIgnoreCase("true");
-
+        boolean headless =
+                headlessValue != null &&
+                headlessValue.equalsIgnoreCase("true");
 
         if (browser.equalsIgnoreCase("chrome")) {
 
@@ -44,6 +43,7 @@ public class Driver {
             ));
 
             if (headless) {
+
                 options.addArguments("--headless=new");
                 options.addArguments("--window-size=1920,1080");
                 options.addArguments("--disable-gpu");
@@ -61,6 +61,7 @@ public class Driver {
             FirefoxOptions options = new FirefoxOptions();
 
             if (headless) {
+
                 options.addArguments("--headless");
                 options.addArguments("--width=1920");
                 options.addArguments("--height=1080");
@@ -70,10 +71,12 @@ public class Driver {
         }
 
         else {
+
             throw new RuntimeException("Invalid Browser Name: " + browser);
         }
 
         if (!headless) {
+
             getDriver().manage().window().maximize();
         }
     }
