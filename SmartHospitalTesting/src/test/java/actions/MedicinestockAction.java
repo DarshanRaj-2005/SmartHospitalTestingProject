@@ -1,5 +1,7 @@
 package actions;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -8,42 +10,59 @@ import pages.MedicinestockPage;
 
 public class MedicinestockAction {
 
-	public void clickmedicinebutton() {
-		Helper.waitForElementClickable(MedicinestockPage.medicinebutton);
-		Helper.click(MedicinestockPage.medicinebutton);
-	}
+    Logger logger = LogManager.getLogger(MedicinestockAction.class);
 
-	public void searchMedicine(String medicine) {
-		Helper.waitForElementClickable(MedicinestockPage.medicineSearchbar);
-		Helper.click(MedicinestockPage.medicineSearchbar);
-		Helper.clear(MedicinestockPage.medicineSearchbar);
-		Helper.type(MedicinestockPage.medicineSearchbar, medicine);
-	}
+    public void clickmedicinebutton() {
+        Helper.waitForElementClickable(MedicinestockPage.medicinebutton);
+        Helper.click(MedicinestockPage.medicinebutton);
+    }
 
-	public String verifySearchedMedicine(String searchedmedicine) {
-		By loc = MedicinestockPage.medicinetext(searchedmedicine);
-		Helper.waitForVisibility(loc);
-		return Helper.getText(loc);
-	}
+    public void searchMedicine(String medicine) {
 
-	public void selectMedicine(String medicine) {
-		By locator = MedicinestockPage.medicineCheckbox(medicine);
-		WebElement element = Helper.getClickableElement(locator);
-		if (!element.isSelected()) {
-			element.click();
-		}
-	}
+        logger.info("Searching medicine: " + medicine);
 
-	public void clickDeleteButton() {
-		Helper.waitForElementClickable(MedicinestockPage.deleteButton);
-		Helper.click(MedicinestockPage.deleteButton);
-	}
+        Helper.waitForElementClickable(MedicinestockPage.medicineSearchbar);
+        Helper.click(MedicinestockPage.medicineSearchbar);
+        Helper.clear(MedicinestockPage.medicineSearchbar);
+        Helper.type(MedicinestockPage.medicineSearchbar, medicine);
+    }
 
-	public void clickdeleteConfirm1() {
-		Helper.acceptAlert();
-	}
+    public String verifySearchedMedicine(String searchedmedicine) {
 
-    public void clickDeleteButton1() {
+        By loc = MedicinestockPage.medicinetext(searchedmedicine);
+
+        Helper.waitForVisibility(loc);
+
+        String actualMedicine = Helper.getText(loc);
+
+        logger.info("Medicine found: " + actualMedicine);
+
+        return actualMedicine;
+    }
+
+    public String verifyMedicineNotFoundMessage() {
+
+        Helper.waitForVisibility(MedicinestockPage.medicinenotfoundtxt);
+
+        String actualMessage = Helper.getText(MedicinestockPage.medicinenotfoundtxt);
+
+        logger.info("No medicine found message displayed");
+
+        return actualMessage;
+    }
+
+    public void selectMedicine(String medicine) {
+
+        By locator = MedicinestockPage.medicineCheckbox(medicine);
+        WebElement element = Helper.getClickableElement(locator);
+
+        if (!element.isSelected()) {
+            logger.info("Selecting medicine: " + medicine);
+            element.click();
+        }
+    }
+
+    public void clickDeleteButton() {
         Helper.waitForElementClickable(MedicinestockPage.deleteButton);
         Helper.click(MedicinestockPage.deleteButton);
     }
@@ -53,7 +72,13 @@ public class MedicinestockAction {
     }
 
     public String verifyDeleteConfirmation() {
+
         Helper.waitForVisibility(MedicinestockPage.deleteConfirmation);
-        return Helper.getText(MedicinestockPage.deleteConfirmation);
+
+        String confirmation = Helper.getText(MedicinestockPage.deleteConfirmation);
+
+        logger.info("Delete confirmation message displayed");
+
+        return confirmation;
     }
 }
