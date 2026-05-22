@@ -17,7 +17,6 @@ public class MedicinestockDefinition {
         String expectedURL = "https://demo.smart-hospital.in/admin/pharmacy/bill";
         String actualURL = Driver.getDriver().getCurrentUrl();
         Assert.assertEquals(actualURL, expectedURL);
-        System.out.println("the user is on the Pharmacy Bill page");
     }
 
     @When("the user clicks the Medicines button")
@@ -30,7 +29,6 @@ public class MedicinestockDefinition {
         String expectedURL = "https://demo.smart-hospital.in/admin/pharmacy/search";
         String actualURL = Driver.getDriver().getCurrentUrl();
         Assert.assertEquals(actualURL, expectedURL);
-        System.out.println("the user moved to the medicine stock page");
     }
 
     @When("the user searches medicine {string}")
@@ -38,11 +36,23 @@ public class MedicinestockDefinition {
         medicineAction.searchMedicine(medicine);
     }
 
-    @Then("the searched medicine {string} should be displayed in the table")
-    public void the_searched_medicine_should_be_displayed_in_the_table(String searchedmedicine) {
-        String actualMedicine = medicineAction.verifySearchedMedicine(searchedmedicine);
-        Assert.assertTrue(actualMedicine.contains(searchedmedicine),
-                "Medicine not found in the table");
+    @Then("the medicine {string} status be {string}")
+    public void the_medicine_status_be(String medicineName, String status) {
+
+        if (status.equalsIgnoreCase("present")) {
+
+            String actualMedicine = medicineAction.verifySearchedMedicine(medicineName);
+
+            Assert.assertTrue(actualMedicine.contains(medicineName),
+                    "Medicine not found in the table");
+
+        } else if (status.equalsIgnoreCase("not present")) {
+
+            String actualMessage = medicineAction.verifyMedicineNotFoundMessage();
+
+            Assert.assertTrue(actualMessage.contains("No data available in table"),
+                    "Expected no data message but got: " + actualMessage);
+        }
     }
 
     @When("the user selects the medicine {string} from the medicine stock list")
@@ -60,8 +70,9 @@ public class MedicinestockDefinition {
         medicineAction.clickdeleteConfirm();
     }
 
-    @Then("the message displayed as medicine deleteted successfully")
-    public void the_message_displayed_as_medicine_deleteted_successfully() {
+    @Then("the message displayed as medicine deleted successfully")
+    public void the_message_displayed_as_medicine_deleted_successfully() {
+
         String actualMessage = medicineAction.verifyDeleteConfirmation();
         String expectedMessage = "Record Deleted Successfully";
 
