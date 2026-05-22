@@ -53,5 +53,5 @@ public class GeneratePharmacybillPage {
 
 	public static By successMessage = By.xpath("//div[contains(@class,'alert-success')]");
 
-	public static By errorMessage = By.xpath("//div[contains(@class,'toast-message')]");
+	public static By errorMessage = By.cssSelector(".toast-message");
 }

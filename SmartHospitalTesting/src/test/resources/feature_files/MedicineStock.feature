@@ -1,4 +1,4 @@
-Feature: Balamurugan S 17-5-2026 Add and manage medicines in the medicine stock page
+Feature: Add and manage medicines in the medicine stock page
 
   Background:
     Given the user is on the login page
@@ -9,14 +9,23 @@ Feature: Balamurugan S 17-5-2026 Add and manage medicines in the medicine stock 
     Then it should move to the Pharmacy Bill page successfully
     When the user clicks the Medicines button
 
-  Scenario: Verify medicine search
+  Scenario Outline: Verify medicine search
     Given the user is on the medicine stock page
-    When the user searches medicine "Cetirizine"
-    Then the searched medicine "Cetirizine" should be displayed in the table
+    When the user searches medicine "<medicineName>"
+    Then the medicine "<medicineName>" status be "<status>"
 
-  Scenario: Delete a selected medicine
+    Examples:
+      | medicineName | status      |
+      | Cetirizine   | present     |
+      | Rifaximin    | not present |
+
+  Scenario Outline: Delete a selected medicine
     Given the user is on the medicine stock page
-    When the user selects the medicine "Amlodipine" from the medicine stock list
+    When the user selects the medicine "<medicineName>" from the medicine stock list
     And clicks the delete Selected button
     And the user confirms the alert displayed
-    Then the message displayed as medicine deleteted successfully
+    Then the message displayed as medicine deleted successfully
+
+    Examples:
+      | medicineName |
+      | VARICELLA    |
