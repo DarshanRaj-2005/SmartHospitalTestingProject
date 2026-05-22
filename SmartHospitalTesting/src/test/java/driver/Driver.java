@@ -28,6 +28,7 @@ public class Driver {
         boolean headless = headlessValue != null
                 && headlessValue.equalsIgnoreCase("true");
 
+
         if (browser.equalsIgnoreCase("chrome")) {
 
             WebDriverManager.chromedriver().setup();
@@ -76,8 +77,7 @@ public class Driver {
         }
     }
 
-    public static void quitDriver() {
-
+        public static void quitDriver() {
         if (getDriver() != null) {
             getDriver().quit();
             driver.remove();
