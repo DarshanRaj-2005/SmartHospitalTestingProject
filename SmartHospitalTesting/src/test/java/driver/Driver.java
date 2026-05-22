@@ -22,8 +22,8 @@ public class Driver {
         String browser = ConfigReader.getProperties().getProperty("browser");
         String headlessValue = ConfigReader.getProperties().getProperty("headless");
 
-        //boolean headless = headlessValue != null
-              //  && headlessValue.equalsIgnoreCase("true");
+        boolean headless = headlessValue != null
+               && headlessValue.equalsIgnoreCase("true");
 
         if (browser.equalsIgnoreCase("chrome")) {
             WebDriverManager.chromedriver().setup();
