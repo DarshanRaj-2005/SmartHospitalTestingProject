@@ -1,10 +1,15 @@
 package actions;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import Utilities.Helper;
 import pages.GeneratePharmacybillPage;
 import pages.PharmacyBillPage;
 
 public class GeneratePharmacybillAction {
+
+	Logger logger = LogManager.getLogger(GeneratePharmacybillAction.class);
 
 	public void clickPharmacy() {
 		Helper.waitForElementClickable(PharmacyBillPage.pharmacyMenu);
@@ -17,6 +22,9 @@ public class GeneratePharmacybillAction {
 	}
 
 	public void enterPatientName(String patientName) {
+
+		logger.info("Entering patient name: " + patientName);
+
 		Helper.waitForElementClickable(GeneratePharmacybillPage.patientDropdown);
 		Helper.click(GeneratePharmacybillPage.patientDropdown);
 
@@ -28,6 +36,9 @@ public class GeneratePharmacybillAction {
 	}
 
 	public void selectCategory(String category) {
+
+		logger.info("Selecting category: " + category);
+
 		Helper.selectSelect2(
 				GeneratePharmacybillPage.categoryDropdown,
 				GeneratePharmacybillPage.categorySearchBox,
@@ -37,6 +48,9 @@ public class GeneratePharmacybillAction {
 	}
 
 	public void selectMedicine(String medicine) {
+
+		logger.info("Selecting medicine: " + medicine);
+
 		Helper.selectSelect2(
 				GeneratePharmacybillPage.medicineInputField,
 				GeneratePharmacybillPage.medicineSearchBox,
@@ -54,6 +68,9 @@ public class GeneratePharmacybillAction {
 	}
 
 	public void selectDoctor(String doctor) {
+
+		logger.info("Selecting doctor: " + doctor);
+
 		Helper.selectSelect2(
 				GeneratePharmacybillPage.doctorDropdown,
 				GeneratePharmacybillPage.doctorSearchBox,
@@ -71,6 +88,9 @@ public class GeneratePharmacybillAction {
 	}
 
 	public void clickSaveButton() {
+
+		logger.info("Clicking Save button");
+
 		Helper.click(GeneratePharmacybillPage.saveButton);
 	}
 
@@ -79,7 +99,12 @@ public class GeneratePharmacybillAction {
 	}
 
 	public String getSuccessMessageText() {
-		return Helper.getText(GeneratePharmacybillPage.successMessage);
+
+		String successMessage = Helper.getText(GeneratePharmacybillPage.successMessage);
+
+		logger.info("Success message displayed: " + successMessage);
+
+		return successMessage;
 	}
 
 	public boolean isErrorMessageDisplayed() {
@@ -87,6 +112,12 @@ public class GeneratePharmacybillAction {
 	}
 
 	public String getErrorMessageText() {
-		return Helper.getText(GeneratePharmacybillPage.errorMessage);
+		
+
+		String errorMessage = Helper.getText(GeneratePharmacybillPage.errorMessage);
+
+		logger.error("Error message displayed: " + errorMessage);
+
+		return errorMessage;
 	}
 }
