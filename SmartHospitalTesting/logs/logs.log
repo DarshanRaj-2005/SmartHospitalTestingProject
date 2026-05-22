@@ -767,6 +767,7 @@ Session ID: 8ebaa434fbf596ce4e68a9e18e3e9a5d
 [INFO ] 2026-05-20 11:24:36.362 [main] DonorManagementStepDefinition - The Record is added Succefully.
 [INFO ] 2026-05-20 11:24:36.396 [main] Hooks - Scenario Passed : Verify user is able to add donor with mandatory fields
 [INFO ] 2026-05-20 11:24:36.607 [main] Hooks - Browser closed
+<<<<<<< Updated upstream
 [INFO ] 2026-05-20 11:39:39.337 [main] Hooks - Browser launched
 [INFO ] 2026-05-20 11:39:50.761 [main] DonorManagementAction - Navigated to Blood Bank module
 [INFO ] 2026-05-20 11:39:52.277 [main] BloodIssueAction - Navigated to Blood Issue Details Page
@@ -1713,3 +1714,356 @@ Session ID: 8ebaa434fbf596ce4e68a9e18e3e9a5d
 [ERROR] 2026-05-21 17:29:30.098 [TestNG-PoolService-5] Hooks - Scenario Failed : Verify user is able to add blood donor details
 [INFO ] 2026-05-21 17:29:30.223 [TestNG-PoolService-5] Hooks - Screenshot Saved
 [INFO ] 2026-05-21 17:29:30.527 [TestNG-PoolService-5] Hooks - Browser closed
+=======
+[INFO ] 2026-05-20 14:03:32.816 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 14:03:43.559 [main] Hooks - Scenario Passed : Verify whether the Pharmacy Bill page displays successfully
+[INFO ] 2026-05-20 14:03:43.810 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 14:03:44.653 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 14:03:54.657 [main] Hooks - Scenario Passed : Verify patient search functionality
+[INFO ] 2026-05-20 14:03:54.881 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 14:03:55.746 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 14:04:06.958 [main] Hooks - Scenario Passed : Verify patient search functionality
+[INFO ] 2026-05-20 14:04:07.186 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 14:05:15.590 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 14:05:28.621 [main] Hooks - Scenario Passed : Verify medicine search
+[INFO ] 2026-05-20 14:05:28.888 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 14:05:29.736 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 14:05:43.192 [main] Hooks - Scenario Passed : Delete a selected medicine
+[INFO ] 2026-05-20 14:05:43.417 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 14:06:43.998 [main] Hooks - Browser launched
+[ERROR] 2026-05-20 14:07:00.752 [main] Hooks - Scenario Failed : Verify whether a user can generate the bill using valid details
+[INFO ] 2026-05-20 14:07:01.029 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 14:07:01.242 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 14:07:02.090 [main] Hooks - Browser launched
+[ERROR] 2026-05-20 14:07:12.669 [main] Hooks - Scenario Failed : Verify error when mandatory fields are missing
+[INFO ] 2026-05-20 14:07:12.921 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 14:07:13.169 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 14:08:01.184 [main] Hooks - Browser launched
+[ERROR] 2026-05-20 14:08:15.952 [main] Hooks - Scenario Failed : Verify whether a user can generate the bill using valid details
+[INFO ] 2026-05-20 14:08:16.214 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 14:08:16.511 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 14:08:17.375 [main] Hooks - Browser launched
+[ERROR] 2026-05-20 14:08:35.252 [main] Hooks - Scenario Failed : Verify error when mandatory fields are missing
+[INFO ] 2026-05-20 14:08:35.509 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 14:08:35.742 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 14:35:29.286 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 14:35:37.209 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-20 14:35:38.555 [main] BloodIssueAction - Navigated to Blood Issue Details Page
+[INFO ] 2026-05-20 14:35:39.516 [main] BloodIssueAction - Issue Blood popup is displayed.
+[DEBUG] 2026-05-20 14:35:40.665 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-20 14:35:40.673 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[ERROR] 2026-05-20 14:36:05.703 [main] Hooks - Scenario Failed : Issue blood with valid details
+[INFO ] 2026-05-20 14:36:05.973 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 14:36:06.281 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 14:36:07.195 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 14:36:16.034 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-20 14:36:17.078 [main] BloodIssueAction - Navigated to Blood Issue Details Page
+[INFO ] 2026-05-20 14:36:17.839 [main] BloodIssueAction - Deleting issued blood record
+[INFO ] 2026-05-20 14:36:19.427 [main] BloodIssueAction - Blood issue record deleted successfully
+[INFO ] 2026-05-20 14:36:19.474 [main] Hooks - Scenario Passed : Delete issued blood record
+[INFO ] 2026-05-20 14:36:19.695 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 14:36:20.528 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 14:36:30.938 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-20 14:36:31.915 [main] BloodIssueAction - Navigated to Blood Issue Details Page
+[INFO ] 2026-05-20 14:36:32.765 [main] BloodIssueAction - Issue Blood popup is displayed.
+[INFO ] 2026-05-20 14:36:33.692 [main] DonorManagementAction - Blood issue is unsuccessful.
+[INFO ] 2026-05-20 14:36:34.761 [main] Hooks - Scenario Passed : Issue blood with empty mandatory fields
+[INFO ] 2026-05-20 14:36:34.976 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 14:36:35.779 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 14:36:54.069 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-20 14:36:57.128 [main] Hooks - Scenario Passed : Verify blood stock details for different blood groups
+[INFO ] 2026-05-20 14:36:57.345 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 14:36:58.281 [main] Hooks - Browser launched
+[ERROR] 2026-05-20 14:37:36.583 [main] Hooks - Scenario Failed : Verify blood stock details for different blood groups
+[INFO ] 2026-05-20 14:37:36.831 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 14:37:37.059 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 14:37:37.878 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 14:37:46.035 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-20 14:37:47.305 [main] Hooks - Scenario Passed : Verify blood stock details for different blood groups
+[INFO ] 2026-05-20 14:37:47.523 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 14:37:48.362 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 14:37:58.639 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-20 14:38:00.005 [main] Hooks - Scenario Passed : Verify blood stock details for different blood groups
+[INFO ] 2026-05-20 14:38:00.239 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 14:38:01.043 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 14:38:10.358 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-20 14:38:11.320 [main] BloodStockAction - Clicked Add Icon
+[INFO ] 2026-05-20 14:38:12.191 [main] BloodStockStepDefinition - Enter Blood Donor Details
+[INFO ] 2026-05-20 14:38:14.522 [main] BloodStockAction - Clicked Save Button
+[INFO ] 2026-05-20 14:38:16.160 [main] BloodStockStepDefinition - Donor Details added.
+[INFO ] 2026-05-20 14:38:16.162 [main] Hooks - Scenario Passed : Verify user is able to add blood donor details
+[INFO ] 2026-05-20 14:38:16.419 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 14:38:17.240 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 14:38:25.615 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-20 14:38:26.628 [main] BloodStockAction - Clicked Issue Button
+[INFO ] 2026-05-20 14:38:27.510 [main] BloodStockStepDefinition - Blood Issue Page is displayed.
+[INFO ] 2026-05-20 14:38:27.512 [main] Hooks - Scenario Passed : Verify user navigates to Blood Issue page
+[INFO ] 2026-05-20 14:38:27.707 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 14:38:28.532 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 14:38:36.994 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-20 14:38:38.993 [main] DonorManagementAction - Blood Donor popup is opened.
+[INFO ] 2026-05-20 14:38:40.797 [main] DonorManagementAction - Clicked Save Button
+[INFO ] 2026-05-20 14:38:40.982 [main] DonorManagementStepDefinition - The Record is added Succefully.
+[INFO ] 2026-05-20 14:38:41.021 [main] Hooks - Scenario Passed : Verify user is able to add donor with valid details
+[INFO ] 2026-05-20 14:38:41.229 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 14:38:42.025 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 14:38:49.687 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-20 14:38:51.603 [main] DonorManagementAction - Blood Donor popup is opened.
+[INFO ] 2026-05-20 14:38:53.010 [main] DonorManagementAction - Clicked Save Button
+[INFO ] 2026-05-20 14:38:53.219 [main] DonorManagementStepDefinition - The Record is added Succefully.
+[INFO ] 2026-05-20 14:38:53.255 [main] Hooks - Scenario Passed : Verify user is able to add donor with mandatory fields
+[INFO ] 2026-05-20 14:38:53.482 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 14:38:54.300 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 14:39:03.319 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-20 14:39:05.264 [main] DonorManagementAction - Blood Donor popup is opened.
+[INFO ] 2026-05-20 14:39:06.069 [main] DonorManagementAction - Clicked Save Button
+[INFO ] 2026-05-20 14:39:06.280 [main] DonorManagementStepDefinition - New Donor is not added.
+[INFO ] 2026-05-20 14:39:06.902 [main] Hooks - Scenario Passed : Validate donor creation with all mandatory fields empty
+[INFO ] 2026-05-20 14:39:07.123 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 14:43:46.726 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 14:43:55.742 [main] Hooks - Browser launched
+[ERROR] 2026-05-20 14:44:08.535 [main] Hooks - Scenario Failed : Verify whether the Pharmacy Bill page displays successfully
+[ERROR] 2026-05-20 14:44:08.544 [main] Hooks - Screenshot Failed org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=148.0.7778.178)
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d009ddca15b07fa27b40352a42b86f3b, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.178, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\ksman\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58303}, goog:processID: 19792, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58303/devtoo..., se:cdpVersion: 148.0.7778.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d009ddca15b07fa27b40352a42b86f3b
+[INFO ] 2026-05-20 14:44:08.642 [main] Hooks - Browser closed
+[ERROR] 2026-05-20 14:44:17.384 [main] Hooks - Scenario Failed : Verify whether the Pharmacy Bill page displays successfully
+[ERROR] 2026-05-20 14:44:17.396 [main] Hooks - Screenshot Failed org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=148.0.7778.178)
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b202549c430bfd0d976ebbabf8652bc, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.178, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\ksman\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64812}, goog:processID: 12156, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64812/devtoo..., se:cdpVersion: 148.0.7778.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b202549c430bfd0d976ebbabf8652bc
+[INFO ] 2026-05-20 14:44:17.469 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 15:38:31.171 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 15:38:58.541 [main] Hooks - Browser launched
+[ERROR] 2026-05-20 15:39:09.674 [main] Hooks - Scenario Failed : Verify whether a user can generate the bill using valid details
+[INFO ] 2026-05-20 15:39:09.851 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 15:39:09.978 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 15:39:10.659 [main] Hooks - Browser launched
+[ERROR] 2026-05-20 15:39:25.365 [main] Hooks - Scenario Failed : Verify error when mandatory fields are missing
+[INFO ] 2026-05-20 15:39:25.509 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 15:39:25.636 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 15:39:26.288 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 15:39:36.265 [main] Hooks - Scenario Passed : Verify medicine search
+[INFO ] 2026-05-20 15:39:36.389 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 15:39:37.027 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 15:39:48.431 [main] Hooks - Scenario Passed : Delete a selected medicine
+[INFO ] 2026-05-20 15:39:48.548 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 15:39:49.199 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 15:39:58.834 [main] Hooks - Scenario Passed : Verify whether the Pharmacy Bill page displays successfully
+[INFO ] 2026-05-20 15:39:58.966 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 15:39:59.613 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 15:40:08.039 [main] Hooks - Scenario Passed : Verify patient search functionality
+[INFO ] 2026-05-20 15:40:08.168 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 15:40:08.832 [main] Hooks - Browser launched
+[INFO ] 2026-05-20 15:40:18.694 [main] Hooks - Scenario Passed : Verify patient search functionality
+[INFO ] 2026-05-20 15:40:18.829 [main] Hooks - Browser closed
+[INFO ] 2026-05-20 17:52:55.629 [TestNG-PoolService-3] Hooks - Browser launched
+[INFO ] 2026-05-20 17:52:55.629 [TestNG-PoolService-1] Hooks - Browser launched
+[INFO ] 2026-05-20 17:52:55.629 [TestNG-PoolService-2] Hooks - Browser launched
+[INFO ] 2026-05-20 17:53:04.350 [TestNG-PoolService-1] Hooks - Scenario Passed : Verify whether the Pharmacy Bill page displays successfully
+[INFO ] 2026-05-20 17:53:04.701 [TestNG-PoolService-1] Hooks - Browser closed
+[INFO ] 2026-05-20 17:53:05.428 [TestNG-PoolService-2] PharmacyBillpageAction - Searching patient name: Ashok
+[INFO ] 2026-05-20 17:53:05.471 [TestNG-PoolService-3] PharmacyBillpageAction - Searching patient name: praveen raj
+[INFO ] 2026-05-20 17:53:06.048 [TestNG-PoolService-2] PharmacyBillpageAction - Patient found: Ashok
+[INFO ] 2026-05-20 17:53:06.050 [TestNG-PoolService-2] Hooks - Scenario Passed : Verify patient search functionality
+[INFO ] 2026-05-20 17:53:06.324 [TestNG-PoolService-2] Hooks - Browser closed
+[INFO ] 2026-05-20 17:53:06.563 [TestNG-PoolService-3] Hooks - Scenario Passed : Verify patient search functionality
+[INFO ] 2026-05-20 17:53:06.786 [TestNG-PoolService-3] Hooks - Browser closed
+[INFO ] 2026-05-20 17:54:57.975 [TestNG-PoolService-1] Hooks - Browser launched
+[INFO ] 2026-05-20 17:54:57.949 [TestNG-PoolService-2] Hooks - Browser launched
+[INFO ] 2026-05-20 17:54:57.953 [TestNG-PoolService-3] Hooks - Browser launched
+[INFO ] 2026-05-20 17:54:57.954 [TestNG-PoolService-6] Hooks - Browser launched
+[INFO ] 2026-05-20 17:54:57.969 [TestNG-PoolService-7] Hooks - Browser launched
+[INFO ] 2026-05-20 17:54:57.985 [TestNG-PoolService-5] Hooks - Browser launched
+[INFO ] 2026-05-20 17:54:57.985 [TestNG-PoolService-4] Hooks - Browser launched
+[INFO ] 2026-05-20 17:55:09.735 [TestNG-PoolService-2] GeneratePharmacybillAction - Clicking Save button
+[ERROR] 2026-05-20 17:55:10.662 [TestNG-PoolService-2] Hooks - Scenario Failed : Verify error when mandatory fields are missing
+[INFO ] 2026-05-20 17:55:11.067 [TestNG-PoolService-2] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 17:55:11.449 [TestNG-PoolService-1] GeneratePharmacybillAction - Entering patient name: John
+[INFO ] 2026-05-20 17:55:11.571 [TestNG-PoolService-7] PharmacyBillpageAction - Searching patient name: praveen raj
+[INFO ] 2026-05-20 17:55:11.615 [TestNG-PoolService-2] Hooks - Browser closed
+[INFO ] 2026-05-20 17:55:11.911 [TestNG-PoolService-6] PharmacyBillpageAction - Searching patient name: Ashok
+[INFO ] 2026-05-20 17:55:12.900 [TestNG-PoolService-6] PharmacyBillpageAction - Patient found: Ashok
+[INFO ] 2026-05-20 17:55:12.905 [TestNG-PoolService-6] Hooks - Scenario Passed : Verify patient search functionality
+[INFO ] 2026-05-20 17:55:13.292 [TestNG-PoolService-6] Hooks - Browser closed
+[INFO ] 2026-05-20 17:55:13.419 [TestNG-PoolService-7] Hooks - Scenario Passed : Verify patient search functionality
+[ERROR] 2026-05-20 17:55:13.586 [TestNG-PoolService-1] Hooks - Scenario Failed : Verify whether a user can generate the bill using valid details
+[INFO ] 2026-05-20 17:55:13.808 [TestNG-PoolService-7] Hooks - Browser closed
+[INFO ] 2026-05-20 17:55:13.961 [TestNG-PoolService-1] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 17:55:14.318 [TestNG-PoolService-1] Hooks - Browser closed
+[INFO ] 2026-05-20 17:55:14.592 [TestNG-PoolService-5] Hooks - Scenario Passed : Verify whether the Pharmacy Bill page displays successfully
+[INFO ] 2026-05-20 17:55:14.877 [TestNG-PoolService-5] Hooks - Browser closed
+[INFO ] 2026-05-20 17:55:17.857 [TestNG-PoolService-3] MedicinestockAction - Searching medicine: Cetirizine
+[INFO ] 2026-05-20 17:55:18.422 [TestNG-PoolService-3] MedicinestockAction - Medicine found: Cetirizine
+[INFO ] 2026-05-20 17:55:18.424 [TestNG-PoolService-3] Hooks - Scenario Passed : Verify medicine search
+[INFO ] 2026-05-20 17:55:18.731 [TestNG-PoolService-3] Hooks - Browser closed
+[ERROR] 2026-05-20 17:55:33.326 [TestNG-PoolService-4] Hooks - Scenario Failed : Delete a selected medicine
+[INFO ] 2026-05-20 17:55:33.567 [TestNG-PoolService-4] Hooks - Screenshot Saved
+[INFO ] 2026-05-20 17:55:33.826 [TestNG-PoolService-4] Hooks - Browser closed
+[INFO ] 2026-05-21 17:31:07.799 [main] Hooks - Browser launched
+[INFO ] 2026-05-21 17:31:17.115 [main] MedicinestockAction - Searching medicine: Cetirizine
+[INFO ] 2026-05-21 17:31:17.366 [main] MedicinestockAction - Medicine found: Cetirizine
+[INFO ] 2026-05-21 17:31:17.368 [main] Hooks - Scenario Passed : Verify medicine search
+[INFO ] 2026-05-21 17:31:17.521 [main] Hooks - Browser closed
+[INFO ] 2026-05-21 17:31:18.198 [main] Hooks - Browser launched
+[INFO ] 2026-05-21 17:31:27.058 [main] MedicinestockAction - Searching medicine: Paracetamol
+[ERROR] 2026-05-21 17:31:47.274 [main] Hooks - Scenario Failed : Verify medicine search
+[INFO ] 2026-05-21 17:31:47.406 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-21 17:31:47.569 [main] Hooks - Browser closed
+[INFO ] 2026-05-21 17:31:48.232 [main] Hooks - Browser launched
+[ERROR] 2026-05-21 17:32:17.955 [main] Hooks - Scenario Failed : Delete a selected medicine
+[INFO ] 2026-05-21 17:32:18.093 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-21 17:32:18.287 [main] Hooks - Browser closed
+[INFO ] 2026-05-21 17:32:18.939 [main] Hooks - Browser launched
+[ERROR] 2026-05-21 17:33:10.606 [main] Hooks - Scenario Failed : Delete a selected medicine
+[INFO ] 2026-05-21 17:33:10.761 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-21 17:33:10.940 [main] Hooks - Browser closed
+[INFO ] 2026-05-21 17:34:23.000 [main] Hooks - Browser launched
+[INFO ] 2026-05-21 17:34:44.785 [main] MedicinestockAction - Searching medicine: Cetirizine
+[INFO ] 2026-05-21 17:34:45.014 [main] MedicinestockAction - Medicine found: Cetirizine
+[INFO ] 2026-05-21 17:34:45.017 [main] Hooks - Scenario Passed : Verify medicine search
+[INFO ] 2026-05-21 17:34:45.177 [main] Hooks - Browser closed
+[INFO ] 2026-05-21 17:34:45.843 [main] Hooks - Browser launched
+[INFO ] 2026-05-21 17:35:05.803 [main] MedicinestockAction - Searching medicine: Paracetamol
+[ERROR] 2026-05-21 17:35:26.075 [main] Hooks - Scenario Failed : Verify medicine search
+[INFO ] 2026-05-21 17:35:26.199 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-21 17:35:26.370 [main] Hooks - Browser closed
+[INFO ] 2026-05-21 17:35:27.068 [main] Hooks - Browser launched
+[ERROR] 2026-05-21 17:35:55.667 [main] Hooks - Scenario Failed : Delete a selected medicine
+[INFO ] 2026-05-21 17:35:55.805 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-21 17:35:55.951 [main] Hooks - Browser closed
+[INFO ] 2026-05-21 17:35:56.612 [main] Hooks - Browser launched
+[ERROR] 2026-05-21 17:36:24.945 [main] Hooks - Scenario Failed : Delete a selected medicine
+[INFO ] 2026-05-21 17:36:25.078 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-21 17:36:25.230 [main] Hooks - Browser closed
+[INFO ] 2026-05-21 18:43:18.252 [main] Hooks - Browser launched
+[INFO ] 2026-05-21 18:43:31.350 [main] MedicinestockAction - Searching medicine: Cetirizine
+[INFO ] 2026-05-21 18:43:31.954 [main] MedicinestockAction - Medicine found: Cetirizine
+[INFO ] 2026-05-21 18:43:31.959 [main] Hooks - Scenario Passed : Verify medicine search
+[INFO ] 2026-05-21 18:43:32.214 [main] Hooks - Browser closed
+[INFO ] 2026-05-21 18:43:33.027 [main] Hooks - Browser launched
+[INFO ] 2026-05-21 18:43:44.503 [main] MedicinestockAction - Searching medicine: Paracetamol
+[ERROR] 2026-05-21 18:44:05.237 [main] Hooks - Scenario Failed : Verify medicine search
+[INFO ] 2026-05-21 18:44:05.477 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-21 18:44:05.720 [main] Hooks - Browser closed
+[INFO ] 2026-05-21 18:44:06.587 [main] Hooks - Browser launched
+[ERROR] 2026-05-21 18:44:17.534 [main] Hooks - Scenario Failed : Delete a selected medicine
+[INFO ] 2026-05-21 18:44:17.822 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-21 18:44:18.055 [main] Hooks - Browser closed
+[INFO ] 2026-05-21 18:44:18.866 [main] Hooks - Browser launched
+[ERROR] 2026-05-21 18:44:28.175 [main] Hooks - Scenario Failed : Delete a selected medicine
+[INFO ] 2026-05-21 18:44:28.455 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-21 18:44:28.685 [main] Hooks - Browser closed
+[INFO ] 2026-05-21 18:47:34.736 [TestNG-PoolService-3] Hooks - Browser launched
+[INFO ] 2026-05-21 18:47:34.736 [TestNG-PoolService-4] Hooks - Browser launched
+[INFO ] 2026-05-21 18:47:34.743 [TestNG-PoolService-1] Hooks - Browser launched
+[INFO ] 2026-05-21 18:47:34.736 [TestNG-PoolService-2] Hooks - Browser launched
+[INFO ] 2026-05-21 18:47:48.616 [TestNG-PoolService-1] MedicinestockAction - Searching medicine: Cetirizine
+[INFO ] 2026-05-21 18:47:48.980 [TestNG-PoolService-2] MedicinestockAction - Searching medicine: Paracetamol
+[INFO ] 2026-05-21 18:47:49.328 [TestNG-PoolService-1] MedicinestockAction - Medicine found: Cetirizine
+[INFO ] 2026-05-21 18:47:49.334 [TestNG-PoolService-1] Hooks - Scenario Passed : Verify medicine search
+[INFO ] 2026-05-21 18:47:49.675 [TestNG-PoolService-1] Hooks - Browser closed
+[ERROR] 2026-05-21 18:48:08.418 [TestNG-PoolService-4] Hooks - Scenario Failed : Delete a selected medicine
+[INFO ] 2026-05-21 18:48:08.695 [TestNG-PoolService-4] Hooks - Screenshot Saved
+[INFO ] 2026-05-21 18:48:09.058 [TestNG-PoolService-4] Hooks - Browser closed
+[ERROR] 2026-05-21 18:48:09.727 [TestNG-PoolService-3] Hooks - Scenario Failed : Delete a selected medicine
+[ERROR] 2026-05-21 18:48:09.768 [TestNG-PoolService-2] Hooks - Scenario Failed : Verify medicine search
+[INFO ] 2026-05-21 18:48:09.943 [TestNG-PoolService-2] Hooks - Screenshot Saved
+[INFO ] 2026-05-21 18:48:10.096 [TestNG-PoolService-3] Hooks - Screenshot Saved
+[INFO ] 2026-05-21 18:48:10.257 [TestNG-PoolService-2] Hooks - Browser closed
+[INFO ] 2026-05-21 18:48:10.381 [TestNG-PoolService-3] Hooks - Browser closed
+[INFO ] 2026-05-22 05:35:16.019 [main] Hooks - Browser launched
+[INFO ] 2026-05-22 05:35:30.467 [main] MedicinestockAction - Searching medicine: Cetirizine
+[INFO ] 2026-05-22 05:35:30.694 [main] MedicinestockAction - Medicine found: Cetirizine
+[INFO ] 2026-05-22 05:35:30.698 [main] Hooks - Scenario Passed : Verify medicine search
+[INFO ] 2026-05-22 05:35:30.850 [main] Hooks - Browser closed
+[INFO ] 2026-05-22 05:35:31.514 [main] Hooks - Browser launched
+[INFO ] 2026-05-22 05:35:40.643 [main] MedicinestockAction - Searching medicine: Elixirs
+[INFO ] 2026-05-22 05:35:40.856 [main] MedicinestockAction - Medicine found: Elixirs
+[INFO ] 2026-05-22 05:35:40.857 [main] Hooks - Scenario Passed : Verify medicine search
+[INFO ] 2026-05-22 05:35:40.988 [main] Hooks - Browser closed
+[INFO ] 2026-05-22 05:35:41.653 [main] Hooks - Browser launched
+[INFO ] 2026-05-22 05:35:50.862 [main] MedicinestockAction - Selecting medicine: Amlodipine
+[INFO ] 2026-05-22 05:35:51.542 [main] MedicinestockAction - Delete confirmation message displayed
+[INFO ] 2026-05-22 05:35:51.543 [main] Hooks - Scenario Passed : Delete a selected medicine
+[INFO ] 2026-05-22 05:35:51.671 [main] Hooks - Browser closed
+[INFO ] 2026-05-22 05:35:52.323 [main] Hooks - Browser launched
+[INFO ] 2026-05-22 05:36:02.637 [main] MedicinestockAction - Selecting medicine: Zukolite Wen
+[INFO ] 2026-05-22 05:36:03.326 [main] MedicinestockAction - Delete confirmation message displayed
+[INFO ] 2026-05-22 05:36:03.327 [main] Hooks - Scenario Passed : Delete a selected medicine
+[INFO ] 2026-05-22 05:36:03.464 [main] Hooks - Browser closed
+[INFO ] 2026-05-22 06:00:09.358 [main] Hooks - Browser launched
+[ERROR] 2026-05-22 06:00:19.559 [main] Hooks - Scenario Failed : Verify medicine search
+[INFO ] 2026-05-22 06:00:19.781 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 06:00:19.943 [main] Hooks - Browser closed
+[INFO ] 2026-05-22 06:00:20.643 [main] Hooks - Browser launched
+[ERROR] 2026-05-22 06:00:35.254 [main] Hooks - Scenario Failed : Verify medicine search
+[INFO ] 2026-05-22 06:00:35.436 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 06:00:35.580 [main] Hooks - Browser closed
+[INFO ] 2026-05-22 06:00:36.232 [main] Hooks - Browser launched
+[ERROR] 2026-05-22 06:00:47.325 [main] Hooks - Scenario Failed : Delete a selected medicine
+[INFO ] 2026-05-22 06:00:47.523 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 06:00:47.677 [main] Hooks - Browser closed
+[INFO ] 2026-05-22 06:00:48.328 [main] Hooks - Browser launched
+[ERROR] 2026-05-22 06:00:59.066 [main] Hooks - Scenario Failed : Delete a selected medicine
+[INFO ] 2026-05-22 06:00:59.266 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 06:00:59.395 [main] Hooks - Browser closed
+[INFO ] 2026-05-22 06:22:56.130 [main] Hooks - Browser launched
+[INFO ] 2026-05-22 06:23:05.059 [main] MedicinestockAction - Searching medicine: Cetirizine
+[INFO ] 2026-05-22 06:23:05.288 [main] MedicinestockAction - Medicine found: Cetirizine
+[INFO ] 2026-05-22 06:23:05.290 [main] Hooks - Scenario Passed : Verify medicine search
+[INFO ] 2026-05-22 06:23:05.448 [main] Hooks - Browser closed
+[INFO ] 2026-05-22 06:23:06.110 [main] Hooks - Browser launched
+[INFO ] 2026-05-22 06:23:14.521 [main] MedicinestockAction - Searching medicine: Rifaximin
+[INFO ] 2026-05-22 06:23:15.765 [main] MedicinestockAction - No medicine found message displayed
+[INFO ] 2026-05-22 06:23:15.767 [main] Hooks - Scenario Passed : Verify medicine search
+[INFO ] 2026-05-22 06:23:15.915 [main] Hooks - Browser closed
+[INFO ] 2026-05-22 06:23:16.568 [main] Hooks - Browser launched
+[ERROR] 2026-05-22 06:23:47.513 [main] Hooks - Scenario Failed : Delete a selected medicine
+[INFO ] 2026-05-22 06:23:47.750 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 06:23:47.990 [main] Hooks - Browser closed
+[INFO ] 2026-05-22 06:23:48.808 [main] Hooks - Browser launched
+[ERROR] 2026-05-22 06:24:18.253 [main] Hooks - Scenario Failed : Delete a selected medicine
+[INFO ] 2026-05-22 06:24:18.478 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 06:24:18.785 [main] Hooks - Browser closed
+[INFO ] 2026-05-22 07:06:11.230 [main] Hooks - Browser launched
+[INFO ] 2026-05-22 07:06:25.300 [main] MedicinestockAction - Searching medicine: Cetirizine
+[INFO ] 2026-05-22 07:06:25.930 [main] MedicinestockAction - Medicine found: Cetirizine
+[INFO ] 2026-05-22 07:06:25.938 [main] Hooks - Scenario Passed : Verify medicine search
+[INFO ] 2026-05-22 07:06:26.198 [main] Hooks - Browser closed
+[INFO ] 2026-05-22 07:06:27.158 [main] Hooks - Browser launched
+[INFO ] 2026-05-22 07:06:41.260 [main] MedicinestockAction - Searching medicine: Rifaximin
+[INFO ] 2026-05-22 07:06:42.924 [main] MedicinestockAction - No medicine found message displayed
+[INFO ] 2026-05-22 07:06:42.927 [main] Hooks - Scenario Passed : Verify medicine search
+[INFO ] 2026-05-22 07:06:43.160 [main] Hooks - Browser closed
+[INFO ] 2026-05-22 07:06:44.013 [main] Hooks - Browser launched
+[ERROR] 2026-05-22 07:07:19.498 [main] Hooks - Scenario Failed : Delete a selected medicine
+[INFO ] 2026-05-22 07:07:19.895 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 07:07:20.265 [main] Hooks - Browser closed
+[INFO ] 2026-05-22 07:09:21.675 [main] Hooks - Browser launched
+[INFO ] 2026-05-22 07:09:38.221 [main] MedicinestockAction - Searching medicine: Cetirizine
+[INFO ] 2026-05-22 07:09:38.851 [main] MedicinestockAction - Medicine found: Cetirizine
+[INFO ] 2026-05-22 07:09:38.860 [main] Hooks - Scenario Passed : Verify medicine search
+[INFO ] 2026-05-22 07:09:39.099 [main] Hooks - Browser closed
+[INFO ] 2026-05-22 07:09:39.994 [main] Hooks - Browser launched
+[INFO ] 2026-05-22 07:09:56.271 [main] MedicinestockAction - Searching medicine: Rifaximin
+[INFO ] 2026-05-22 07:09:57.953 [main] MedicinestockAction - No medicine found message displayed
+[INFO ] 2026-05-22 07:09:57.957 [main] Hooks - Scenario Passed : Verify medicine search
+[INFO ] 2026-05-22 07:09:58.180 [main] Hooks - Browser closed
+[INFO ] 2026-05-22 07:09:59.037 [main] Hooks - Browser launched
+[INFO ] 2026-05-22 07:10:16.105 [main] MedicinestockAction - Selecting medicine: VARICELLA
+[INFO ] 2026-05-22 07:10:17.209 [main] MedicinestockAction - Delete confirmation message displayed
+[INFO ] 2026-05-22 07:10:17.211 [main] Hooks - Scenario Passed : Delete a selected medicine
+[INFO ] 2026-05-22 07:10:17.420 [main] Hooks - Browser closed
+>>>>>>> Stashed changes
