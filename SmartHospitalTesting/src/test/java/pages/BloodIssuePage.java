@@ -12,7 +12,7 @@ public class BloodIssuePage {
     public static By referenceNamefield   = By.xpath("//input[@id='reference']");
     public static By bloodBagdropdown     = By.xpath("(//span[@role='combobox']/following::span[text()='Select'])[1]");
     public static By chargecategorydropdown = By.xpath("(//span[contains(@class,'select2-selection--single')])[5]");
-    public static By chargenameDropdown   = By.xpath("(//span[contains(@class,'select2-selection--single')])[6]");
+    public static By chargenameDropdown   = By.xpath("(//span[@class='select2-selection__rendered'])[6]");
     public static By saveButton           = By.xpath("(//button[normalize-space()='Save'])[1]");
     public static By paymentfield         = By.xpath("//input[@id='payment_amount']");
     public static By searchBox            = By.xpath("//input[@class='select2-search__field']");
