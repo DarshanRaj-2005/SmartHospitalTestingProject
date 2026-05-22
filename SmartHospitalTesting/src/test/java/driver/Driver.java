@@ -17,13 +17,13 @@ public class Driver {
     public static WebDriver getDriver() {
         return driver.get();
     }
-    public Driver() {
+   /* public Driver() {
 
         String browser = ConfigReader.getProperties().getProperty("browser");
         String headlessValue = ConfigReader.getProperties().getProperty("headless");
 
-        boolean headless = headlessValue != null
-                && headlessValue.equalsIgnoreCase("true");
+        //boolean headless = headlessValue != null
+              //  && headlessValue.equalsIgnoreCase("true");
 
         if (browser.equalsIgnoreCase("chrome")) {
             WebDriverManager.chromedriver().setup();
@@ -32,6 +32,7 @@ public class Driver {
             options.setExperimentalOption("prefs", Map.of(
                     "credentials_enable_service", false,
                     "profile.password_manager_enabled", false));
+        }
             if (headless) {
                 options.addArguments("--headless=new");
                 options.addArguments("--window-size=1920,1080");
@@ -60,6 +61,36 @@ public class Driver {
         if (!headless) {
             getDriver().manage().window().maximize();
         }
+    }*/
+    public Driver() {
+
+        String browser = ConfigReader.getProperties().getProperty("browser");
+
+        if (browser.equalsIgnoreCase("chrome")) {
+            WebDriverManager.chromedriver().setup();
+
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--disable-notifications");
+            options.setExperimentalOption("prefs", Map.of(
+                    "credentials_enable_service", false,
+                    "profile.password_manager_enabled", false));
+
+            driver.set(new ChromeDriver(options));   // ✅ IMPORTANT
+        }
+
+        else if (browser.equalsIgnoreCase("firefox")) {
+            WebDriverManager.firefoxdriver().setup();
+
+            FirefoxOptions options = new FirefoxOptions();
+
+            driver.set(new FirefoxDriver(options));  // ✅ IMPORTANT
+        }
+
+        else {
+            throw new RuntimeException("Invalid Browser Name: " + browser);
+        }
+
+        getDriver().manage().window().maximize();   // ✅ since no headless
     }
     public static void quitDriver() {
         if (getDriver() != null) {

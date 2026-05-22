@@ -100,13 +100,14 @@ public class BloodIssueStepDefinition {
         String doctor         = data[0][1];
         String issueDate      = data[0][2];
         String chargeCategory = data[0][3];
+        String chargeName     =data[0][4];
 
         bloodIssueAction.selectpatient(patientName);
         bloodIssueAction.enterIssueDate(issueDate);
         bloodIssueAction.selectdoctor(doctor);        
         bloodIssueAction.selectBloodbag();
         bloodIssueAction.selectChargeCategory(chargeCategory);
-        bloodIssueAction.selectChargeName();
+        bloodIssueAction.selectChargeName(chargeName);
     }
 }
 
