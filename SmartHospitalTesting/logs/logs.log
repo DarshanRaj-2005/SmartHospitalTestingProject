@@ -342,3 +342,449 @@ Charge Name field is required
 [ERROR] 2026-05-21 17:29:30.098 [TestNG-PoolService-5] Hooks - Scenario Failed : Verify user is able to add blood donor details
 [INFO ] 2026-05-21 17:29:30.223 [TestNG-PoolService-5] Hooks - Screenshot Saved
 [INFO ] 2026-05-21 17:29:30.527 [TestNG-PoolService-5] Hooks - Browser closed
+<<<<<<< HEAD
+[INFO ] 2026-05-22 07:24:18.283 [main] Hooks - Browser launched
+[INFO ] 2026-05-22 07:25:30.822 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 07:25:31.457 [main] BloodIssueAction - Navigated to Blood Issue Details Page
+[INFO ] 2026-05-22 07:25:39.401 [main] BloodIssueAction - Issue Blood popup is displayed.
+[DEBUG] 2026-05-22 07:25:46.369 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-22 07:25:46.374 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[ERROR] 2026-05-22 07:25:49.820 [main] Hooks - Scenario Failed : Issue blood with valid details
+[INFO ] 2026-05-22 07:25:49.975 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 07:25:50.175 [main] Hooks - Browser closed
+[INFO ] 2026-05-22 07:31:58.720 [main] Hooks - Browser launched
+[INFO ] 2026-05-22 07:32:08.415 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 07:32:09.456 [main] BloodIssueAction - Navigated to Blood Issue Details Page
+[INFO ] 2026-05-22 07:32:10.978 [main] BloodIssueAction - Issue Blood popup is displayed.
+[DEBUG] 2026-05-22 07:32:12.109 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-22 07:32:12.113 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[ERROR] 2026-05-22 07:32:16.253 [main] Hooks - Scenario Failed : Issue blood with valid details
+[INFO ] 2026-05-22 07:32:16.472 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 07:32:17.006 [main] Hooks - Browser closed
+[INFO ] 2026-05-22 07:37:01.675 [main] Hooks - Browser launched
+[INFO ] 2026-05-22 07:38:49.215 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 07:38:49.888 [main] BloodIssueAction - Navigated to Blood Issue Details Page
+[INFO ] 2026-05-22 07:38:50.815 [main] BloodIssueAction - Issue Blood popup is displayed.
+[DEBUG] 2026-05-22 07:38:51.787 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-22 07:38:51.797 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[INFO ] 2026-05-22 07:38:56.768 [main] BloodIssueAction - Record Saved Successfully
+[INFO ] 2026-05-22 07:38:56.784 [main] Hooks - Scenario Passed : Issue blood with valid details
+[INFO ] 2026-05-22 07:38:57.105 [main] Hooks - Browser closed
+[INFO ] 2026-05-22 07:50:39.619 [main] Hooks - Browser launched
+[INFO ] 2026-05-22 07:51:15.252 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 07:51:16.528 [main] BloodStockAction - Clicked Add Icon
+[INFO ] 2026-05-22 07:51:17.346 [main] BloodStockStepDefinition - Enter Blood Donor Details
+[ERROR] 2026-05-22 07:51:38.815 [main] Hooks - Scenario Failed : Verify user is able to add blood donor details
+[INFO ] 2026-05-22 07:51:39.052 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 07:51:39.554 [main] Hooks - Browser closed
+[INFO ] 2026-05-22 07:56:56.218 [main] Hooks - Browser launched
+[INFO ] 2026-05-22 07:57:12.145 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 07:57:12.954 [main] BloodStockAction - Clicked Add Icon
+[INFO ] 2026-05-22 07:57:14.339 [main] BloodStockStepDefinition - Enter Blood Donor Details
+[ERROR] 2026-05-22 07:57:34.752 [main] Hooks - Scenario Failed : Verify user is able to add blood donor details
+[INFO ] 2026-05-22 07:57:35.027 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 07:57:35.315 [main] Hooks - Browser closed
+[INFO ] 2026-05-22 08:01:18.271 [main] Hooks - Browser launched
+[INFO ] 2026-05-22 08:01:31.725 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 08:01:32.746 [main] BloodStockAction - Clicked Add Icon
+[INFO ] 2026-05-22 08:01:33.633 [main] BloodStockStepDefinition - Enter Blood Donor Details
+[ERROR] 2026-05-22 08:01:53.986 [main] Hooks - Scenario Failed : Verify user is able to add blood donor details
+[INFO ] 2026-05-22 08:01:54.225 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 08:01:54.621 [main] Hooks - Browser closed
+[INFO ] 2026-05-22 08:04:28.352 [main] Hooks - Browser launched
+[INFO ] 2026-05-22 08:04:53.081 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 08:04:54.798 [main] BloodStockAction - Clicked Add Icon
+[INFO ] 2026-05-22 08:04:55.620 [main] BloodStockStepDefinition - Enter Blood Donor Details
+[ERROR] 2026-05-22 08:05:17.654 [main] Hooks - Scenario Failed : Verify user is able to add blood donor details
+[INFO ] 2026-05-22 08:05:17.940 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 08:05:18.251 [main] Hooks - Browser closed
+[INFO ] 2026-05-22 08:07:32.629 [main] Hooks - Browser launched
+[INFO ] 2026-05-22 08:07:52.209 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 08:07:53.489 [main] BloodStockAction - Clicked Add Icon
+[ERROR] 2026-05-22 08:07:54.331 [main] Hooks - Scenario Failed : Verify user is able to add blood donor details
+[INFO ] 2026-05-22 08:07:54.656 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 08:07:54.973 [main] Hooks - Browser closed
+[INFO ] 2026-05-22 14:59:45.894 [TestNG-PoolService-2] Hooks - Browser launched
+[INFO ] 2026-05-22 14:59:45.898 [TestNG-PoolService-3] Hooks - Browser launched
+[INFO ] 2026-05-22 14:59:45.879 [TestNG-PoolService-9] Hooks - Browser launched
+[INFO ] 2026-05-22 14:59:45.942 [TestNG-PoolService-6] Hooks - Browser launched
+[INFO ] 2026-05-22 14:59:45.879 [TestNG-PoolService-8] Hooks - Browser launched
+[INFO ] 2026-05-22 14:59:45.936 [TestNG-PoolService-5] Hooks - Browser launched
+[INFO ] 2026-05-22 14:59:45.898 [TestNG-PoolService-1] Hooks - Browser launched
+[INFO ] 2026-05-22 14:59:45.979 [TestNG-PoolService-10] Hooks - Browser launched
+[INFO ] 2026-05-22 14:59:45.986 [TestNG-PoolService-7] Hooks - Browser launched
+[ERROR] 2026-05-22 14:59:50.344 [TestNG-PoolService-3] Hooks - Scenario Failed : Issue blood with empty mandatory fields
+[ERROR] 2026-05-22 14:59:50.352 [TestNG-PoolService-3] Hooks - Screenshot Failed org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=148.0.7778.179)
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [164a5405cb3593e9e62e5acd2caa2648, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\HARINI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59240}, goog:processID: 2160, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59240/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 164a5405cb3593e9e62e5acd2caa2648
+[INFO ] 2026-05-22 15:02:48.763 [TestNG-PoolService-6] Hooks - Browser launched
+[INFO ] 2026-05-22 15:02:48.763 [TestNG-PoolService-7] Hooks - Browser launched
+[INFO ] 2026-05-22 15:02:48.763 [TestNG-PoolService-5] Hooks - Browser launched
+[INFO ] 2026-05-22 15:02:48.763 [TestNG-PoolService-8] Hooks - Browser launched
+[INFO ] 2026-05-22 15:02:48.763 [TestNG-PoolService-10] Hooks - Browser launched
+[INFO ] 2026-05-22 15:02:48.763 [TestNG-PoolService-4] Hooks - Browser launched
+[INFO ] 2026-05-22 15:02:48.763 [TestNG-PoolService-3] Hooks - Browser launched
+[INFO ] 2026-05-22 15:02:48.763 [TestNG-PoolService-9] Hooks - Browser launched
+[INFO ] 2026-05-22 15:02:48.763 [TestNG-PoolService-1] Hooks - Browser launched
+[INFO ] 2026-05-22 15:02:48.763 [TestNG-PoolService-2] Hooks - Browser launched
+[INFO ] 2026-05-22 15:02:59.136 [TestNG-PoolService-5] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:02:59.433 [TestNG-PoolService-7] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:02:59.516 [TestNG-PoolService-8] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:02:59.548 [TestNG-PoolService-4] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:02:59.606 [TestNG-PoolService-10] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:02:59.612 [TestNG-PoolService-9] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:03:00.531 [TestNG-PoolService-9] BloodStockAction - Clicked Issue Button
+[INFO ] 2026-05-22 15:03:00.647 [TestNG-PoolService-8] BloodStockAction - Clicked Add Icon
+[INFO ] 2026-05-22 15:03:00.711 [TestNG-PoolService-5] Hooks - Scenario Passed : Verify blood stock details for different blood groups
+[ERROR] 2026-05-22 15:03:00.910 [TestNG-PoolService-7] Hooks - Scenario Failed : Verify blood stock details for different blood groups
+[INFO ] 2026-05-22 15:03:01.041 [TestNG-PoolService-5] Hooks - Browser closed
+[INFO ] 2026-05-22 15:03:01.266 [TestNG-PoolService-4] Hooks - Scenario Passed : Verify blood stock details for different blood groups
+[INFO ] 2026-05-22 15:03:01.330 [TestNG-PoolService-9] BloodStockStepDefinition - Blood Issue Page is displayed.
+[INFO ] 2026-05-22 15:03:01.331 [TestNG-PoolService-7] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 15:03:01.331 [TestNG-PoolService-9] Hooks - Scenario Passed : Verify user navigates to Blood Issue page
+[INFO ] 2026-05-22 15:03:01.355 [TestNG-PoolService-10] DonorManagementAction - Blood Donor popup is opened.
+[INFO ] 2026-05-22 15:03:01.501 [TestNG-PoolService-8] BloodStockStepDefinition - Enter Blood Donor Details
+[INFO ] 2026-05-22 15:03:02.021 [TestNG-PoolService-5] Hooks - Browser launched
+[INFO ] 2026-05-22 15:03:02.414 [TestNG-PoolService-4] Hooks - Browser closed
+[INFO ] 2026-05-22 15:03:02.420 [TestNG-PoolService-9] Hooks - Browser closed
+[INFO ] 2026-05-22 15:03:02.453 [TestNG-PoolService-7] Hooks - Browser closed
+[INFO ] 2026-05-22 15:03:02.848 [TestNG-PoolService-10] DonorManagementAction - Clicked Save Button
+[INFO ] 2026-05-22 15:03:03.047 [TestNG-PoolService-10] DonorManagementStepDefinition - The Record is added Succefully.
+[INFO ] 2026-05-22 15:03:03.075 [TestNG-PoolService-10] Hooks - Scenario Passed : Verify user is able to add donor with valid details
+[INFO ] 2026-05-22 15:03:03.366 [TestNG-PoolService-4] Hooks - Browser launched
+[INFO ] 2026-05-22 15:03:03.489 [TestNG-PoolService-10] Hooks - Browser closed
+[INFO ] 2026-05-22 15:03:03.576 [TestNG-PoolService-8] BloodStockAction - Clicked Save Button
+[INFO ] 2026-05-22 15:03:03.714 [TestNG-PoolService-8] BloodStockStepDefinition - Donor Details added.
+[INFO ] 2026-05-22 15:03:03.715 [TestNG-PoolService-8] Hooks - Scenario Passed : Verify user is able to add blood donor details
+[INFO ] 2026-05-22 15:03:04.070 [TestNG-PoolService-8] Hooks - Browser closed
+[INFO ] 2026-05-22 15:03:08.362 [TestNG-PoolService-3] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:03:08.900 [TestNG-PoolService-3] BloodIssueAction - Navigated to Blood Issue Details Page
+[INFO ] 2026-05-22 15:03:09.654 [TestNG-PoolService-3] BloodIssueAction - Issue Blood popup is displayed.
+[INFO ] 2026-05-22 15:03:10.308 [TestNG-PoolService-3] DonorManagementAction - Blood issue is unsuccessful.
+[INFO ] 2026-05-22 15:03:11.041 [TestNG-PoolService-3] Hooks - Scenario Passed : Issue blood with empty mandatory fields
+[INFO ] 2026-05-22 15:03:11.168 [TestNG-PoolService-3] Hooks - Browser closed
+[INFO ] 2026-05-22 15:03:11.645 [TestNG-PoolService-6] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:03:12.375 [TestNG-PoolService-6] Hooks - Scenario Passed : Verify blood stock details for different blood groups
+[INFO ] 2026-05-22 15:03:12.538 [TestNG-PoolService-6] Hooks - Browser closed
+[INFO ] 2026-05-22 15:03:12.994 [TestNG-PoolService-2] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:03:13.276 [TestNG-PoolService-1] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:03:13.496 [TestNG-PoolService-2] BloodIssueAction - Navigated to Blood Issue Details Page
+[INFO ] 2026-05-22 15:03:13.932 [TestNG-PoolService-1] BloodIssueAction - Navigated to Blood Issue Details Page
+[INFO ] 2026-05-22 15:03:14.162 [TestNG-PoolService-2] BloodIssueAction - Deleting issued blood record
+[INFO ] 2026-05-22 15:03:14.632 [TestNG-PoolService-1] BloodIssueAction - Issue Blood popup is displayed.
+[DEBUG] 2026-05-22 15:03:15.524 [TestNG-PoolService-1] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-22 15:03:15.527 [TestNG-PoolService-1] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[INFO ] 2026-05-22 15:03:15.560 [TestNG-PoolService-2] BloodIssueAction - Blood issue record deleted successfully
+[INFO ] 2026-05-22 15:03:15.578 [TestNG-PoolService-2] Hooks - Scenario Passed : Delete issued blood record
+[INFO ] 2026-05-22 15:03:15.718 [TestNG-PoolService-2] Hooks - Browser closed
+[INFO ] 2026-05-22 15:03:19.082 [TestNG-PoolService-4] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:03:19.167 [TestNG-PoolService-1] BloodIssueAction - Record Saved Successfully
+[INFO ] 2026-05-22 15:03:19.169 [TestNG-PoolService-1] Hooks - Scenario Passed : Issue blood with valid details
+[INFO ] 2026-05-22 15:03:19.598 [TestNG-PoolService-1] Hooks - Browser closed
+[INFO ] 2026-05-22 15:03:20.941 [TestNG-PoolService-4] DonorManagementAction - Blood Donor popup is opened.
+[INFO ] 2026-05-22 15:03:21.616 [TestNG-PoolService-4] DonorManagementAction - Clicked Save Button
+[INFO ] 2026-05-22 15:03:21.697 [TestNG-PoolService-4] DonorManagementStepDefinition - New Donor is not added.
+[INFO ] 2026-05-22 15:03:22.323 [TestNG-PoolService-4] Hooks - Scenario Passed : Validate donor creation with all mandatory fields empty
+[INFO ] 2026-05-22 15:03:23.154 [TestNG-PoolService-4] Hooks - Browser closed
+[INFO ] 2026-05-22 15:03:29.072 [TestNG-PoolService-5] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:03:30.733 [TestNG-PoolService-5] DonorManagementAction - Blood Donor popup is opened.
+[INFO ] 2026-05-22 15:03:31.708 [TestNG-PoolService-5] DonorManagementAction - Clicked Save Button
+[INFO ] 2026-05-22 15:03:31.780 [TestNG-PoolService-5] DonorManagementStepDefinition - The Record is added Succefully.
+[INFO ] 2026-05-22 15:03:31.797 [TestNG-PoolService-5] Hooks - Scenario Passed : Verify user is able to add donor with mandatory fields
+[INFO ] 2026-05-22 15:03:32.239 [TestNG-PoolService-5] Hooks - Browser closed
+=======
+>>>>>>> ced25b94256334cab9425921f36b7c512ddd1b50
+[INFO ] 2026-05-22 15:08:42.446 [TestNG-PoolService-4] Hooks - Browser launched
+[INFO ] 2026-05-22 15:08:42.446 [TestNG-PoolService-3] Hooks - Browser launched
+[INFO ] 2026-05-22 15:08:42.446 [TestNG-PoolService-5] Hooks - Browser launched
+[INFO ] 2026-05-22 15:08:42.446 [TestNG-PoolService-1] Hooks - Browser launched
+[INFO ] 2026-05-22 15:08:42.446 [TestNG-PoolService-2] Hooks - Browser launched
+[INFO ] 2026-05-22 15:09:17.323 [TestNG-PoolService-2] GeneratePharmacybillAction - Clicking Save button
+[INFO ] 2026-05-22 15:09:17.691 [TestNG-PoolService-1] GeneratePharmacybillAction - Entering patient name: John
+[ERROR] 2026-05-22 15:09:18.081 [TestNG-PoolService-2] Hooks - Scenario Failed : Verify error when mandatory fields are missing
+[INFO ] 2026-05-22 15:09:18.437 [TestNG-PoolService-2] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 15:09:18.781 [TestNG-PoolService-2] Hooks - Browser closed
+[INFO ] 2026-05-22 15:09:19.345 [TestNG-PoolService-1] GeneratePharmacybillAction - Selecting category: Syrup
+[ERROR] 2026-05-22 15:09:20.101 [TestNG-PoolService-1] Hooks - Scenario Failed : Verify whether a user can generate the bill using valid details
+[INFO ] 2026-05-22 15:09:20.347 [TestNG-PoolService-1] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 15:09:20.510 [TestNG-PoolService-1] Hooks - Browser closed
+[INFO ] 2026-05-22 15:09:25.924 [TestNG-PoolService-5] PharmacyBillpageAction - Searching patient name: praveen raj
+[INFO ] 2026-05-22 15:09:27.222 [TestNG-PoolService-5] Hooks - Scenario Passed : Verify patient search functionality
+[INFO ] 2026-05-22 15:09:27.397 [TestNG-PoolService-4] PharmacyBillpageAction - Searching patient name: Ashok
+[INFO ] 2026-05-22 15:09:27.411 [TestNG-PoolService-5] Hooks - Browser closed
+[INFO ] 2026-05-22 15:09:27.560 [TestNG-PoolService-4] PharmacyBillpageAction - Patient found: Ashok
+[INFO ] 2026-05-22 15:09:27.561 [TestNG-PoolService-4] Hooks - Scenario Passed : Verify patient search functionality
+[INFO ] 2026-05-22 15:09:27.726 [TestNG-PoolService-4] Hooks - Browser closed
+[ERROR] 2026-05-22 15:09:34.765 [TestNG-PoolService-3] Hooks - Scenario Failed : Verify whether the Pharmacy Bill page displays successfully
+[INFO ] 2026-05-22 15:09:34.882 [TestNG-PoolService-3] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 15:09:36.601 [TestNG-PoolService-3] Hooks - Browser closed
+[INFO ] 2026-05-22 15:10:04.633 [TestNG-PoolService-1] Hooks - Browser launched
+[INFO ] 2026-05-22 15:10:04.633 [TestNG-PoolService-6] Hooks - Browser launched
+[INFO ] 2026-05-22 15:10:04.633 [TestNG-PoolService-2] Hooks - Browser launched
+[INFO ] 2026-05-22 15:10:04.633 [TestNG-PoolService-3] Hooks - Browser launched
+[INFO ] 2026-05-22 15:10:04.633 [TestNG-PoolService-9] Hooks - Browser launched
+[INFO ] 2026-05-22 15:10:04.633 [TestNG-PoolService-5] Hooks - Browser launched
+[INFO ] 2026-05-22 15:10:04.633 [TestNG-PoolService-7] Hooks - Browser launched
+[INFO ] 2026-05-22 15:10:04.633 [TestNG-PoolService-8] Hooks - Browser launched
+[INFO ] 2026-05-22 15:10:04.633 [TestNG-PoolService-10] Hooks - Browser launched
+[INFO ] 2026-05-22 15:10:04.633 [TestNG-PoolService-4] Hooks - Browser launched
+[INFO ] 2026-05-22 15:11:32.067 [TestNG-PoolService-6] Hooks - Browser launched
+[INFO ] 2026-05-22 15:11:32.064 [TestNG-PoolService-9] Hooks - Browser launched
+[INFO ] 2026-05-22 15:11:32.065 [TestNG-PoolService-1] Hooks - Browser launched
+[INFO ] 2026-05-22 15:11:32.064 [TestNG-PoolService-8] Hooks - Browser launched
+[INFO ] 2026-05-22 15:11:32.064 [TestNG-PoolService-4] Hooks - Browser launched
+[INFO ] 2026-05-22 15:11:32.064 [TestNG-PoolService-10] Hooks - Browser launched
+[INFO ] 2026-05-22 15:11:32.064 [TestNG-PoolService-5] Hooks - Browser launched
+[INFO ] 2026-05-22 15:11:32.068 [TestNG-PoolService-2] Hooks - Browser launched
+[INFO ] 2026-05-22 15:11:32.083 [TestNG-PoolService-7] Hooks - Browser launched
+[INFO ] 2026-05-22 15:11:32.113 [TestNG-PoolService-3] Hooks - Browser launched
+[ERROR] 2026-05-22 15:12:02.661 [TestNG-PoolService-3] Hooks - Scenario Failed : Issue blood with empty mandatory fields
+[ERROR] 2026-05-22 15:12:02.807 [TestNG-PoolService-2] Hooks - Scenario Failed : Delete issued blood record
+[ERROR] 2026-05-22 15:12:02.808 [TestNG-PoolService-1] Hooks - Scenario Failed : Issue blood with valid details
+[INFO ] 2026-05-22 15:12:02.942 [TestNG-PoolService-3] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 15:12:03.038 [TestNG-PoolService-2] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 15:12:03.056 [TestNG-PoolService-1] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 15:12:03.918 [TestNG-PoolService-1] Hooks - Browser closed
+[INFO ] 2026-05-22 15:12:03.947 [TestNG-PoolService-2] Hooks - Browser closed
+[INFO ] 2026-05-22 15:12:03.983 [TestNG-PoolService-3] Hooks - Browser closed
+[INFO ] 2026-05-22 15:12:04.894 [TestNG-PoolService-2] Hooks - Browser launched
+[INFO ] 2026-05-22 15:12:04.895 [TestNG-PoolService-1] Hooks - Browser launched
+[INFO ] 2026-05-22 15:12:05.068 [TestNG-PoolService-5] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:12:06.667 [TestNG-PoolService-9] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:12:07.064 [TestNG-PoolService-7] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:12:08.059 [TestNG-PoolService-9] BloodStockAction - Clicked Issue Button
+[INFO ] 2026-05-22 15:12:08.403 [TestNG-PoolService-5] Hooks - Scenario Passed : Verify blood stock details for different blood groups
+[INFO ] 2026-05-22 15:12:08.652 [TestNG-PoolService-5] Hooks - Browser closed
+[INFO ] 2026-05-22 15:12:08.801 [TestNG-PoolService-9] BloodStockStepDefinition - Blood Issue Page is displayed.
+[INFO ] 2026-05-22 15:12:08.804 [TestNG-PoolService-9] Hooks - Scenario Passed : Verify user navigates to Blood Issue page
+[INFO ] 2026-05-22 15:12:09.101 [TestNG-PoolService-9] Hooks - Browser closed
+[INFO ] 2026-05-22 15:12:09.365 [TestNG-PoolService-7] Hooks - Scenario Passed : Verify blood stock details for different blood groups
+[INFO ] 2026-05-22 15:12:09.743 [TestNG-PoolService-7] Hooks - Browser closed
+[INFO ] 2026-05-22 15:12:09.847 [TestNG-PoolService-6] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:12:10.974 [TestNG-PoolService-4] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:12:11.312 [TestNG-PoolService-6] Hooks - Scenario Passed : Verify blood stock details for different blood groups
+[INFO ] 2026-05-22 15:12:11.614 [TestNG-PoolService-6] Hooks - Browser closed
+[INFO ] 2026-05-22 15:12:12.370 [TestNG-PoolService-4] Hooks - Scenario Passed : Verify blood stock details for different blood groups
+[INFO ] 2026-05-22 15:12:12.608 [TestNG-PoolService-4] Hooks - Browser closed
+[INFO ] 2026-05-22 15:12:19.424 [TestNG-PoolService-10] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:12:21.145 [TestNG-PoolService-8] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:12:21.209 [TestNG-PoolService-10] DonorManagementAction - Blood Donor popup is opened.
+[INFO ] 2026-05-22 15:12:22.311 [TestNG-PoolService-10] DonorManagementAction - Clicked Save Button
+[INFO ] 2026-05-22 15:12:22.406 [TestNG-PoolService-10] DonorManagementStepDefinition - The Record is added Succefully.
+[INFO ] 2026-05-22 15:12:22.428 [TestNG-PoolService-10] Hooks - Scenario Passed : Verify user is able to add donor with valid details
+[INFO ] 2026-05-22 15:12:22.552 [TestNG-PoolService-8] BloodStockAction - Clicked Add Icon
+[INFO ] 2026-05-22 15:12:22.633 [TestNG-PoolService-10] Hooks - Browser closed
+[INFO ] 2026-05-22 15:12:23.206 [TestNG-PoolService-8] BloodStockStepDefinition - Enter Blood Donor Details
+[INFO ] 2026-05-22 15:12:24.402 [TestNG-PoolService-8] BloodStockAction - Clicked Save Button
+[INFO ] 2026-05-22 15:12:24.501 [TestNG-PoolService-8] BloodStockStepDefinition - Donor Details added.
+[INFO ] 2026-05-22 15:12:24.502 [TestNG-PoolService-8] Hooks - Scenario Passed : Verify user is able to add blood donor details
+[INFO ] 2026-05-22 15:12:24.690 [TestNG-PoolService-8] Hooks - Browser closed
+[INFO ] 2026-05-22 15:12:29.288 [TestNG-PoolService-1] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:12:31.522 [TestNG-PoolService-1] DonorManagementAction - Blood Donor popup is opened.
+[INFO ] 2026-05-22 15:12:32.390 [TestNG-PoolService-1] DonorManagementAction - Clicked Save Button
+[INFO ] 2026-05-22 15:12:32.447 [TestNG-PoolService-1] DonorManagementStepDefinition - The Record is added Succefully.
+[INFO ] 2026-05-22 15:12:32.461 [TestNG-PoolService-1] Hooks - Scenario Passed : Verify user is able to add donor with mandatory fields
+[INFO ] 2026-05-22 15:12:32.661 [TestNG-PoolService-1] Hooks - Browser closed
+[INFO ] 2026-05-22 15:12:33.535 [TestNG-PoolService-2] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:12:35.345 [TestNG-PoolService-2] DonorManagementAction - Blood Donor popup is opened.
+[INFO ] 2026-05-22 15:12:36.007 [TestNG-PoolService-2] DonorManagementAction - Clicked Save Button
+[INFO ] 2026-05-22 15:12:36.090 [TestNG-PoolService-2] DonorManagementStepDefinition - New Donor is not added.
+[INFO ] 2026-05-22 15:12:36.641 [TestNG-PoolService-2] Hooks - Scenario Passed : Validate donor creation with all mandatory fields empty
+[INFO ] 2026-05-22 15:12:36.860 [TestNG-PoolService-2] Hooks - Browser closed
+[INFO ] 2026-05-22 15:13:08.838 [TestNG-PoolService-8] Hooks - Browser launched
+[INFO ] 2026-05-22 15:13:08.838 [TestNG-PoolService-1] Hooks - Browser launched
+[INFO ] 2026-05-22 15:13:08.838 [TestNG-PoolService-6] Hooks - Browser launched
+[INFO ] 2026-05-22 15:13:08.838 [TestNG-PoolService-7] Hooks - Browser launched
+[INFO ] 2026-05-22 15:13:08.838 [TestNG-PoolService-9] Hooks - Browser launched
+[INFO ] 2026-05-22 15:13:08.838 [TestNG-PoolService-3] Hooks - Browser launched
+[INFO ] 2026-05-22 15:13:08.838 [TestNG-PoolService-10] Hooks - Browser launched
+[INFO ] 2026-05-22 15:13:08.838 [TestNG-PoolService-5] Hooks - Browser launched
+[INFO ] 2026-05-22 15:13:08.838 [TestNG-PoolService-2] Hooks - Browser launched
+[INFO ] 2026-05-22 15:13:08.838 [TestNG-PoolService-4] Hooks - Browser launched
+[INFO ] 2026-05-22 15:13:50.916 [TestNG-PoolService-6] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:14:05.490 [TestNG-PoolService-4] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:14:06.588 [TestNG-PoolService-6] Hooks - Scenario Passed : Verify blood stock details for different blood groups
+[ERROR] 2026-05-22 15:14:18.238 [TestNG-PoolService-2] Hooks - Scenario Failed : Delete issued blood record
+[INFO ] 2026-05-22 15:14:18.885 [TestNG-PoolService-2] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 15:14:18.959 [TestNG-PoolService-5] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:14:18.966 [TestNG-PoolService-3] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:14:22.905 [TestNG-PoolService-3] BloodIssueAction - Navigated to Blood Issue Details Page
+[ERROR] 2026-05-22 15:14:24.730 [TestNG-PoolService-8] Hooks - Scenario Failed : Verify user is able to add blood donor details
+[INFO ] 2026-05-22 15:14:25.475 [TestNG-PoolService-8] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 15:14:28.488 [TestNG-PoolService-3] BloodIssueAction - Issue Blood popup is displayed.
+[INFO ] 2026-05-22 15:14:30.728 [TestNG-PoolService-5] Hooks - Scenario Passed : Verify blood stock details for different blood groups
+[INFO ] 2026-05-22 15:14:31.188 [TestNG-PoolService-3] DonorManagementAction - Blood issue is unsuccessful.
+[INFO ] 2026-05-22 15:14:33.615 [TestNG-PoolService-3] Hooks - Scenario Passed : Issue blood with empty mandatory fields
+[ERROR] 2026-05-22 15:14:38.734 [TestNG-PoolService-7] Hooks - Scenario Failed : Verify blood stock details for different blood groups
+[ERROR] 2026-05-22 15:14:38.980 [TestNG-PoolService-9] Hooks - Scenario Failed : Verify user navigates to Blood Issue page
+[INFO ] 2026-05-22 15:14:39.216 [TestNG-PoolService-7] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 15:14:39.456 [TestNG-PoolService-9] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 15:14:42.705 [TestNG-PoolService-10] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:14:46.130 [TestNG-PoolService-1] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:14:47.949 [TestNG-PoolService-6] Hooks - Browser closed
+[INFO ] 2026-05-22 15:14:50.532 [TestNG-PoolService-10] DonorManagementAction - Blood Donor popup is opened.
+[INFO ] 2026-05-22 15:14:51.423 [TestNG-PoolService-6] Hooks - Browser launched
+[INFO ] 2026-05-22 15:14:53.291 [TestNG-PoolService-2] Hooks - Browser closed
+[INFO ] 2026-05-22 15:14:53.603 [TestNG-PoolService-1] BloodIssueAction - Navigated to Blood Issue Details Page
+[INFO ] 2026-05-22 15:14:54.551 [TestNG-PoolService-10] DonorManagementAction - Clicked Save Button
+[INFO ] 2026-05-22 15:14:55.465 [TestNG-PoolService-2] Hooks - Browser launched
+[INFO ] 2026-05-22 15:14:56.036 [TestNG-PoolService-1] BloodIssueAction - Issue Blood popup is displayed.
+[INFO ] 2026-05-22 15:14:56.216 [TestNG-PoolService-10] DonorManagementStepDefinition - The Record is added Succefully.
+[INFO ] 2026-05-22 15:14:56.322 [TestNG-PoolService-10] Hooks - Scenario Passed : Verify user is able to add donor with valid details
+[DEBUG] 2026-05-22 15:14:57.978 [TestNG-PoolService-1] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-22 15:14:58.005 [TestNG-PoolService-1] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[ERROR] 2026-05-22 15:15:03.619 [TestNG-PoolService-2] Hooks - Scenario Failed : Validate donor creation with all mandatory fields empty
+[INFO ] 2026-05-22 15:15:04.226 [TestNG-PoolService-2] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 15:15:04.763 [TestNG-PoolService-3] Hooks - Browser closed
+[INFO ] 2026-05-22 15:15:06.607 [TestNG-PoolService-8] Hooks - Browser closed
+[INFO ] 2026-05-22 15:15:08.964 [TestNG-PoolService-4] Hooks - Scenario Passed : Verify blood stock details for different blood groups
+[INFO ] 2026-05-22 15:15:11.799 [TestNG-PoolService-5] Hooks - Browser closed
+[INFO ] 2026-05-22 15:15:15.262 [TestNG-PoolService-9] Hooks - Browser closed
+[INFO ] 2026-05-22 15:15:19.391 [TestNG-PoolService-7] Hooks - Browser closed
+[INFO ] 2026-05-22 15:15:39.477 [TestNG-PoolService-9] Hooks - Browser launched
+[INFO ] 2026-05-22 15:15:39.478 [TestNG-PoolService-2] Hooks - Browser launched
+[INFO ] 2026-05-22 15:15:39.477 [TestNG-PoolService-10] Hooks - Browser launched
+[INFO ] 2026-05-22 15:15:39.478 [TestNG-PoolService-1] Hooks - Browser launched
+[INFO ] 2026-05-22 15:15:39.478 [TestNG-PoolService-3] Hooks - Browser launched
+[INFO ] 2026-05-22 15:15:39.478 [TestNG-PoolService-7] Hooks - Browser launched
+[INFO ] 2026-05-22 15:15:39.477 [TestNG-PoolService-8] Hooks - Browser launched
+[INFO ] 2026-05-22 15:15:39.478 [TestNG-PoolService-6] Hooks - Browser launched
+[INFO ] 2026-05-22 15:15:39.478 [TestNG-PoolService-4] Hooks - Browser launched
+[INFO ] 2026-05-22 15:15:39.477 [TestNG-PoolService-5] Hooks - Browser launched
+[INFO ] 2026-05-22 15:16:33.003 [TestNG-PoolService-2] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:16:33.161 [TestNG-PoolService-9] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:16:33.451 [TestNG-PoolService-10] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:16:33.556 [TestNG-PoolService-6] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:16:33.745 [TestNG-PoolService-2] BloodIssueAction - Navigated to Blood Issue Details Page
+[INFO ] 2026-05-22 15:16:34.838 [TestNG-PoolService-9] BloodStockAction - Clicked Issue Button
+[INFO ] 2026-05-22 15:16:34.844 [TestNG-PoolService-2] BloodIssueAction - Deleting issued blood record
+[INFO ] 2026-05-22 15:16:34.999 [TestNG-PoolService-6] Hooks - Scenario Passed : Verify blood stock details for different blood groups
+[INFO ] 2026-05-22 15:16:35.324 [TestNG-PoolService-10] DonorManagementAction - Blood Donor popup is opened.
+[INFO ] 2026-05-22 15:16:35.604 [TestNG-PoolService-9] BloodStockStepDefinition - Blood Issue Page is displayed.
+[INFO ] 2026-05-22 15:16:35.606 [TestNG-PoolService-9] Hooks - Scenario Passed : Verify user navigates to Blood Issue page
+[INFO ] 2026-05-22 15:16:36.459 [TestNG-PoolService-2] BloodIssueAction - Blood issue record deleted successfully
+[INFO ] 2026-05-22 15:16:36.496 [TestNG-PoolService-2] Hooks - Scenario Passed : Delete issued blood record
+[INFO ] 2026-05-22 15:16:37.047 [TestNG-PoolService-10] DonorManagementAction - Clicked Save Button
+[INFO ] 2026-05-22 15:16:37.219 [TestNG-PoolService-10] DonorManagementStepDefinition - The Record is added Succefully.
+[INFO ] 2026-05-22 15:16:37.255 [TestNG-PoolService-10] Hooks - Scenario Passed : Verify user is able to add donor with valid details
+[ERROR] 2026-05-22 15:16:39.316 [TestNG-PoolService-8] Hooks - Scenario Failed : Verify user is able to add blood donor details
+[INFO ] 2026-05-22 15:16:39.321 [TestNG-PoolService-4] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:16:39.529 [TestNG-PoolService-8] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 15:16:39.545 [TestNG-PoolService-1] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:16:40.461 [TestNG-PoolService-1] BloodIssueAction - Navigated to Blood Issue Details Page
+[INFO ] 2026-05-22 15:16:40.507 [TestNG-PoolService-4] Hooks - Scenario Passed : Verify blood stock details for different blood groups
+[INFO ] 2026-05-22 15:16:41.882 [TestNG-PoolService-1] BloodIssueAction - Issue Blood popup is displayed.
+[ERROR] 2026-05-22 15:16:42.398 [TestNG-PoolService-3] Hooks - Scenario Failed : Issue blood with empty mandatory fields
+[INFO ] 2026-05-22 15:16:42.583 [TestNG-PoolService-3] Hooks - Screenshot Saved
+[DEBUG] 2026-05-22 15:16:42.721 [TestNG-PoolService-1] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-22 15:16:42.725 [TestNG-PoolService-1] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[INFO ] 2026-05-22 15:16:44.826 [TestNG-PoolService-4] Hooks - Browser closed
+[INFO ] 2026-05-22 15:16:45.809 [TestNG-PoolService-4] Hooks - Browser launched
+[INFO ] 2026-05-22 15:16:46.973 [TestNG-PoolService-1] BloodIssueAction - Record Saved Successfully
+[INFO ] 2026-05-22 15:16:46.974 [TestNG-PoolService-1] Hooks - Scenario Passed : Issue blood with valid details
+[ERROR] 2026-05-22 15:16:47.028 [TestNG-PoolService-7] Hooks - Scenario Failed : Verify blood stock details for different blood groups
+[INFO ] 2026-05-22 15:16:47.168 [TestNG-PoolService-7] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 15:16:48.271 [TestNG-PoolService-2] Hooks - Browser closed
+[INFO ] 2026-05-22 15:16:48.901 [TestNG-PoolService-9] Hooks - Browser closed
+[INFO ] 2026-05-22 15:16:48.917 [TestNG-PoolService-10] Hooks - Browser closed
+[INFO ] 2026-05-22 15:16:48.988 [TestNG-PoolService-6] Hooks - Browser closed
+[INFO ] 2026-05-22 15:16:48.989 [TestNG-PoolService-8] Hooks - Browser closed
+[INFO ] 2026-05-22 15:16:49.149 [TestNG-PoolService-2] Hooks - Browser launched
+[INFO ] 2026-05-22 15:16:49.191 [TestNG-PoolService-3] Hooks - Browser closed
+[INFO ] 2026-05-22 15:16:50.043 [TestNG-PoolService-7] Hooks - Browser closed
+[INFO ] 2026-05-22 15:16:50.068 [TestNG-PoolService-1] Hooks - Browser closed
+[INFO ] 2026-05-22 15:17:01.404 [TestNG-PoolService-5] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:17:02.433 [TestNG-PoolService-5] Hooks - Scenario Passed : Verify blood stock details for different blood groups
+[INFO ] 2026-05-22 15:17:03.624 [TestNG-PoolService-5] Hooks - Browser closed
+[INFO ] 2026-05-22 15:17:14.312 [TestNG-PoolService-4] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:17:15.620 [TestNG-PoolService-4] DonorManagementAction - Blood Donor popup is opened.
+[INFO ] 2026-05-22 15:17:16.475 [TestNG-PoolService-4] DonorManagementAction - Clicked Save Button
+[INFO ] 2026-05-22 15:17:16.544 [TestNG-PoolService-4] DonorManagementStepDefinition - The Record is added Succefully.
+[INFO ] 2026-05-22 15:17:16.562 [TestNG-PoolService-4] Hooks - Scenario Passed : Verify user is able to add donor with mandatory fields
+[INFO ] 2026-05-22 15:17:16.738 [TestNG-PoolService-4] Hooks - Browser closed
+[INFO ] 2026-05-22 15:17:22.179 [TestNG-PoolService-2] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:17:24.031 [TestNG-PoolService-2] DonorManagementAction - Blood Donor popup is opened.
+[INFO ] 2026-05-22 15:17:24.692 [TestNG-PoolService-2] DonorManagementAction - Clicked Save Button
+[INFO ] 2026-05-22 15:17:24.800 [TestNG-PoolService-2] DonorManagementStepDefinition - New Donor is not added.
+[INFO ] 2026-05-22 15:17:25.379 [TestNG-PoolService-2] Hooks - Scenario Passed : Validate donor creation with all mandatory fields empty
+[INFO ] 2026-05-22 15:17:25.561 [TestNG-PoolService-2] Hooks - Browser closed
+[INFO ] 2026-05-22 15:23:59.902 [TestNG-PoolService-10] Hooks - Browser launched
+[INFO ] 2026-05-22 15:23:59.902 [TestNG-PoolService-6] Hooks - Browser launched
+[INFO ] 2026-05-22 15:23:59.902 [TestNG-PoolService-4] Hooks - Browser launched
+[INFO ] 2026-05-22 15:23:59.902 [TestNG-PoolService-1] Hooks - Browser launched
+[INFO ] 2026-05-22 15:23:59.902 [TestNG-PoolService-8] Hooks - Browser launched
+[INFO ] 2026-05-22 15:23:59.902 [TestNG-PoolService-3] Hooks - Browser launched
+[INFO ] 2026-05-22 15:23:59.902 [TestNG-PoolService-7] Hooks - Browser launched
+[INFO ] 2026-05-22 15:23:59.902 [TestNG-PoolService-9] Hooks - Browser launched
+[INFO ] 2026-05-22 15:23:59.902 [TestNG-PoolService-5] Hooks - Browser launched
+[INFO ] 2026-05-22 15:23:59.902 [TestNG-PoolService-2] Hooks - Browser launched
+[INFO ] 2026-05-22 15:24:09.271 [TestNG-PoolService-8] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:24:09.280 [TestNG-PoolService-10] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:24:09.366 [TestNG-PoolService-4] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:24:09.460 [TestNG-PoolService-1] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:24:09.479 [TestNG-PoolService-6] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:24:09.712 [TestNG-PoolService-7] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:24:10.614 [TestNG-PoolService-2] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:24:10.699 [TestNG-PoolService-8] BloodStockAction - Clicked Add Icon
+[INFO ] 2026-05-22 15:24:10.783 [TestNG-PoolService-5] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:24:10.880 [TestNG-PoolService-1] BloodIssueAction - Navigated to Blood Issue Details Page
+[INFO ] 2026-05-22 15:24:11.048 [TestNG-PoolService-3] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:24:11.630 [TestNG-PoolService-9] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:24:11.741 [TestNG-PoolService-8] BloodStockStepDefinition - Enter Blood Donor Details
+[INFO ] 2026-05-22 15:24:11.792 [TestNG-PoolService-10] DonorManagementAction - Blood Donor popup is opened.
+[INFO ] 2026-05-22 15:24:11.910 [TestNG-PoolService-4] Hooks - Scenario Passed : Verify blood stock details for different blood groups
+[INFO ] 2026-05-22 15:24:11.945 [TestNG-PoolService-2] BloodIssueAction - Navigated to Blood Issue Details Page
+[INFO ] 2026-05-22 15:24:12.049 [TestNG-PoolService-6] Hooks - Scenario Passed : Verify blood stock details for different blood groups
+[INFO ] 2026-05-22 15:24:12.334 [TestNG-PoolService-1] BloodIssueAction - Issue Blood popup is displayed.
+[INFO ] 2026-05-22 15:24:12.510 [TestNG-PoolService-3] BloodIssueAction - Navigated to Blood Issue Details Page
+[INFO ] 2026-05-22 15:24:12.544 [TestNG-PoolService-5] Hooks - Scenario Passed : Verify blood stock details for different blood groups
+[INFO ] 2026-05-22 15:24:12.779 [TestNG-PoolService-7] Hooks - Scenario Passed : Verify blood stock details for different blood groups
+[INFO ] 2026-05-22 15:24:12.839 [TestNG-PoolService-2] BloodIssueAction - Deleting issued blood record
+[INFO ] 2026-05-22 15:24:12.879 [TestNG-PoolService-9] BloodStockAction - Clicked Issue Button
+[DEBUG] 2026-05-22 15:24:13.159 [TestNG-PoolService-1] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-22 15:24:13.166 [TestNG-PoolService-1] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[INFO ] 2026-05-22 15:24:13.295 [TestNG-PoolService-10] DonorManagementAction - Clicked Save Button
+[INFO ] 2026-05-22 15:24:13.351 [TestNG-PoolService-3] BloodIssueAction - Issue Blood popup is displayed.
+[INFO ] 2026-05-22 15:24:13.432 [TestNG-PoolService-10] DonorManagementStepDefinition - The Record is added Succefully.
+[INFO ] 2026-05-22 15:24:13.459 [TestNG-PoolService-10] Hooks - Scenario Passed : Verify user is able to add donor with valid details
+[INFO ] 2026-05-22 15:24:13.606 [TestNG-PoolService-9] BloodStockStepDefinition - Blood Issue Page is displayed.
+[INFO ] 2026-05-22 15:24:13.607 [TestNG-PoolService-9] Hooks - Scenario Passed : Verify user navigates to Blood Issue page
+[INFO ] 2026-05-22 15:24:13.613 [TestNG-PoolService-4] Hooks - Browser closed
+[INFO ] 2026-05-22 15:24:13.613 [TestNG-PoolService-7] Hooks - Browser closed
+[INFO ] 2026-05-22 15:24:13.613 [TestNG-PoolService-6] Hooks - Browser closed
+[INFO ] 2026-05-22 15:24:13.829 [TestNG-PoolService-8] BloodStockAction - Clicked Save Button
+[INFO ] 2026-05-22 15:24:13.990 [TestNG-PoolService-8] BloodStockStepDefinition - Donor Details added.
+[INFO ] 2026-05-22 15:24:13.992 [TestNG-PoolService-8] Hooks - Scenario Passed : Verify user is able to add blood donor details
+[INFO ] 2026-05-22 15:24:14.155 [TestNG-PoolService-3] DonorManagementAction - Blood issue is unsuccessful.
+[INFO ] 2026-05-22 15:24:14.291 [TestNG-PoolService-2] BloodIssueAction - Blood issue record deleted successfully
+[INFO ] 2026-05-22 15:24:14.318 [TestNG-PoolService-2] Hooks - Scenario Passed : Delete issued blood record
+[INFO ] 2026-05-22 15:24:14.550 [TestNG-PoolService-6] Hooks - Browser launched
+[INFO ] 2026-05-22 15:24:14.634 [TestNG-PoolService-7] Hooks - Browser launched
+[INFO ] 2026-05-22 15:24:15.027 [TestNG-PoolService-3] Hooks - Scenario Passed : Issue blood with empty mandatory fields
+[INFO ] 2026-05-22 15:24:15.072 [TestNG-PoolService-5] Hooks - Browser closed
+[INFO ] 2026-05-22 15:24:15.723 [TestNG-PoolService-10] Hooks - Browser closed
+[INFO ] 2026-05-22 15:24:16.196 [TestNG-PoolService-3] Hooks - Browser closed
+[INFO ] 2026-05-22 15:24:16.211 [TestNG-PoolService-9] Hooks - Browser closed
+[INFO ] 2026-05-22 15:24:16.226 [TestNG-PoolService-2] Hooks - Browser closed
+[INFO ] 2026-05-22 15:24:16.275 [TestNG-PoolService-8] Hooks - Browser closed
+[INFO ] 2026-05-22 15:24:17.311 [TestNG-PoolService-1] BloodIssueAction - Record Saved Successfully
+[INFO ] 2026-05-22 15:24:17.312 [TestNG-PoolService-1] Hooks - Scenario Passed : Issue blood with valid details
+[INFO ] 2026-05-22 15:24:17.507 [TestNG-PoolService-1] Hooks - Browser closed
+[INFO ] 2026-05-22 15:24:26.522 [TestNG-PoolService-7] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:24:28.127 [TestNG-PoolService-7] DonorManagementAction - Blood Donor popup is opened.
+[INFO ] 2026-05-22 15:24:28.989 [TestNG-PoolService-7] DonorManagementAction - Clicked Save Button
+[INFO ] 2026-05-22 15:24:29.084 [TestNG-PoolService-7] DonorManagementStepDefinition - The Record is added Succefully.
+[INFO ] 2026-05-22 15:24:29.104 [TestNG-PoolService-7] Hooks - Scenario Passed : Verify user is able to add donor with mandatory fields
+[INFO ] 2026-05-22 15:24:29.228 [TestNG-PoolService-7] Hooks - Browser closed
+[INFO ] 2026-05-22 15:24:29.571 [TestNG-PoolService-6] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:24:31.496 [TestNG-PoolService-6] DonorManagementAction - Blood Donor popup is opened.
+[INFO ] 2026-05-22 15:24:32.133 [TestNG-PoolService-6] DonorManagementAction - Clicked Save Button
+[INFO ] 2026-05-22 15:24:32.209 [TestNG-PoolService-6] DonorManagementStepDefinition - New Donor is not added.
+[INFO ] 2026-05-22 15:24:32.797 [TestNG-PoolService-6] Hooks - Scenario Passed : Validate donor creation with all mandatory fields empty
+[INFO ] 2026-05-22 15:24:33.023 [TestNG-PoolService-6] Hooks - Browser closed
