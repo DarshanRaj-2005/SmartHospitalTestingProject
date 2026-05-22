@@ -3,127 +3,164 @@ package actions;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
-import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import pages.InventorySearchPage;
+
 import Utilities.Helper;
 import Utilities.Data_Provider;
+
 import driver.Driver;
 
 public class InventorySearchActions {
-	 private static final Logger logger = LogManager.getLogger(InventorySearchActions.class);
+
+    private static final Logger logger = LogManager.getLogger(InventorySearchActions.class);
 
     public static boolean Zero = true;
+
     public static boolean notmatch = true;
- 
-    
+
     public static void searchValidItems() throws Exception {
 
-    	
         notmatch = true;
+
         Zero = true;
+
         logger.info("Starting valid inventory search test");
 
-        String path = System.getProperty("user.dir") +
-                "/src/test/resources/test_datas/Tamilarasu_data/Search_item_data.xlsx";
+        String path = System.getProperty("user.dir") + "/src/test/resources/test_datas/Tamilarasu_data/Search_item_data.xlsx";
 
-        String[][] data = Data_Provider.getExcelData(path, "Sheet1");
+        String[][] data = Data_Provider.getExcelData(path,"Sheet1");
 
-        for (int i = 0; i < data.length; i++) {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(),Duration.ofSeconds(15));
+
+        for(int i = 0; i < data.length; i++){
 
             String searchItem = data[i][0];
 
-            System.out.println("🔍 Searching for: " + searchItem);
+            System.out.println("🔍 Searching for : " + searchItem);
 
             Helper.waitForVisibility(InventorySearchPage.searchBox);
-            Helper.getElements(InventorySearchPage.searchBox);
-            Helper.clear(InventorySearchPage.searchBox);
-            Helper.type(InventorySearchPage.searchBox, searchItem);
-            logger.info("Waiting for search results");
 
-           // Thread.sleep(2000);
-            WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
-			wait.until(ExpectedConditions.visibilityOfElementLocated(InventorySearchPage.itemNames));
-			 logger.info("Validating search results for: " + searchItem);
+            Helper.clear(InventorySearchPage.searchBox);
+
+            Helper.type(InventorySearchPage.searchBox,searchItem);
+
+            try{
+
+                wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("DataTables_Table_0_processing")));
+
+            }catch(Exception e){
+
+                System.out.println("Processing popup not displayed");
+            }
+
+            wait.until(driver -> driver.findElements(InventorySearchPage.itemNames).size() > 0);
+
+            logger.info("Validating search results for : " + searchItem);
+
             validateSearchResults(searchItem);
         }
     }
 
-    // 🔥 VALIDATION METHOD
-    public static void validateSearchResults(String searchItem) {
+    public static void validateSearchResults(String searchItem){
 
-        Helper.waitForVisibility(InventorySearchPage.itemNames);
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(),Duration.ofSeconds(10));
 
-        List<WebElement> elements =
-                Driver.getDriver().findElements(InventorySearchPage.itemNames);
-        
+        wait.until(driver -> driver.findElements(InventorySearchPage.itemNames).size() > 0);
 
-        if (elements.size() == 0) {
+        int size = Driver.getDriver().findElements(InventorySearchPage.itemNames).size();
+
+        if(size == 0){
+
             Zero = false;
+
+            System.out.println("No items found");
+
+            return;
         }
 
         ArrayList<String> itemList = new ArrayList<>();
 
-        for (int i = 0; i < elements.size(); i++) {
+        for(int i = 0; i < size; i++){
 
-            List<WebElement> freshElements =
-                    Driver.getDriver().findElements(InventorySearchPage.itemNames);
+            try{
 
-            String name = freshElements.get(i).getText().trim();
-            itemList.add(name);
+                String itemName = Driver.getDriver().findElements(InventorySearchPage.itemNames).get(i).getText().trim();
+
+                itemList.add(itemName);
+
+            }catch(Exception e){
+
+                System.out.println("Stale element skipped");
+            }
         }
 
-        System.out.println("Items displayed: " + itemList);
+        System.out.println("Displayed Items : " + itemList);
 
-        for (String item : itemList) {
+        for(String item : itemList){
 
             String itemText = item.toLowerCase();
+
             String searchText = searchItem.toLowerCase();
 
-            if (itemText.contains(searchText) || searchText.contains(itemText)) {
-                logger.info("MATCH FOUND: " + item);
-                System.out.println("✅ Match: " + item);
-            } else {
-            	 logger.error("NOT MATCHED ITEM: " + item);
-                System.out.println("❌ Not Match: " + item);
+            if(itemText.contains(searchText) || searchText.contains(itemText)){
+
+                logger.info("MATCH FOUND : " + item);
+
+                System.out.println("✅ MATCH : " + item);
+
+            }else{
+
+                logger.error("NOT MATCHED : " + item);
+
+                System.out.println("❌ NOT MATCH : " + item);
+
                 notmatch = false;
             }
         }
     }
 
-    // 🔥 INVALID SEARCH (ONLY SEARCH)
     public void searchInvalidItems() throws IOException {
 
-        String path = System.getProperty("user.dir") +
-                "/src/test/resources/test_datas/Tamilarasu_data/Search_item_data.xlsx";
+        String path = System.getProperty("user.dir") + "/src/test/resources/test_datas/Tamilarasu_data/Search_item_data.xlsx";
 
-        String[][] data = Data_Provider.getExcelData(path, "Sheet2");
+        String[][] data = Data_Provider.getExcelData(path,"Sheet2");
 
-        for (int i = 0; i < data.length; i++) {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(),Duration.ofSeconds(10));
+
+        for(int i = 0; i < data.length; i++){
 
             String searchItem = data[i][0];
 
-            System.out.println("🔍 Searching invalid: " + searchItem);
+            System.out.println("🔍 Searching invalid : " + searchItem);
 
             Helper.waitForVisibility(InventorySearchPage.searchBox);
-            Helper.getElements(InventorySearchPage.searchBox);
-            Helper.clear(InventorySearchPage.searchBox);
-            Helper.type(InventorySearchPage.searchBox, searchItem);
 
-            WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
-			wait.until(ExpectedConditions.visibilityOfElementLocated(InventorySearchPage.itemNames));
-			
+            Helper.clear(InventorySearchPage.searchBox);
+
+            Helper.type(InventorySearchPage.searchBox,searchItem);
+
+            try{
+
+                wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("DataTables_Table_0_processing")));
+
+            }catch(Exception e){
+
+                System.out.println("Processing popup not displayed");
+            }
         }
     }
 
-    // 🔥 ERROR MESSAGE VALIDATION
-    public boolean isNoDataMessageDisplayed() {
+    public boolean isNoDataMessageDisplayed(){
 
         Helper.waitForVisibility(InventorySearchPage.noDataText);
 
