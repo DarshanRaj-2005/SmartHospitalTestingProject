@@ -14,7 +14,7 @@ public class MedicinestockPage {
 	public static By medicinetext(String searchedmedicine) {
 		return By.xpath("//tr[td[contains(normalize-space(),'" + searchedmedicine + "')]]/td[2]");
 	}
-
-	public static By deleteButton = By.xpath("//button[@id='load']");
+	public static By medicinenotfoundtxt=By.xpath("//td[@class=\"dataTables_empty\"]/child::div[contains(text(),\"No data available in table \")]");
+    public static By deleteButton = By.xpath("//button[@id='load']");
 	public static By deleteConfirmation = By.xpath("//div[contains(text(),'Record Deleted Successfully')]");
 }
