@@ -80,8 +80,8 @@ public class Driver {
             getDriver().manage().window().maximize();
         }
     }
-    
-    public static void quitDriver() {
+
+        public static void quitDriver() {
         if (getDriver() != null) {
             getDriver().quit();
             driver.remove();
