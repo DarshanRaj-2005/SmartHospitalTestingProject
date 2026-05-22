@@ -14,10 +14,12 @@ public class AddambulanceAction {
 	public static WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
 
 	public static void clickAddambulance() {
+		Helper.waitForVisibility(AddambulancePage.addAmbulance);
 		Helper.click(AddambulancePage.addAmbulance);
 	}
 
 	public static void clickAddambulanceCall() {
+		Helper.waitForVisibility(AddambulancePage.addAmbulanceCall);
 		Helper.click(AddambulancePage.addAmbulanceCall);
 	}
 
@@ -46,9 +48,13 @@ public class AddambulanceAction {
 		Helper.type(AddambulancePage.searchBox, chargeName);
 		Helper.waitForElementsPresent(AddambulancePage.selectOption(chargeName), 20);
 		Helper.click(AddambulancePage.selectOption(chargeName));
-	
 		
+//		Helper.type(AddambulancePage.helloField, hello);
+
 		Helper.type(AddambulancePage.note, note);
+		
+		Select s2 = new Select(Helper.getElement(AddambulancePage.paymentOption));
+		s2.selectByVisibleText(paymentMode);
 	}
 
 	public static void enterAmbulanceDetail(String patient, String vehicleModel, String date,
