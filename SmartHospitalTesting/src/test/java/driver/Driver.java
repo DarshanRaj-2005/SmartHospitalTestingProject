@@ -22,6 +22,7 @@ public class Driver {
 
     public Driver() {
 
+
         String browser = ConfigReader.getProperties().getProperty("browser");
         String headlessValue = ConfigReader.getProperties().getProperty("headless");
 
