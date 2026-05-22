@@ -13,7 +13,11 @@ public class BloodStockPage {
 	}
 
 	public static By dynamicOption(String option) {
-		return By.xpath("//li[contains(@class,'select2-results__option') and contains(text(),'" + option + "')]");
+
+	    return By.xpath(
+	        "//li[contains(@class,'select2-results__option') " +
+	        "and contains(normalize-space(),'" + option + "')]"
+	    );
 	}
 
 	public static By searchBox = By.xpath("//input[@class='select2-search__field']");
@@ -37,4 +41,5 @@ public class BloodStockPage {
 	}
 
 	public static By issueDate = By.xpath("//label[contains(text(),'Issue Date')]");
+	
 }

@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 
 import Utilities.Helper;
+import pages.BloodIssuePage;
 import pages.BloodStockPage;
 
 public class BloodStockAction {
@@ -44,10 +45,18 @@ public class BloodStockAction {
 	}
 
 	public static void selectBloodDonor(String donor) {
-		Helper.moveToElementAndClick(BloodStockPage.bloodDonor);
-		Helper.type(BloodStockPage.searchBox, donor);
-		Helper.waitForVisibility(BloodStockPage.dynamicOption(donor));
-		Helper.click(BloodStockPage.dynamicOption(donor));
+
+	    Helper.moveToElementAndClick(BloodStockPage.bloodDonor);
+
+	    Helper.waitForVisibility(BloodStockPage.searchBox);
+
+	    Helper.type(BloodStockPage.searchBox, donor);
+
+	    By option = BloodStockPage.dynamicOption(donor);
+
+	    Helper.waitForVisibility(option);
+
+	    Helper.click(option);
 	}
 
 	public static void enterDonateDate(String donateDate) {
@@ -60,19 +69,27 @@ public class BloodStockAction {
 	}
 
 	public static void selectChargeCategory(String chargecategory) {
-		Helper.moveToElementAndClick(BloodStockPage.chargeCategory);
-		Helper.type(BloodStockPage.searchBox, chargecategory);
-		Helper.waitForVisibility(BloodStockPage.dynamicOption(chargecategory));
-		Helper.click(BloodStockPage.dynamicOption(chargecategory));
+	    Helper.moveToElementAndClick(BloodStockPage.chargeCategory);
+	    Helper.waitForVisibility(BloodStockPage.searchBox);
+	    Helper.type(BloodStockPage.searchBox, chargecategory);
+	    By option = BloodStockPage.dynamicOption(chargecategory);
+	    Helper.waitForVisibility(option);
+	    Helper.click(option);
 	}
 
-	public static void selectChargeName(String chargename) {
-		Helper.moveToElementAndClick(BloodStockPage.chargeName);
-		Helper.type(BloodStockPage.searchBox, chargename);
-		Helper.waitForElementsPresent(BloodStockPage.dynamicOption(chargename), 20);
-		Helper.click(BloodStockPage.dynamicOption(chargename));
-	}
+    public void selectChargeName(String charge) {
 
+        Helper.moveToElementAndClick(BloodStockPage.chargeName);
+
+        Helper.waitForVisibility(BloodStockPage.searchBox);
+
+        Helper.type(BloodStockPage.searchBox, charge);
+
+        Helper.waitForElementsPresent(
+                BloodStockPage.dynamicOption(charge), 20);
+
+        Helper.click(BloodStockPage.dynamicOption(charge));
+    }
 	public static void clickSaveButton() {
 		logger.info("Clicked Save Button");
 		Helper.click(BloodStockPage.saveButton);
