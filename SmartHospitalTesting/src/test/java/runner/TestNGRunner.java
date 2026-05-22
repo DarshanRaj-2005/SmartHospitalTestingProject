@@ -8,15 +8,15 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 
         features = "src/test/resources/feature_files",
-        tags="@BloodStockValidation",
-
         glue = { "stepDefinition", "hooks" },
+		tags=("@bala"),
         plugin = {
                 "pretty",
                 "html:target/cucumber-report.html",
                 "json:target/cucumber-report.json",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
-                "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
+                "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
+                "rerun:target/failedrerun.txt"
         },
         
         monochrome = true
