@@ -77,7 +77,7 @@ public class BloodStockAction {
 	    Helper.click(option);
 	}
 
-    public void selectChargeName(String charge) {
+    public static void selectChargeName(String charge) {
 
         Helper.moveToElementAndClick(BloodStockPage.chargeName);
 
