@@ -29,4 +29,4 @@ Feature: Add and manage medicines in the medicine stock page
 
     Examples:
       | medicineName |
-      | VARICELLA    |
+      | Ferigod XT   |
