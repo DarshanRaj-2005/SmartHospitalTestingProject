@@ -7,8 +7,6 @@ import io.cucumber.java.en.When;
 import java.util.List;
 import java.util.Map;
 
-import org.testng.Assert;
-
 import Utilities.Data_Provider;
 import actions.AddambulanceAction;
 
@@ -21,7 +19,8 @@ public class AddambulanceStepDefinition {
 
 	@Then("the user redirected to ambulance page")
 	public void the_user_redirected_to_ambulance_page() {
-		Assert.assertEquals(AddambulanceAction.checkTitle(), "Ambulance Call List");
+
+		AddambulanceAction.checkTitle();
 	}
 
 	@Then("the user clicks the add ambulance link")
@@ -31,7 +30,7 @@ public class AddambulanceStepDefinition {
 
 	@Then("the user redirected to getcallambulance page")
 	public void the_user_redirected_to_getcallambulance_page() {
-		Assert.assertEquals(AddambulanceAction.checkmodelText(), "Vehicle Model");
+		AddambulanceAction.checkmodelText();
 	}
 
 	@Then("the user enters ambulance call details")
@@ -82,17 +81,17 @@ public class AddambulanceStepDefinition {
 
 	@Then("the ambulance call should be added successfully")
 	public void the_ambulance_call_should_be_added_successfully() {
-		Assert.assertEquals(AddambulanceAction.checksuccess(), "Record Saved Successfully");
+		AddambulanceAction.checksuccess();
 	}
 
 	@Then("the system should show validation error messages")
 	public void the_system_should_show_validation_error_messages() {
-		Assert.assertEquals(AddambulanceAction.checkerror(), "Vehicle Model field is required");
+		AddambulanceAction.checkerror();
 	}
 
 	@Then("the system should show invalid charge name field required message")
 	public void the_system_should_show_invalid_standard_charge_message() {
-		Assert.assertEquals(AddambulanceAction.checkInvalidAmount(), "Charge Category field is required");
+		AddambulanceAction.checkInvalidAmount();
 	}
 
 }

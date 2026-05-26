@@ -78,33 +78,38 @@ public class AddambulanceAction {
 		Helper.click(AddambulancePage.saveButton);
 	}
 
-	public static String  checkTitle() {
+	public static boolean checkTitle() {
 		Helper.waitForVisibility(AddambulancePage.title);
 		String title = Helper.getText(AddambulancePage.title);
-		return title;
+		Assert.assertEquals(title, "Ambulance Call List");
+		return true;
 	}
 
-	public static String checkmodelText() {
+	public static boolean checkmodelText() {
 		Helper.waitForVisibility(AddambulancePage.modelText);
 		String title = Helper.getText(AddambulancePage.modelText);
-		return title;
+		Assert.assertEquals(title, "Vehicle Model");
+		return true;
 	}
 
-	public static String checkerror() {
+	public static boolean checkerror() {
 		Helper.waitForVisibility(AddambulancePage.errtext);
 		String title = Helper.getText(AddambulancePage.errtext);
-		return title;
+		Assert.assertEquals(title, "Vehicle Model field is required");
+		return true;
 	}
 
-	public static String checksuccess() {
+	public static boolean checksuccess() {
 		Helper.waitForVisibility(AddambulancePage.successMessage);
 		String text = Helper.getText(AddambulancePage.successMessage);
-		return text;
+		Assert.assertEquals(text, "Record Saved Successfully");
+		return true;
 	}
 
-	public static String checkInvalidAmount() {
+	public static boolean checkInvalidAmount() {
 		Helper.waitForVisibility(AddambulancePage.invalidamountmess);
 		String text = Helper.getText(AddambulancePage.invalidamountmess);
-		return text;
+		Assert.assertEquals(text, "Charge Category field is required");
+		return true;
 	}
 }
