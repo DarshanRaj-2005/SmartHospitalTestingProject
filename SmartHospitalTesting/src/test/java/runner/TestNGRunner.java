@@ -9,7 +9,6 @@ import io.cucumber.testng.CucumberOptions;
         features = "src/test/resources/feature_files",
 
         glue = { "stepDefinition", "hooks" },
-	 	tags="@bala"
         plugin = {
                 "pretty",
                 "html:target/cucumber-report.html",
