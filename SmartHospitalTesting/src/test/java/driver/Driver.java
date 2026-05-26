@@ -1,78 +1,90 @@
 package driver;
 
-import org.openqa.selenium.chrome.ChromeDriver;
+import java.util.Map;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
-
 import Utilities.ConfigReader;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-import java.util.Map;
-
-import org.openqa.selenium.WebDriver;
-
-
 public class Driver {
 
-	private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+    private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
-	public static WebDriver getDriver() {
+    public static WebDriver getDriver() {
+        return driver.get();
+    }
 
-		return driver.get();
-	}
+    public Driver() {
 
-	public Driver() {
+        String browser = ConfigReader.getProperties().getProperty("browser");
+        String headlessValue = ConfigReader.getProperties().getProperty("headless");
 
-		    String browser = ConfigReader.getProperties().getProperty("browser");
-		    String headlessValue = ConfigReader.getProperties().getProperty("headless");
+        boolean headless =
+                headlessValue != null &&
+                headlessValue.equalsIgnoreCase("true");
 
-		    boolean headless = headlessValue != null && headlessValue.equalsIgnoreCase("true");
+        if (browser.equalsIgnoreCase("chrome")) {
 
-		    if (browser.equalsIgnoreCase("chrome")) {
+            WebDriverManager.chromedriver().setup();
 
-		        WebDriverManager.chromedriver().setup();
-		        ChromeOptions options = new ChromeOptions();
-		        options.addArguments("--disable-notifications");
+            ChromeOptions options = new ChromeOptions();
 
-		        options.setExperimentalOption("prefs", Map.of(
-		            "credentials_enable_service", false,
-		            "profile.password_manager_enabled", false
-		        ));
+            options.addArguments("--disable-notifications");
 
-		        if (headless) {
-		            options.addArguments("--headless=new");
-		        }
+            options.setExperimentalOption("prefs", Map.of(
+                    "credentials_enable_service", false,
+                    "profile.password_manager_enabled", false
+            ));
 
-		        driver.set(new ChromeDriver(options));
+            if (headless) {
 
-		    } else if (browser.equalsIgnoreCase("firefox")) {
+                options.addArguments("--headless=new");
+                options.addArguments("--window-size=1920,1080");
+                options.addArguments("--disable-gpu");
+                options.addArguments("--disable-dev-shm-usage");
+                options.addArguments("--no-sandbox");
+            }
 
-		        WebDriverManager.firefoxdriver().setup();
-		        FirefoxOptions options = new FirefoxOptions();
+            driver.set(new ChromeDriver(options));
+        }
 
-		        if (headless) {
-		            options.addArguments("--headless=new");
-		        }
+        else if (browser.equalsIgnoreCase("firefox")) {
 
-		        driver.set(new FirefoxDriver(options));
+            WebDriverManager.firefoxdriver().setup();
 
-		    } else {
-		       
-		        throw new RuntimeException("Invalid Browser Name: " + browser);
-		    }
+            FirefoxOptions options = new FirefoxOptions();
 
-		    getDriver().manage().window().maximize();
-		}
+            if (headless) {
 
-	public static void quitDriver() {
-		if (getDriver() != null) {
-			getDriver().quit();
-			driver.remove();
-		}
-	}
+                options.addArguments("--headless");
+                options.addArguments("--width=1920");
+                options.addArguments("--height=1080");
+            }
 
+            driver.set(new FirefoxDriver(options));
+        }
+
+        else {
+
+            throw new RuntimeException("Invalid Browser Name: " + browser);
+        }
+
+        if (!headless) {
+
+            getDriver().manage().window().maximize();
+        }
+    }
+
+        public static void quitDriver() {
+        if (getDriver() != null) {
+            getDriver().quit();
+            driver.remove();
+        }
+    }
 }

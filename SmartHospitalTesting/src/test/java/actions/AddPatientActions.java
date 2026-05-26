@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import Utilities.Helper;
 import driver.Driver;
+
 import pages.AddPatientPage;
 
 public class AddPatientActions {
@@ -23,6 +24,20 @@ public class AddPatientActions {
     public AddPatientActions() {}
     public void clickPatientCategory() {
         log.info("Clicking Patient category in sidebar");
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+public class AddPatientActions {
+	
+   static Logger logger = LogManager.getLogger(AddPatientActions.class);
+    private String lastPatientName = "";
+
+    public AddPatientActions(WebDriver driver) {
+		
+	}
+
+	public void clickPatientCategory() {
+
         Helper.waitForElementClickable(AddPatientPage.patientCategory);
         Helper.jsClick(AddPatientPage.patientCategory);
         log.info("Patient category clicked");
@@ -143,10 +158,6 @@ public class AddPatientActions {
         Helper.jsClick(AddPatientPage.saveButton);
         log.info("Save button clicked");
     }
-
-    // =====================================================================
-    // VERIFICATION ACTIONS
-    // =====================================================================
 
     public boolean verifyPatientAdded() {
         log.info("Verifying patient added: " + lastPatientName);

@@ -7,21 +7,25 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 
-        features = "src/test/resources/feature_files/Add_Patient.feature",
+        
+        features = "src/test/resources/feature_files",
+
         glue = { "stepDefinition", "hooks" },
         plugin = {
                 "pretty",
                 "html:target/cucumber-report.html",
                 "json:target/cucumber-report.json",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
-                "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
+                "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
+                "rerun:target/failedrerun.txt"
         },
         
         monochrome = true
 )
+
 public class TestNGRunner extends AbstractTestNGCucumberTests {
 	@DataProvider(parallel = false)
 	public Object[][] scenarios() {
-	    return super.scenarios();
+		return super.scenarios();
 	}
 }

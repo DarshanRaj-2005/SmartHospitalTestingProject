@@ -1,5 +1,7 @@
 package actions;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -8,12 +10,17 @@ import pages.MedicinestockPage;
 
 public class MedicinestockAction {
 
+    Logger logger = LogManager.getLogger(MedicinestockAction.class);
+
     public void clickmedicinebutton() {
         Helper.waitForElementClickable(MedicinestockPage.medicinebutton);
         Helper.click(MedicinestockPage.medicinebutton);
     }
 
     public void searchMedicine(String medicine) {
+
+        logger.info("Searching medicine: " + medicine);
+
         Helper.waitForElementClickable(MedicinestockPage.medicineSearchbar);
         Helper.click(MedicinestockPage.medicineSearchbar);
         Helper.clear(MedicinestockPage.medicineSearchbar);
@@ -21,17 +28,36 @@ public class MedicinestockAction {
     }
 
     public String verifySearchedMedicine(String searchedmedicine) {
+
         By loc = MedicinestockPage.medicinetext(searchedmedicine);
+
         Helper.waitForVisibility(loc);
-        return Helper.getText(loc);
+
+        String actualMedicine = Helper.getText(loc);
+
+        logger.info("Medicine found: " + actualMedicine);
+
+        return actualMedicine;
+    }
+
+    public String verifyMedicineNotFoundMessage() {
+
+        Helper.waitForVisibility(MedicinestockPage.medicinenotfoundtxt);
+
+        String actualMessage = Helper.getText(MedicinestockPage.medicinenotfoundtxt);
+
+        logger.info("No medicine found message displayed");
+
+        return actualMessage;
     }
 
     public void selectMedicine(String medicine) {
-        By locator = MedicinestockPage.medicineCheckbox(medicine);
 
+        By locator = MedicinestockPage.medicineCheckbox(medicine);
         WebElement element = Helper.getClickableElement(locator);
 
         if (!element.isSelected()) {
+            logger.info("Selecting medicine: " + medicine);
             element.click();
         }
     }
@@ -46,7 +72,13 @@ public class MedicinestockAction {
     }
 
     public String verifyDeleteConfirmation() {
+
         Helper.waitForVisibility(MedicinestockPage.deleteConfirmation);
-        return Helper.getText(MedicinestockPage.deleteConfirmation);
+
+        String confirmation = Helper.getText(MedicinestockPage.deleteConfirmation);
+
+        logger.info("Delete confirmation message displayed");
+
+        return confirmation;
     }
 }

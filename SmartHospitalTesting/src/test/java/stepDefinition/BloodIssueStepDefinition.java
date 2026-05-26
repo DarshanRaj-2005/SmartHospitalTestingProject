@@ -95,20 +95,19 @@ public class BloodIssueStepDefinition {
 
     @When("the user enters valid blood issue details")
     public void the_user_enters_valid_blood_issue_details() throws IOException {
-
-        Data_Provider excelData = new Data_Provider();
-        Object[][] data = excelData.bloodIssueData();
-
-        String patientName    = String.valueOf(data[0][0]).replace(".0", "").trim();
-        String doctor         = String.valueOf(data[0][1]).trim();
-        String issueDate      = String.valueOf(data[0][2]).trim();
-        String chargeCategory = String.valueOf(data[0][3]).trim();
+        String[][] data =Data_Provider.getExcelData("src/test/resources/test_datas/BloodIssueValid.xlsx","validDetails") ;
+        String patientName = String.valueOf((int) Double.parseDouble(data[0][0]));
+        String doctor         = data[0][1];
+        String issueDate      = data[0][2];
+        String chargeCategory = data[0][3];
+        String chargeName     =data[0][4];
 
         bloodIssueAction.selectpatient(patientName);
         bloodIssueAction.enterIssueDate(issueDate);
         bloodIssueAction.selectdoctor(doctor);        
         bloodIssueAction.selectBloodbag();
         bloodIssueAction.selectChargeCategory(chargeCategory);
-        bloodIssueAction.selectChargeName();
+        bloodIssueAction.selectChargeName(chargeName);
     }
 }
+

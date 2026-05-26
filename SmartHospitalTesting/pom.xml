@@ -7,7 +7,14 @@
 	<groupId>com.expleo</groupId>
 	<artifactId>SmartHospitalTesting</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-
+	
+	
+	<properties>
+	
+	<selenium.verison>4.43.0</selenium.verison>
+	<testng.version>7.12.0</testng.version>
+	
+	</properties>
 
 	<dependencies>
 
@@ -15,14 +22,14 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>4.43.0</version>
+			<version>${selenium.verison}</version>
 		</dependency>
 
 		<!-- TestNG -->
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>7.12.0</version>
+			<version>${testng.version}</version>
 			<scope>test</scope>
 		</dependency>
 
