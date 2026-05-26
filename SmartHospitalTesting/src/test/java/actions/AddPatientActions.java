@@ -12,7 +12,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import Utilities.Helper;
 import driver.Driver;
-
 import pages.AddPatientPage;
 
 public class AddPatientActions {
@@ -22,22 +21,13 @@ public class AddPatientActions {
     private String lastPatientName = "";
 
     public AddPatientActions() {}
+
+    // =====================================================================
+    // NAVIGATION ACTIONS
+    // =====================================================================
+
     public void clickPatientCategory() {
         log.info("Clicking Patient category in sidebar");
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-public class AddPatientActions {
-	
-   static Logger logger = LogManager.getLogger(AddPatientActions.class);
-    private String lastPatientName = "";
-
-    public AddPatientActions(WebDriver driver) {
-		
-	}
-
-	public void clickPatientCategory() {
-
         Helper.waitForElementClickable(AddPatientPage.patientCategory);
         Helper.jsClick(AddPatientPage.patientCategory);
         log.info("Patient category clicked");
@@ -58,6 +48,10 @@ public class AddPatientActions {
         log.info("Add Patient modal is ready");
     }
 
+    // =====================================================================
+    // FORM ACTIONS
+    // =====================================================================
+
     public void enterPatientDetails(List<Map<String, String>> patientData) {
         Map<String, String> data = patientData.get(0);
         lastPatientName = data.get("PatientName");
@@ -73,7 +67,13 @@ public class AddPatientActions {
         log.info("All patient details entered");
     }
 
-  
+    // =====================================================================
+    // DOB HANDLING — FIXED
+    // age_year / age_month / age_day are READ-ONLY fields on this site.
+    // sendKeys() throws ElementNotInteractableException on read-only fields.
+    // Fix: Use JavascriptExecutor to set values; set DOB in YYYY-MM-DD format.
+    // =====================================================================
+
     public void enterDOB(String value) {
         log.info("Entering DOB: " + value);
 
@@ -158,6 +158,10 @@ public class AddPatientActions {
         Helper.jsClick(AddPatientPage.saveButton);
         log.info("Save button clicked");
     }
+
+    // =====================================================================
+    // VERIFICATION ACTIONS
+    // =====================================================================
 
     public boolean verifyPatientAdded() {
         log.info("Verifying patient added: " + lastPatientName);
