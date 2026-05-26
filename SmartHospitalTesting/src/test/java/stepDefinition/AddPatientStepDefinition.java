@@ -27,7 +27,10 @@ public class AddPatientStepDefinition {
         return action;
     }
 
-    
+    // =====================================================================
+    // BACKGROUND STEP — runs before every scenario in both feature files
+    // =====================================================================
+
     @Given("Admin is on the Dashboard page")
     public void admin_is_on_the_dashboard_page() {
         log.info("Given: Admin is on the Dashboard page");
@@ -50,6 +53,10 @@ public class AddPatientStepDefinition {
 
         log.info("Login successful — dashboard loaded");
     }
+
+    // =====================================================================
+    // SCENARIO 1 — Add patient with valid details
+    // =====================================================================
 
     @Then("admin clicks the patient category")
     public void admin_clicks_the_patient_category() {
@@ -110,6 +117,10 @@ public class AddPatientStepDefinition {
                 "Validation message was not displayed after Save with empty Name.");
         log.info("Validation message verified");
     }
+
+    // =====================================================================
+    // SCENARIO 3 + 4 — DOB auto-fill and re-entry
+    // =====================================================================
 
     @When("Admin enters only DOB as {string}")
     public void admin_enters_only_dob_as(String dob) {
