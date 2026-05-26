@@ -4,6 +4,10 @@ import org.openqa.selenium.By;
 
 public class AddPatientPage {
 
+    // =====================================================================
+    // NAVIGATION LOCATORS
+    // =====================================================================
+
     // Patient link in the left sidebar menu
     // Using child axis: finds <a> that is a child of <li> containing 'Patient' span
     public static By patientCategory =
@@ -17,6 +21,10 @@ public class AddPatientPage {
                    + "//a[contains(@class,'addpatient') "
                    + "or contains(text(),'Add New Patient') "
                    + "or contains(text(),'Add Patient')]");
+
+    // =====================================================================
+    // MODAL LOCATORS
+    // =====================================================================
 
     // Modal title — "Add Patient" heading inside modal-header
     public static By modalTitle =
@@ -76,7 +84,10 @@ public class AddPatientPage {
     public static By saveButton =
             By.xpath("//button[@id='formaddpabtn']");
 
-   
+    // =====================================================================
+    // PATIENT LIST LOCATORS (after modal closes)
+    // =====================================================================
+
     // Patient List box body — visible after modal closes on successful save
     public static By patientListTable =
             By.xpath("//div[@class='box-body']");
@@ -85,16 +96,14 @@ public class AddPatientPage {
     public static By tableCells =
             By.xpath("//div[contains(@class,'box-body')]//table//tbody//td");
 
-   
+    // =====================================================================
+    // VALIDATION LOCATORS
+    // =====================================================================
+
     // Validation error text shown when Name is empty and Save clicked
     // Using parent axis: finds error element that is sibling/near the name field
     public static By validationMessage =
-
             By.xpath("//*[@id='name-error' or @id='name_error']"
                    + " | //label[@for='name' and contains(@class,'error')]"
                    + " | //div[contains(@class,'alert-danger')]");
-
-                By.xpath("//*[contains(@class,'invalid-feedback') and not(contains(@style,'display:none')) and not(contains(@style,'display: none'))]"
-                   + " | //*[contains(@class,'help-block') and contains(text(),'required')]"
-                   + " | //*[@id='name-error' or @id='name_error']");
 }
