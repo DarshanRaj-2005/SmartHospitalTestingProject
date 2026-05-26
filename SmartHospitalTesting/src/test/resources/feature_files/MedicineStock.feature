@@ -29,4 +29,4 @@ Feature: Balamurugan S 17/05/2026 Add and manage medicines in the medicine stock
 
     Examples:
       | medicineName |
-      | Ferigod XT   |
+      |	Cough Syrup  |
