@@ -2430,3 +2430,850 @@ Session ID: 164a5405cb3593e9e62e5acd2caa2648
 [INFO ] 2026-05-22 15:24:32.797 [TestNG-PoolService-6] Hooks - Scenario Passed : Validate donor creation with all mandatory fields empty
 [INFO ] 2026-05-22 15:24:33.023 [TestNG-PoolService-6] Hooks - Browser closed
 >>>>>>> ec170fbf9c356ad9ebdc4ac262c38f4e21a9bd65
+[INFO ] 2026-05-22 15:43:32.816 [TestNG-PoolService-9] Hooks - Browser launched
+[INFO ] 2026-05-22 15:43:32.812 [TestNG-PoolService-10] Hooks - Browser launched
+[INFO ] 2026-05-22 15:43:32.891 [TestNG-PoolService-5] Hooks - Browser launched
+[INFO ] 2026-05-22 15:43:33.112 [TestNG-PoolService-7] Hooks - Browser launched
+[INFO ] 2026-05-22 15:43:33.133 [TestNG-PoolService-1] Hooks - Browser launched
+[INFO ] 2026-05-22 15:43:33.241 [TestNG-PoolService-6] Hooks - Browser launched
+[INFO ] 2026-05-22 15:43:33.353 [TestNG-PoolService-2] Hooks - Browser launched
+[INFO ] 2026-05-22 15:43:33.519 [TestNG-PoolService-3] Hooks - Browser launched
+[INFO ] 2026-05-22 15:43:33.519 [TestNG-PoolService-8] Hooks - Browser launched
+[INFO ] 2026-05-22 15:43:33.632 [TestNG-PoolService-4] Hooks - Browser launched
+[INFO ] 2026-05-22 15:43:55.043 [TestNG-PoolService-7] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:43:55.988 [TestNG-PoolService-7] Hooks - Scenario Passed : Verify blood stock details for different blood groups
+[INFO ] 2026-05-22 15:43:56.160 [TestNG-PoolService-7] Hooks - Browser closed
+[INFO ] 2026-05-22 15:43:56.944 [TestNG-PoolService-7] Hooks - Browser launched
+[ERROR] 2026-05-22 15:44:03.675 [TestNG-PoolService-6] Hooks - Scenario Failed : Verify blood stock details for different blood groups
+[INFO ] 2026-05-22 15:44:03.850 [TestNG-PoolService-4] DonorManagementAction - Navigated to Blood Bank module
+[ERROR] 2026-05-22 15:44:03.913 [TestNG-PoolService-10] Hooks - Scenario Failed : Verify user is able to add donor with valid details
+[ERROR] 2026-05-22 15:44:04.047 [TestNG-PoolService-2] Hooks - Scenario Failed : Delete issued blood record
+[ERROR] 2026-05-22 15:44:04.069 [TestNG-PoolService-8] Hooks - Scenario Failed : Verify user is able to add blood donor details
+[INFO ] 2026-05-22 15:44:04.179 [TestNG-PoolService-6] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 15:44:04.232 [TestNG-PoolService-10] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 15:44:04.318 [TestNG-PoolService-2] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 15:44:04.360 [TestNG-PoolService-8] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 15:44:04.607 [TestNG-PoolService-10] Hooks - Browser closed
+[INFO ] 2026-05-22 15:44:04.659 [TestNG-PoolService-6] Hooks - Browser closed
+[INFO ] 2026-05-22 15:44:04.713 [TestNG-PoolService-2] Hooks - Browser closed
+[INFO ] 2026-05-22 15:44:04.884 [TestNG-PoolService-8] Hooks - Browser closed
+[INFO ] 2026-05-22 15:44:05.565 [TestNG-PoolService-4] Hooks - Scenario Passed : Verify blood stock details for different blood groups
+[INFO ] 2026-05-22 15:44:05.607 [TestNG-PoolService-10] Hooks - Browser launched
+[INFO ] 2026-05-22 15:44:05.708 [TestNG-PoolService-4] Hooks - Browser closed
+[INFO ] 2026-05-22 15:44:08.670 [TestNG-PoolService-5] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:44:09.896 [TestNG-PoolService-9] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:44:10.168 [TestNG-PoolService-5] Hooks - Scenario Passed : Verify blood stock details for different blood groups
+[INFO ] 2026-05-22 15:44:10.318 [TestNG-PoolService-5] Hooks - Browser closed
+[INFO ] 2026-05-22 15:44:10.531 [TestNG-PoolService-9] BloodStockAction - Clicked Issue Button
+[INFO ] 2026-05-22 15:44:11.760 [TestNG-PoolService-9] BloodStockStepDefinition - Blood Issue Page is displayed.
+[INFO ] 2026-05-22 15:44:11.761 [TestNG-PoolService-9] Hooks - Scenario Passed : Verify user navigates to Blood Issue page
+[INFO ] 2026-05-22 15:44:11.934 [TestNG-PoolService-9] Hooks - Browser closed
+[INFO ] 2026-05-22 15:44:14.738 [TestNG-PoolService-1] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:44:15.249 [TestNG-PoolService-1] BloodIssueAction - Navigated to Blood Issue Details Page
+[INFO ] 2026-05-22 15:44:16.144 [TestNG-PoolService-1] BloodIssueAction - Issue Blood popup is displayed.
+[DEBUG] 2026-05-22 15:44:16.815 [TestNG-PoolService-1] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-22 15:44:16.817 [TestNG-PoolService-1] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[INFO ] 2026-05-22 15:44:19.964 [TestNG-PoolService-1] BloodIssueAction - Record Saved Successfully
+[INFO ] 2026-05-22 15:44:19.965 [TestNG-PoolService-1] Hooks - Scenario Passed : Issue blood with valid details
+[INFO ] 2026-05-22 15:44:20.113 [TestNG-PoolService-1] Hooks - Browser closed
+[INFO ] 2026-05-22 15:44:22.514 [TestNG-PoolService-10] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:44:24.042 [TestNG-PoolService-10] DonorManagementAction - Blood Donor popup is opened.
+[INFO ] 2026-05-22 15:44:24.694 [TestNG-PoolService-10] DonorManagementAction - Clicked Save Button
+[INFO ] 2026-05-22 15:44:24.778 [TestNG-PoolService-10] DonorManagementStepDefinition - New Donor is not added.
+[INFO ] 2026-05-22 15:44:25.353 [TestNG-PoolService-10] Hooks - Scenario Passed : Validate donor creation with all mandatory fields empty
+[INFO ] 2026-05-22 15:44:25.491 [TestNG-PoolService-10] Hooks - Browser closed
+[INFO ] 2026-05-22 15:44:34.066 [TestNG-PoolService-7] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:44:37.174 [TestNG-PoolService-7] DonorManagementAction - Blood Donor popup is opened.
+[INFO ] 2026-05-22 15:44:38.018 [TestNG-PoolService-7] DonorManagementAction - Clicked Save Button
+[INFO ] 2026-05-22 15:44:38.086 [TestNG-PoolService-7] DonorManagementStepDefinition - The Record is added Succefully.
+[INFO ] 2026-05-22 15:44:38.101 [TestNG-PoolService-7] Hooks - Scenario Passed : Verify user is able to add donor with mandatory fields
+[INFO ] 2026-05-22 15:44:38.301 [TestNG-PoolService-7] Hooks - Browser closed
+[INFO ] 2026-05-22 15:44:48.822 [TestNG-PoolService-3] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:44:49.356 [TestNG-PoolService-3] BloodIssueAction - Navigated to Blood Issue Details Page
+[INFO ] 2026-05-22 15:44:49.903 [TestNG-PoolService-3] BloodIssueAction - Issue Blood popup is displayed.
+[INFO ] 2026-05-22 15:44:50.563 [TestNG-PoolService-3] DonorManagementAction - Blood issue is unsuccessful.
+[INFO ] 2026-05-22 15:44:51.253 [TestNG-PoolService-3] Hooks - Scenario Passed : Issue blood with empty mandatory fields
+[INFO ] 2026-05-22 15:44:51.407 [TestNG-PoolService-3] Hooks - Browser closed
+[INFO ] 2026-05-22 15:45:24.158 [TestNG-PoolService-6] Hooks - Browser launched
+[INFO ] 2026-05-22 15:45:24.158 [TestNG-PoolService-1] Hooks - Browser launched
+[INFO ] 2026-05-22 15:45:24.158 [TestNG-PoolService-3] Hooks - Browser launched
+[INFO ] 2026-05-22 15:45:24.171 [TestNG-PoolService-9] Hooks - Browser launched
+[INFO ] 2026-05-22 15:45:24.183 [TestNG-PoolService-7] Hooks - Browser launched
+[INFO ] 2026-05-22 15:45:24.199 [TestNG-PoolService-10] Hooks - Browser launched
+[INFO ] 2026-05-22 15:45:24.199 [TestNG-PoolService-4] Hooks - Browser launched
+[INFO ] 2026-05-22 15:45:24.217 [TestNG-PoolService-8] Hooks - Browser launched
+[INFO ] 2026-05-22 15:45:24.247 [TestNG-PoolService-5] Hooks - Browser launched
+[INFO ] 2026-05-22 15:45:24.247 [TestNG-PoolService-2] Hooks - Browser launched
+[ERROR] 2026-05-22 15:45:54.990 [TestNG-PoolService-9] Hooks - Scenario Failed : Verify user navigates to Blood Issue page
+[ERROR] 2026-05-22 15:45:54.991 [TestNG-PoolService-7] Hooks - Scenario Failed : Verify blood stock details for different blood groups
+[INFO ] 2026-05-22 15:45:55.320 [TestNG-PoolService-9] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 15:45:55.327 [TestNG-PoolService-7] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 15:45:55.774 [TestNG-PoolService-9] Hooks - Browser closed
+[INFO ] 2026-05-22 15:45:55.787 [TestNG-PoolService-7] Hooks - Browser closed
+[INFO ] 2026-05-22 15:45:58.606 [TestNG-PoolService-9] Hooks - Browser launched
+[INFO ] 2026-05-22 15:45:58.647 [TestNG-PoolService-7] Hooks - Browser launched
+[INFO ] 2026-05-22 15:46:07.366 [TestNG-PoolService-2] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:46:08.251 [TestNG-PoolService-1] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:46:08.876 [TestNG-PoolService-8] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:46:09.087 [TestNG-PoolService-2] BloodIssueAction - Navigated to Blood Issue Details Page
+[INFO ] 2026-05-22 15:46:12.143 [TestNG-PoolService-8] BloodStockAction - Clicked Add Icon
+[INFO ] 2026-05-22 15:46:12.159 [TestNG-PoolService-2] BloodIssueAction - Deleting issued blood record
+[INFO ] 2026-05-22 15:46:13.555 [TestNG-PoolService-8] BloodStockStepDefinition - Enter Blood Donor Details
+[INFO ] 2026-05-22 15:46:13.691 [TestNG-PoolService-1] BloodIssueAction - Navigated to Blood Issue Details Page
+[INFO ] 2026-05-22 15:46:13.713 [TestNG-PoolService-10] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:46:14.090 [TestNG-PoolService-2] BloodIssueAction - Blood issue record deleted successfully
+[INFO ] 2026-05-22 15:46:14.158 [TestNG-PoolService-2] Hooks - Scenario Passed : Delete issued blood record
+[INFO ] 2026-05-22 15:46:16.344 [TestNG-PoolService-1] BloodIssueAction - Issue Blood popup is displayed.
+[INFO ] 2026-05-22 15:46:16.712 [TestNG-PoolService-2] Hooks - Browser closed
+[INFO ] 2026-05-22 15:46:18.255 [TestNG-PoolService-10] DonorManagementAction - Blood Donor popup is opened.
+[DEBUG] 2026-05-22 15:46:18.319 [TestNG-PoolService-1] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-22 15:46:18.328 [TestNG-PoolService-1] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[INFO ] 2026-05-22 15:46:19.373 [TestNG-PoolService-8] BloodStockAction - Clicked Save Button
+[INFO ] 2026-05-22 15:46:21.510 [TestNG-PoolService-8] BloodStockStepDefinition - Donor Details added.
+[INFO ] 2026-05-22 15:46:21.521 [TestNG-PoolService-8] Hooks - Scenario Passed : Verify user is able to add blood donor details
+[INFO ] 2026-05-22 15:46:23.630 [TestNG-PoolService-10] DonorManagementAction - Clicked Save Button
+[INFO ] 2026-05-22 15:46:24.230 [TestNG-PoolService-10] DonorManagementStepDefinition - The Record is added Succefully.
+[INFO ] 2026-05-22 15:46:24.320 [TestNG-PoolService-10] Hooks - Scenario Passed : Verify user is able to add donor with valid details
+[INFO ] 2026-05-22 15:46:29.244 [TestNG-PoolService-5] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:46:33.596 [TestNG-PoolService-5] Hooks - Scenario Passed : Verify blood stock details for different blood groups
+[INFO ] 2026-05-22 15:46:35.027 [TestNG-PoolService-1] BloodIssueAction - Record Saved Successfully
+[INFO ] 2026-05-22 15:46:35.036 [TestNG-PoolService-1] Hooks - Scenario Passed : Issue blood with valid details
+[INFO ] 2026-05-22 15:46:35.693 [TestNG-PoolService-9] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:46:37.208 [TestNG-PoolService-10] Hooks - Browser closed
+[INFO ] 2026-05-22 15:46:38.700 [TestNG-PoolService-4] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:46:41.627 [TestNG-PoolService-9] DonorManagementAction - Blood Donor popup is opened.
+[INFO ] 2026-05-22 15:46:41.848 [TestNG-PoolService-7] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:46:41.889 [TestNG-PoolService-6] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:46:42.711 [TestNG-PoolService-4] Hooks - Scenario Passed : Verify blood stock details for different blood groups
+[INFO ] 2026-05-22 15:46:43.080 [TestNG-PoolService-8] Hooks - Browser closed
+[INFO ] 2026-05-22 15:46:44.892 [TestNG-PoolService-3] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-22 15:46:45.383 [TestNG-PoolService-9] DonorManagementAction - Clicked Save Button
+[INFO ] 2026-05-22 15:46:45.453 [TestNG-PoolService-6] Hooks - Scenario Passed : Verify blood stock details for different blood groups
+[INFO ] 2026-05-22 15:46:45.791 [TestNG-PoolService-9] DonorManagementStepDefinition - The Record is added Succefully.
+[INFO ] 2026-05-22 15:46:45.853 [TestNG-PoolService-9] Hooks - Scenario Passed : Verify user is able to add donor with mandatory fields
+[INFO ] 2026-05-22 15:46:46.060 [TestNG-PoolService-5] Hooks - Browser closed
+[INFO ] 2026-05-22 15:46:46.423 [TestNG-PoolService-1] Hooks - Browser closed
+[INFO ] 2026-05-22 15:46:46.935 [TestNG-PoolService-7] DonorManagementAction - Blood Donor popup is opened.
+[INFO ] 2026-05-22 15:46:47.150 [TestNG-PoolService-3] BloodIssueAction - Navigated to Blood Issue Details Page
+[INFO ] 2026-05-22 15:46:47.963 [TestNG-PoolService-7] DonorManagementAction - Clicked Save Button
+[INFO ] 2026-05-22 15:46:48.488 [TestNG-PoolService-7] DonorManagementStepDefinition - New Donor is not added.
+[INFO ] 2026-05-22 15:46:48.526 [TestNG-PoolService-3] BloodIssueAction - Issue Blood popup is displayed.
+[INFO ] 2026-05-22 15:46:48.586 [TestNG-PoolService-6] Hooks - Browser closed
+[INFO ] 2026-05-22 15:46:48.611 [TestNG-PoolService-4] Hooks - Browser closed
+[INFO ] 2026-05-22 15:46:48.691 [TestNG-PoolService-9] Hooks - Browser closed
+[INFO ] 2026-05-22 15:46:49.117 [TestNG-PoolService-7] Hooks - Scenario Passed : Validate donor creation with all mandatory fields empty
+[INFO ] 2026-05-22 15:46:49.596 [TestNG-PoolService-7] Hooks - Browser closed
+[INFO ] 2026-05-22 15:46:49.672 [TestNG-PoolService-3] DonorManagementAction - Blood issue is unsuccessful.
+[INFO ] 2026-05-22 15:46:50.597 [TestNG-PoolService-3] Hooks - Scenario Passed : Issue blood with empty mandatory fields
+[INFO ] 2026-05-22 15:46:50.984 [TestNG-PoolService-3] Hooks - Browser closed
+[INFO ] 2026-05-22 16:56:00.499 [TestNG-PoolService-7] Hooks - Browser launched
+[INFO ] 2026-05-22 16:56:00.499 [TestNG-PoolService-6] Hooks - Browser launched
+[INFO ] 2026-05-22 16:56:00.499 [TestNG-PoolService-1] Hooks - Browser launched
+[INFO ] 2026-05-22 16:56:00.499 [TestNG-PoolService-8] Hooks - Browser launched
+[INFO ] 2026-05-22 16:56:00.499 [TestNG-PoolService-4] Hooks - Browser launched
+[INFO ] 2026-05-22 16:56:00.499 [TestNG-PoolService-5] Hooks - Browser launched
+[INFO ] 2026-05-22 16:56:00.501 [TestNG-PoolService-3] Hooks - Browser launched
+[INFO ] 2026-05-22 16:56:00.515 [TestNG-PoolService-2] Hooks - Browser launched
+[INFO ] 2026-05-22 16:56:30.485 [TestNG-PoolService-8] Hooks - Scenario Passed : Login with invalid username and password
+[INFO ] 2026-05-22 16:56:31.003 [TestNG-PoolService-8] Hooks - Browser closed
+[ERROR] 2026-05-22 16:56:31.551 [TestNG-PoolService-7] Hooks - Scenario Failed : Login with invalid password credentials
+[ERROR] 2026-05-22 16:56:31.552 [TestNG-PoolService-6] Hooks - Scenario Failed : Login with empty fields
+[ERROR] 2026-05-22 16:56:31.560 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
+[ERROR] 2026-05-22 16:56:31.562 [TestNG-PoolService-4] Hooks - Scenario Failed : Login with valid credentials
+[ERROR] 2026-05-22 16:56:31.570 [TestNG-PoolService-3] Hooks - Scenario Failed : Entering character in charge field
+[INFO ] 2026-05-22 16:56:31.856 [TestNG-PoolService-3] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 16:56:31.872 [TestNG-PoolService-4] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 16:56:31.878 [TestNG-PoolService-6] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 16:56:31.880 [TestNG-PoolService-1] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 16:56:31.881 [TestNG-PoolService-7] Hooks - Screenshot Saved
+[INFO ] 2026-05-22 16:56:32.209 [TestNG-PoolService-7] Hooks - Browser closed
+[INFO ] 2026-05-22 16:56:32.213 [TestNG-PoolService-4] Hooks - Browser closed
+[INFO ] 2026-05-22 16:56:32.213 [TestNG-PoolService-3] Hooks - Browser closed
+[INFO ] 2026-05-22 16:56:32.235 [TestNG-PoolService-6] Hooks - Browser closed
+[INFO ] 2026-05-22 16:56:32.248 [TestNG-PoolService-1] Hooks - Browser closed
+[INFO ] 2026-05-22 16:56:36.769 [TestNG-PoolService-5] Hooks - Scenario Passed : Login with invalid username credentials
+[INFO ] 2026-05-22 16:56:37.028 [TestNG-PoolService-5] Hooks - Browser closed
+[INFO ] 2026-05-22 16:56:48.984 [TestNG-PoolService-2] Hooks - Scenario Passed : Add Ambulance with empty fields
+[INFO ] 2026-05-22 16:56:49.224 [TestNG-PoolService-2] Hooks - Browser closed
+[INFO ] 2026-05-26 09:14:40.151 [TestNG-PoolService-2] Hooks - Browser launched
+[INFO ] 2026-05-26 09:14:40.154 [TestNG-PoolService-3] Hooks - Browser launched
+[INFO ] 2026-05-26 09:14:40.152 [TestNG-PoolService-8] Hooks - Browser launched
+[INFO ] 2026-05-26 09:14:40.152 [TestNG-PoolService-7] Hooks - Browser launched
+[INFO ] 2026-05-26 09:14:40.152 [TestNG-PoolService-1] Hooks - Browser launched
+[INFO ] 2026-05-26 09:14:40.152 [TestNG-PoolService-4] Hooks - Browser launched
+[INFO ] 2026-05-26 09:14:40.165 [TestNG-PoolService-5] Hooks - Browser launched
+[INFO ] 2026-05-26 09:14:40.330 [TestNG-PoolService-6] Hooks - Browser launched
+[INFO ] 2026-05-26 09:14:46.182 [TestNG-PoolService-6] Hooks - Scenario Passed : Login with empty fields
+[INFO ] 2026-05-26 09:14:47.335 [TestNG-PoolService-6] Hooks - Browser closed
+[INFO ] 2026-05-26 09:14:47.404 [TestNG-PoolService-7] Hooks - Scenario Passed : Login with invalid password credentials
+[INFO ] 2026-05-26 09:14:47.559 [TestNG-PoolService-8] Hooks - Scenario Passed : Login with invalid username and password
+[INFO ] 2026-05-26 09:14:47.828 [TestNG-PoolService-7] Hooks - Browser closed
+[INFO ] 2026-05-26 09:14:47.856 [TestNG-PoolService-8] Hooks - Browser closed
+[INFO ] 2026-05-26 09:14:48.263 [TestNG-PoolService-5] Hooks - Scenario Passed : Login with invalid username credentials
+[INFO ] 2026-05-26 09:14:48.701 [TestNG-PoolService-5] Hooks - Browser closed
+[INFO ] 2026-05-26 09:14:49.380 [TestNG-PoolService-4] Hooks - Scenario Passed : Login with valid credentials
+[INFO ] 2026-05-26 09:14:49.566 [TestNG-PoolService-4] Hooks - Browser closed
+[DEBUG] 2026-05-26 09:14:54.068 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-26 09:14:54.074 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[DEBUG] 2026-05-26 09:14:54.076 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[DEBUG] 2026-05-26 09:14:54.923 [TestNG-PoolService-3] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+[INFO ] 2026-05-26 09:14:55.943 [TestNG-PoolService-2] Hooks - Scenario Passed : Add Ambulance with empty fields
+[INFO ] 2026-05-26 09:14:56.188 [TestNG-PoolService-2] Hooks - Browser closed
+[INFO ] 2026-05-26 09:14:57.318 [TestNG-PoolService-3] Hooks - Scenario Passed : Entering character in charge field
+[INFO ] 2026-05-26 09:14:57.367 [TestNG-PoolService-1] Hooks - Scenario Passed : Add Ambulance with valid Details
+[INFO ] 2026-05-26 09:14:57.538 [TestNG-PoolService-3] Hooks - Browser closed
+[INFO ] 2026-05-26 09:14:57.558 [TestNG-PoolService-1] Hooks - Browser closed
+[INFO ] 2026-05-26 22:05:03.728 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 22:05:14.471 [main] Hooks - Scenario Passed : Add Payment with valid detials
+[INFO ] 2026-05-26 22:05:14.693 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 22:05:15.592 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 22:05:26.808 [main] Hooks - Scenario Passed : Delete the payment successfully
+[INFO ] 2026-05-26 22:05:26.997 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 22:05:27.811 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 22:05:38.976 [main] Hooks - Scenario Passed : Add Payment with empty fields
+[INFO ] 2026-05-26 22:05:39.196 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 22:51:39.091 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 22:52:08.479 [main] Hooks - Browser launched
+[ERROR] 2026-05-26 22:52:26.700 [main] Hooks - Scenario Failed : Add Payment with valid detials
+[INFO ] 2026-05-26 22:52:27.174 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-26 22:53:07.507 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 22:53:28.178 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 22:53:51.592 [main] Hooks - Browser launched
+[ERROR] 2026-05-26 22:54:05.898 [main] Hooks - Scenario Failed : Add Payment with valid detials
+[INFO ] 2026-05-26 22:54:06.141 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-26 22:54:06.410 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 22:54:07.235 [main] Hooks - Browser launched
+[ERROR] 2026-05-26 22:54:38.155 [main] Hooks - Scenario Failed : Delete the payment successfully
+[INFO ] 2026-05-26 22:54:38.489 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-26 22:54:38.849 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 22:54:39.727 [main] Hooks - Browser launched
+[ERROR] 2026-05-26 22:55:11.220 [main] Hooks - Scenario Failed : Add Payment with empty fields
+[INFO ] 2026-05-26 22:55:11.574 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-26 22:55:11.952 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 22:55:40.987 [main] Hooks - Browser launched
+[ERROR] 2026-05-26 22:55:53.040 [main] Hooks - Scenario Failed : Add Payment with valid detials
+[INFO ] 2026-05-26 22:55:53.357 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-26 22:55:53.629 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 22:55:54.431 [main] Hooks - Browser launched
+[ERROR] 2026-05-26 22:56:07.181 [main] Hooks - Scenario Failed : Delete the payment successfully
+[INFO ] 2026-05-26 22:56:07.476 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-26 22:56:07.725 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 22:56:08.430 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 22:56:21.607 [main] Hooks - Scenario Passed : Add Payment with empty fields
+[INFO ] 2026-05-26 22:56:21.914 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 22:56:50.359 [main] Hooks - Browser launched
+[ERROR] 2026-05-26 22:57:02.962 [main] Hooks - Scenario Failed : Add Payment with valid detials
+[INFO ] 2026-05-26 22:57:03.298 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-26 22:57:03.580 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 22:57:04.298 [main] Hooks - Browser launched
+[ERROR] 2026-05-26 22:57:16.794 [main] Hooks - Scenario Failed : Delete the payment successfully
+[INFO ] 2026-05-26 22:57:17.134 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-26 22:57:17.338 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 22:57:18.076 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 22:58:00.103 [main] Hooks - Browser launched
+[ERROR] 2026-05-26 22:58:11.848 [main] Hooks - Scenario Failed : Add Payment with valid detials
+[INFO ] 2026-05-26 22:58:12.175 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-26 22:58:12.175 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 22:58:13.014 [main] Hooks - Browser launched
+[ERROR] 2026-05-26 22:58:27.420 [main] Hooks - Scenario Failed : Delete the payment successfully
+[INFO ] 2026-05-26 22:58:27.781 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-26 22:58:27.781 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 22:58:28.530 [main] Hooks - Browser launched
+[ERROR] 2026-05-26 22:58:53.188 [main] Hooks - Scenario Failed : Add Payment with empty fields
+[ERROR] 2026-05-26 22:58:53.194 [main] Hooks - Screenshot Failed org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=148.0.7778.179)
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [32be4950da6c03fe405dc535bd589139, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\dhars\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58038}, goog:processID: 15440, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58038/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 32be4950da6c03fe405dc535bd589139
+[INFO ] 2026-05-26 22:58:53.195 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:01:16.770 [main] Hooks - Browser launched
+[ERROR] 2026-05-26 23:01:29.656 [main] Hooks - Scenario Failed : Add Payment with valid detials
+[INFO ] 2026-05-26 23:01:30.005 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-26 23:01:30.005 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:01:30.803 [main] Hooks - Browser launched
+[ERROR] 2026-05-26 23:01:41.416 [main] Hooks - Scenario Failed : Delete the payment successfully
+[INFO ] 2026-05-26 23:01:41.744 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-26 23:01:41.744 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:01:42.658 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 23:02:00.484 [main] Hooks - Browser launched
+[ERROR] 2026-05-26 23:02:11.560 [main] Hooks - Scenario Failed : Add Payment with valid detials
+[INFO ] 2026-05-26 23:02:11.923 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-26 23:02:11.923 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:02:12.871 [main] Hooks - Browser launched
+[ERROR] 2026-05-26 23:02:25.715 [main] Hooks - Scenario Failed : Delete the payment successfully
+[INFO ] 2026-05-26 23:02:26.071 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-26 23:02:26.071 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:02:26.891 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 23:02:39.890 [main] Hooks - Scenario Passed : Add Payment with empty fields
+[INFO ] 2026-05-26 23:02:39.891 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:06:32.645 [main] Hooks - Browser launched
+[ERROR] 2026-05-26 23:06:43.979 [main] Hooks - Scenario Failed : Add Payment with valid detials
+[INFO ] 2026-05-26 23:06:44.267 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-26 23:06:44.267 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:06:45.393 [main] Hooks - Browser launched
+[ERROR] 2026-05-26 23:06:58.015 [main] Hooks - Scenario Failed : Delete the payment successfully
+[INFO ] 2026-05-26 23:06:58.331 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-26 23:06:58.331 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:06:59.199 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 23:07:14.017 [main] Hooks - Scenario Passed : Add Payment with empty fields
+[INFO ] 2026-05-26 23:07:14.022 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:14:02.822 [main] Hooks - Browser launched
+[ERROR] 2026-05-26 23:14:15.725 [main] Hooks - Scenario Failed : Add Payment with valid detials
+[INFO ] 2026-05-26 23:14:16.203 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-26 23:14:16.204 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:14:17.068 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 23:14:30.786 [main] Hooks - Scenario Passed : Delete the payment successfully
+[INFO ] 2026-05-26 23:14:30.786 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:14:31.517 [main] Hooks - Browser launched
+[ERROR] 2026-05-26 23:15:00.682 [main] Hooks - Scenario Failed : Add Payment with empty fields
+[ERROR] 2026-05-26 23:15:00.687 [main] Hooks - Screenshot Failed org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=148.0.7778.179)
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [842f1d35181b1ed27c14da7a37029ea4, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\dhars\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65096}, goog:processID: 14716, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65096/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 842f1d35181b1ed27c14da7a37029ea4
+[INFO ] 2026-05-26 23:15:00.688 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:15:36.793 [main] Hooks - Browser launched
+[ERROR] 2026-05-26 23:15:46.859 [main] Hooks - Scenario Failed : Add Payment with valid detials
+[INFO ] 2026-05-26 23:15:47.356 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-26 23:15:47.356 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:15:48.246 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 23:16:06.514 [main] Hooks - Browser launched
+[ERROR] 2026-05-26 23:16:18.849 [main] Hooks - Scenario Failed : Add Payment with valid detials
+[INFO ] 2026-05-26 23:16:19.249 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-26 23:16:19.250 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:16:20.169 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 23:16:31.968 [main] Hooks - Scenario Passed : Delete the payment successfully
+[INFO ] 2026-05-26 23:16:31.968 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:16:32.762 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 23:16:45.265 [main] Hooks - Scenario Passed : Add Payment with empty fields
+[INFO ] 2026-05-26 23:16:45.265 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:17:33.179 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 23:17:44.228 [main] Hooks - Scenario Passed : Add Payment with valid detials
+[INFO ] 2026-05-26 23:17:44.229 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:17:45.180 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 23:17:56.579 [main] Hooks - Scenario Passed : Delete the payment successfully
+[INFO ] 2026-05-26 23:17:56.579 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:17:57.323 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 23:18:10.241 [main] Hooks - Scenario Passed : Add Payment with empty fields
+[INFO ] 2026-05-26 23:18:10.243 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:32:27.800 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 23:32:38.040 [main] Hooks - Scenario Passed : Add Payment with valid detials
+[INFO ] 2026-05-26 23:32:38.040 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:32:39.057 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 23:32:50.722 [main] Hooks - Scenario Passed : Delete the payment successfully
+[INFO ] 2026-05-26 23:32:50.722 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:32:51.557 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 23:33:04.248 [main] Hooks - Scenario Passed : Add Payment with empty fields
+[INFO ] 2026-05-26 23:33:04.250 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:35:14.167 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 23:35:27.502 [main] Hooks - Scenario Passed : Add Payment with valid detials
+[INFO ] 2026-05-26 23:35:27.502 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:35:28.403 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 23:35:38.838 [main] Hooks - Scenario Passed : Delete the payment successfully
+[INFO ] 2026-05-26 23:35:38.838 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:35:39.637 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 23:35:53.714 [main] Hooks - Scenario Passed : Add Payment with empty fields
+[INFO ] 2026-05-26 23:35:53.715 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:36:54.713 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 23:37:05.843 [main] Hooks - Scenario Passed : Add Payment with valid detials
+[INFO ] 2026-05-26 23:37:05.845 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:37:06.840 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 23:37:16.475 [main] Hooks - Scenario Passed : Delete the payment successfully
+[INFO ] 2026-05-26 23:37:16.475 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:37:17.364 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 23:37:35.818 [main] Hooks - Scenario Passed : Add Payment with empty fields
+[INFO ] 2026-05-26 23:37:35.818 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:38:19.769 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 23:38:32.919 [main] Hooks - Scenario Passed : Add Payment with valid detials
+[INFO ] 2026-05-26 23:38:32.920 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:38:33.935 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 23:38:44.068 [main] Hooks - Scenario Passed : Delete the payment successfully
+[INFO ] 2026-05-26 23:38:44.068 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:38:45.024 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 23:38:58.065 [main] Hooks - Scenario Passed : Add Payment with empty fields
+[INFO ] 2026-05-26 23:38:58.065 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:41:44.776 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 23:41:55.295 [main] Hooks - Scenario Passed : Add Payment with valid detials
+[INFO ] 2026-05-26 23:41:55.295 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:41:56.195 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 23:42:08.865 [main] Hooks - Scenario Passed : Delete the payment successfully
+[INFO ] 2026-05-26 23:42:08.868 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:42:09.868 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 23:42:22.736 [main] Hooks - Scenario Passed : Add Payment with empty fields
+[INFO ] 2026-05-26 23:42:22.737 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:43:55.778 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 23:44:07.261 [main] Hooks - Scenario Passed : Add Payment with valid detials
+[INFO ] 2026-05-26 23:44:07.263 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:44:08.300 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 23:44:23.203 [main] Hooks - Scenario Passed : Delete the payment successfully
+[INFO ] 2026-05-26 23:44:23.203 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:44:24.080 [main] Hooks - Browser launched
+[ERROR] 2026-05-26 23:44:55.923 [main] Hooks - Scenario Failed : Add Payment with empty fields
+[INFO ] 2026-05-26 23:44:56.391 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-26 23:44:56.392 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:46:30.979 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 23:46:45.316 [main] Hooks - Scenario Passed : Add Payment with valid detials
+[INFO ] 2026-05-26 23:46:45.316 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:46:46.217 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 23:46:58.332 [main] Hooks - Scenario Passed : Delete the payment successfully
+[INFO ] 2026-05-26 23:46:58.333 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:46:59.133 [main] Hooks - Browser launched
+[ERROR] 2026-05-26 23:47:29.506 [main] Hooks - Scenario Failed : Add Payment with empty fields
+[INFO ] 2026-05-26 23:47:29.937 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-26 23:47:29.938 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:50:27.186 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 23:50:39.505 [main] Hooks - Scenario Passed : Add Payment with valid detials
+[INFO ] 2026-05-26 23:50:39.505 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:50:40.415 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 23:50:57.329 [main] Hooks - Scenario Passed : Delete the payment successfully
+[INFO ] 2026-05-26 23:50:57.330 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:50:58.212 [main] Hooks - Browser launched
+[INFO ] 2026-05-26 23:51:12.467 [main] Hooks - Scenario Passed : Add Payment with empty fields
+[INFO ] 2026-05-26 23:51:12.469 [main] Hooks - Browser closed
+[INFO ] 2026-05-26 23:52:40.499 [TestNG-PoolService-1] Hooks - Browser launched
+[INFO ] 2026-05-26 23:52:40.499 [TestNG-PoolService-10] Hooks - Browser launched
+[INFO ] 2026-05-26 23:52:40.718 [TestNG-PoolService-8] Hooks - Browser launched
+[INFO ] 2026-05-26 23:52:40.725 [TestNG-PoolService-7] Hooks - Browser launched
+[INFO ] 2026-05-26 23:52:40.762 [TestNG-PoolService-2] Hooks - Browser launched
+[INFO ] 2026-05-26 23:52:40.820 [TestNG-PoolService-6] Hooks - Browser launched
+[INFO ] 2026-05-26 23:52:40.822 [TestNG-PoolService-4] Hooks - Browser launched
+[INFO ] 2026-05-26 23:52:41.274 [TestNG-PoolService-3] Hooks - Browser launched
+[INFO ] 2026-05-26 23:52:41.321 [TestNG-PoolService-9] Hooks - Browser launched
+[INFO ] 2026-05-26 23:52:41.833 [TestNG-PoolService-5] Hooks - Browser launched
+[INFO ] 2026-05-26 23:52:46.329 [TestNG-PoolService-9] Hooks - Scenario Passed : Login with empty fields
+[INFO ] 2026-05-26 23:52:46.330 [TestNG-PoolService-9] Hooks - Browser closed
+[INFO ] 2026-05-26 23:52:48.089 [TestNG-PoolService-10] Hooks - Scenario Passed : Login with invalid password credentials
+[INFO ] 2026-05-26 23:52:48.089 [TestNG-PoolService-10] Hooks - Browser closed
+[INFO ] 2026-05-26 23:52:50.095 [TestNG-PoolService-8] Hooks - Scenario Passed : Login with invalid username credentials
+[INFO ] 2026-05-26 23:52:50.096 [TestNG-PoolService-8] Hooks - Browser closed
+[INFO ] 2026-05-26 23:52:54.385 [TestNG-PoolService-9] Hooks - Browser launched
+[INFO ] 2026-05-26 23:52:55.950 [TestNG-PoolService-7] Hooks - Scenario Passed : Login with valid credentials
+[INFO ] 2026-05-26 23:52:55.951 [TestNG-PoolService-7] Hooks - Browser closed
+[ERROR] 2026-05-26 23:53:09.276 [TestNG-PoolService-3] Hooks - Scenario Failed : Entering character in charge field
+[INFO ] 2026-05-26 23:53:09.831 [TestNG-PoolService-9] Hooks - Scenario Passed : Login with invalid username and password
+[INFO ] 2026-05-26 23:53:09.832 [TestNG-PoolService-9] Hooks - Browser closed
+[INFO ] 2026-05-26 23:53:10.147 [TestNG-PoolService-3] Hooks - Screenshot Saved
+[INFO ] 2026-05-26 23:53:10.148 [TestNG-PoolService-3] Hooks - Browser closed
+[ERROR] 2026-05-26 23:53:26.210 [TestNG-PoolService-4] Hooks - Scenario Failed : Add Payment with valid detials
+[ERROR] 2026-05-26 23:53:26.483 [TestNG-PoolService-5] Hooks - Scenario Failed : Delete the payment successfully
+[INFO ] 2026-05-26 23:53:26.761 [TestNG-PoolService-4] Hooks - Screenshot Saved
+[INFO ] 2026-05-26 23:53:26.761 [TestNG-PoolService-4] Hooks - Browser closed
+[INFO ] 2026-05-26 23:53:27.331 [TestNG-PoolService-5] Hooks - Screenshot Saved
+[INFO ] 2026-05-26 23:53:27.331 [TestNG-PoolService-5] Hooks - Browser closed
+[ERROR] 2026-05-26 23:53:29.103 [TestNG-PoolService-2] Hooks - Scenario Failed : Add Ambulance with empty fields
+[INFO ] 2026-05-26 23:53:29.333 [TestNG-PoolService-2] Hooks - Screenshot Saved
+[INFO ] 2026-05-26 23:53:29.334 [TestNG-PoolService-2] Hooks - Browser closed
+[ERROR] 2026-05-26 23:53:30.922 [TestNG-PoolService-6] Hooks - Scenario Failed : Add Payment with empty fields
+[INFO ] 2026-05-26 23:53:31.157 [TestNG-PoolService-6] Hooks - Screenshot Saved
+[INFO ] 2026-05-26 23:53:31.157 [TestNG-PoolService-6] Hooks - Browser closed
+[ERROR] 2026-05-26 23:53:31.967 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
+[INFO ] 2026-05-26 23:53:32.230 [TestNG-PoolService-1] Hooks - Screenshot Saved
+[INFO ] 2026-05-26 23:53:32.230 [TestNG-PoolService-1] Hooks - Browser closed
+[INFO ] 2026-05-26 23:54:35.562 [TestNG-PoolService-2] Hooks - Browser launched
+[INFO ] 2026-05-26 23:54:35.568 [TestNG-PoolService-7] Hooks - Browser launched
+[INFO ] 2026-05-26 23:54:35.873 [TestNG-PoolService-1] Hooks - Browser launched
+[INFO ] 2026-05-26 23:54:35.925 [TestNG-PoolService-8] Hooks - Browser launched
+[INFO ] 2026-05-26 23:54:35.939 [TestNG-PoolService-9] Hooks - Browser launched
+[INFO ] 2026-05-26 23:54:35.954 [TestNG-PoolService-5] Hooks - Browser launched
+[INFO ] 2026-05-26 23:54:36.014 [TestNG-PoolService-10] Hooks - Browser launched
+[INFO ] 2026-05-26 23:54:36.670 [TestNG-PoolService-4] Hooks - Browser launched
+[INFO ] 2026-05-26 23:54:36.672 [TestNG-PoolService-3] Hooks - Browser launched
+[INFO ] 2026-05-26 23:54:37.924 [TestNG-PoolService-6] Hooks - Browser launched
+[INFO ] 2026-05-26 23:54:44.854 [TestNG-PoolService-9] Hooks - Scenario Passed : Login with empty fields
+[INFO ] 2026-05-26 23:54:44.855 [TestNG-PoolService-9] Hooks - Browser closed
+[INFO ] 2026-05-26 23:54:45.700 [TestNG-PoolService-8] Hooks - Scenario Passed : Login with invalid username credentials
+[INFO ] 2026-05-26 23:54:45.701 [TestNG-PoolService-8] Hooks - Browser closed
+[INFO ] 2026-05-26 23:54:47.787 [TestNG-PoolService-10] Hooks - Scenario Passed : Login with invalid password credentials
+[INFO ] 2026-05-26 23:54:47.787 [TestNG-PoolService-10] Hooks - Browser closed
+[INFO ] 2026-05-26 23:54:56.497 [TestNG-PoolService-9] Hooks - Browser launched
+[INFO ] 2026-05-26 23:54:59.963 [TestNG-PoolService-7] Hooks - Scenario Passed : Login with valid credentials
+[INFO ] 2026-05-26 23:54:59.963 [TestNG-PoolService-7] Hooks - Browser closed
+[ERROR] 2026-05-26 23:55:01.928 [TestNG-PoolService-5] Hooks - Scenario Failed : Delete the payment successfully
+[INFO ] 2026-05-26 23:55:03.438 [TestNG-PoolService-5] Hooks - Screenshot Saved
+[INFO ] 2026-05-26 23:55:03.438 [TestNG-PoolService-5] Hooks - Browser closed
+[ERROR] 2026-05-26 23:55:07.638 [TestNG-PoolService-4] Hooks - Scenario Failed : Add Payment with valid detials
+[ERROR] 2026-05-26 23:55:08.515 [TestNG-PoolService-6] Hooks - Scenario Failed : Add Payment with empty fields
+[INFO ] 2026-05-26 23:55:08.551 [TestNG-PoolService-4] Hooks - Screenshot Saved
+[INFO ] 2026-05-26 23:55:08.551 [TestNG-PoolService-4] Hooks - Browser closed
+[INFO ] 2026-05-26 23:55:09.421 [TestNG-PoolService-6] Hooks - Screenshot Saved
+[INFO ] 2026-05-26 23:55:09.422 [TestNG-PoolService-6] Hooks - Browser closed
+[INFO ] 2026-05-26 23:55:09.671 [TestNG-PoolService-9] Hooks - Scenario Passed : Login with invalid username and password
+[INFO ] 2026-05-26 23:55:09.671 [TestNG-PoolService-9] Hooks - Browser closed
+[ERROR] 2026-05-26 23:55:11.316 [TestNG-PoolService-3] Hooks - Scenario Failed : Entering character in charge field
+[INFO ] 2026-05-26 23:55:11.947 [TestNG-PoolService-3] Hooks - Screenshot Saved
+[INFO ] 2026-05-26 23:55:11.947 [TestNG-PoolService-3] Hooks - Browser closed
+[INFO ] 2026-05-26 23:55:29.614 [TestNG-PoolService-2] Hooks - Browser launched
+[INFO ] 2026-05-26 23:55:29.614 [TestNG-PoolService-1] Hooks - Browser launched
+[INFO ] 2026-05-26 23:55:29.614 [TestNG-PoolService-3] Hooks - Browser launched
+[ERROR] 2026-05-26 23:55:46.017 [TestNG-PoolService-3] Hooks - Scenario Failed : Add Payment with empty fields
+[ERROR] 2026-05-26 23:55:46.020 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Payment with valid detials
+[ERROR] 2026-05-26 23:55:46.522 [TestNG-PoolService-2] Hooks - Scenario Failed : Delete the payment successfully
+[INFO ] 2026-05-26 23:55:46.578 [TestNG-PoolService-3] Hooks - Screenshot Saved
+[INFO ] 2026-05-26 23:55:46.578 [TestNG-PoolService-1] Hooks - Screenshot Saved
+[INFO ] 2026-05-26 23:55:46.578 [TestNG-PoolService-3] Hooks - Browser closed
+[INFO ] 2026-05-26 23:55:46.578 [TestNG-PoolService-1] Hooks - Browser closed
+[INFO ] 2026-05-26 23:55:46.977 [TestNG-PoolService-2] Hooks - Screenshot Saved
+[INFO ] 2026-05-26 23:55:46.978 [TestNG-PoolService-2] Hooks - Browser closed
+[INFO ] 2026-05-27 00:00:33.831 [TestNG-PoolService-3] Hooks - Browser launched
+[INFO ] 2026-05-27 00:00:33.867 [TestNG-PoolService-2] Hooks - Browser launched
+[INFO ] 2026-05-27 00:00:33.880 [TestNG-PoolService-1] Hooks - Browser launched
+[ERROR] 2026-05-27 00:01:02.440 [TestNG-PoolService-2] Hooks - Scenario Failed : Delete the payment successfully
+[ERROR] 2026-05-27 00:01:02.504 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Payment with valid detials
+[INFO ] 2026-05-27 00:01:02.635 [TestNG-PoolService-2] Hooks - Screenshot Saved
+[INFO ] 2026-05-27 00:01:02.665 [TestNG-PoolService-1] Hooks - Screenshot Saved
+[INFO ] 2026-05-27 00:01:02.782 [TestNG-PoolService-2] Hooks - Browser closed
+[INFO ] 2026-05-27 00:01:02.839 [TestNG-PoolService-1] Hooks - Browser closed
+[ERROR] 2026-05-27 00:01:03.468 [TestNG-PoolService-3] Hooks - Scenario Failed : Add Payment with empty fields
+[INFO ] 2026-05-27 00:01:03.628 [TestNG-PoolService-3] Hooks - Screenshot Saved
+[INFO ] 2026-05-27 00:01:03.768 [TestNG-PoolService-3] Hooks - Browser closed
+[INFO ] 2026-05-27 00:01:23.270 [TestNG-PoolService-3] Hooks - Browser launched
+[INFO ] 2026-05-27 00:01:23.273 [TestNG-PoolService-1] Hooks - Browser launched
+[INFO ] 2026-05-27 00:01:23.366 [TestNG-PoolService-2] Hooks - Browser launched
+[INFO ] 2026-05-27 00:01:32.748 [TestNG-PoolService-1] Hooks - Scenario Passed : Add Payment with valid detials
+[INFO ] 2026-05-27 00:01:32.933 [TestNG-PoolService-1] Hooks - Browser closed
+[ERROR] 2026-05-27 00:01:33.546 [TestNG-PoolService-3] Hooks - Scenario Failed : Add Payment with empty fields
+[INFO ] 2026-05-27 00:01:33.762 [TestNG-PoolService-3] Hooks - Screenshot Saved
+[INFO ] 2026-05-27 00:01:33.925 [TestNG-PoolService-3] Hooks - Browser closed
+[INFO ] 2026-05-27 00:01:34.045 [TestNG-PoolService-2] Hooks - Scenario Passed : Delete the payment successfully
+[INFO ] 2026-05-27 00:01:34.173 [TestNG-PoolService-2] Hooks - Browser closed
+[INFO ] 2026-05-27 00:02:13.934 [TestNG-PoolService-1] Hooks - Browser launched
+[INFO ] 2026-05-27 00:02:13.934 [TestNG-PoolService-3] Hooks - Browser launched
+[INFO ] 2026-05-27 00:02:13.934 [TestNG-PoolService-2] Hooks - Browser launched
+[ERROR] 2026-05-27 00:02:22.474 [TestNG-PoolService-3] Hooks - Scenario Failed : Add Payment with empty fields
+[INFO ] 2026-05-27 00:02:22.870 [TestNG-PoolService-3] Hooks - Screenshot Saved
+[INFO ] 2026-05-27 00:02:23.014 [TestNG-PoolService-3] Hooks - Browser closed
+[INFO ] 2026-05-27 00:02:24.227 [TestNG-PoolService-1] Hooks - Scenario Passed : Add Payment with valid detials
+[INFO ] 2026-05-27 00:02:24.376 [TestNG-PoolService-1] Hooks - Browser closed
+[INFO ] 2026-05-27 00:02:24.561 [TestNG-PoolService-2] Hooks - Scenario Passed : Delete the payment successfully
+[INFO ] 2026-05-27 00:02:24.745 [TestNG-PoolService-2] Hooks - Browser closed
+[INFO ] 2026-05-27 00:03:01.285 [TestNG-PoolService-2] Hooks - Browser launched
+[INFO ] 2026-05-27 00:03:01.307 [TestNG-PoolService-3] Hooks - Browser launched
+[INFO ] 2026-05-27 00:03:01.321 [TestNG-PoolService-1] Hooks - Browser launched
+[INFO ] 2026-05-27 00:03:09.907 [TestNG-PoolService-3] Hooks - Scenario Passed : Add Payment with empty fields
+[INFO ] 2026-05-27 00:03:10.053 [TestNG-PoolService-3] Hooks - Browser closed
+[INFO ] 2026-05-27 00:03:12.132 [TestNG-PoolService-2] Hooks - Scenario Passed : Delete the payment successfully
+[INFO ] 2026-05-27 00:03:12.213 [TestNG-PoolService-1] Hooks - Scenario Passed : Add Payment with valid detials
+[INFO ] 2026-05-27 00:03:12.253 [TestNG-PoolService-2] Hooks - Browser closed
+[INFO ] 2026-05-27 00:03:12.315 [TestNG-PoolService-1] Hooks - Browser closed
+[INFO ] 2026-05-27 00:10:43.934 [TestNG-PoolService-6] Hooks - Browser launched
+[INFO ] 2026-05-27 00:10:43.934 [TestNG-PoolService-3] Hooks - Browser launched
+[INFO ] 2026-05-27 00:10:43.934 [TestNG-PoolService-2] Hooks - Browser launched
+[INFO ] 2026-05-27 00:10:43.934 [TestNG-PoolService-8] Hooks - Browser launched
+[INFO ] 2026-05-27 00:10:43.934 [TestNG-PoolService-7] Hooks - Browser launched
+[INFO ] 2026-05-27 00:10:43.943 [TestNG-PoolService-1] Hooks - Browser launched
+[INFO ] 2026-05-27 00:10:43.990 [TestNG-PoolService-4] Hooks - Browser launched
+[INFO ] 2026-05-27 00:10:44.034 [TestNG-PoolService-10] Hooks - Browser launched
+[INFO ] 2026-05-27 00:10:44.057 [TestNG-PoolService-5] Hooks - Browser launched
+[INFO ] 2026-05-27 00:10:44.104 [TestNG-PoolService-9] Hooks - Browser launched
+[INFO ] 2026-05-27 00:10:44.105 [TestNG-PoolService-2] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-27 00:10:44.105 [TestNG-PoolService-2] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-27 00:10:44.110 [TestNG-PoolService-1] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-27 00:10:44.110 [TestNG-PoolService-1] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-27 00:10:44.116 [TestNG-PoolService-8] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-27 00:10:44.116 [TestNG-PoolService-8] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-27 00:10:44.139 [TestNG-PoolService-3] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-27 00:10:44.139 [TestNG-PoolService-3] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-27 00:10:44.147 [TestNG-PoolService-9] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-27 00:10:44.147 [TestNG-PoolService-9] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-27 00:10:44.149 [TestNG-PoolService-6] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-27 00:10:44.149 [TestNG-PoolService-6] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-27 00:10:44.151 [TestNG-PoolService-4] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-27 00:10:44.151 [TestNG-PoolService-4] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-27 00:10:44.165 [TestNG-PoolService-7] LoginStepDefinition - Launching application URL
+[INFO ] 2026-05-27 00:10:44.165 [TestNG-PoolService-10] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-27 00:10:44.165 [TestNG-PoolService-7] LoginStepDefinition - Opening URL from ConfigReader
+[DEBUG] 2026-05-27 00:10:44.165 [TestNG-PoolService-10] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-27 00:10:44.165 [TestNG-PoolService-5] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-27 00:10:44.166 [TestNG-PoolService-5] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-27 00:10:44.757 [TestNG-PoolService-8] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-27 00:10:44.768 [TestNG-PoolService-8] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-27 00:10:44.768 [TestNG-PoolService-8] LoginStepDefinition - Waiting for Super Admin button
+[INFO ] 2026-05-27 00:10:45.835 [TestNG-PoolService-10] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-27 00:10:45.838 [TestNG-PoolService-10] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-27 00:10:45.838 [TestNG-PoolService-10] LoginStepDefinition - Waiting for Super Admin button
+[INFO ] 2026-05-27 00:10:45.912 [TestNG-PoolService-3] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-27 00:10:45.915 [TestNG-PoolService-3] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-27 00:10:45.915 [TestNG-PoolService-3] LoginStepDefinition - Waiting for Super Admin button
+[DEBUG] 2026-05-27 00:10:45.946 [TestNG-PoolService-10] LoginStepDefinition - Calling clicksuperAdmin()
+[INFO ] 2026-05-27 00:10:46.151 [TestNG-PoolService-6] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-27 00:10:46.159 [TestNG-PoolService-6] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-27 00:10:46.159 [TestNG-PoolService-6] LoginStepDefinition - Waiting for Super Admin button
+[INFO ] 2026-05-27 00:10:46.362 [TestNG-PoolService-1] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-27 00:10:46.365 [TestNG-PoolService-1] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-27 00:10:46.365 [TestNG-PoolService-1] LoginStepDefinition - Waiting for Super Admin button
+[DEBUG] 2026-05-27 00:10:46.422 [TestNG-PoolService-3] LoginStepDefinition - Calling clicksuperAdmin()
+[INFO ] 2026-05-27 00:10:46.602 [TestNG-PoolService-5] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-27 00:10:46.605 [TestNG-PoolService-5] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-27 00:10:46.605 [TestNG-PoolService-5] LoginStepDefinition - Waiting for Super Admin button
+[DEBUG] 2026-05-27 00:10:46.609 [TestNG-PoolService-6] LoginStepDefinition - Calling clicksuperAdmin()
+[DEBUG] 2026-05-27 00:10:46.826 [TestNG-PoolService-5] LoginStepDefinition - Calling clicksuperAdmin()
+[DEBUG] 2026-05-27 00:10:46.846 [TestNG-PoolService-1] LoginStepDefinition - Calling clicksuperAdmin()
+[INFO ] 2026-05-27 00:10:47.003 [TestNG-PoolService-2] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-27 00:10:47.005 [TestNG-PoolService-2] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-27 00:10:47.006 [TestNG-PoolService-2] LoginStepDefinition - Waiting for Super Admin button
+[INFO ] 2026-05-27 00:10:47.043 [TestNG-PoolService-7] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-27 00:10:47.045 [TestNG-PoolService-7] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-27 00:10:47.046 [TestNG-PoolService-7] LoginStepDefinition - Waiting for Super Admin button
+[INFO ] 2026-05-27 00:10:47.146 [TestNG-PoolService-4] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-27 00:10:47.148 [TestNG-PoolService-4] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-27 00:10:47.148 [TestNG-PoolService-4] LoginStepDefinition - Waiting for Super Admin button
+[DEBUG] 2026-05-27 00:10:47.315 [TestNG-PoolService-8] LoginStepDefinition - Calling clicksuperAdmin()
+[INFO ] 2026-05-27 00:10:47.614 [TestNG-PoolService-9] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-27 00:10:47.623 [TestNG-PoolService-9] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-27 00:10:47.624 [TestNG-PoolService-9] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-27 00:10:47.719 [TestNG-PoolService-3] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-27 00:10:47.721 [TestNG-PoolService-3] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-27 00:10:47.721 [TestNG-PoolService-3] LoginStepDefinition - Calling clicksignIn()
+[DEBUG] 2026-05-27 00:10:47.774 [TestNG-PoolService-2] LoginStepDefinition - Calling clicksuperAdmin()
+[DEBUG] 2026-05-27 00:10:47.792 [TestNG-PoolService-7] LoginStepDefinition - Calling clicksuperAdmin()
+[DEBUG] 2026-05-27 00:10:47.792 [TestNG-PoolService-4] LoginStepDefinition - Calling clicksuperAdmin()
+[INFO ] 2026-05-27 00:10:47.792 [TestNG-PoolService-10] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-27 00:10:47.794 [TestNG-PoolService-10] LoginStepDefinition - Entering invalid password
+[DEBUG] 2026-05-27 00:10:47.794 [TestNG-PoolService-10] LoginStepDefinition - Typing invalid password
+[INFO ] 2026-05-27 00:10:47.991 [TestNG-PoolService-5] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-27 00:10:47.993 [TestNG-PoolService-5] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-27 00:10:47.993 [TestNG-PoolService-5] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-27 00:10:48.137 [TestNG-PoolService-6] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-27 00:10:48.139 [TestNG-PoolService-6] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-27 00:10:48.139 [TestNG-PoolService-6] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-27 00:10:48.252 [TestNG-PoolService-1] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-27 00:10:48.254 [TestNG-PoolService-1] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-27 00:10:48.254 [TestNG-PoolService-1] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-27 00:10:48.303 [TestNG-PoolService-7] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-27 00:10:48.306 [TestNG-PoolService-7] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-27 00:10:48.306 [TestNG-PoolService-7] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-27 00:10:48.354 [TestNG-PoolService-10] LoginStepDefinition - Invalid password entered successfully
+[INFO ] 2026-05-27 00:10:48.357 [TestNG-PoolService-10] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-27 00:10:48.357 [TestNG-PoolService-10] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-27 00:10:48.456 [TestNG-PoolService-8] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-27 00:10:48.506 [TestNG-PoolService-8] LoginStepDefinition - Entering invalid username
+[DEBUG] 2026-05-27 00:10:48.507 [TestNG-PoolService-8] LoginStepDefinition - Typing invalid username
+[INFO ] 2026-05-27 00:10:48.511 [TestNG-PoolService-2] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-27 00:10:48.513 [TestNG-PoolService-2] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-27 00:10:48.513 [TestNG-PoolService-2] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-27 00:10:48.744 [TestNG-PoolService-4] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-27 00:10:48.748 [TestNG-PoolService-4] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-27 00:10:48.748 [TestNG-PoolService-4] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-27 00:10:49.098 [TestNG-PoolService-9] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-27 00:10:49.120 [TestNG-PoolService-9] LoginStepDefinition - Validating mandatory field messages
+[DEBUG] 2026-05-27 00:10:49.121 [TestNG-PoolService-9] LoginStepDefinition - Waiting for required field message
+[INFO ] 2026-05-27 00:10:49.611 [TestNG-PoolService-8] LoginStepDefinition - Invalid username entered successfully
+[INFO ] 2026-05-27 00:10:49.640 [TestNG-PoolService-8] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-27 00:10:49.642 [TestNG-PoolService-8] LoginStepDefinition - Calling clicksignIn()
+[DEBUG] 2026-05-27 00:10:49.652 [TestNG-PoolService-9] LoginStepDefinition - Actual Message : Username field is required
+[INFO ] 2026-05-27 00:10:49.669 [TestNG-PoolService-9] LoginStepDefinition - Required field validation successful
+[INFO ] 2026-05-27 00:10:49.706 [TestNG-PoolService-9] Hooks - Scenario Passed : Login with empty fields
+[INFO ] 2026-05-27 00:10:50.325 [TestNG-PoolService-10] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-27 00:10:50.330 [TestNG-PoolService-10] LoginStepDefinition - Validating invalid credential message
+[DEBUG] 2026-05-27 00:10:50.330 [TestNG-PoolService-10] LoginStepDefinition - Waiting for validation message
+[DEBUG] 2026-05-27 00:10:51.252 [TestNG-PoolService-10] LoginStepDefinition - Actual Message : Invalid Username or Password
+[INFO ] 2026-05-27 00:10:51.252 [TestNG-PoolService-10] LoginStepDefinition - Validation message displayed successfully
+[INFO ] 2026-05-27 00:10:51.255 [TestNG-PoolService-10] Hooks - Scenario Passed : Login with invalid password credentials
+[INFO ] 2026-05-27 00:10:52.592 [TestNG-PoolService-8] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-27 00:10:52.594 [TestNG-PoolService-8] LoginStepDefinition - Validating invalid credential message
+[DEBUG] 2026-05-27 00:10:52.595 [TestNG-PoolService-8] LoginStepDefinition - Waiting for validation message
+[DEBUG] 2026-05-27 00:10:52.984 [TestNG-PoolService-8] LoginStepDefinition - Actual Message : Invalid Username or Password
+[INFO ] 2026-05-27 00:10:53.033 [TestNG-PoolService-8] LoginStepDefinition - Validation message displayed successfully
+[INFO ] 2026-05-27 00:10:53.036 [TestNG-PoolService-8] Hooks - Scenario Passed : Login with invalid username credentials
+[INFO ] 2026-05-27 00:10:53.715 [TestNG-PoolService-9] Hooks - Browser closed
+[INFO ] 2026-05-27 00:10:55.382 [TestNG-PoolService-8] Hooks - Browser closed
+[INFO ] 2026-05-27 00:10:56.008 [TestNG-PoolService-9] Hooks - Browser launched
+[INFO ] 2026-05-27 00:10:56.013 [TestNG-PoolService-9] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-27 00:10:56.014 [TestNG-PoolService-9] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-27 00:10:56.200 [TestNG-PoolService-3] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-27 00:10:56.204 [TestNG-PoolService-3] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-27 00:10:56.204 [TestNG-PoolService-3] LoginStepDefinition - Checking dashboard visibility
+[INFO ] 2026-05-27 00:10:56.405 [TestNG-PoolService-3] LoginStepDefinition - Dashboard displayed successfully
+[INFO ] 2026-05-27 00:10:56.408 [TestNG-PoolService-3] AddambulanceCallStepDefinition - User trying to click Ambulance link
+[DEBUG] 2026-05-27 00:10:56.408 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Calling clickAddambulance()
+[INFO ] 2026-05-27 00:10:57.588 [TestNG-PoolService-9] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-27 00:10:57.592 [TestNG-PoolService-9] LoginStepDefinition - Entering invalid login credentials
+[DEBUG] 2026-05-27 00:10:57.593 [TestNG-PoolService-9] LoginStepDefinition - Typing invalid username and password
+[INFO ] 2026-05-27 00:10:58.724 [TestNG-PoolService-1] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-27 00:10:58.727 [TestNG-PoolService-1] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-27 00:10:58.727 [TestNG-PoolService-1] LoginStepDefinition - Checking dashboard visibility
+[INFO ] 2026-05-27 00:10:58.743 [TestNG-PoolService-5] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-27 00:10:58.746 [TestNG-PoolService-5] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-27 00:10:58.746 [TestNG-PoolService-5] LoginStepDefinition - Checking dashboard visibility
+[INFO ] 2026-05-27 00:10:59.069 [TestNG-PoolService-6] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-27 00:10:59.071 [TestNG-PoolService-6] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-27 00:10:59.072 [TestNG-PoolService-6] LoginStepDefinition - Checking dashboard visibility
+[INFO ] 2026-05-27 00:10:59.156 [TestNG-PoolService-5] LoginStepDefinition - Dashboard displayed successfully
+[INFO ] 2026-05-27 00:10:59.159 [TestNG-PoolService-5] AddambulanceCallStepDefinition - User trying to click Ambulance link
+[DEBUG] 2026-05-27 00:10:59.160 [TestNG-PoolService-5] AddambulanceCallStepDefinition - Calling clickAddambulance()
+[INFO ] 2026-05-27 00:10:59.172 [TestNG-PoolService-1] LoginStepDefinition - Dashboard displayed successfully
+[INFO ] 2026-05-27 00:10:59.174 [TestNG-PoolService-1] AddambulanceCallStepDefinition - User trying to click Ambulance link
+[DEBUG] 2026-05-27 00:10:59.175 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Calling clickAddambulance()
+[INFO ] 2026-05-27 00:10:59.887 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Ambulance link clicked successfully
+[INFO ] 2026-05-27 00:10:59.889 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Validating Ambulance page
+[DEBUG] 2026-05-27 00:10:59.890 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Fetching Ambulance page title
+[INFO ] 2026-05-27 00:10:59.909 [TestNG-PoolService-6] LoginStepDefinition - Dashboard displayed successfully
+[INFO ] 2026-05-27 00:10:59.922 [TestNG-PoolService-6] AddambulanceCallStepDefinition - User trying to click Ambulance link
+[DEBUG] 2026-05-27 00:10:59.923 [TestNG-PoolService-6] AddambulanceCallStepDefinition - Calling clickAddambulance()
+[INFO ] 2026-05-27 00:11:00.220 [TestNG-PoolService-10] Hooks - Browser closed
+[DEBUG] 2026-05-27 00:11:00.304 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Actual title : Ambulance Call List
+[INFO ] 2026-05-27 00:11:00.305 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Successfully redirected to Ambulance page
+[INFO ] 2026-05-27 00:11:00.309 [TestNG-PoolService-3] AddambulanceCallStepDefinition - User trying to click Add Ambulance link
+[DEBUG] 2026-05-27 00:11:00.309 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Calling clickAddambulanceCall()
+[INFO ] 2026-05-27 00:11:00.358 [TestNG-PoolService-4] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-27 00:11:00.361 [TestNG-PoolService-4] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-27 00:11:00.362 [TestNG-PoolService-4] LoginStepDefinition - Checking dashboard visibility
+[INFO ] 2026-05-27 00:11:00.557 [TestNG-PoolService-4] LoginStepDefinition - Dashboard displayed successfully
+[INFO ] 2026-05-27 00:11:00.559 [TestNG-PoolService-4] AddambulanceCallStepDefinition - User trying to click Ambulance link
+[DEBUG] 2026-05-27 00:11:00.559 [TestNG-PoolService-4] AddambulanceCallStepDefinition - Calling clickAddambulance()
+[INFO ] 2026-05-27 00:11:00.774 [TestNG-PoolService-2] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-27 00:11:00.776 [TestNG-PoolService-2] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-27 00:11:00.776 [TestNG-PoolService-2] LoginStepDefinition - Checking dashboard visibility
+[INFO ] 2026-05-27 00:11:01.007 [TestNG-PoolService-2] LoginStepDefinition - Dashboard displayed successfully
+[INFO ] 2026-05-27 00:11:01.009 [TestNG-PoolService-2] AddambulanceCallStepDefinition - User trying to click Ambulance link
+[DEBUG] 2026-05-27 00:11:01.010 [TestNG-PoolService-2] AddambulanceCallStepDefinition - Calling clickAddambulance()
+[INFO ] 2026-05-27 00:11:01.427 [TestNG-PoolService-7] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-27 00:11:01.429 [TestNG-PoolService-7] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-27 00:11:01.429 [TestNG-PoolService-7] LoginStepDefinition - Checking dashboard visibility
+[INFO ] 2026-05-27 00:11:01.643 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Add Ambulance link clicked successfully
+[INFO ] 2026-05-27 00:11:01.646 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Validating Get Call Ambulance page
+[INFO ] 2026-05-27 00:11:01.923 [TestNG-PoolService-7] LoginStepDefinition - Dashboard displayed successfully
+[INFO ] 2026-05-27 00:11:01.926 [TestNG-PoolService-7] Hooks - Scenario Passed : Login with valid credentials
+[DEBUG] 2026-05-27 00:11:02.001 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Actual model text : Vehicle Model
+[INFO ] 2026-05-27 00:11:02.002 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Successfully redirected to Get Call Ambulance page
+[INFO ] 2026-05-27 00:11:02.004 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Entering ambulance details from Excel
+[DEBUG] 2026-05-27 00:11:02.005 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Reading Excel data
+[INFO ] 2026-05-27 00:11:02.467 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Ambulance link clicked successfully
+[INFO ] 2026-05-27 00:11:02.469 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Validating Ambulance page
+[DEBUG] 2026-05-27 00:11:02.469 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Fetching Ambulance page title
+[DEBUG] 2026-05-27 00:11:02.928 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Actual title : Ambulance Call List
+[INFO ] 2026-05-27 00:11:02.928 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Successfully redirected to Ambulance page
+[INFO ] 2026-05-27 00:11:02.930 [TestNG-PoolService-1] AddambulanceCallStepDefinition - User trying to click Add Ambulance link
+[DEBUG] 2026-05-27 00:11:02.930 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Calling clickAddambulanceCall()
+[DEBUG] 2026-05-27 00:11:03.204 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-27 00:11:03.210 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[DEBUG] 2026-05-27 00:11:03.213 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[INFO ] 2026-05-27 00:11:03.557 [TestNG-PoolService-9] LoginStepDefinition - Invalid credentials entered successfully
+[INFO ] 2026-05-27 00:11:03.575 [TestNG-PoolService-9] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-27 00:11:03.577 [TestNG-PoolService-9] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-27 00:11:04.288 [TestNG-PoolService-6] AddambulanceCallStepDefinition - Ambulance link clicked successfully
+[INFO ] 2026-05-27 00:11:04.300 [TestNG-PoolService-6] AddambulanceCallStepDefinition - Validating Ambulance page
+[DEBUG] 2026-05-27 00:11:04.300 [TestNG-PoolService-6] AddambulanceCallStepDefinition - Fetching Ambulance page title
+[INFO ] 2026-05-27 00:11:04.321 [TestNG-PoolService-5] AddambulanceCallStepDefinition - Ambulance link clicked successfully
+[INFO ] 2026-05-27 00:11:04.323 [TestNG-PoolService-5] AddambulanceCallStepDefinition - Validating Ambulance page
+[DEBUG] 2026-05-27 00:11:04.323 [TestNG-PoolService-5] AddambulanceCallStepDefinition - Fetching Ambulance page title
+[INFO ] 2026-05-27 00:11:04.393 [TestNG-PoolService-4] AddambulanceCallStepDefinition - Ambulance link clicked successfully
+[INFO ] 2026-05-27 00:11:04.395 [TestNG-PoolService-4] AddambulanceCallStepDefinition - Validating Ambulance page
+[DEBUG] 2026-05-27 00:11:04.396 [TestNG-PoolService-4] AddambulanceCallStepDefinition - Fetching Ambulance page title
+[INFO ] 2026-05-27 00:11:04.572 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Add Ambulance link clicked successfully
+[INFO ] 2026-05-27 00:11:04.574 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Validating Get Call Ambulance page
+[DEBUG] 2026-05-27 00:11:04.910 [TestNG-PoolService-5] AddambulanceCallStepDefinition - Actual title : Ambulance Call List
+[INFO ] 2026-05-27 00:11:04.910 [TestNG-PoolService-5] AddambulanceCallStepDefinition - Successfully redirected to Ambulance page
+[INFO ] 2026-05-27 00:11:04.912 [TestNG-PoolService-5] AddPaymentStepDefinition - User trying to click Add Payment link
+[DEBUG] 2026-05-27 00:11:04.913 [TestNG-PoolService-5] AddPaymentStepDefinition - Calling clickAddPayment()
+[DEBUG] 2026-05-27 00:11:05.130 [TestNG-PoolService-4] AddambulanceCallStepDefinition - Actual title : Ambulance Call List
+[INFO ] 2026-05-27 00:11:05.130 [TestNG-PoolService-4] AddambulanceCallStepDefinition - Successfully redirected to Ambulance page
+[INFO ] 2026-05-27 00:11:05.132 [TestNG-PoolService-4] AddPaymentStepDefinition - User trying to click Add Payment link
+[DEBUG] 2026-05-27 00:11:05.132 [TestNG-PoolService-4] AddPaymentStepDefinition - Calling clickAddPayment()
+[DEBUG] 2026-05-27 00:11:05.208 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Actual model text : Vehicle Model
+[INFO ] 2026-05-27 00:11:05.208 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Successfully redirected to Get Call Ambulance page
+[INFO ] 2026-05-27 00:11:05.219 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Entering ambulance call details using DataTable
+[DEBUG] 2026-05-27 00:11:05.223 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Fetching ambulance test data
+[DEBUG] 2026-05-27 00:11:05.224 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Patient : 1185
+[DEBUG] 2026-05-27 00:11:05.224 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Vehicle Model : Force Traveller - MP21 AB 1023
+[INFO ] 2026-05-27 00:11:05.270 [TestNG-PoolService-9] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-27 00:11:05.285 [TestNG-PoolService-9] LoginStepDefinition - Validating invalid credential message
+[DEBUG] 2026-05-27 00:11:05.285 [TestNG-PoolService-9] LoginStepDefinition - Waiting for validation message
+[DEBUG] 2026-05-27 00:11:05.448 [TestNG-PoolService-6] AddambulanceCallStepDefinition - Actual title : Ambulance Call List
+[INFO ] 2026-05-27 00:11:05.448 [TestNG-PoolService-6] AddambulanceCallStepDefinition - Successfully redirected to Ambulance page
+[INFO ] 2026-05-27 00:11:05.472 [TestNG-PoolService-6] AddPaymentStepDefinition - User trying to click Add Payment link
+[DEBUG] 2026-05-27 00:11:05.473 [TestNG-PoolService-6] AddPaymentStepDefinition - Calling clickAddPayment()
+[INFO ] 2026-05-27 00:11:06.011 [TestNG-PoolService-2] AddambulanceCallStepDefinition - Ambulance link clicked successfully
+[INFO ] 2026-05-27 00:11:06.013 [TestNG-PoolService-2] AddambulanceCallStepDefinition - Validating Ambulance page
+[DEBUG] 2026-05-27 00:11:06.013 [TestNG-PoolService-2] AddambulanceCallStepDefinition - Fetching Ambulance page title
+[DEBUG] 2026-05-27 00:11:06.441 [TestNG-PoolService-9] LoginStepDefinition - Actual Message : Invalid Username or Password
+[INFO ] 2026-05-27 00:11:06.442 [TestNG-PoolService-9] LoginStepDefinition - Validation message displayed successfully
+[INFO ] 2026-05-27 00:11:06.445 [TestNG-PoolService-9] Hooks - Scenario Passed : Login with invalid username and password
+[DEBUG] 2026-05-27 00:11:06.986 [TestNG-PoolService-2] AddambulanceCallStepDefinition - Actual title : Ambulance Call List
+[INFO ] 2026-05-27 00:11:06.987 [TestNG-PoolService-2] AddambulanceCallStepDefinition - Successfully redirected to Ambulance page
+[INFO ] 2026-05-27 00:11:06.988 [TestNG-PoolService-2] AddambulanceCallStepDefinition - User trying to click Add Ambulance link
+[DEBUG] 2026-05-27 00:11:06.988 [TestNG-PoolService-2] AddambulanceCallStepDefinition - Calling clickAddambulanceCall()
+[DEBUG] 2026-05-27 00:11:07.096 [TestNG-PoolService-3] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+[INFO ] 2026-05-27 00:11:07.286 [TestNG-PoolService-4] AddPaymentStepDefinition - Add Payment link clicked successfully
+[INFO ] 2026-05-27 00:11:07.288 [TestNG-PoolService-4] AddPaymentStepDefinition - Validating Add Payment page
+[DEBUG] 2026-05-27 00:11:07.288 [TestNG-PoolService-4] AddPaymentStepDefinition - Fetching payment page title
+[INFO ] 2026-05-27 00:11:07.631 [TestNG-PoolService-2] AddambulanceCallStepDefinition - Add Ambulance link clicked successfully
+[INFO ] 2026-05-27 00:11:07.633 [TestNG-PoolService-2] AddambulanceCallStepDefinition - Validating Get Call Ambulance page
+[DEBUG] 2026-05-27 00:11:07.685 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Excel Data Loaded Successfully
+[DEBUG] 2026-05-27 00:11:08.061 [TestNG-PoolService-4] AddPaymentStepDefinition - Actual Title : Payments
+[INFO ] 2026-05-27 00:11:08.061 [TestNG-PoolService-4] AddPaymentStepDefinition - Successfully redirected to Add Payment page
+[INFO ] 2026-05-27 00:11:08.063 [TestNG-PoolService-4] AddPaymentStepDefinition - Entering payment details
+[DEBUG] 2026-05-27 00:11:08.064 [TestNG-PoolService-4] AddPaymentStepDefinition - Calling enterPaymentDetails()
+[INFO ] 2026-05-27 00:11:08.081 [TestNG-PoolService-5] AddPaymentStepDefinition - Add Payment link clicked successfully
+[INFO ] 2026-05-27 00:11:08.083 [TestNG-PoolService-5] AddPaymentStepDefinition - Validating Add Payment page
+[DEBUG] 2026-05-27 00:11:08.084 [TestNG-PoolService-5] AddPaymentStepDefinition - Fetching payment page title
+[INFO ] 2026-05-27 00:11:08.305 [TestNG-PoolService-7] Hooks - Browser closed
+[DEBUG] 2026-05-27 00:11:08.358 [TestNG-PoolService-2] AddambulanceCallStepDefinition - Actual model text : Vehicle Model
+[INFO ] 2026-05-27 00:11:08.359 [TestNG-PoolService-2] AddambulanceCallStepDefinition - Successfully redirected to Get Call Ambulance page
+[INFO ] 2026-05-27 00:11:08.361 [TestNG-PoolService-2] AddambulanceCallStepDefinition - User clicking Save button
+[DEBUG] 2026-05-27 00:11:08.362 [TestNG-PoolService-2] AddambulanceCallStepDefinition - Calling clickSave()
+[INFO ] 2026-05-27 00:11:08.484 [TestNG-PoolService-6] AddPaymentStepDefinition - Add Payment link clicked successfully
+[INFO ] 2026-05-27 00:11:08.492 [TestNG-PoolService-6] AddPaymentStepDefinition - Validating Add Payment page
+[DEBUG] 2026-05-27 00:11:08.492 [TestNG-PoolService-6] AddPaymentStepDefinition - Fetching payment page title
+[INFO ] 2026-05-27 00:11:08.508 [TestNG-PoolService-4] AddPaymentStepDefinition - Payment details entered successfully
+[INFO ] 2026-05-27 00:11:08.511 [TestNG-PoolService-4] AddPaymentStepDefinition - User clicking Save button
+[DEBUG] 2026-05-27 00:11:08.511 [TestNG-PoolService-4] AddPaymentStepDefinition - Calling clickSave()
+[INFO ] 2026-05-27 00:11:08.681 [TestNG-PoolService-9] Hooks - Browser closed
+[INFO ] 2026-05-27 00:11:08.744 [TestNG-PoolService-2] AddambulanceCallStepDefinition - Save button clicked successfully
+[INFO ] 2026-05-27 00:11:08.746 [TestNG-PoolService-2] AddambulanceCallStepDefinition - Validating mandatory field error message
+[INFO ] 2026-05-27 00:11:08.832 [TestNG-PoolService-4] AddPaymentStepDefinition - Save button clicked successfully
+[INFO ] 2026-05-27 00:11:08.834 [TestNG-PoolService-4] AddPaymentStepDefinition - Validating payment success message
+[DEBUG] 2026-05-27 00:11:08.889 [TestNG-PoolService-5] AddPaymentStepDefinition - Actual Title : Payments
+[INFO ] 2026-05-27 00:11:08.889 [TestNG-PoolService-5] AddPaymentStepDefinition - Successfully redirected to Add Payment page
+[INFO ] 2026-05-27 00:11:08.891 [TestNG-PoolService-5] AddPaymentStepDefinition - User trying to delete payment
+[DEBUG] 2026-05-27 00:11:08.891 [TestNG-PoolService-5] AddPaymentStepDefinition - Calling deletePayment()
+[DEBUG] 2026-05-27 00:11:09.393 [TestNG-PoolService-6] AddPaymentStepDefinition - Actual Title : Payments
+[INFO ] 2026-05-27 00:11:09.393 [TestNG-PoolService-6] AddPaymentStepDefinition - Successfully redirected to Add Payment page
+[INFO ] 2026-05-27 00:11:09.397 [TestNG-PoolService-6] AddPaymentStepDefinition - User clicking Save button
+[DEBUG] 2026-05-27 00:11:09.397 [TestNG-PoolService-6] AddPaymentStepDefinition - Calling clickSave()
+[DEBUG] 2026-05-27 00:11:09.442 [TestNG-PoolService-2] AddambulanceCallStepDefinition - Actual Error Message : Vehicle Model field is required
+[INFO ] 2026-05-27 00:11:09.443 [TestNG-PoolService-2] AddambulanceCallStepDefinition - Validation error displayed successfully
+[INFO ] 2026-05-27 00:11:09.444 [TestNG-PoolService-2] Hooks - Scenario Passed : Add Ambulance with empty fields
+[DEBUG] 2026-05-27 00:11:09.785 [TestNG-PoolService-4] AddPaymentStepDefinition - Actual Success Message : Record Saved Successfully
+[INFO ] 2026-05-27 00:11:09.786 [TestNG-PoolService-4] AddPaymentStepDefinition - Payment added successfully
+[INFO ] 2026-05-27 00:11:09.787 [TestNG-PoolService-4] Hooks - Scenario Passed : Add Payment with valid detials
+[INFO ] 2026-05-27 00:11:10.419 [TestNG-PoolService-2] Hooks - Browser closed
+[INFO ] 2026-05-27 00:11:10.620 [TestNG-PoolService-5] AddPaymentStepDefinition - Delete button clicked successfully
+[INFO ] 2026-05-27 00:11:10.623 [TestNG-PoolService-5] AddPaymentStepDefinition - Validating delete success message
+[INFO ] 2026-05-27 00:11:10.743 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Excel ambulance details entered successfully
+[INFO ] 2026-05-27 00:11:10.745 [TestNG-PoolService-3] AddambulanceCallStepDefinition - User clicking Save button
+[DEBUG] 2026-05-27 00:11:10.745 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Calling clickSave()
+[INFO ] 2026-05-27 00:11:10.916 [TestNG-PoolService-4] Hooks - Browser closed
+[INFO ] 2026-05-27 00:11:11.233 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Save button clicked successfully
+[INFO ] 2026-05-27 00:11:11.235 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Validating invalid charge category message
+[INFO ] 2026-05-27 00:11:11.358 [TestNG-PoolService-6] AddPaymentStepDefinition - Save button clicked successfully
+[INFO ] 2026-05-27 00:11:11.370 [TestNG-PoolService-6] AddPaymentStepDefinition - Validating error message for empty fields
+[DEBUG] 2026-05-27 00:11:11.852 [TestNG-PoolService-5] AddPaymentStepDefinition - Actual Delete Message : Record Deleted Successfully
+[INFO ] 2026-05-27 00:11:11.852 [TestNG-PoolService-5] AddPaymentStepDefinition - Payment deleted successfully
+[INFO ] 2026-05-27 00:11:11.854 [TestNG-PoolService-5] Hooks - Scenario Passed : Delete the payment successfully
+[DEBUG] 2026-05-27 00:11:11.923 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Actual Invalid Message : Charge Category field is required
+[INFO ] 2026-05-27 00:11:11.923 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Invalid charge category message validated
+[INFO ] 2026-05-27 00:11:11.925 [TestNG-PoolService-3] Hooks - Scenario Passed : Entering character in charge field
+[DEBUG] 2026-05-27 00:11:12.387 [TestNG-PoolService-6] AddPaymentStepDefinition - Actual Error Message : Date field is required
+[INFO ] 2026-05-27 00:11:12.387 [TestNG-PoolService-6] AddPaymentStepDefinition - Validation message displayed successfully
+[INFO ] 2026-05-27 00:11:12.392 [TestNG-PoolService-6] Hooks - Scenario Passed : Add Payment with empty fields
+[INFO ] 2026-05-27 00:11:12.632 [TestNG-PoolService-5] Hooks - Browser closed
+[INFO ] 2026-05-27 00:11:12.643 [TestNG-PoolService-3] Hooks - Browser closed
+[INFO ] 2026-05-27 00:11:12.899 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Ambulance details entered successfully
+[INFO ] 2026-05-27 00:11:12.909 [TestNG-PoolService-1] AddambulanceCallStepDefinition - User clicking Save button
+[DEBUG] 2026-05-27 00:11:12.909 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Calling clickSave()
+[INFO ] 2026-05-27 00:11:13.039 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Save button clicked successfully
+[INFO ] 2026-05-27 00:11:13.041 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Validating ambulance success message
+[INFO ] 2026-05-27 00:11:13.147 [TestNG-PoolService-6] Hooks - Browser closed
+[DEBUG] 2026-05-27 00:11:13.603 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Actual Success Message : Record Saved Successfully
+[INFO ] 2026-05-27 00:11:13.603 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Ambulance call added successfully
+[INFO ] 2026-05-27 00:11:13.603 [TestNG-PoolService-1] Hooks - Scenario Passed : Add Ambulance with valid Details
+[INFO ] 2026-05-27 00:11:13.836 [TestNG-PoolService-1] Hooks - Browser closed
