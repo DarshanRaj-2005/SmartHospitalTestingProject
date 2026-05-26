@@ -13,6 +13,9 @@
 	
 	<selenium.verison>4.43.0</selenium.verison>
 	<testng.version>7.12.0</testng.version>
+	<cucumberjava.version>7.34.2</cucumberjava.version>
+	<cucumbertestngversion>7.34.2</cucumbertestngversion>
+	<webdrivermanager.version>6.1.0</webdrivermanager.version>
 	
 	</properties>
 
@@ -37,21 +40,21 @@
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java</artifactId>
-			<version>7.34.2</version>
+			<version>${cucumberjava.version}</version>
 		</dependency>
 
 		<!-- Cucumber TestNG -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-testng</artifactId>
-			<version>7.34.2</version>
+			<version>${cucumbertestngversion}</version>
 		</dependency>
 
 		<!-- WebDriverManager -->
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
-			<version>6.1.0</version>
+			<version>${webdrivermanager.version}</version>
 		</dependency>
 
 		<!-- Log4j -->
@@ -73,11 +76,6 @@
 			<version>5.2.5</version>
 		</dependency>
 
-
-		<!-- ========================= -->
-		<!-- EXTENT REPORT DEPENDENCIES -->
-		<!-- ========================= -->
-
 		<!-- Extent Spark Report -->
 		<dependency>
 			<groupId>com.aventstack</groupId>
@@ -91,11 +89,6 @@
 			<artifactId>extentreports-cucumber7-adapter</artifactId>
 			<version>1.14.0</version>
 		</dependency>
-
-
-		<!-- ========================= -->
-		<!-- ALLURE REPORT DEPENDENCIES -->
-		<!-- ========================= -->
 
 		<!-- Allure TestNG -->
 		<dependency>
