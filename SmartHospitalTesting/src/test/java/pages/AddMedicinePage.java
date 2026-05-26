@@ -6,7 +6,7 @@ public class AddMedicinePage {
 
 	public static By medicineTab = By.className("modal-content");
 
-	public static By addMedicineButton = By.xpath("//a[contains(text(),'Add Medicine')]");
+	public static By addMedicineButton = By.xpath("//a[@class='btn btn-primary btn-sm addmedicine']");
 
 	public static By saveButton = By.id("formaddbtn");
 	public static By medicineNameField = By.id("medicine_name");
@@ -25,9 +25,6 @@ public class AddMedicinePage {
 	public static By rackNumberField = By.xpath("//form[@id='formadd']//input[@name='rack_number']");
 
 	public static By noteField = By.name("note");
-
-	public static By addMedicineModal = By.className("modal-content");
-
 	public static By categoryDropdown = By.name("medicine_category_id");
 
 	public static By companyDropdown = By.name("medicine_company");
@@ -35,10 +32,8 @@ public class AddMedicinePage {
 	public static By groupDropdown = By.name("medicine_group");
 
 	public static By unitDropdown = By.name("unit");
-	public static By medicineNameValidationMessage = By.xpath("//input[@id='medicine_name']/parent::div//span");
-	public static By successMessage = By.xpath("//*[@id='toast-container']/div");
 
-	public static By errorMessage = By.xpath("//*[@id='toast-container']/div");
+	public static By medicineNameValidationMessage = By.xpath("//div[contains(@class,'toast-message')]//p");
+	public static By medicineRows = By.xpath("//table[@id='DataTables_Table_0']//tr");
 	public static By medicineTable = By.id("DataTables_Table_0");
-	public static By tableCells = By.xpath("//table[@id='DataTables_Table_0']//td");
 }
