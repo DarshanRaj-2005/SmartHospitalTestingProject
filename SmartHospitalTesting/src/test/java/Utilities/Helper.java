@@ -341,35 +341,26 @@ public class Helper {
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
 	}
 
-	public static boolean isToastMessageDisplayed(By locator) {
+	public static void waitForPresence(By locator, int timeoutSeconds) {
 
-		try {
-
-			WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
-
-			wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-
-			return Driver.getDriver().findElement(locator).isDisplayed();
-
-		} catch (Exception e) {
-
-			return false;
-		}
+	    new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(timeoutSeconds))
+	            .until(ExpectedConditions.presenceOfElementLocated(locator));
 	}
+	public static String getToastText(By locator) {
 
-	public static String getToastMessage(By locator) {
+	    try {
 
-		try {
+	        WebDriverWait wait =
+	                new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
 
-			WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
+	        WebElement element =
+	                wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 
-			WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+	        return element.getText().trim();
 
-			return element.getText();
+	    } catch (Exception e) {
 
-		} catch (Exception e) {
-
-			return "";
-		}
+	        return "";
+	    }
 	}
 }

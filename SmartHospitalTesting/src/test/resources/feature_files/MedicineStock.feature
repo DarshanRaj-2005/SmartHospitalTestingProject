@@ -1,5 +1,5 @@
 @bala
-Feature: Add and manage medicines in the medicine stock page
+Feature: Balamurugan S 17/05/2026 Add and manage medicines in the medicine stock page
 
   Background:
     Given the user is on the login page
