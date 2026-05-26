@@ -69,8 +69,11 @@ public class AddMedicineDefinition {
 	@When("the user enters add medicine details from excel")
 	public void the_user_enters_add_medicine_details_from_excel() throws IOException {
 
-		String[][] data = Data_Provider.getExcelData("src/test/resources/testdata/AddMedicineData.xlsx",
-				"MedicineData");
+		String path = System.getProperty("user.dir")
+		        + "/src/test/resources/test_datas/AddMedicineData.xlsx";
+
+		String[][] data =
+		        Data_Provider.getExcelData(path, "MedicineData");
 
 		addMedicineAction.enterMedicineName(data[0][0]);
 
@@ -120,8 +123,13 @@ public class AddMedicineDefinition {
 	@Then("the medicine name required validation message should be displayed")
 	public void the_medicine_name_required_validation_message_should_be_displayed() {
 
-		Assert.assertTrue(addMedicineAction.isMedicineNameValidationDisplayed(), "Validation message is not displayed");
+	    String actualMessage =
+	            addMedicineAction.getMedicineNameValidationMessage();
 
-		System.out.println(addMedicineAction.getMedicineNameValidationMessage());
+	    Assert.assertEquals(
+	            actualMessage,
+	            "Medicine Name field is required");
+
+	    System.out.println(actualMessage);
 	}
 }
