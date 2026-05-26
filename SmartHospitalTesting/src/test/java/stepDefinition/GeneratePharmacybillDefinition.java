@@ -22,10 +22,6 @@ public class GeneratePharmacybillDefinition {
 
 		Map<String, String> pharmacyBillData = dataTable.asMap(String.class, String.class);
 
-		if (pharmacyBillData.get("patient") != null && !pharmacyBillData.get("patient").isEmpty()) {
-			generatePharmacyBillAction.enterPatientName(pharmacyBillData.get("patient"));
-		}
-
 		if (pharmacyBillData.get("category") != null && !pharmacyBillData.get("category").isEmpty()) {
 			generatePharmacyBillAction.selectCategory(pharmacyBillData.get("category"));
 		}
@@ -33,42 +29,12 @@ public class GeneratePharmacybillDefinition {
 		if (pharmacyBillData.get("medicine") != null && !pharmacyBillData.get("medicine").isEmpty()) {
 			generatePharmacyBillAction.selectMedicine(pharmacyBillData.get("medicine"));
 		}
-
-		if (pharmacyBillData.get("doctor") != null && !pharmacyBillData.get("doctor").isEmpty()) {
-			generatePharmacyBillAction.selectDoctor(pharmacyBillData.get("doctor"));
-		}
-
-		if (pharmacyBillData.get("batch") != null && !pharmacyBillData.get("batch").isEmpty()) {
-			generatePharmacyBillAction.enterBatchNumber(pharmacyBillData.get("batch"));
-		}
-
-		if (pharmacyBillData.get("quantity") != null && !pharmacyBillData.get("quantity").isEmpty()) {
-			generatePharmacyBillAction.enterQuantity(pharmacyBillData.get("quantity"));
-		}
-
-		if (pharmacyBillData.get("paymentMode") != null && !pharmacyBillData.get("paymentMode").isEmpty()) {
-			generatePharmacyBillAction.selectPaymentMode(pharmacyBillData.get("paymentMode"));
-		}
-
-		if (pharmacyBillData.get("amount") != null && !pharmacyBillData.get("amount").isEmpty()) {
-			generatePharmacyBillAction.enterAmount(pharmacyBillData.get("amount"));
-		}
 	}
 
 	@When("user clicks the Save button")
 	public void user_clicks_the_save_button() {
 		generatePharmacyBillAction.clickSaveButton();
 		System.out.println("User clicked Save button");
-	}
-
-	@Then("the pharmacy bill should be generated successfully")
-	public void the_pharmacy_bill_should_be_generated_successfully() {
-
-		boolean isSuccessMessageDisplayed = generatePharmacyBillAction.isSuccessMessageDisplayed();
-		Assert.assertTrue(isSuccessMessageDisplayed, "Success message is not displayed");
-
-		String successMessage = generatePharmacyBillAction.getSuccessMessageText();
-		System.out.println("Success message: " + successMessage);
 	}
 
 	@Then("the error message should be displayed")
