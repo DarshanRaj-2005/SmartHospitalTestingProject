@@ -55,12 +55,12 @@ public class LoginStepDefinition {
 		Assert.assertEquals(texts, "Username field is required");
 	}
 	
-	@When("the user enter invalid {string} and {string}>")
+	@Given("the user enter invalid {string} and {string}")
 	public void the_user_enter_invalid_and(String string, String string2) {
 		Helper.type(LoginPage.email,string);
 		Helper.type(LoginPage.password,string2);
 	}
-
+	
 	@When("the user enters valid username and invalid password")
 	public void the_user_enters_valid_username_and_invalid() {
 		Helper.type(LoginPage.password,ConfigReader.getPassword());

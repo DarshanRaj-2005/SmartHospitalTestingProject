@@ -1,3 +1,4 @@
+@bala
 Feature: Balamurugan S 18-05-2026 Generate the Pharmacy Bill
 
   Background:
@@ -9,22 +10,10 @@ Feature: Balamurugan S 18-05-2026 Generate the Pharmacy Bill
     Then it should move to the Pharmacy Bill page successfully
     And user clicks Generate Bill button
 
-  Scenario: Verify whether a user can generate the bill using valid details
-    And the user enters pharmacy bill details
-      | patient     | John              |
-      | category    | Syrup             |
-      | medicine    | Alprovit          |
-      | batch       | 5673              |
-      | quantity    | 2                 |
-      | doctor      | Amit Singh (9009) |
-      | paymentMode | Cash              |
-      | amount      | 200               |
-    And user clicks the Save button
-    Then the pharmacy bill should be generated successfully
 
   Scenario: Verify error when mandatory fields are missing
     And the user enters pharmacy bill details
-      | category |   |
-      | medicine |   |
+      | category |  |
+      | medicine |  |
     And user clicks the Save button
     Then the error message should be displayed

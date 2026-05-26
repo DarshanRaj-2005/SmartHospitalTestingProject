@@ -1,18 +1,19 @@
 package stepDefinition;
 
-import org.testng.Assert;
-
-import Utilities.Helper;
-import actions.DonorManagementAction;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
-import pages.DonorManagementPage;
 import java.util.List;
 import java.util.Map;
 
-import io.cucumber.datatable.DataTable;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.testng.Assert;
+
+import Utilities.CsvReader;
+import Utilities.Helper;
+import actions.DonorManagementAction;
+import io.cucumber.datatable.DataTable;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import pages.DonorManagementPage;
 
 public class DonorManagementStepDefinition {
 	Logger logger = LogManager.getLogger(DonorManagementStepDefinition.class);
@@ -81,10 +82,7 @@ public class DonorManagementStepDefinition {
 	}
 
 	
-	@When("the user clicks on Save button")
-	public void the_user_clicks_on_save_button() {
-		donor.clickSaveButton();
-	}
+
 
 	@Then("the newly added donor record should be visible in donor details list")
 	public void the_newly_added_donor_record_should_be_visible_in_donor_details_list() {
@@ -128,5 +126,30 @@ public class DonorManagementStepDefinition {
 	    donor.enterBloodGroup(bloodGroup);
 	    donor.enterGender(gender);	   
 	}
+	@When("the user enters mandatory donor details from csv")
+	public void the_user_enters_mandatory_donor_details_from_csv() {
+		List<String[]> donorData =
+	            CsvReader.readCsv("src/test/resources/test_datas/donorData.csv");
+
+	    for (String[] data : donorData) {
+
+	        String donorName = data[0];
+	        String dob = data[1];
+	        String bloodGroup = data[2];
+	        String gender = data[3];
+
+	        donor.enterDonorName(donorName);
+	        donor.enterDateOfBirth(dob);
+	        donor.enterBloodGroup(bloodGroup);
+	        donor.enterGender(gender);
+	}
+}
+	@When("the user clicks on Save")
+	public void the_user_clicks_on_save() {
+		donor.clickSaveButton();
+
+	}
+
+
 }
 	

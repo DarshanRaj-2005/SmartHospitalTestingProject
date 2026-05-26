@@ -14,10 +14,12 @@ public class AddambulanceAction {
 	public static WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
 
 	public static void clickAddambulance() {
+		Helper.waitForVisibility(AddambulancePage.addAmbulance);
 		Helper.click(AddambulancePage.addAmbulance);
 	}
 
 	public static void clickAddambulanceCall() {
+		Helper.waitForVisibility(AddambulancePage.addAmbulanceCall);
 		Helper.click(AddambulancePage.addAmbulanceCall);
 	}
 
