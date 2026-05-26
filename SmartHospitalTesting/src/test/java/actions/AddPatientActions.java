@@ -165,7 +165,7 @@ public class AddPatientActions {
 
     public boolean verifyPatientAdded() {
         log.info("Verifying patient added: " + lastPatientName);
-        Helper.waitForInvisibility(AddPatientPage.patientName);
+        
         Helper.waitForVisibility(AddPatientPage.patientListTable);
         Helper.waitForElementsPresent(AddPatientPage.tableCells, 15);
         List<WebElement> cells = Helper.getElements(AddPatientPage.tableCells);
