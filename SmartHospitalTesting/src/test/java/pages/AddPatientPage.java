@@ -1,60 +1,109 @@
 package pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import java.time.Duration;
-import java.util.List;
-import Utilities.Helper;
-import driver.Driver;
 
 public class AddPatientPage {
 
+    // =====================================================================
+    // NAVIGATION LOCATORS
+    // =====================================================================
+
+    // Patient link in the left sidebar menu
+    // Using child axis: finds <a> that is a child of <li> containing 'Patient' span
     public static By patientCategory =
-            By.xpath("//a[contains(@href,'patient') and .//span[contains(text(),'Patient')]]"
-                   + " | //a[normalize-space(text())='Patient']"
-                   + " | //span[normalize-space(text())='Patient']/parent::a");
+            By.xpath("//ul[contains(@class,'sidebar-menu')]"
+                   + "//li/a[.//span[normalize-space(text())='Patient']]");
 
+    // Add New Patient button on Patient List page (top right of box-header)
+    // Using ancestor axis: <a> whose ancestor is div with class box-header
     public static By addNewPatientButton =
-            By.xpath("//a[contains(@class,'addpatient')]"
-                   + " | //a[contains(text(),'Add New Patient') or contains(text(),'Add Patient')]"
-                   + " | //button[contains(text(),'Add New Patient') or contains(text(),'Add Patient')]");
-    public static By modalNameInput =
-            By.xpath("//input[@id='name' or @name='name']"
-                   + " | //div[@id='add_patient']//input[@placeholder='Name']");
+            By.xpath("//div[contains(@class,'box-header')]"
+                   + "//a[contains(@class,'addpatient') "
+                   + "or contains(text(),'Add New Patient') "
+                   + "or contains(text(),'Add Patient')]");
 
-    public static By patientName  = By.id("name");
-    public static By guardianName = By.id("guardian_name");
-    public static By gender       = By.id("gender");
-    public static By bloodGroup   = By.id("blood_group");
+    // =====================================================================
+    // MODAL LOCATORS
+    // =====================================================================
 
-    public static By dobYear  = By.xpath("//input[@placeholder='Year'  or @name='dob_year'  or @id='dob_year']");
-    public static By dobMonth = By.xpath("//input[@placeholder='Month' or @name='dob_month' or @id='dob_month']");
-    public static By dobDay   = By.xpath("//input[@placeholder='Day'   or @name='dob_day'   or @id='dob_day']");
-    public static By dob      = By.xpath("//input[@id='dob' or @name='dob' or @placeholder='Date of Birth']");
+    // Modal title — "Add Patient" heading inside modal-header
+    public static By modalTitle =
+            By.xpath("//div[contains(@class,'modal-header')]"
+                   + "//h4[contains(text(),'Add Patient')]");
 
-    public static By phone   = By.xpath("//input[@id='phone' or @name='phone' or @id='mobile']");
-    public static By email   = By.xpath("//input[@id='email' or @name='email']");
-    public static By address = By.xpath("//input[@id='address' or @name='address']"
-                                      + " | //textarea[@id='address' or @name='address']");
+    // Name input — first mandatory field (id='name')
+    public static By patientName =
+            By.xpath("//div[contains(@class,'modal-body')]//input[@id='name']");
 
+    // Guardian Name — sibling input inside same row as Name
+    // Using following-sibling axis inside the form row
+    public static By guardianName =
+            By.xpath("//input[@id='name']"
+                   + "/following::input[@name='guardian_name'][1]");
+
+    // Gender — select dropdown, identified by its id
+    public static By gender =
+            By.xpath("//select[@id='addformgender']");
+
+    // Date Of Birth — single date input field (id='birth_date')
+    public static By dob =
+            By.xpath("//input[@id='birth_date']");
+
+    // Age Year — input with placeholder='Year' inside the age calculate div
+    // Using descendant axis from the calculate div
+    public static By dobYear =
+            By.xpath("//div[@id='calculate']//descendant::input[@id='age_year']");
+
+    // Age Month — sibling of Year input inside calculate div
+    public static By dobMonth =
+            By.xpath("//div[@id='calculate']//descendant::input[@id='age_month']");
+
+    // Age Day — sibling of Month input inside calculate div
+    public static By dobDay =
+            By.xpath("//div[@id='calculate']//descendant::input[@id='age_day']");
+
+    // Blood Group — select dropdown, 2nd select inside modal-body
+    public static By bloodGroup =
+            By.xpath("//div[contains(@class,'col-sm-3')]"
+                   + "//select[@name='blood_group']");
+
+    // Phone — input with id='number'
+    public static By phone =
+            By.xpath("//input[@id='number']");
+
+    // Email — input with id='addformemail'
+    public static By email =
+            By.xpath("//input[@id='addformemail']");
+
+    // Address — input with name='address' inside the last full-width col
+    public static By address =
+            By.xpath("//div[contains(@class,'col-lg-12')]"
+                   + "//input[@name='address']");
+
+    // Save button — button with id='formaddpabtn' inside modal-footer
     public static By saveButton =
-            By.xpath("//button[@type='submit' and contains(text(),'Save')]"
-                   + " | //button[contains(@class,'btn-primary') and contains(text(),'Save')]"
-                   + " | //button[contains(text(),'Save')]");
+            By.xpath("//button[@id='formaddpabtn']");
 
+    // =====================================================================
+    // PATIENT LIST LOCATORS (after modal closes)
+    // =====================================================================
+
+    // Patient List box body — visible after modal closes on successful save
     public static By patientListTable =
-            By.xpath("//table[contains(@id,'patient') or contains(@class,'patient')]"
-                   + " | //div[@id='patient_list']"
-                   + " | //div[contains(@class,'table-responsive')]//table");
+            By.xpath("//div[@class='box-body']");
 
+    // All table cells in Patient List table — used to search for saved name
     public static By tableCells =
-            By.xpath("//div[contains(@class,'table-responsive')]//td"
-                   + " | //table//td");
+            By.xpath("//div[contains(@class,'box-body')]//table//tbody//td");
 
+    // =====================================================================
+    // VALIDATION LOCATORS
+    // =====================================================================
+
+    // Validation error text shown when Name is empty and Save clicked
+    // Using parent axis: finds error element that is sibling/near the name field
     public static By validationMessage =
-                By.xpath("//*[contains(@class,'invalid-feedback') and not(contains(@style,'display:none')) and not(contains(@style,'display: none'))]"
-                   + " | //*[contains(@class,'help-block') and contains(text(),'required')]"
-                   + " | //*[@id='name-error' or @id='name_error']");
+            By.xpath("//*[@id='name-error' or @id='name_error']"
+                   + " | //label[@for='name' and contains(@class,'error')]"
+                   + " | //div[contains(@class,'alert-danger')]");
 }
