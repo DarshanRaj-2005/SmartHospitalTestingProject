@@ -2,7 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 
-public class AddambulancePage {
+public class AddambulanceCallPage {
 	public static By addAmbulance = By.xpath("//ul[@class='sidebar-menu verttop']/li[11]/a");
 
 	public static By addAmbulanceCall = By.xpath("//div[@class='box-tools pull-right']/a[1]");
