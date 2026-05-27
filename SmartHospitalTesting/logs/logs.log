@@ -3591,3 +3591,233 @@ Session ID: 842f1d35181b1ed27c14da7a37029ea4
 [INFO ] 2026-05-27 00:16:04.928 [TestNG-PoolService-3] Hooks - Scenario Passed : Entering character in charge field
 [INFO ] 2026-05-27 00:16:05.045 [TestNG-PoolService-1] Hooks - Browser closed
 [INFO ] 2026-05-27 00:16:05.130 [TestNG-PoolService-3] Hooks - Browser closed
+[INFO ] 2026-05-27 16:43:46.950 [TestNG-PoolService-1] Hooks - Browser launched
+[INFO ] 2026-05-27 16:43:46.950 [TestNG-PoolService-10] Hooks - Browser launched
+[INFO ] 2026-05-27 16:43:46.950 [TestNG-PoolService-8] Hooks - Browser launched
+[INFO ] 2026-05-27 16:43:46.950 [TestNG-PoolService-9] Hooks - Browser launched
+[INFO ] 2026-05-27 16:43:46.950 [TestNG-PoolService-7] Hooks - Browser launched
+[INFO ] 2026-05-27 16:43:46.950 [TestNG-PoolService-5] Hooks - Browser launched
+[INFO ] 2026-05-27 16:43:46.950 [TestNG-PoolService-4] Hooks - Browser launched
+[INFO ] 2026-05-27 16:43:46.950 [TestNG-PoolService-2] Hooks - Browser launched
+[INFO ] 2026-05-27 16:43:46.950 [TestNG-PoolService-6] Hooks - Browser launched
+[INFO ] 2026-05-27 16:43:46.950 [TestNG-PoolService-3] Hooks - Browser launched
+[INFO ] 2026-05-27 16:43:47.037 [TestNG-PoolService-5] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-27 16:43:47.037 [TestNG-PoolService-5] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-27 16:43:47.037 [TestNG-PoolService-7] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-27 16:43:47.037 [TestNG-PoolService-7] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-27 16:43:47.038 [TestNG-PoolService-2] LoginStepDefinition - Launching application URL
+[INFO ] 2026-05-27 16:43:47.038 [TestNG-PoolService-10] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-27 16:43:47.038 [TestNG-PoolService-2] LoginStepDefinition - Opening URL from ConfigReader
+[DEBUG] 2026-05-27 16:43:47.038 [TestNG-PoolService-10] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-27 16:43:47.038 [TestNG-PoolService-3] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-27 16:43:47.038 [TestNG-PoolService-3] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-27 16:43:47.038 [TestNG-PoolService-9] LoginStepDefinition - Launching application URL
+[INFO ] 2026-05-27 16:43:47.039 [TestNG-PoolService-8] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-27 16:43:47.039 [TestNG-PoolService-8] LoginStepDefinition - Opening URL from ConfigReader
+[DEBUG] 2026-05-27 16:43:47.039 [TestNG-PoolService-9] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-27 16:43:47.040 [TestNG-PoolService-4] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-27 16:43:47.040 [TestNG-PoolService-4] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-27 16:43:47.040 [TestNG-PoolService-1] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-27 16:43:47.040 [TestNG-PoolService-1] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-27 16:43:47.041 [TestNG-PoolService-6] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-27 16:43:47.041 [TestNG-PoolService-6] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-27 16:43:48.658 [TestNG-PoolService-4] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-27 16:43:48.671 [TestNG-PoolService-4] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-27 16:43:48.672 [TestNG-PoolService-4] LoginStepDefinition - Waiting for Super Admin button
+[INFO ] 2026-05-27 16:43:49.672 [TestNG-PoolService-3] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-27 16:43:49.672 [TestNG-PoolService-1] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-27 16:43:49.677 [TestNG-PoolService-1] LoginStepDefinition - User trying to click Super Admin button
+[INFO ] 2026-05-27 16:43:49.677 [TestNG-PoolService-3] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-27 16:43:49.677 [TestNG-PoolService-1] LoginStepDefinition - Waiting for Super Admin button
+[DEBUG] 2026-05-27 16:43:49.678 [TestNG-PoolService-3] LoginStepDefinition - Waiting for Super Admin button
+[DEBUG] 2026-05-27 16:43:49.776 [TestNG-PoolService-1] LoginStepDefinition - Calling clicksuperAdmin()
+[DEBUG] 2026-05-27 16:43:49.776 [TestNG-PoolService-3] LoginStepDefinition - Calling clicksuperAdmin()
+[INFO ] 2026-05-27 16:43:49.862 [TestNG-PoolService-8] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-27 16:43:49.894 [TestNG-PoolService-8] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-27 16:43:49.895 [TestNG-PoolService-8] LoginStepDefinition - Waiting for Super Admin button
+[INFO ] 2026-05-27 16:43:49.972 [TestNG-PoolService-5] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-27 16:43:49.976 [TestNG-PoolService-5] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-27 16:43:49.978 [TestNG-PoolService-5] LoginStepDefinition - Waiting for Super Admin button
+[DEBUG] 2026-05-27 16:43:50.441 [TestNG-PoolService-4] LoginStepDefinition - Calling clicksuperAdmin()
+[DEBUG] 2026-05-27 16:43:50.455 [TestNG-PoolService-8] LoginStepDefinition - Calling clicksuperAdmin()
+[INFO ] 2026-05-27 16:43:50.493 [TestNG-PoolService-7] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-27 16:43:50.499 [TestNG-PoolService-7] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-27 16:43:50.501 [TestNG-PoolService-7] LoginStepDefinition - Waiting for Super Admin button
+[DEBUG] 2026-05-27 16:43:50.510 [TestNG-PoolService-5] LoginStepDefinition - Calling clicksuperAdmin()
+[INFO ] 2026-05-27 16:43:50.543 [TestNG-PoolService-9] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-27 16:43:50.546 [TestNG-PoolService-9] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-27 16:43:50.549 [TestNG-PoolService-9] LoginStepDefinition - Waiting for Super Admin button
+[DEBUG] 2026-05-27 16:43:50.623 [TestNG-PoolService-9] LoginStepDefinition - Calling clicksuperAdmin()
+[DEBUG] 2026-05-27 16:43:50.623 [TestNG-PoolService-7] LoginStepDefinition - Calling clicksuperAdmin()
+[INFO ] 2026-05-27 16:43:50.661 [TestNG-PoolService-3] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-27 16:43:50.674 [TestNG-PoolService-3] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-27 16:43:50.674 [TestNG-PoolService-3] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-27 16:43:50.678 [TestNG-PoolService-1] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-27 16:43:50.686 [TestNG-PoolService-1] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-27 16:43:50.686 [TestNG-PoolService-1] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-27 16:43:50.754 [TestNG-PoolService-4] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-27 16:43:50.758 [TestNG-PoolService-4] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-27 16:43:50.759 [TestNG-PoolService-4] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-27 16:43:50.779 [TestNG-PoolService-8] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-27 16:43:50.782 [TestNG-PoolService-10] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-27 16:43:50.789 [TestNG-PoolService-8] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-27 16:43:50.790 [TestNG-PoolService-8] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-27 16:43:50.790 [TestNG-PoolService-10] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-27 16:43:50.790 [TestNG-PoolService-10] LoginStepDefinition - Waiting for Super Admin button
+[INFO ] 2026-05-27 16:43:50.805 [TestNG-PoolService-5] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-27 16:43:50.809 [TestNG-PoolService-5] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-27 16:43:50.811 [TestNG-PoolService-5] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-27 16:43:50.846 [TestNG-PoolService-7] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-27 16:43:50.857 [TestNG-PoolService-7] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-27 16:43:50.859 [TestNG-PoolService-7] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-27 16:43:50.880 [TestNG-PoolService-9] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-27 16:43:50.889 [TestNG-PoolService-9] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-27 16:43:50.891 [TestNG-PoolService-9] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-27 16:43:50.903 [TestNG-PoolService-2] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-27 16:43:50.906 [TestNG-PoolService-2] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-27 16:43:50.907 [TestNG-PoolService-2] LoginStepDefinition - Waiting for Super Admin button
+[DEBUG] 2026-05-27 16:43:50.946 [TestNG-PoolService-10] LoginStepDefinition - Calling clicksuperAdmin()
+[INFO ] 2026-05-27 16:43:51.055 [TestNG-PoolService-1] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-27 16:43:51.062 [TestNG-PoolService-1] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-27 16:43:51.063 [TestNG-PoolService-1] LoginStepDefinition - Checking dashboard visibility
+[DEBUG] 2026-05-27 16:43:51.096 [TestNG-PoolService-2] LoginStepDefinition - Calling clicksuperAdmin()
+[INFO ] 2026-05-27 16:43:51.126 [TestNG-PoolService-6] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-27 16:43:51.129 [TestNG-PoolService-6] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-27 16:43:51.129 [TestNG-PoolService-6] LoginStepDefinition - Waiting for Super Admin button
+[DEBUG] 2026-05-27 16:43:51.341 [TestNG-PoolService-6] LoginStepDefinition - Calling clicksuperAdmin()
+[INFO ] 2026-05-27 16:43:51.492 [TestNG-PoolService-10] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-27 16:43:51.495 [TestNG-PoolService-10] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-27 16:43:51.495 [TestNG-PoolService-10] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-27 16:43:51.659 [TestNG-PoolService-2] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-27 16:43:51.661 [TestNG-PoolService-2] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-27 16:43:51.661 [TestNG-PoolService-2] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-27 16:43:51.802 [TestNG-PoolService-6] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-27 16:43:51.806 [TestNG-PoolService-6] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-27 16:43:51.807 [TestNG-PoolService-6] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-27 16:43:51.932 [TestNG-PoolService-2] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-27 16:43:51.940 [TestNG-PoolService-2] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-27 16:43:51.940 [TestNG-PoolService-2] LoginStepDefinition - Checking dashboard visibility
+[INFO ] 2026-05-27 16:43:51.973 [TestNG-PoolService-6] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-27 16:43:51.984 [TestNG-PoolService-6] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-27 16:43:51.985 [TestNG-PoolService-6] LoginStepDefinition - Checking dashboard visibility
+[INFO ] 2026-05-27 16:43:56.521 [TestNG-PoolService-8] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-27 16:43:56.523 [TestNG-PoolService-8] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-27 16:43:56.524 [TestNG-PoolService-8] LoginStepDefinition - Checking dashboard visibility
+[INFO ] 2026-05-27 16:43:56.636 [TestNG-PoolService-8] LoginStepDefinition - Dashboard displayed successfully
+[INFO ] 2026-05-27 16:43:56.695 [TestNG-PoolService-8] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-27 16:43:56.713 [TestNG-PoolService-1] LoginStepDefinition - Dashboard displayed successfully
+[INFO ] 2026-05-27 16:43:56.753 [TestNG-PoolService-1] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-27 16:43:57.023 [TestNG-PoolService-9] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-27 16:43:57.025 [TestNG-PoolService-9] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-27 16:43:57.025 [TestNG-PoolService-9] LoginStepDefinition - Checking dashboard visibility
+[INFO ] 2026-05-27 16:43:57.045 [TestNG-PoolService-3] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-27 16:43:57.055 [TestNG-PoolService-3] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-27 16:43:57.057 [TestNG-PoolService-3] LoginStepDefinition - Checking dashboard visibility
+[INFO ] 2026-05-27 16:43:57.146 [TestNG-PoolService-3] LoginStepDefinition - Dashboard displayed successfully
+[INFO ] 2026-05-27 16:43:57.146 [TestNG-PoolService-9] LoginStepDefinition - Dashboard displayed successfully
+[INFO ] 2026-05-27 16:43:57.264 [TestNG-PoolService-3] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-27 16:43:57.279 [TestNG-PoolService-9] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-27 16:43:57.425 [TestNG-PoolService-5] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-27 16:43:57.427 [TestNG-PoolService-5] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-27 16:43:57.439 [TestNG-PoolService-5] LoginStepDefinition - Checking dashboard visibility
+[INFO ] 2026-05-27 16:43:57.539 [TestNG-PoolService-4] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-27 16:43:57.543 [TestNG-PoolService-4] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-27 16:43:57.543 [TestNG-PoolService-4] LoginStepDefinition - Checking dashboard visibility
+[INFO ] 2026-05-27 16:43:57.559 [TestNG-PoolService-7] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-27 16:43:57.562 [TestNG-PoolService-7] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-27 16:43:57.563 [TestNG-PoolService-7] LoginStepDefinition - Checking dashboard visibility
+[INFO ] 2026-05-27 16:43:57.659 [TestNG-PoolService-5] LoginStepDefinition - Dashboard displayed successfully
+[INFO ] 2026-05-27 16:43:57.729 [TestNG-PoolService-2] LoginStepDefinition - Dashboard displayed successfully
+[INFO ] 2026-05-27 16:43:57.729 [TestNG-PoolService-7] LoginStepDefinition - Dashboard displayed successfully
+[INFO ] 2026-05-27 16:43:57.762 [TestNG-PoolService-1] BloodIssueAction - Navigated to Blood Issue Details Page
+[INFO ] 2026-05-27 16:43:57.789 [TestNG-PoolService-8] BloodStockAction - Clicked Add Icon
+[INFO ] 2026-05-27 16:43:57.793 [TestNG-PoolService-4] LoginStepDefinition - Dashboard displayed successfully
+[INFO ] 2026-05-27 16:43:57.811 [TestNG-PoolService-5] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-27 16:43:57.852 [TestNG-PoolService-2] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-27 16:43:57.857 [TestNG-PoolService-7] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-27 16:43:57.975 [TestNG-PoolService-4] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-27 16:43:58.346 [TestNG-PoolService-10] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-27 16:43:58.348 [TestNG-PoolService-10] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-27 16:43:58.349 [TestNG-PoolService-10] LoginStepDefinition - Checking dashboard visibility
+[INFO ] 2026-05-27 16:43:58.546 [TestNG-PoolService-10] LoginStepDefinition - Dashboard displayed successfully
+[INFO ] 2026-05-27 16:43:58.567 [TestNG-PoolService-8] BloodStockStepDefinition - Enter Blood Donor Details
+[INFO ] 2026-05-27 16:43:58.694 [TestNG-PoolService-10] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-27 16:43:58.724 [TestNG-PoolService-6] LoginStepDefinition - Dashboard displayed successfully
+[INFO ] 2026-05-27 16:43:58.792 [TestNG-PoolService-6] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-27 16:43:58.821 [TestNG-PoolService-3] BloodIssueAction - Navigated to Blood Issue Details Page
+[INFO ] 2026-05-27 16:43:58.962 [TestNG-PoolService-9] BloodStockAction - Clicked Issue Button
+[INFO ] 2026-05-27 16:43:59.000 [TestNG-PoolService-1] BloodIssueAction - Issue Blood popup is displayed.
+[INFO ] 2026-05-27 16:43:59.250 [TestNG-PoolService-2] BloodIssueAction - Navigated to Blood Issue Details Page
+[INFO ] 2026-05-27 16:43:59.372 [TestNG-PoolService-5] Hooks - Scenario Passed : Verify blood stock details for different blood groups
+[INFO ] 2026-05-27 16:43:59.662 [TestNG-PoolService-3] BloodIssueAction - Issue Blood popup is displayed.
+[INFO ] 2026-05-27 16:43:59.805 [TestNG-PoolService-5] Hooks - Browser closed
+[INFO ] 2026-05-27 16:43:59.827 [TestNG-PoolService-9] BloodStockStepDefinition - Blood Issue Page is displayed.
+[INFO ] 2026-05-27 16:43:59.835 [TestNG-PoolService-9] Hooks - Scenario Passed : Verify user navigates to Blood Issue page
+[INFO ] 2026-05-27 16:43:59.976 [TestNG-PoolService-2] BloodIssueAction - Deleting issued blood record
+[INFO ] 2026-05-27 16:43:59.993 [TestNG-PoolService-4] Hooks - Scenario Passed : Verify blood stock details for different blood groups
+[DEBUG] 2026-05-27 16:44:00.101 [TestNG-PoolService-1] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-27 16:44:00.108 [TestNG-PoolService-1] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[INFO ] 2026-05-27 16:44:00.124 [TestNG-PoolService-6] Hooks - Scenario Passed : Verify blood stock details for different blood groups
+[INFO ] 2026-05-27 16:44:00.303 [TestNG-PoolService-7] Hooks - Scenario Passed : Verify blood stock details for different blood groups
+[INFO ] 2026-05-27 16:44:00.446 [TestNG-PoolService-10] DonorManagementAction - Blood Donor popup is opened.
+[INFO ] 2026-05-27 16:44:00.485 [TestNG-PoolService-3] DonorManagementAction - Blood issue is unsuccessful.
+[INFO ] 2026-05-27 16:44:00.785 [TestNG-PoolService-6] Hooks - Browser closed
+[INFO ] 2026-05-27 16:44:00.818 [TestNG-PoolService-5] Hooks - Browser launched
+[INFO ] 2026-05-27 16:44:00.824 [TestNG-PoolService-4] Hooks - Browser closed
+[INFO ] 2026-05-27 16:44:00.824 [TestNG-PoolService-5] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-27 16:44:00.824 [TestNG-PoolService-5] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-27 16:44:00.874 [TestNG-PoolService-8] BloodStockAction - Clicked Save Button
+[INFO ] 2026-05-27 16:44:00.893 [TestNG-PoolService-9] Hooks - Browser closed
+[INFO ] 2026-05-27 16:44:01.018 [TestNG-PoolService-7] Hooks - Browser closed
+[INFO ] 2026-05-27 16:44:01.322 [TestNG-PoolService-3] Hooks - Scenario Passed : Issue blood with empty mandatory fields
+[INFO ] 2026-05-27 16:44:01.373 [TestNG-PoolService-2] BloodIssueAction - Blood issue record deleted successfully
+[INFO ] 2026-05-27 16:44:01.389 [TestNG-PoolService-2] Hooks - Scenario Passed : Delete issued blood record
+[INFO ] 2026-05-27 16:44:01.553 [TestNG-PoolService-6] Hooks - Browser launched
+[INFO ] 2026-05-27 16:44:01.554 [TestNG-PoolService-6] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-27 16:44:01.554 [TestNG-PoolService-6] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-27 16:44:01.623 [TestNG-PoolService-10] DonorManagementAction - Clicked Save Button
+[INFO ] 2026-05-27 16:44:01.693 [TestNG-PoolService-10] DonorManagementStepDefinition - The Record is added Succefully.
+[INFO ] 2026-05-27 16:44:01.708 [TestNG-PoolService-10] Hooks - Scenario Passed : Verify user is able to add donor with valid details
+[INFO ] 2026-05-27 16:44:01.912 [TestNG-PoolService-3] Hooks - Browser closed
+[INFO ] 2026-05-27 16:44:01.965 [TestNG-PoolService-2] Hooks - Browser closed
+[INFO ] 2026-05-27 16:44:02.012 [TestNG-PoolService-10] Hooks - Browser closed
+[INFO ] 2026-05-27 16:44:02.234 [TestNG-PoolService-8] BloodStockStepDefinition - Donor Details added.
+[INFO ] 2026-05-27 16:44:02.236 [TestNG-PoolService-8] Hooks - Scenario Passed : Verify user is able to add blood donor details
+[INFO ] 2026-05-27 16:44:02.469 [TestNG-PoolService-8] Hooks - Browser closed
+[INFO ] 2026-05-27 16:44:03.587 [TestNG-PoolService-1] BloodIssueAction - Record Saved Successfully
+[INFO ] 2026-05-27 16:44:03.588 [TestNG-PoolService-1] Hooks - Scenario Passed : Issue blood with valid details
+[INFO ] 2026-05-27 16:44:03.816 [TestNG-PoolService-1] Hooks - Browser closed
+[INFO ] 2026-05-27 16:44:08.708 [TestNG-PoolService-6] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-27 16:44:08.709 [TestNG-PoolService-6] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-27 16:44:08.709 [TestNG-PoolService-6] LoginStepDefinition - Waiting for Super Admin button
+[DEBUG] 2026-05-27 16:44:08.735 [TestNG-PoolService-6] LoginStepDefinition - Calling clicksuperAdmin()
+[INFO ] 2026-05-27 16:44:08.782 [TestNG-PoolService-6] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-27 16:44:08.783 [TestNG-PoolService-6] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-27 16:44:08.783 [TestNG-PoolService-6] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-27 16:44:09.334 [TestNG-PoolService-6] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-27 16:44:09.339 [TestNG-PoolService-6] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-27 16:44:09.340 [TestNG-PoolService-6] LoginStepDefinition - Checking dashboard visibility
+[INFO ] 2026-05-27 16:44:10.690 [TestNG-PoolService-5] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-27 16:44:10.691 [TestNG-PoolService-5] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-27 16:44:10.691 [TestNG-PoolService-5] LoginStepDefinition - Waiting for Super Admin button
+[DEBUG] 2026-05-27 16:44:10.719 [TestNG-PoolService-5] LoginStepDefinition - Calling clicksuperAdmin()
+[INFO ] 2026-05-27 16:44:10.774 [TestNG-PoolService-5] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-27 16:44:10.775 [TestNG-PoolService-5] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-27 16:44:10.775 [TestNG-PoolService-5] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-27 16:44:11.285 [TestNG-PoolService-5] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-27 16:44:11.287 [TestNG-PoolService-5] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-27 16:44:11.288 [TestNG-PoolService-5] LoginStepDefinition - Checking dashboard visibility
+[INFO ] 2026-05-27 16:44:13.650 [TestNG-PoolService-6] LoginStepDefinition - Dashboard displayed successfully
+[INFO ] 2026-05-27 16:44:13.675 [TestNG-PoolService-6] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-27 16:44:14.942 [TestNG-PoolService-6] DonorManagementAction - Blood Donor popup is opened.
+[INFO ] 2026-05-27 16:44:15.047 [TestNG-PoolService-5] LoginStepDefinition - Dashboard displayed successfully
+[INFO ] 2026-05-27 16:44:15.074 [TestNG-PoolService-5] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-27 16:44:15.541 [TestNG-PoolService-6] DonorManagementAction - Clicked Save Button
+[INFO ] 2026-05-27 16:44:15.592 [TestNG-PoolService-6] DonorManagementStepDefinition - New Donor is not added.
+[INFO ] 2026-05-27 16:44:16.145 [TestNG-PoolService-6] Hooks - Scenario Passed : Validate donor creation with all mandatory fields empty
+[INFO ] 2026-05-27 16:44:16.552 [TestNG-PoolService-6] Hooks - Browser closed
+[INFO ] 2026-05-27 16:44:16.585 [TestNG-PoolService-5] DonorManagementAction - Blood Donor popup is opened.
+[INFO ] 2026-05-27 16:44:17.359 [TestNG-PoolService-5] DonorManagementAction - Clicked Save Button
+[INFO ] 2026-05-27 16:44:17.402 [TestNG-PoolService-5] DonorManagementStepDefinition - The Record is added Succefully.
+[INFO ] 2026-05-27 16:44:17.410 [TestNG-PoolService-5] Hooks - Scenario Passed : Verify user is able to add donor with mandatory fields
+[INFO ] 2026-05-27 16:44:17.721 [TestNG-PoolService-5] Hooks - Browser closed
