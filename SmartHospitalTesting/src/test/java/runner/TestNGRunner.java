@@ -6,7 +6,8 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-        features = "src/test/resources/feature_files/Add_Patient.feature",
+        features = "src/test/resources/feature_files",
+	    tags="@Jananisri",
 
         glue = { "stepDefinition", "hooks" },
         plugin = {
