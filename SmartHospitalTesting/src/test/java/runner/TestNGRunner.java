@@ -10,6 +10,7 @@ import io.cucumber.testng.CucumberOptions;
 	   
 
         glue = { "stepDefinition", "hooks" },
+	tags="@Harini",
         plugin = {
                 "pretty",
                 "html:target/cucumber-report.html",
