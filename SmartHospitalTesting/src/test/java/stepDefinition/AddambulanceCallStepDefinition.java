@@ -131,6 +131,7 @@ public class AddambulanceCallStepDefinition {
             logger.debug("Fetching ambulance test data");
 
             String patient = ambulance.get("patient");
+            String name = ambulance.get("name");
             String vehicleModel = ambulance.get("vehicleModel");
             String date = ambulance.get("date");
             String chargeCategory = ambulance.get("chargeCategory");
@@ -143,6 +144,7 @@ public class AddambulanceCallStepDefinition {
 
             AddambulanceCallAction.enterAmbulanceDetail(
                     patient,
+                    name,
                     vehicleModel,
                     date,
                     chargeCategory,
