@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 		
 		features = "src/test/resources/feature_files",
-        tags = "@ValidCredentials",
+        tags = "@Darshanraj",
         glue = { "stepDefinition", "hooks" },
         plugin = {
                 "pretty",
