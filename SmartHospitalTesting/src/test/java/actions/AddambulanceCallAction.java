@@ -23,15 +23,15 @@ public class AddambulanceCallAction {
 		Helper.click(AddambulanceCallPage.addAmbulanceCall);
 	}
 
-	public static void enterAmbulanceDetail(String patient, String vehicleModel, String date, String chargeCategory,
+	public static void enterAmbulanceDetail(String patient, String name, String vehicleModel, String date, String chargeCategory,
 			String chargeName, String note, String paymentMode) throws InterruptedException {
 
 		Helper.click(AddambulanceCallPage.patient);
 		Helper.type(AddambulanceCallPage.patientInput, patient);
 
-		Helper.waitForElementClickable(AddambulanceCallPage.dynamicOption("Ashok (1185)"));
+		Helper.waitForElementClickable(AddambulanceCallPage.dynamicOption(name));
 
-		Helper.click(AddambulanceCallPage.dynamicOption("Ashok (1185)"));
+		Helper.click(AddambulanceCallPage.dynamicOption(name));
 
 		Select s = new Select(Helper.getElement(AddambulanceCallPage.vehicleModal));
 		s.selectByVisibleText(vehicleModel);

@@ -3591,3 +3591,622 @@ Session ID: 842f1d35181b1ed27c14da7a37029ea4
 [INFO ] 2026-05-27 00:16:04.928 [TestNG-PoolService-3] Hooks - Scenario Passed : Entering character in charge field
 [INFO ] 2026-05-27 00:16:05.045 [TestNG-PoolService-1] Hooks - Browser closed
 [INFO ] 2026-05-27 00:16:05.130 [TestNG-PoolService-3] Hooks - Browser closed
+[INFO ] 2026-05-28 14:01:42.943 [TestNG-PoolService-3] Hooks - Browser launched
+[INFO ] 2026-05-28 14:01:42.943 [TestNG-PoolService-2] Hooks - Browser launched
+[INFO ] 2026-05-28 14:01:42.998 [TestNG-PoolService-3] LoginStepDefinition - Launching application URL
+[INFO ] 2026-05-28 14:01:42.998 [TestNG-PoolService-2] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-28 14:01:42.998 [TestNG-PoolService-3] LoginStepDefinition - Opening URL from ConfigReader
+[DEBUG] 2026-05-28 14:01:42.998 [TestNG-PoolService-2] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-28 14:01:43.078 [TestNG-PoolService-1] Hooks - Browser launched
+[INFO ] 2026-05-28 14:01:43.081 [TestNG-PoolService-1] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-28 14:01:43.082 [TestNG-PoolService-1] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-28 14:01:45.874 [TestNG-PoolService-2] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-28 14:01:45.883 [TestNG-PoolService-2] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-28 14:01:45.883 [TestNG-PoolService-2] LoginStepDefinition - Waiting for Super Admin button
+[DEBUG] 2026-05-28 14:01:45.960 [TestNG-PoolService-2] LoginStepDefinition - Calling clicksuperAdmin()
+[INFO ] 2026-05-28 14:01:46.043 [TestNG-PoolService-1] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-28 14:01:46.046 [TestNG-PoolService-1] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-28 14:01:46.046 [TestNG-PoolService-1] LoginStepDefinition - Waiting for Super Admin button
+[INFO ] 2026-05-28 14:01:46.062 [TestNG-PoolService-3] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-28 14:01:46.065 [TestNG-PoolService-3] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-28 14:01:46.065 [TestNG-PoolService-3] LoginStepDefinition - Waiting for Super Admin button
+[DEBUG] 2026-05-28 14:01:46.137 [TestNG-PoolService-1] LoginStepDefinition - Calling clicksuperAdmin()
+[DEBUG] 2026-05-28 14:01:46.153 [TestNG-PoolService-3] LoginStepDefinition - Calling clicksuperAdmin()
+[INFO ] 2026-05-28 14:01:46.154 [TestNG-PoolService-2] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-28 14:01:46.159 [TestNG-PoolService-2] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-28 14:01:46.159 [TestNG-PoolService-2] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-28 14:01:46.328 [TestNG-PoolService-1] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-28 14:01:46.331 [TestNG-PoolService-1] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-28 14:01:46.332 [TestNG-PoolService-1] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-28 14:01:46.354 [TestNG-PoolService-3] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-28 14:01:46.356 [TestNG-PoolService-3] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-28 14:01:46.356 [TestNG-PoolService-3] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-28 14:01:50.953 [TestNG-PoolService-2] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-28 14:01:50.956 [TestNG-PoolService-2] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-28 14:01:50.956 [TestNG-PoolService-2] LoginStepDefinition - Checking dashboard visibility
+[INFO ] 2026-05-28 14:01:51.008 [TestNG-PoolService-2] LoginStepDefinition - Dashboard displayed successfully
+[INFO ] 2026-05-28 14:01:51.009 [TestNG-PoolService-2] AddambulanceCallStepDefinition - User trying to click Ambulance link
+[DEBUG] 2026-05-28 14:01:51.009 [TestNG-PoolService-2] AddambulanceCallStepDefinition - Calling clickAddambulance()
+[INFO ] 2026-05-28 14:01:51.344 [TestNG-PoolService-3] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-28 14:01:51.345 [TestNG-PoolService-3] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-28 14:01:51.345 [TestNG-PoolService-3] LoginStepDefinition - Checking dashboard visibility
+[INFO ] 2026-05-28 14:01:51.404 [TestNG-PoolService-3] LoginStepDefinition - Dashboard displayed successfully
+[INFO ] 2026-05-28 14:01:51.406 [TestNG-PoolService-3] AddambulanceCallStepDefinition - User trying to click Ambulance link
+[DEBUG] 2026-05-28 14:01:51.406 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Calling clickAddambulance()
+[INFO ] 2026-05-28 14:01:51.432 [TestNG-PoolService-1] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-28 14:01:51.434 [TestNG-PoolService-1] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-28 14:01:51.435 [TestNG-PoolService-1] LoginStepDefinition - Checking dashboard visibility
+[INFO ] 2026-05-28 14:01:51.497 [TestNG-PoolService-1] LoginStepDefinition - Dashboard displayed successfully
+[INFO ] 2026-05-28 14:01:51.498 [TestNG-PoolService-1] AddambulanceCallStepDefinition - User trying to click Ambulance link
+[DEBUG] 2026-05-28 14:01:51.499 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Calling clickAddambulance()
+[INFO ] 2026-05-28 14:01:51.928 [TestNG-PoolService-2] AddambulanceCallStepDefinition - Ambulance link clicked successfully
+[INFO ] 2026-05-28 14:01:51.930 [TestNG-PoolService-2] AddambulanceCallStepDefinition - Validating Ambulance page
+[DEBUG] 2026-05-28 14:01:51.930 [TestNG-PoolService-2] AddambulanceCallStepDefinition - Fetching Ambulance page title
+[DEBUG] 2026-05-28 14:01:52.015 [TestNG-PoolService-2] AddambulanceCallStepDefinition - Actual title : Ambulance Call List
+[INFO ] 2026-05-28 14:01:52.016 [TestNG-PoolService-2] AddambulanceCallStepDefinition - Successfully redirected to Ambulance page
+[INFO ] 2026-05-28 14:01:52.017 [TestNG-PoolService-2] AddambulanceCallStepDefinition - User trying to click Add Ambulance link
+[DEBUG] 2026-05-28 14:01:52.018 [TestNG-PoolService-2] AddambulanceCallStepDefinition - Calling clickAddambulanceCall()
+[INFO ] 2026-05-28 14:01:52.141 [TestNG-PoolService-2] AddambulanceCallStepDefinition - Add Ambulance link clicked successfully
+[INFO ] 2026-05-28 14:01:52.142 [TestNG-PoolService-2] AddambulanceCallStepDefinition - Validating Get Call Ambulance page
+[INFO ] 2026-05-28 14:01:52.499 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Ambulance link clicked successfully
+[INFO ] 2026-05-28 14:01:52.500 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Validating Ambulance page
+[DEBUG] 2026-05-28 14:01:52.500 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Fetching Ambulance page title
+[INFO ] 2026-05-28 14:01:52.519 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Ambulance link clicked successfully
+[INFO ] 2026-05-28 14:01:52.521 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Validating Ambulance page
+[DEBUG] 2026-05-28 14:01:52.521 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Fetching Ambulance page title
+[DEBUG] 2026-05-28 14:01:52.544 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Actual title : Ambulance Call List
+[INFO ] 2026-05-28 14:01:52.545 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Successfully redirected to Ambulance page
+[INFO ] 2026-05-28 14:01:52.545 [TestNG-PoolService-3] AddambulanceCallStepDefinition - User trying to click Add Ambulance link
+[DEBUG] 2026-05-28 14:01:52.546 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Calling clickAddambulanceCall()
+[DEBUG] 2026-05-28 14:01:52.562 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Actual title : Ambulance Call List
+[INFO ] 2026-05-28 14:01:52.562 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Successfully redirected to Ambulance page
+[INFO ] 2026-05-28 14:01:52.563 [TestNG-PoolService-1] AddambulanceCallStepDefinition - User trying to click Add Ambulance link
+[DEBUG] 2026-05-28 14:01:52.563 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Calling clickAddambulanceCall()
+[INFO ] 2026-05-28 14:01:52.651 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Add Ambulance link clicked successfully
+[INFO ] 2026-05-28 14:01:52.653 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Validating Get Call Ambulance page
+[INFO ] 2026-05-28 14:01:52.679 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Add Ambulance link clicked successfully
+[INFO ] 2026-05-28 14:01:52.681 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Validating Get Call Ambulance page
+[DEBUG] 2026-05-28 14:01:52.714 [TestNG-PoolService-2] AddambulanceCallStepDefinition - Actual model text : Vehicle Model
+[INFO ] 2026-05-28 14:01:52.714 [TestNG-PoolService-2] AddambulanceCallStepDefinition - Successfully redirected to Get Call Ambulance page
+[INFO ] 2026-05-28 14:01:52.716 [TestNG-PoolService-2] AddambulanceCallStepDefinition - User clicking Save button
+[DEBUG] 2026-05-28 14:01:52.716 [TestNG-PoolService-2] AddambulanceCallStepDefinition - Calling clickSave()
+[INFO ] 2026-05-28 14:01:52.827 [TestNG-PoolService-2] AddambulanceCallStepDefinition - Save button clicked successfully
+[INFO ] 2026-05-28 14:01:52.830 [TestNG-PoolService-2] AddambulanceCallStepDefinition - Validating mandatory field error message
+[DEBUG] 2026-05-28 14:01:53.248 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Actual model text : Vehicle Model
+[INFO ] 2026-05-28 14:01:53.248 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Successfully redirected to Get Call Ambulance page
+[INFO ] 2026-05-28 14:01:53.249 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Entering ambulance details from Excel
+[DEBUG] 2026-05-28 14:01:53.249 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Reading Excel data
+[DEBUG] 2026-05-28 14:01:53.259 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Actual model text : Vehicle Model
+[INFO ] 2026-05-28 14:01:53.259 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Successfully redirected to Get Call Ambulance page
+[INFO ] 2026-05-28 14:01:53.264 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Entering ambulance call details using DataTable
+[DEBUG] 2026-05-28 14:01:53.265 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Fetching ambulance test data
+[DEBUG] 2026-05-28 14:01:53.265 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Patient : 1185
+[DEBUG] 2026-05-28 14:01:53.265 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Vehicle Model : Force Traveller - MP21 AB 1023
+[DEBUG] 2026-05-28 14:01:53.340 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-05-28 14:01:53.343 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[DEBUG] 2026-05-28 14:01:53.344 [TestNG-PoolService-3] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[DEBUG] 2026-05-28 14:01:53.394 [TestNG-PoolService-2] AddambulanceCallStepDefinition - Actual Error Message : Vehicle Model field is required
+[INFO ] 2026-05-28 14:01:53.394 [TestNG-PoolService-2] AddambulanceCallStepDefinition - Validation error displayed successfully
+[INFO ] 2026-05-28 14:01:53.397 [TestNG-PoolService-2] Hooks - Scenario Passed : Add Ambulance with empty fields
+[INFO ] 2026-05-28 14:01:53.583 [TestNG-PoolService-2] Hooks - Browser closed
+[DEBUG] 2026-05-28 14:01:53.724 [TestNG-PoolService-3] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+[DEBUG] 2026-05-28 14:01:53.825 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Excel Data Loaded Successfully
+[INFO ] 2026-05-28 14:01:54.701 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Excel ambulance details entered successfully
+[INFO ] 2026-05-28 14:01:54.703 [TestNG-PoolService-3] AddambulanceCallStepDefinition - User clicking Save button
+[DEBUG] 2026-05-28 14:01:54.703 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Calling clickSave()
+[INFO ] 2026-05-28 14:01:54.779 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Save button clicked successfully
+[INFO ] 2026-05-28 14:01:54.780 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Validating invalid charge category message
+[DEBUG] 2026-05-28 14:01:55.351 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Actual Invalid Message : Charge Category field is required
+[INFO ] 2026-05-28 14:01:55.351 [TestNG-PoolService-3] AddambulanceCallStepDefinition - Invalid charge category message validated
+[INFO ] 2026-05-28 14:01:55.352 [TestNG-PoolService-3] Hooks - Scenario Passed : Entering character in charge field
+[INFO ] 2026-05-28 14:01:55.615 [TestNG-PoolService-3] Hooks - Browser closed
+[ERROR] 2026-05-28 14:02:14.884 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Failed to enter ambulance details
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for Utilities.Helper$$Lambda/0x00000000396dc4d0@69cdbb66
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.216, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\dhars\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62846}, goog:processID: 50108, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62846/devtoo..., se:cdpVersion: 148.0.7778.216, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b0e652bb104b709746388ab04f300f93
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at Utilities.Helper.waitForElementsPresent(Helper.java:192)
+	at actions.AddambulanceCallAction.enterAmbulanceDetail(AddambulanceCallAction.java:49)
+	at stepDefinition.AddambulanceCallStepDefinition.the_user_enters_ambulance_call_details(AddambulanceCallStepDefinition.java:145)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:62)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:55)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:87)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:135)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[ERROR] 2026-05-28 14:02:14.903 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
+[INFO ] 2026-05-28 14:02:15.030 [TestNG-PoolService-1] Hooks - Screenshot Saved
+[INFO ] 2026-05-28 14:02:15.239 [TestNG-PoolService-1] Hooks - Browser closed
+[INFO ] 2026-05-28 14:03:48.284 [main] Hooks - Browser launched
+[INFO ] 2026-05-28 14:03:48.390 [main] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-28 14:03:48.390 [main] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-28 14:03:51.112 [main] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-28 14:03:51.146 [main] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-28 14:03:51.146 [main] LoginStepDefinition - Waiting for Super Admin button
+[DEBUG] 2026-05-28 14:03:51.246 [main] LoginStepDefinition - Calling clicksuperAdmin()
+[INFO ] 2026-05-28 14:03:51.391 [main] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-28 14:03:51.395 [main] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-28 14:03:51.396 [main] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-28 14:03:55.510 [main] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-28 14:03:55.513 [main] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-28 14:03:55.514 [main] LoginStepDefinition - Checking dashboard visibility
+[INFO ] 2026-05-28 14:03:55.559 [main] LoginStepDefinition - Dashboard displayed successfully
+[INFO ] 2026-05-28 14:03:55.563 [main] AddambulanceCallStepDefinition - User trying to click Ambulance link
+[DEBUG] 2026-05-28 14:03:55.564 [main] AddambulanceCallStepDefinition - Calling clickAddambulance()
+[INFO ] 2026-05-28 14:03:56.642 [main] AddambulanceCallStepDefinition - Ambulance link clicked successfully
+[INFO ] 2026-05-28 14:03:56.646 [main] AddambulanceCallStepDefinition - Validating Ambulance page
+[DEBUG] 2026-05-28 14:03:56.646 [main] AddambulanceCallStepDefinition - Fetching Ambulance page title
+[DEBUG] 2026-05-28 14:03:56.746 [main] AddambulanceCallStepDefinition - Actual title : Ambulance Call List
+[INFO ] 2026-05-28 14:03:56.747 [main] AddambulanceCallStepDefinition - Successfully redirected to Ambulance page
+[INFO ] 2026-05-28 14:03:56.749 [main] AddambulanceCallStepDefinition - User trying to click Add Ambulance link
+[DEBUG] 2026-05-28 14:03:56.750 [main] AddambulanceCallStepDefinition - Calling clickAddambulanceCall()
+[INFO ] 2026-05-28 14:03:56.992 [main] AddambulanceCallStepDefinition - Add Ambulance link clicked successfully
+[INFO ] 2026-05-28 14:03:56.995 [main] AddambulanceCallStepDefinition - Validating Get Call Ambulance page
+[DEBUG] 2026-05-28 14:03:57.659 [main] AddambulanceCallStepDefinition - Actual model text : Vehicle Model
+[INFO ] 2026-05-28 14:03:57.661 [main] AddambulanceCallStepDefinition - Successfully redirected to Get Call Ambulance page
+[INFO ] 2026-05-28 14:03:57.681 [main] AddambulanceCallStepDefinition - Entering ambulance call details using DataTable
+[DEBUG] 2026-05-28 14:03:57.685 [main] AddambulanceCallStepDefinition - Fetching ambulance test data
+[DEBUG] 2026-05-28 14:03:57.685 [main] AddambulanceCallStepDefinition - Patient : 1185
+[DEBUG] 2026-05-28 14:03:57.686 [main] AddambulanceCallStepDefinition - Vehicle Model : Force Traveller - MP21 AB 1023
+[INFO ] 2026-05-28 14:04:00.250 [main] AddambulanceCallStepDefinition - Ambulance details entered successfully
+[INFO ] 2026-05-28 14:04:00.261 [main] AddambulanceCallStepDefinition - User clicking Save button
+[DEBUG] 2026-05-28 14:04:00.261 [main] AddambulanceCallStepDefinition - Calling clickSave()
+[INFO ] 2026-05-28 14:04:00.399 [main] AddambulanceCallStepDefinition - Save button clicked successfully
+[INFO ] 2026-05-28 14:04:00.403 [main] AddambulanceCallStepDefinition - Validating ambulance success message
+[DEBUG] 2026-05-28 14:04:01.049 [main] AddambulanceCallStepDefinition - Actual Success Message : Record Saved Successfully
+[INFO ] 2026-05-28 14:04:01.049 [main] AddambulanceCallStepDefinition - Ambulance call added successfully
+[INFO ] 2026-05-28 14:04:01.054 [main] Hooks - Scenario Passed : Add Ambulance with valid Details
+[INFO ] 2026-05-28 14:04:01.055 [main] Hooks - Browser closed
+[INFO ] 2026-05-28 14:04:33.514 [TestNG-PoolService-1] Hooks - Browser launched
+[INFO ] 2026-05-28 14:04:33.561 [TestNG-PoolService-1] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-28 14:04:33.561 [TestNG-PoolService-1] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-28 14:04:36.081 [TestNG-PoolService-1] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-28 14:04:36.090 [TestNG-PoolService-1] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-28 14:04:36.090 [TestNG-PoolService-1] LoginStepDefinition - Waiting for Super Admin button
+[DEBUG] 2026-05-28 14:04:36.150 [TestNG-PoolService-1] LoginStepDefinition - Calling clicksuperAdmin()
+[INFO ] 2026-05-28 14:04:36.229 [TestNG-PoolService-1] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-28 14:04:36.231 [TestNG-PoolService-1] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-28 14:04:36.232 [TestNG-PoolService-1] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-28 14:04:36.812 [TestNG-PoolService-1] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-28 14:04:36.818 [TestNG-PoolService-1] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-28 14:04:36.819 [TestNG-PoolService-1] LoginStepDefinition - Checking dashboard visibility
+[INFO ] 2026-05-28 14:04:40.453 [TestNG-PoolService-1] LoginStepDefinition - Dashboard displayed successfully
+[INFO ] 2026-05-28 14:04:40.454 [TestNG-PoolService-1] AddambulanceCallStepDefinition - User trying to click Ambulance link
+[DEBUG] 2026-05-28 14:04:40.454 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Calling clickAddambulance()
+[INFO ] 2026-05-28 14:04:41.191 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Ambulance link clicked successfully
+[INFO ] 2026-05-28 14:04:41.193 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Validating Ambulance page
+[DEBUG] 2026-05-28 14:04:41.193 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Fetching Ambulance page title
+[DEBUG] 2026-05-28 14:04:41.233 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Actual title : Ambulance Call List
+[INFO ] 2026-05-28 14:04:41.233 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Successfully redirected to Ambulance page
+[INFO ] 2026-05-28 14:04:41.234 [TestNG-PoolService-1] AddambulanceCallStepDefinition - User trying to click Add Ambulance link
+[DEBUG] 2026-05-28 14:04:41.234 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Calling clickAddambulanceCall()
+[INFO ] 2026-05-28 14:04:41.315 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Add Ambulance link clicked successfully
+[INFO ] 2026-05-28 14:04:41.316 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Validating Get Call Ambulance page
+[DEBUG] 2026-05-28 14:04:41.882 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Actual model text : Vehicle Model
+[INFO ] 2026-05-28 14:04:41.882 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Successfully redirected to Get Call Ambulance page
+[INFO ] 2026-05-28 14:04:41.890 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Entering ambulance call details using DataTable
+[DEBUG] 2026-05-28 14:04:41.891 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Fetching ambulance test data
+[DEBUG] 2026-05-28 14:04:41.891 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Patient : 1185
+[DEBUG] 2026-05-28 14:04:41.891 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Vehicle Model : Force Traveller - MP21 AB 1023
+[ERROR] 2026-05-28 14:05:03.589 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Failed to enter ambulance details
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for Utilities.Helper$$Lambda/0x0000000032561cd0@66176f76
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.216, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\dhars\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61235}, goog:processID: 20012, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61235/devtoo..., se:cdpVersion: 148.0.7778.216, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2f7ca450093ac59f09773d5be08910fc
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at Utilities.Helper.waitForElementsPresent(Helper.java:192)
+	at actions.AddambulanceCallAction.enterAmbulanceDetail(AddambulanceCallAction.java:49)
+	at stepDefinition.AddambulanceCallStepDefinition.the_user_enters_ambulance_call_details(AddambulanceCallStepDefinition.java:145)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:62)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:55)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:87)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:135)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[ERROR] 2026-05-28 14:05:03.608 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
+[INFO ] 2026-05-28 14:05:03.740 [TestNG-PoolService-1] Hooks - Screenshot Saved
+[INFO ] 2026-05-28 14:05:03.740 [TestNG-PoolService-1] Hooks - Browser closed
+[INFO ] 2026-05-28 14:05:21.343 [TestNG-PoolService-1] Hooks - Browser launched
+[INFO ] 2026-05-28 14:05:21.389 [TestNG-PoolService-1] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-28 14:05:21.389 [TestNG-PoolService-1] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-28 14:05:24.065 [TestNG-PoolService-1] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-28 14:05:24.078 [TestNG-PoolService-1] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-28 14:05:24.078 [TestNG-PoolService-1] LoginStepDefinition - Waiting for Super Admin button
+[DEBUG] 2026-05-28 14:05:24.160 [TestNG-PoolService-1] LoginStepDefinition - Calling clicksuperAdmin()
+[INFO ] 2026-05-28 14:05:24.250 [TestNG-PoolService-1] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-28 14:05:24.253 [TestNG-PoolService-1] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-28 14:05:24.253 [TestNG-PoolService-1] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-28 14:05:24.336 [TestNG-PoolService-1] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-28 14:05:24.338 [TestNG-PoolService-1] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-28 14:05:24.338 [TestNG-PoolService-1] LoginStepDefinition - Checking dashboard visibility
+[INFO ] 2026-05-28 14:05:28.488 [TestNG-PoolService-1] LoginStepDefinition - Dashboard displayed successfully
+[INFO ] 2026-05-28 14:05:28.489 [TestNG-PoolService-1] AddambulanceCallStepDefinition - User trying to click Ambulance link
+[DEBUG] 2026-05-28 14:05:28.489 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Calling clickAddambulance()
+[INFO ] 2026-05-28 14:05:29.328 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Ambulance link clicked successfully
+[INFO ] 2026-05-28 14:05:29.332 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Validating Ambulance page
+[DEBUG] 2026-05-28 14:05:29.332 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Fetching Ambulance page title
+[DEBUG] 2026-05-28 14:05:29.406 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Actual title : Ambulance Call List
+[INFO ] 2026-05-28 14:05:29.406 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Successfully redirected to Ambulance page
+[INFO ] 2026-05-28 14:05:29.407 [TestNG-PoolService-1] AddambulanceCallStepDefinition - User trying to click Add Ambulance link
+[DEBUG] 2026-05-28 14:05:29.408 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Calling clickAddambulanceCall()
+[INFO ] 2026-05-28 14:05:29.500 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Add Ambulance link clicked successfully
+[INFO ] 2026-05-28 14:05:29.502 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Validating Get Call Ambulance page
+[DEBUG] 2026-05-28 14:05:30.080 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Actual model text : Vehicle Model
+[INFO ] 2026-05-28 14:05:30.080 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Successfully redirected to Get Call Ambulance page
+[INFO ] 2026-05-28 14:05:30.088 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Entering ambulance call details using DataTable
+[DEBUG] 2026-05-28 14:05:30.089 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Fetching ambulance test data
+[DEBUG] 2026-05-28 14:05:30.089 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Patient : 1185
+[DEBUG] 2026-05-28 14:05:30.089 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Vehicle Model : Force Traveller - MP21 AB 1023
+[INFO ] 2026-05-28 14:05:31.759 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Ambulance details entered successfully
+[INFO ] 2026-05-28 14:05:31.763 [TestNG-PoolService-1] AddambulanceCallStepDefinition - User clicking Save button
+[DEBUG] 2026-05-28 14:05:31.763 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Calling clickSave()
+[INFO ] 2026-05-28 14:05:31.829 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Save button clicked successfully
+[INFO ] 2026-05-28 14:05:31.830 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Validating ambulance success message
+[DEBUG] 2026-05-28 14:05:32.401 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Actual Success Message : Payment Amount field is required
+Standard Charge field is required
+[ERROR] 2026-05-28 14:05:32.410 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
+[INFO ] 2026-05-28 14:05:32.675 [TestNG-PoolService-1] Hooks - Screenshot Saved
+[INFO ] 2026-05-28 14:05:32.675 [TestNG-PoolService-1] Hooks - Browser closed
+[INFO ] 2026-05-28 14:06:09.562 [TestNG-PoolService-1] Hooks - Browser launched
+[INFO ] 2026-05-28 14:06:09.614 [TestNG-PoolService-1] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-28 14:06:09.614 [TestNG-PoolService-1] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-28 14:06:12.740 [TestNG-PoolService-1] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-28 14:06:12.750 [TestNG-PoolService-1] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-28 14:06:12.750 [TestNG-PoolService-1] LoginStepDefinition - Waiting for Super Admin button
+[DEBUG] 2026-05-28 14:06:12.802 [TestNG-PoolService-1] LoginStepDefinition - Calling clicksuperAdmin()
+[INFO ] 2026-05-28 14:06:12.882 [TestNG-PoolService-1] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-28 14:06:12.886 [TestNG-PoolService-1] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-28 14:06:12.886 [TestNG-PoolService-1] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-28 14:06:12.975 [TestNG-PoolService-1] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-28 14:06:12.985 [TestNG-PoolService-1] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-28 14:06:12.985 [TestNG-PoolService-1] LoginStepDefinition - Checking dashboard visibility
+[INFO ] 2026-05-28 14:06:17.405 [TestNG-PoolService-1] LoginStepDefinition - Dashboard displayed successfully
+[INFO ] 2026-05-28 14:06:17.406 [TestNG-PoolService-1] AddambulanceCallStepDefinition - User trying to click Ambulance link
+[DEBUG] 2026-05-28 14:06:17.406 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Calling clickAddambulance()
+[INFO ] 2026-05-28 14:06:18.266 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Ambulance link clicked successfully
+[INFO ] 2026-05-28 14:06:18.268 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Validating Ambulance page
+[DEBUG] 2026-05-28 14:06:18.268 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Fetching Ambulance page title
+[DEBUG] 2026-05-28 14:06:18.305 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Actual title : Ambulance Call List
+[INFO ] 2026-05-28 14:06:18.305 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Successfully redirected to Ambulance page
+[INFO ] 2026-05-28 14:06:18.306 [TestNG-PoolService-1] AddambulanceCallStepDefinition - User trying to click Add Ambulance link
+[DEBUG] 2026-05-28 14:06:18.306 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Calling clickAddambulanceCall()
+[INFO ] 2026-05-28 14:06:18.394 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Add Ambulance link clicked successfully
+[INFO ] 2026-05-28 14:06:18.396 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Validating Get Call Ambulance page
+[DEBUG] 2026-05-28 14:06:18.977 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Actual model text : Vehicle Model
+[INFO ] 2026-05-28 14:06:18.977 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Successfully redirected to Get Call Ambulance page
+[INFO ] 2026-05-28 14:06:18.989 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Entering ambulance call details using DataTable
+[DEBUG] 2026-05-28 14:06:18.990 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Fetching ambulance test data
+[DEBUG] 2026-05-28 14:06:18.990 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Patient : 1185
+[DEBUG] 2026-05-28 14:06:18.990 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Vehicle Model : Force Traveller - MP21 AB 1023
+[ERROR] 2026-05-28 14:06:40.556 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Failed to enter ambulance details
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for Utilities.Helper$$Lambda/0x0000000024572358@70a84d10
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.216, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\dhars\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60982}, goog:processID: 43548, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60982/devtoo..., se:cdpVersion: 148.0.7778.216, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0b8be0bcd8bae67a6db6db13976911bc
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at Utilities.Helper.waitForElementsPresent(Helper.java:192)
+	at actions.AddambulanceCallAction.enterAmbulanceDetail(AddambulanceCallAction.java:49)
+	at stepDefinition.AddambulanceCallStepDefinition.the_user_enters_ambulance_call_details(AddambulanceCallStepDefinition.java:145)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:62)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:55)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:87)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:135)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[ERROR] 2026-05-28 14:06:40.567 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
+[INFO ] 2026-05-28 14:06:40.701 [TestNG-PoolService-1] Hooks - Screenshot Saved
+[INFO ] 2026-05-28 14:06:40.701 [TestNG-PoolService-1] Hooks - Browser closed
+[INFO ] 2026-05-28 14:07:21.122 [TestNG-PoolService-1] Hooks - Browser launched
+[INFO ] 2026-05-28 14:07:21.169 [TestNG-PoolService-1] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-28 14:07:21.169 [TestNG-PoolService-1] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-28 14:07:24.062 [TestNG-PoolService-1] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-28 14:07:24.079 [TestNG-PoolService-1] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-28 14:07:24.080 [TestNG-PoolService-1] LoginStepDefinition - Waiting for Super Admin button
+[DEBUG] 2026-05-28 14:07:24.157 [TestNG-PoolService-1] LoginStepDefinition - Calling clicksuperAdmin()
+[INFO ] 2026-05-28 14:07:24.248 [TestNG-PoolService-1] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-28 14:07:24.249 [TestNG-PoolService-1] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-28 14:07:24.250 [TestNG-PoolService-1] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-28 14:07:27.995 [TestNG-PoolService-1] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-28 14:07:27.998 [TestNG-PoolService-1] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-28 14:07:27.998 [TestNG-PoolService-1] LoginStepDefinition - Checking dashboard visibility
+[INFO ] 2026-05-28 14:07:28.039 [TestNG-PoolService-1] LoginStepDefinition - Dashboard displayed successfully
+[INFO ] 2026-05-28 14:07:28.042 [TestNG-PoolService-1] AddambulanceCallStepDefinition - User trying to click Ambulance link
+[DEBUG] 2026-05-28 14:07:28.042 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Calling clickAddambulance()
+[INFO ] 2026-05-28 14:07:28.705 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Ambulance link clicked successfully
+[INFO ] 2026-05-28 14:07:28.707 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Validating Ambulance page
+[DEBUG] 2026-05-28 14:07:28.707 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Fetching Ambulance page title
+[DEBUG] 2026-05-28 14:07:28.752 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Actual title : Ambulance Call List
+[INFO ] 2026-05-28 14:07:28.753 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Successfully redirected to Ambulance page
+[INFO ] 2026-05-28 14:07:28.753 [TestNG-PoolService-1] AddambulanceCallStepDefinition - User trying to click Add Ambulance link
+[DEBUG] 2026-05-28 14:07:28.753 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Calling clickAddambulanceCall()
+[INFO ] 2026-05-28 14:07:28.832 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Add Ambulance link clicked successfully
+[INFO ] 2026-05-28 14:07:28.833 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Validating Get Call Ambulance page
+[DEBUG] 2026-05-28 14:07:29.443 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Actual model text : Vehicle Model
+[INFO ] 2026-05-28 14:07:29.444 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Successfully redirected to Get Call Ambulance page
+[INFO ] 2026-05-28 14:07:29.461 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Entering ambulance call details using DataTable
+[DEBUG] 2026-05-28 14:07:29.462 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Fetching ambulance test data
+[DEBUG] 2026-05-28 14:07:29.462 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Patient : 1185
+[DEBUG] 2026-05-28 14:07:29.464 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Vehicle Model : Force Traveller - MP21 AB 1023
+[INFO ] 2026-05-28 14:07:31.159 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Ambulance details entered successfully
+[INFO ] 2026-05-28 14:07:31.162 [TestNG-PoolService-1] AddambulanceCallStepDefinition - User clicking Save button
+[DEBUG] 2026-05-28 14:07:31.163 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Calling clickSave()
+[INFO ] 2026-05-28 14:07:31.218 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Save button clicked successfully
+[INFO ] 2026-05-28 14:07:31.220 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Validating ambulance success message
+[DEBUG] 2026-05-28 14:07:31.805 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Actual Success Message : Record Saved Successfully
+[INFO ] 2026-05-28 14:07:31.805 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Ambulance call added successfully
+[INFO ] 2026-05-28 14:07:31.808 [TestNG-PoolService-1] Hooks - Scenario Passed : Add Ambulance with valid Details
+[INFO ] 2026-05-28 14:07:31.809 [TestNG-PoolService-1] Hooks - Browser closed
+[INFO ] 2026-05-28 15:22:33.044 [TestNG-PoolService-1] Hooks - Browser launched
+[INFO ] 2026-05-28 15:22:33.096 [TestNG-PoolService-1] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-28 15:22:33.096 [TestNG-PoolService-1] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-28 15:22:36.789 [TestNG-PoolService-1] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-28 15:22:36.798 [TestNG-PoolService-1] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-28 15:22:36.799 [TestNG-PoolService-1] LoginStepDefinition - Waiting for Super Admin button
+[DEBUG] 2026-05-28 15:22:36.879 [TestNG-PoolService-1] LoginStepDefinition - Calling clicksuperAdmin()
+[INFO ] 2026-05-28 15:22:36.979 [TestNG-PoolService-1] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-28 15:22:36.985 [TestNG-PoolService-1] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-28 15:22:36.985 [TestNG-PoolService-1] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-28 15:22:41.819 [TestNG-PoolService-1] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-28 15:22:41.822 [TestNG-PoolService-1] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-28 15:22:41.822 [TestNG-PoolService-1] LoginStepDefinition - Checking dashboard visibility
+[ERROR] 2026-05-28 15:22:41.883 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
+[INFO ] 2026-05-28 15:22:42.194 [TestNG-PoolService-1] Hooks - Screenshot Saved
+[INFO ] 2026-05-28 15:22:42.194 [TestNG-PoolService-1] Hooks - Browser closed
+[INFO ] 2026-05-28 15:22:53.435 [TestNG-PoolService-1] Hooks - Browser launched
+[INFO ] 2026-05-28 15:22:53.549 [TestNG-PoolService-1] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-28 15:22:53.549 [TestNG-PoolService-1] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-28 15:22:56.248 [TestNG-PoolService-1] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-28 15:22:56.262 [TestNG-PoolService-1] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-28 15:22:56.262 [TestNG-PoolService-1] LoginStepDefinition - Waiting for Super Admin button
+[DEBUG] 2026-05-28 15:22:56.353 [TestNG-PoolService-1] LoginStepDefinition - Calling clicksuperAdmin()
+[INFO ] 2026-05-28 15:22:56.508 [TestNG-PoolService-1] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-28 15:22:56.514 [TestNG-PoolService-1] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-28 15:22:56.514 [TestNG-PoolService-1] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-28 15:22:57.191 [TestNG-PoolService-1] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-28 15:22:57.196 [TestNG-PoolService-1] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-28 15:22:57.198 [TestNG-PoolService-1] LoginStepDefinition - Checking dashboard visibility
+[ERROR] 2026-05-28 15:23:00.759 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
+[INFO ] 2026-05-28 15:23:01.189 [TestNG-PoolService-1] Hooks - Screenshot Saved
+[INFO ] 2026-05-28 15:23:01.190 [TestNG-PoolService-1] Hooks - Browser closed
+[INFO ] 2026-05-28 15:25:17.765 [TestNG-PoolService-1] Hooks - Browser launched
+[INFO ] 2026-05-28 15:25:17.814 [TestNG-PoolService-1] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-28 15:25:17.814 [TestNG-PoolService-1] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-28 15:25:20.968 [TestNG-PoolService-1] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-28 15:25:20.979 [TestNG-PoolService-1] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-28 15:25:20.979 [TestNG-PoolService-1] LoginStepDefinition - Waiting for Super Admin button
+[DEBUG] 2026-05-28 15:25:21.024 [TestNG-PoolService-1] LoginStepDefinition - Calling clicksuperAdmin()
+[INFO ] 2026-05-28 15:25:21.105 [TestNG-PoolService-1] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-28 15:25:21.107 [TestNG-PoolService-1] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-28 15:25:21.107 [TestNG-PoolService-1] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-28 15:25:25.781 [TestNG-PoolService-1] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-28 15:25:25.784 [TestNG-PoolService-1] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-28 15:25:25.784 [TestNG-PoolService-1] LoginStepDefinition - Checking dashboard visibility
+[ERROR] 2026-05-28 15:25:25.844 [TestNG-PoolService-1] Hooks - Scenario Failed : Add Ambulance with valid Details
+[INFO ] 2026-05-28 15:25:26.097 [TestNG-PoolService-1] Hooks - Screenshot Saved
+[INFO ] 2026-05-28 15:25:26.098 [TestNG-PoolService-1] Hooks - Browser closed
+[INFO ] 2026-05-28 16:17:42.049 [TestNG-PoolService-1] Hooks - Browser launched
+[INFO ] 2026-05-28 16:17:42.132 [TestNG-PoolService-1] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-28 16:17:42.132 [TestNG-PoolService-1] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-28 16:17:44.847 [TestNG-PoolService-1] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-28 16:17:44.872 [TestNG-PoolService-1] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-28 16:17:44.873 [TestNG-PoolService-1] LoginStepDefinition - Waiting for Super Admin button
+[DEBUG] 2026-05-28 16:17:44.927 [TestNG-PoolService-1] LoginStepDefinition - Calling clicksuperAdmin()
+[INFO ] 2026-05-28 16:17:45.021 [TestNG-PoolService-1] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-28 16:17:45.024 [TestNG-PoolService-1] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-28 16:17:45.024 [TestNG-PoolService-1] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-28 16:17:45.123 [TestNG-PoolService-1] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-28 16:17:45.125 [TestNG-PoolService-1] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-28 16:17:45.125 [TestNG-PoolService-1] LoginStepDefinition - Checking dashboard visibility
+[INFO ] 2026-05-28 16:17:48.691 [TestNG-PoolService-1] LoginStepDefinition - Dashboard displayed successfully
+[INFO ] 2026-05-28 16:17:48.693 [TestNG-PoolService-1] AddambulanceCallStepDefinition - User trying to click Ambulance link
+[DEBUG] 2026-05-28 16:17:48.693 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Calling clickAddambulance()
+[INFO ] 2026-05-28 16:17:49.451 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Ambulance link clicked successfully
+[INFO ] 2026-05-28 16:17:49.454 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Validating Ambulance page
+[DEBUG] 2026-05-28 16:17:49.455 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Fetching Ambulance page title
+[DEBUG] 2026-05-28 16:17:49.569 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Actual title : Ambulance Call List
+[INFO ] 2026-05-28 16:17:49.569 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Successfully redirected to Ambulance page
+[INFO ] 2026-05-28 16:17:49.570 [TestNG-PoolService-1] AddambulanceCallStepDefinition - User trying to click Add Ambulance link
+[DEBUG] 2026-05-28 16:17:49.570 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Calling clickAddambulanceCall()
+[INFO ] 2026-05-28 16:17:49.668 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Add Ambulance link clicked successfully
+[INFO ] 2026-05-28 16:17:49.670 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Validating Get Call Ambulance page
+[DEBUG] 2026-05-28 16:17:50.291 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Actual model text : Vehicle Model
+[INFO ] 2026-05-28 16:17:50.291 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Successfully redirected to Get Call Ambulance page
+[INFO ] 2026-05-28 16:17:50.300 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Entering ambulance call details using DataTable
+[DEBUG] 2026-05-28 16:17:50.303 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Fetching ambulance test data
+[DEBUG] 2026-05-28 16:17:50.303 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Patient : 1185
+[DEBUG] 2026-05-28 16:17:50.303 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Vehicle Model : Force Traveller - MP21 AB 1023
+[INFO ] 2026-05-28 16:17:52.181 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Ambulance details entered successfully
+[INFO ] 2026-05-28 16:17:52.184 [TestNG-PoolService-1] AddambulanceCallStepDefinition - User clicking Save button
+[DEBUG] 2026-05-28 16:17:52.185 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Calling clickSave()
+[INFO ] 2026-05-28 16:17:52.270 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Save button clicked successfully
+[INFO ] 2026-05-28 16:17:52.272 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Validating ambulance success message
+[DEBUG] 2026-05-28 16:17:52.854 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Actual Success Message : Record Saved Successfully
+[INFO ] 2026-05-28 16:17:52.854 [TestNG-PoolService-1] AddambulanceCallStepDefinition - Ambulance call added successfully
+[INFO ] 2026-05-28 16:17:52.857 [TestNG-PoolService-1] Hooks - Scenario Passed : Add Ambulance with valid Details
+[INFO ] 2026-05-28 16:17:53.015 [TestNG-PoolService-1] Hooks - Browser closed
+[INFO ] 2026-05-28 16:20:14.893 [main] Hooks - Browser launched
+[INFO ] 2026-05-28 16:20:14.900 [main] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-28 16:20:14.901 [main] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-28 16:20:18.080 [main] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-28 16:20:18.083 [main] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-28 16:20:18.083 [main] LoginStepDefinition - Waiting for Super Admin button
+[DEBUG] 2026-05-28 16:20:18.138 [main] LoginStepDefinition - Calling clicksuperAdmin()
+[INFO ] 2026-05-28 16:20:18.231 [main] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-28 16:20:18.232 [main] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-28 16:20:18.232 [main] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-28 16:20:23.199 [main] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-28 16:20:23.201 [main] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-28 16:20:23.201 [main] LoginStepDefinition - Checking dashboard visibility
+[INFO ] 2026-05-28 16:20:23.245 [main] LoginStepDefinition - Dashboard displayed successfully
+[INFO ] 2026-05-28 16:20:23.247 [main] Hooks - Scenario Passed : Login with valid credentials
+[INFO ] 2026-05-28 16:20:23.370 [main] Hooks - Browser closed
+[INFO ] 2026-05-28 16:20:24.173 [main] Hooks - Browser launched
+[INFO ] 2026-05-28 16:20:24.177 [main] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-28 16:20:24.178 [main] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-28 16:20:27.046 [main] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-28 16:20:27.050 [main] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-28 16:20:27.051 [main] LoginStepDefinition - Waiting for Super Admin button
+[DEBUG] 2026-05-28 16:20:27.147 [main] LoginStepDefinition - Calling clicksuperAdmin()
+[INFO ] 2026-05-28 16:20:27.244 [main] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-28 16:20:27.247 [main] LoginStepDefinition - Entering invalid username
+[DEBUG] 2026-05-28 16:20:27.248 [main] LoginStepDefinition - Typing invalid username
+[INFO ] 2026-05-28 16:20:27.315 [main] LoginStepDefinition - Invalid username entered successfully
+[INFO ] 2026-05-28 16:20:27.317 [main] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-28 16:20:27.317 [main] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-28 16:20:27.399 [main] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-28 16:20:27.401 [main] LoginStepDefinition - Validating invalid credential message
+[DEBUG] 2026-05-28 16:20:27.401 [main] LoginStepDefinition - Waiting for validation message
+[DEBUG] 2026-05-28 16:20:27.864 [main] LoginStepDefinition - Actual Message : Invalid Username or Password
+[INFO ] 2026-05-28 16:20:27.865 [main] LoginStepDefinition - Validation message displayed successfully
+[INFO ] 2026-05-28 16:20:27.866 [main] Hooks - Scenario Passed : Login with invalid username credentials
+[INFO ] 2026-05-28 16:20:28.037 [main] Hooks - Browser closed
+[INFO ] 2026-05-28 16:20:28.809 [main] Hooks - Browser launched
+[INFO ] 2026-05-28 16:20:28.816 [main] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-28 16:20:28.816 [main] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-28 16:20:31.738 [main] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-28 16:20:31.744 [main] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-28 16:20:31.744 [main] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-28 16:20:31.870 [main] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-28 16:20:31.873 [main] LoginStepDefinition - Validating mandatory field messages
+[DEBUG] 2026-05-28 16:20:31.874 [main] LoginStepDefinition - Waiting for required field message
+[DEBUG] 2026-05-28 16:20:32.375 [main] LoginStepDefinition - Actual Message : Username field is required
+[INFO ] 2026-05-28 16:20:32.376 [main] LoginStepDefinition - Required field validation successful
+[INFO ] 2026-05-28 16:20:32.378 [main] Hooks - Scenario Passed : Login with empty fields
+[INFO ] 2026-05-28 16:20:32.472 [main] Hooks - Browser closed
+[INFO ] 2026-05-28 16:20:33.211 [main] Hooks - Browser launched
+[INFO ] 2026-05-28 16:20:33.215 [main] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-28 16:20:33.216 [main] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-28 16:20:36.350 [main] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-28 16:20:36.352 [main] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-28 16:20:36.352 [main] LoginStepDefinition - Waiting for Super Admin button
+[DEBUG] 2026-05-28 16:20:36.389 [main] LoginStepDefinition - Calling clicksuperAdmin()
+[INFO ] 2026-05-28 16:20:36.482 [main] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-28 16:20:36.483 [main] LoginStepDefinition - Entering invalid password
+[DEBUG] 2026-05-28 16:20:36.483 [main] LoginStepDefinition - Typing invalid password
+[INFO ] 2026-05-28 16:20:36.552 [main] LoginStepDefinition - Invalid password entered successfully
+[INFO ] 2026-05-28 16:20:36.554 [main] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-28 16:20:36.555 [main] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-28 16:20:36.685 [main] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-28 16:20:36.686 [main] LoginStepDefinition - Validating invalid credential message
+[DEBUG] 2026-05-28 16:20:36.686 [main] LoginStepDefinition - Waiting for validation message
+[DEBUG] 2026-05-28 16:20:37.206 [main] LoginStepDefinition - Actual Message : Invalid Username or Password
+[INFO ] 2026-05-28 16:20:37.206 [main] LoginStepDefinition - Validation message displayed successfully
+[INFO ] 2026-05-28 16:20:37.208 [main] Hooks - Scenario Passed : Login with invalid password credentials
+[INFO ] 2026-05-28 16:20:37.397 [main] Hooks - Browser closed
+[INFO ] 2026-05-28 16:20:38.176 [main] Hooks - Browser launched
+[INFO ] 2026-05-28 16:20:38.178 [main] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-28 16:20:38.178 [main] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-28 16:20:41.256 [main] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-28 16:20:41.263 [main] LoginStepDefinition - Entering invalid login credentials
+[DEBUG] 2026-05-28 16:20:41.264 [main] LoginStepDefinition - Typing invalid username and password
+[INFO ] 2026-05-28 16:20:41.405 [main] LoginStepDefinition - Invalid credentials entered successfully
+[INFO ] 2026-05-28 16:20:41.407 [main] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-28 16:20:41.407 [main] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-28 16:20:41.502 [main] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-28 16:20:41.504 [main] LoginStepDefinition - Validating invalid credential message
+[DEBUG] 2026-05-28 16:20:41.504 [main] LoginStepDefinition - Waiting for validation message
+[DEBUG] 2026-05-28 16:20:41.968 [main] LoginStepDefinition - Actual Message : Invalid Username or Password
+[INFO ] 2026-05-28 16:20:41.969 [main] LoginStepDefinition - Validation message displayed successfully
+[INFO ] 2026-05-28 16:20:41.970 [main] Hooks - Scenario Passed : Login with invalid username and password
+[INFO ] 2026-05-28 16:20:42.168 [main] Hooks - Browser closed
+[INFO ] 2026-05-28 16:20:42.949 [main] Hooks - Browser launched
+[INFO ] 2026-05-28 16:20:42.954 [main] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-28 16:20:42.954 [main] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-28 16:20:45.716 [main] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-28 16:20:45.718 [main] LoginStepDefinition - Entering invalid login credentials
+[DEBUG] 2026-05-28 16:20:45.719 [main] LoginStepDefinition - Typing invalid username and password
+[INFO ] 2026-05-28 16:20:45.853 [main] LoginStepDefinition - Invalid credentials entered successfully
+[INFO ] 2026-05-28 16:20:45.856 [main] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-28 16:20:45.857 [main] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-28 16:20:45.954 [main] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-28 16:20:45.958 [main] LoginStepDefinition - Validating invalid credential message
+[DEBUG] 2026-05-28 16:20:45.958 [main] LoginStepDefinition - Waiting for validation message
+[DEBUG] 2026-05-28 16:20:46.405 [main] LoginStepDefinition - Actual Message : Invalid Username or Password
+[INFO ] 2026-05-28 16:20:46.406 [main] LoginStepDefinition - Validation message displayed successfully
+[INFO ] 2026-05-28 16:20:46.409 [main] Hooks - Scenario Passed : Login with invalid username and password
+[INFO ] 2026-05-28 16:20:46.605 [main] Hooks - Browser closed
