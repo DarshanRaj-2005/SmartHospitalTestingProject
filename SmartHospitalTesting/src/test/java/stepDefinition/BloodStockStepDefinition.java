@@ -93,6 +93,19 @@ public class BloodStockStepDefinition {
 		    String bag =data.get(0).get("Bag");
 		    BloodStockAction.clickIssueButton(bag);
 	}
+	@Then("the donor details validation messages should be displayed")
+	public void the_donor_details_validation_messages_should_be_displayed(io.cucumber.datatable.DataTable dataTable) {
+		logger.info("New Donor is not added.");
+	    List<String> expectedMessages = dataTable.asList(String.class);
+	    List<String> actualMessages = StockAction.getValidationMessages();
+	    Assert.assertEquals(actualMessages, expectedMessages);
+	}
+	@Then("the user clicks Save button without entering donor details")
+	public void the_user_clicks_save_button_without_entering_donor_details() {
+		BloodStockAction.clickSaveButton();
+	}
+
+
 
 
 }
