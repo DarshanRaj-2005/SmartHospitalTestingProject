@@ -6,11 +6,10 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-        features = "src/test/resources/feature_files",
-	   
-
+		
+		features = "src/test/resources/feature_files",
+        tags = "@ValidCredentials",
         glue = { "stepDefinition", "hooks" },
-	tags="@Harini",
         plugin = {
                 "pretty",
                 "html:target/cucumber-report.html",

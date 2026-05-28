@@ -42,4 +42,5 @@ Then the system should show a message "Invalid "
 Examples:
 |username | password |
 |super    | 1234     |
+|admin    | 5678     |
 
