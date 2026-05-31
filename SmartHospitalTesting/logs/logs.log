@@ -5306,3 +5306,162 @@ Session ID: 0b8be0bcd8bae67a6db6db13976911bc
 [INFO ] 2026-05-28 08:01:56.211 [main] Hooks - Scenario Passed : Validate donor details with all mandatory fields empty
 [INFO ] 2026-05-28 08:01:56.380 [main] Hooks - Browser closed
 >>>>>>> 45eba6fa4c35339c25dd2f0f441f522eb40c9b60
+[INFO ] 2026-05-31 11:16:04.685 [main] Hooks - Browser launched
+[INFO ] 2026-05-31 11:16:04.692 [main] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-31 11:16:04.692 [main] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-31 11:16:09.466 [main] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-31 11:16:09.468 [main] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-31 11:16:09.468 [main] LoginStepDefinition - Waiting for Super Admin button
+[DEBUG] 2026-05-31 11:16:09.524 [main] LoginStepDefinition - Calling clicksuperAdmin()
+[INFO ] 2026-05-31 11:16:09.622 [main] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-31 11:16:09.623 [main] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-31 11:16:09.624 [main] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-31 11:16:18.430 [main] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-31 11:16:18.434 [main] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-31 11:16:18.434 [main] LoginStepDefinition - Checking dashboard visibility
+[INFO ] 2026-05-31 11:16:18.557 [main] LoginStepDefinition - Dashboard displayed successfully
+[INFO ] 2026-05-31 11:16:18.639 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-31 11:16:21.266 [main] DonorManagementAction - Blood Donor popup is opened.
+[INFO ] 2026-05-31 11:16:22.958 [main] DonorManagementAction - Clicked Save Button
+[INFO ] 2026-05-31 11:16:23.100 [main] DonorManagementStepDefinition - The Record is added Succefully.
+[INFO ] 2026-05-31 11:16:23.142 [main] Hooks - Scenario Passed : Verify user is able to add donor with valid details
+[INFO ] 2026-05-31 11:16:23.501 [main] Hooks - Browser closed
+[INFO ] 2026-05-31 11:19:17.404 [main] Hooks - Browser launched
+[INFO ] 2026-05-31 11:19:17.408 [main] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-31 11:19:17.408 [main] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-31 11:19:20.227 [main] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-31 11:19:20.230 [main] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-31 11:19:20.230 [main] LoginStepDefinition - Waiting for Super Admin button
+[DEBUG] 2026-05-31 11:19:20.355 [main] LoginStepDefinition - Calling clicksuperAdmin()
+[INFO ] 2026-05-31 11:19:20.448 [main] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-31 11:19:20.451 [main] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-31 11:19:20.451 [main] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-31 11:19:20.524 [main] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-31 11:19:20.526 [main] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-31 11:19:20.526 [main] LoginStepDefinition - Checking dashboard visibility
+[INFO ] 2026-05-31 11:19:30.039 [main] LoginStepDefinition - Dashboard displayed successfully
+[INFO ] 2026-05-31 11:19:30.068 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-31 11:19:32.400 [main] Hooks - Scenario Passed : Verify user is able to search donor name in donor list
+[INFO ] 2026-05-31 11:19:32.665 [main] Hooks - Browser closed
+[INFO ] 2026-05-31 11:33:12.649 [main] Hooks - Browser launched
+[INFO ] 2026-05-31 11:33:12.654 [main] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-31 11:33:12.654 [main] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-31 11:33:18.161 [main] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-31 11:33:18.163 [main] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-31 11:33:18.163 [main] LoginStepDefinition - Waiting for Super Admin button
+[DEBUG] 2026-05-31 11:33:18.221 [main] LoginStepDefinition - Calling clicksuperAdmin()
+[INFO ] 2026-05-31 11:33:18.320 [main] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-31 11:33:18.321 [main] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-31 11:33:18.321 [main] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-31 11:33:18.433 [main] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-31 11:33:18.435 [main] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-31 11:33:18.435 [main] LoginStepDefinition - Checking dashboard visibility
+[INFO ] 2026-05-31 11:33:30.003 [main] LoginStepDefinition - Dashboard displayed successfully
+[INFO ] 2026-05-31 11:33:30.030 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-31 11:33:33.088 [main] DonorManagementAction - Searching donor name: Oliver
+[ERROR] 2026-05-31 11:33:33.291 [main] Hooks - Scenario Failed : Verify user is able to search donor name in donor list
+[INFO ] 2026-05-31 11:33:33.569 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-31 11:33:33.736 [main] Hooks - Browser closed
+[INFO ] 2026-05-31 11:38:27.252 [main] Hooks - Browser launched
+[INFO ] 2026-05-31 11:38:27.256 [main] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-31 11:38:27.256 [main] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-31 11:38:30.081 [main] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-31 11:38:30.083 [main] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-31 11:38:30.084 [main] LoginStepDefinition - Waiting for Super Admin button
+[DEBUG] 2026-05-31 11:38:30.124 [main] LoginStepDefinition - Calling clicksuperAdmin()
+[INFO ] 2026-05-31 11:38:30.212 [main] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-31 11:38:30.213 [main] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-31 11:38:30.213 [main] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-31 11:38:42.203 [main] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-31 11:38:42.205 [main] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-31 11:38:42.206 [main] LoginStepDefinition - Checking dashboard visibility
+[INFO ] 2026-05-31 11:38:42.245 [main] LoginStepDefinition - Dashboard displayed successfully
+[INFO ] 2026-05-31 11:38:42.274 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-31 11:38:45.197 [main] DonorManagementAction - Searching donor name: Oliver
+[ERROR] 2026-05-31 11:38:45.393 [main] Hooks - Scenario Failed : Verify user is able to search donor name in donor list
+[INFO ] 2026-05-31 11:38:45.674 [main] Hooks - Screenshot Saved
+[INFO ] 2026-05-31 11:38:45.812 [main] Hooks - Browser closed
+[INFO ] 2026-05-31 11:41:47.331 [main] Hooks - Browser launched
+[INFO ] 2026-05-31 11:41:47.337 [main] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-31 11:41:47.337 [main] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-31 11:41:50.031 [main] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-31 11:41:50.034 [main] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-31 11:41:50.034 [main] LoginStepDefinition - Waiting for Super Admin button
+[DEBUG] 2026-05-31 11:41:50.093 [main] LoginStepDefinition - Calling clicksuperAdmin()
+[INFO ] 2026-05-31 11:41:50.170 [main] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-31 11:41:50.172 [main] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-31 11:41:50.172 [main] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-31 11:41:50.246 [main] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-31 11:41:50.248 [main] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-31 11:41:50.248 [main] LoginStepDefinition - Checking dashboard visibility
+[INFO ] 2026-05-31 11:42:06.614 [main] LoginStepDefinition - Dashboard displayed successfully
+[INFO ] 2026-05-31 11:42:06.642 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-31 11:42:08.805 [main] DonorManagementAction - Searching donor name: Oliver
+[INFO ] 2026-05-31 11:42:09.015 [main] DonorManagementAction - Table Data : NIHIT SHARMA
+04/27/2000 A+ Male ASHOK
+Jhon
+03/11/2000 AB+ Male wood
+MEENA
+03/03/2000 A+ Female JAY Main Street, Apt. Central
+JIGAR
+03/04/2026 B+ Male 75674563454 ABHI
+Gaurav
+03/05/2010 B- Male 87979798967 Lokesh Shah
+Oliver
+12/28/2008 B+ Male 89797890 Larence UK
+Ahemad
+12/28/2009 A+ Male 9844165160 Lokesh UK
+Meera
+02/05/1998 B+ Female 9561141461 Jason
+Riyaz
+06/21/1989 B+ Male 867849494869 Garv
+Addey
+12/06/2021 B+ Male 987455215
+Stephen
+12/28/1998 B- Male 87678768 Shane Thomas Main Street, Apt. Central Brooklyn
+Niklesh
+01/05/1999 O- Male 6786887 Michel Main Street, Apt. Central
+Crish
+03/02/2000 A- Male 6578768768 Grame Smith Main Street, Apt. Central Brooklyn
+Veneet
+03/03/2001 O- Male 675765 Arun Main Street, Apt. Central Brooklyn
+Saurabh
+12/28/1998 A- Male 765767 Mahesh Main Street, Apt. Central Brooklyn
+Sara
+12/28/1998 AB+ Female 8978567676 George Main Street, Apt. Central Brooklyn
+Jhon
+12/28/1998 AB- Male 78768768 David Main Street, Apt. Central Brooklyn
+Maria
+03/02/2001 AB+ Female 67867876 Jhonson England
+Marsh
+02/11/2010 AB- Male 7686787 Willlam Sadar
+Kevlin
+06/18/2019 A+ Male 965874123
+Brian
+06/23/1999 B+ Male 8756756778 7 Main Street, Apt. Central Brooklyn.
+Devin Coinneach
+07/21/1994 B+ Male 7418529630 David 56 Main Street, Suite 3, Brooklyn, NY 11210-0000
+Mayank Singh
+04/05/1991 A+ Male 65756776 Ramesh Sadar, jabalpur
+Abhishek Khanna
+07/21/1995 O+ Male 9475312547 Vijay khanna Akbar road, delhi
+[INFO ] 2026-05-31 11:42:09.018 [main] Hooks - Scenario Passed : Verify user is able to search donor name in donor list
+[INFO ] 2026-05-31 11:42:09.159 [main] Hooks - Browser closed
+[INFO ] 2026-05-31 11:44:14.174 [main] Hooks - Browser launched
+[INFO ] 2026-05-31 11:44:14.178 [main] LoginStepDefinition - Launching application URL
+[DEBUG] 2026-05-31 11:44:14.178 [main] LoginStepDefinition - Opening URL from ConfigReader
+[INFO ] 2026-05-31 11:44:19.182 [main] LoginStepDefinition - Application launched successfully
+[INFO ] 2026-05-31 11:44:19.186 [main] LoginStepDefinition - User trying to click Super Admin button
+[DEBUG] 2026-05-31 11:44:19.186 [main] LoginStepDefinition - Waiting for Super Admin button
+[DEBUG] 2026-05-31 11:44:19.306 [main] LoginStepDefinition - Calling clicksuperAdmin()
+[INFO ] 2026-05-31 11:44:19.523 [main] LoginStepDefinition - Super Admin button clicked successfully
+[INFO ] 2026-05-31 11:44:19.525 [main] LoginStepDefinition - User trying to click Sign In button
+[DEBUG] 2026-05-31 11:44:19.526 [main] LoginStepDefinition - Calling clicksignIn()
+[INFO ] 2026-05-31 11:44:28.441 [main] LoginStepDefinition - Sign In button clicked successfully
+[INFO ] 2026-05-31 11:44:28.445 [main] LoginStepDefinition - Validating dashboard redirection
+[DEBUG] 2026-05-31 11:44:28.445 [main] LoginStepDefinition - Checking dashboard visibility
+[INFO ] 2026-05-31 11:44:28.552 [main] LoginStepDefinition - Dashboard displayed successfully
+[INFO ] 2026-05-31 11:44:28.642 [main] DonorManagementAction - Navigated to Blood Bank module
+[INFO ] 2026-05-31 11:44:31.507 [main] DonorManagementAction - Searching donor name: Oliver
+[INFO ] 2026-05-31 11:44:31.719 [main] Hooks - Scenario Passed : Verify user is able to search donor name in donor list
+[INFO ] 2026-05-31 11:44:31.875 [main] Hooks - Browser closed
