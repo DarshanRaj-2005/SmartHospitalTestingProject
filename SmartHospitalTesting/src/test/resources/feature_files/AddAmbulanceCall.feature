@@ -30,6 +30,6 @@ Then the system should show validation error messages
 
 @InvalidCredentials
 Scenario: Entering character in charge field
-And the user enters ambulance call details
+And the user enters ambulance call details from excel
 And the user clicks save button
 Then the system should show invalid charge name field required message
