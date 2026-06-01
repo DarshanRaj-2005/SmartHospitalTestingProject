@@ -29,7 +29,7 @@ public class BloodStockPage {
 	public static By chargeCategory = By.xpath("//span[@id='select2-charge_category-container']");
 	public static By chargeName = By.xpath("//span[@id='select2-code-container']");
 	public static By calculate = By.xpath("//button[normalize-space()='Calculate']");
-	public static By saveButton = By.xpath("//button[@id='donorbloodbtn']");
+	public static By saveButton = By.xpath("(//button[text()=' Save']/self::button)[1]");
 	public static By successMessage = By.xpath("//div[contains(@class,'toast-message')]");
 
 	public static By addedBagNumber(String bagField) {
@@ -41,5 +41,6 @@ public class BloodStockPage {
 	}
 
 	public static By issueDate = By.xpath("//label[contains(text(),'Issue Date')]");
+	public static By validationMessages =By.xpath("//div[contains(@class,'toast-message')]");
 	
 }

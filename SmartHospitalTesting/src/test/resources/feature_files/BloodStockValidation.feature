@@ -38,3 +38,18 @@ Scenario: Verify user navigates to Blood Issue page
     | Bag |
     | 56  |
   Then the Blood Issue page should be displayed
+  
+ @DonorAllFieldsEmpty
+Scenario: Validate donor details with all mandatory fields empty
+
+  When the user clicks on add icon
+  Then the Blood Donor Details popup should be displayed
+  And the user clicks Save button without entering donor details
+  Then the donor details validation messages should be displayed
+    | Blood Donor field is required      |
+    | Donate Date field is required      |
+    | Bag No field is required           |
+    | Charge Category field is required  |
+    | Charge Name field is required      |
+    | Standard Charge field is required  |
+    | Payment Amount field is required   |
