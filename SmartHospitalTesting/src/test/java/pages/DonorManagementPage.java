@@ -17,6 +17,8 @@ public class DonorManagementPage {
 	public static By address =By.name("address");
 	public static By saveButton =By.xpath("//button[@id='formaddbtn']");
 	public static By validationMessages =By.xpath("//div[contains(@class,'toast-message')]");
+	public static By searchDonor=By.xpath("//div[@class='dataTables_filter']/descendant::input");
+	public static By searchResult =By.xpath("(//table//tbody)[1]");
 }
 
 

@@ -1,7 +1,7 @@
 package driver;
 
 import java.util.Map;
-
+import java.io.File;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -36,12 +36,17 @@ public class Driver {
             ChromeOptions options = new ChromeOptions();
 
             options.addArguments("--disable-notifications");
+            String downloadPath = System.getProperty("user.dir") + "\\src\\test\\resources\\downloads";
+            new File(downloadPath).mkdirs();
 
             options.setExperimentalOption("prefs", Map.of(
-                    "credentials_enable_service", false,
-                    "profile.password_manager_enabled", false
+                "credentials_enable_service", false,
+                "profile.password_manager_enabled", false,
+                "download.default_directory", downloadPath,
+                "download.prompt_for_download", false,
+                "download.directory_upgrade", true,
+                "safebrowsing.enabled", true
             ));
-
             if (headless) {
 
                 options.addArguments("--headless=new");
@@ -82,9 +87,16 @@ public class Driver {
     }
 
         public static void quitDriver() {
+<<<<<<< HEAD
 	        if (getDriver() != null) {
 	            getDriver().quit();
 	            driver.remove();
 	        }
+=======
+            if (getDriver() != null) {
+            getDriver().quit();
+            driver.remove();
+        }
+>>>>>>> aed6925ab96cbe1adb0c2a1847dd84f25659cc96
     }
 }
