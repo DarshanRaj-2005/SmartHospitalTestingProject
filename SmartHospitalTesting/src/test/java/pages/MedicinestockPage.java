@@ -17,4 +17,9 @@ public class MedicinestockPage {
 	public static By medicinenotfoundtxt=By.xpath("//td[@class=\"dataTables_empty\"]/child::div[contains(text(),\"No data available in table \")]");
     public static By deleteButton = By.xpath("//button[@id='load']");
 	public static By deleteConfirmation = By.xpath("//div[contains(text(),'Record Deleted Successfully')]");
+	public static By showButton = By.xpath("//tbody/tr[1]/td[2]/div[1]/a[1]/i[1]");
+	public static By stockTab = By.xpath("//a[@href='#current_stock']");
+	public static By badStockTab = By.xpath("//a[@href='#bad_stock']");
+	public static By stockEntryTable = By.xpath("//div[@id='current_stock']//table");
+	public static By firstRowShowButton = By.xpath("//tbody/tr[1]/td[2]/div[1]/a[1]");
 }

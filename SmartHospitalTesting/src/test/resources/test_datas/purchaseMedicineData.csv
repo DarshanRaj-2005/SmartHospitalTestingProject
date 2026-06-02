@@ -1,0 +1,2 @@
+supplierName,medicineCategory,medicineName,batchNo,expiryMonth,mrp,batchAmount,salePrice,packingQty,quantity,purchasePrice,tax,paymentMode,paymentNote
+Anant Pharmacy,Capsule,Ciprofloxacin,BT101,Dec-27,20,1000,25,10 strips,50,18,5,Cash,Payment Completed

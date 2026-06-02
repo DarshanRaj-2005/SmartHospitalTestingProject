@@ -10,4 +10,6 @@ public class PharmacyBillPage {
 	public static By searchInputbar = By.xpath("//input[@type=\"search\"]");
 	public static By searchnamerow = By.xpath("//tbody/tr/td[4]");
 	public static By noDataMessage = By.xpath("//td[@class='dataTables_empty']");
+	public static By csvButton = By.xpath("//a[@title='CSV']");
+	public static By billTable = By.xpath("//table[@id='DataTables_Table_0']");
 }
