@@ -18,6 +18,7 @@ import pages.DonorManagementPage;
 public class DonorManagementStepDefinition {
 	Logger logger = LogManager.getLogger(DonorManagementStepDefinition.class);
 	DonorManagementAction donor = new DonorManagementAction();
+	String donorName;
 	@When("the user clicks on the Blood Bank menu")
 	public void the_user_clicks_on_the_blood_bank_menu() {
 		Helper.waitForElementClickable(DonorManagementPage.bloodBankMenu);
@@ -148,6 +149,21 @@ public class DonorManagementStepDefinition {
 	public void the_user_clicks_on_save() {
 		donor.clickSaveButton();
 
+	}
+	@When("User searches donor name")
+	public void user_searches_donor_name(DataTable dataTable) {
+
+	    List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+
+	    donorName = data.get(0).get("DonorName");
+
+	    donor.searchDonorName(donorName);
+	}
+
+
+	@Then("Donor details should be displayed")
+	public void donor_details_should_be_displayed() {
+		Assert.assertTrue(donor.verifyDonorNameInList(donorName),"Donor name not found" );
 	}
 
 

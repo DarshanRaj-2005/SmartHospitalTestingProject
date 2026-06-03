@@ -363,4 +363,9 @@ public class Helper {
 	        return "";
 	    }
 	}
+	
+	public static void waitForTextToBePresentInElementLocated(By locator, String value) {
+		new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(20)).
+		until(ExpectedConditions.textToBePresentInElementLocated(locator,value));
+	}
 }

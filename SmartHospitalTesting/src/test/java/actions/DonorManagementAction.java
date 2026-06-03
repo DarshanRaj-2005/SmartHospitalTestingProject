@@ -7,6 +7,7 @@ import driver.Driver;
 import pages.DonorManagementPage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.Keys;
 
 public class DonorManagementAction {
 	Logger logger = LogManager.getLogger(DonorManagementAction.class);
@@ -68,4 +69,15 @@ public class DonorManagementAction {
 		String text = Driver.getDriver().findElement(DonorManagementPage.validationMessages).getText();
 		return Arrays.asList(text.split("\\n"));
 	}
+	public void searchDonorName(String donorName) {
+	    logger.info("Searching donor name: " + donorName);
+	    Helper.click(DonorManagementPage.searchDonor);
+	    Helper.clearAndEnterText(DonorManagementPage.searchDonor, donorName);
+	    Helper.getElement(DonorManagementPage.searchDonor).sendKeys(Keys.ENTER);
+	}
+	public boolean verifyDonorNameInList(String donorName) {
+	    Helper.waitForVisibility(DonorManagementPage.searchResult);
+	    return Helper.getText(DonorManagementPage.searchResult).contains(donorName);
+	}
+
 }
