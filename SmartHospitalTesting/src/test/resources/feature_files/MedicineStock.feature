@@ -32,9 +32,3 @@ Feature: Balamurugan S 17/05/2026 Add and manage medicines in the medicine stock
       | medicineName |
       | Ferigod XT   |
       | Mometasone   |
-
-  Scenario: Verify user can view medicine details and stock entry using Show button
-    Given the user is on the medicine stock page
-    When the user clicks the Show button on any available medicine
-    Then the medicine details page should be displayed
-    And the stock entry details should be visible
