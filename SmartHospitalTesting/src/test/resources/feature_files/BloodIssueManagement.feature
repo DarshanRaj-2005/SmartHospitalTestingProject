@@ -1,6 +1,6 @@
 @Harini
 @BloodIssueManagement
-Feature: Harini_17/05/2026  Blood Issue Management
+Feature:Blood Issue Management
 
   Background:
     Given the user is on the login page
@@ -41,3 +41,17 @@ Feature: Harini_17/05/2026  Blood Issue Management
       | Charge Category field is required |
       | Hospital Doctor field is required |
       | Payment Amount field is required  |
+ 
+ @AddNewPatient
+Scenario: Add New Patient from Blood Issue Page
+  When the user clicks on Issue Blood button
+  Then the Issue Blood popup should be displayed
+  When the user clicks on New Patient button
+  Then the Add Patient popup should be displayed
+  When the user enters the patient details
+    | Name   | Year | Month | Day |
+    | Harini | 1992 | 12    | 26  |
+  And the user clicks on Save button
+  Then the patient should be added successfully 
+   
+   

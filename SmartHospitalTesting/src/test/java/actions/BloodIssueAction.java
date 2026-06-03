@@ -150,5 +150,32 @@ public class BloodIssueAction {
         }
         return false;
     }
+    public void clickNewPatientButton() {
+        Helper.click(BloodIssuePage.newPatient);
+    }
+
+    public void enterPatientDetails(String name,
+            String year,
+            String month,
+            String day) {
+
+	Helper.clearAndEnterText(BloodIssuePage.name, name);
+	Helper.clearAndEnterText(BloodIssuePage.ageYear, year);
+	Helper.clearAndEnterText(BloodIssuePage.ageMonth, month);
+	Helper.clearAndEnterText(BloodIssuePage.ageDay, day);
+}
+    public void clickPatientSaveButton() {
+        Helper.click(BloodIssuePage.patientSave);
+    }
+    public boolean isAddPatientPopupDisplayed() {
+        Helper.waitForVisibility(BloodIssuePage.addPatientPopup);
+        return Helper.isDisplayed(BloodIssuePage.addPatientPopup);
+    }
+    public boolean isPatientAddedSuccessfully() {
+        Helper.waitForVisibility(BloodIssuePage.successMessage);
+        String message = Helper.getText(BloodIssuePage.successMessage);
+        return message.trim().equalsIgnoreCase("Record Saved Successfully");
+    }
+    
     
 }
