@@ -81,4 +81,20 @@ public class MedicinestockAction {
 
         return confirmation;
     }
+    public void clickShowButtonOnAnyMedicine() {
+        Helper.moveToElement(By.xpath("//tbody/tr[1]"));
+        logger.info("Hovered over first medicine row");
+        Helper.moveToElementAndClick(MedicinestockPage.firstRowShowButton);
+        logger.info("Clicked Show button on first available medicine");
+    }
+
+    public boolean isMedicineDetailsPageDisplayed() {
+        return Helper.isDisplayed(MedicinestockPage.stockTab) 
+            && Helper.isDisplayed(MedicinestockPage.badStockTab);
+    }
+
+    public boolean isStockEntryVisible() {
+        Helper.waitForVisibility(MedicinestockPage.stockEntryTable);
+        return Helper.isDisplayed(MedicinestockPage.stockEntryTable);
+    }
 }
