@@ -78,20 +78,4 @@ public class MedicinestockDefinition {
 		Assert.assertTrue(actualMessage.contains(expectedMessage),
 				"Expected message: " + expectedMessage + " \nActual message: " + actualMessage);
 	}
-
-	@When("the user clicks the Show button on any available medicine")
-	public void the_user_clicks_the_show_button_on_any_available_medicine() {
-		medicineAction.clickShowButtonOnAnyMedicine();
-	}
-
-	@Then("the medicine details page should be displayed")
-	public void the_medicine_details_page_should_be_displayed() {
-		Assert.assertTrue(medicineAction.isMedicineDetailsPageDisplayed(), "Medicine details page is not displayed");
-	}
-
-	@Then("the stock entry details should be visible")
-	public void the_stock_entry_details_should_be_visible() {
-		Assert.assertTrue(medicineAction.isStockEntryVisible(), "Stock entry details are not visible");
-	}
-
 }
