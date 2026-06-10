@@ -17,3 +17,17 @@ Feature: Balamurugan S 27/04/2026 Purchasing a Medicine
     When the user enters purchase medicine details from csv
     And the user clicks Purchase Save button
     Then the medicine purchase should be successful
+
+  @InvalidPurchase
+  Scenario: Verify validation when mandatory fields are empty during purchase
+    When the user clicks the Purchase Medicine button
+    Then the Purchase Medicine page should be displayed
+    When the user clicks Purchase Save button without entering any details
+    Then the required field validation messages should be displayed
+    
+  @exportPurchaseCSV
+  Scenario: Verify user can export purchase list as CSV
+    When the user clicks the Purchase Medicine button
+    Then the Purchase Medicine page should be displayed
+    When the user clicks the CSV button on the purchase page
+    Then the CSV file should be downloaded successfully

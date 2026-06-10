@@ -8,13 +8,16 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+import java.time.Duration;
+import org.openqa.selenium.WebDriver;
 import Utilities.Helper;
+import driver.Driver;
 import pages.AddMedicinePage;
 
 public class AddMedicineAction {
 
 	Logger logger = LogManager.getLogger(AddMedicineAction.class);
+	private WebDriver driver;
 	private String lastMedicineName = "";
 
 	public boolean isMedicineStockPageDisplayed() {
@@ -145,35 +148,44 @@ public class AddMedicineAction {
 
 	public boolean verifyMedicineAdded() {
 
-		try {
+	    try {
 
-			Helper.waitForPresence(AddMedicinePage.medicineTable, 20);
+	        WebDriver driver = Driver.getDriver();
 
-			String expected = lastMedicineName.trim();
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
-			List<WebElement> rows = Helper.getElements(AddMedicinePage.medicineRows);
+	        wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(
+	                AddMedicinePage.medicineTableRows));
 
-			for (WebElement row : rows) {
+	        String expected = lastMedicineName.trim();
 
-				List<WebElement> cols = row.findElements(By.tagName("td"));
+	        List<WebElement> nameCells =
+	                driver.findElements(AddMedicinePage.medicineNameCells);
 
-				for (WebElement col : cols) {
+	        logger.info("Expected Medicine Name : " + expected);
+	        logger.info("Total Medicines Found : " + nameCells.size());
 
-					String text = col.getText().trim();
+	        for (WebElement cell : nameCells) {
 
-					if (text.equalsIgnoreCase(expected)) {
+	            String actual = cell.getText().trim();
 
-						logger.info("Medicine found: " + expected);
-						return true;
-					}
-				}
-			}
+	            logger.info("Actual Medicine Name : " + actual);
 
-		} catch (Exception e) {
+	            if (actual.equalsIgnoreCase(expected)) {
 
-			logger.error("Verification failed: " + e.getMessage());
-		}
+	                logger.info("Medicine found successfully : " + actual);
+	                return true;
+	            }
+	        }
 
-		return false;
+	        logger.error("Medicine not found in table.");
+
+	    } catch (Exception e) {
+
+	        logger.error("Verification failed", e);
+	    }
+
+	    return false;
 	}
+	
 }
