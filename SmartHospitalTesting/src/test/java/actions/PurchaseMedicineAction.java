@@ -1,20 +1,21 @@
 package actions;
 
+import java.io.File;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import Utilities.Helper;
 import pages.PurchaseMedicinePage;
 
 public class PurchaseMedicineAction {
+	
 
     Logger logger = LogManager.getLogger(PurchaseMedicineAction.class);
-
+    PharmacyBillpageAction pharmacyBillAction = new PharmacyBillpageAction();
     public void clickPurchaseMedicineButton() {
         logger.info("Clicking Purchase nav menu link");
         Helper.click(PurchaseMedicinePage.purchaseMedicineButton);
     }
 
-    // NEW: clicks the "Add Purchase" button to open the form
     public void clickAddPurchaseButton() {
         logger.info("Clicking Add Purchase button to open form");
         Helper.waitForVisibility(PurchaseMedicinePage.addPurchaseButton);
@@ -99,5 +100,27 @@ public class PurchaseMedicineAction {
     public void clickSaveButton() {
         logger.info("Clicking Save button");
         Helper.click(PurchaseMedicinePage.saveButton);
+    }
+
+
+    public boolean isValidationMessageDisplayed() {
+        logger.info("Checking if validation messages are displayed");
+        try {
+            Helper.waitForVisibility(PurchaseMedicinePage.validationMessage);
+            return Helper.isDisplayed(PurchaseMedicinePage.validationMessage);
+        } catch (Exception e) {
+            logger.error("Validation message not found: " + e.getMessage());
+            return false;
+        }
+    }
+    public void clickCsvButton() {
+        logger.info("Clicking CSV export button on purchase page");
+        Helper.waitForVisibility(PurchaseMedicinePage.csvButton);
+        Helper.jsClick(PurchaseMedicinePage.csvButton); // jsClick bypasses the interception
+        logger.info("Clicked CSV export button");
+    }
+    public boolean isCsvDownloaded() {
+        logger.info("Delegating CSV download check to PharmacyBillpageAction");
+        return pharmacyBillAction.isCSVFileDownloaded();
     }
 }

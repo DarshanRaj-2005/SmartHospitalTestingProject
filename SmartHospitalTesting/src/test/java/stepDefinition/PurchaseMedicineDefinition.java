@@ -1,9 +1,12 @@
 package stepDefinition;
 
 import java.util.List;
+
 import org.testng.Assert;
+
 import Utilities.CsvReader;
 import Utilities.Helper;
+import actions.PharmacyBillpageAction;
 import actions.PurchaseMedicineAction;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -12,7 +15,7 @@ import pages.PurchaseMedicinePage;
 public class PurchaseMedicineDefinition {
 
 	PurchaseMedicineAction purchase = new PurchaseMedicineAction();
-
+	PharmacyBillpageAction pharmacy= new PharmacyBillpageAction();
 	@When("the user clicks the Purchase Medicine button")
 	public void the_user_clicks_the_purchase_medicine_button() {
 		// Clicks Purchase nav link, then Add Purchase to open the form
@@ -74,5 +77,21 @@ public class PurchaseMedicineDefinition {
 	public void the_medicine_purchase_should_be_successful() {
 		Helper.waitForVisibility(PurchaseMedicinePage.addPurchaseButton);
 		Assert.assertTrue(Helper.isDisplayed(PurchaseMedicinePage.addPurchaseButton), "Purchase not done successfully");
+	}
+	@When("the user clicks Purchase Save button without entering any details")
+	public void the_user_clicks_purchase_save_button_without_entering_any_details() {
+	    purchase.clickSaveButton();
+	}
+
+	@Then("the required field validation messages should be displayed")
+	public void the_required_field_validation_messages_should_be_displayed() {
+	    Assert.assertTrue(purchase.isValidationMessageDisplayed(),
+	            "Validation messages were not displayed for empty mandatory fields");
+	}
+
+	@When("the user clicks the CSV button on the purchase page")
+	public void the_user_clicks_the_csv_button_on_the_purchase_page() {
+	    pharmacy.clearDownloadsFolder(); 
+	    purchase.clickCsvButton();
 	}
 }
