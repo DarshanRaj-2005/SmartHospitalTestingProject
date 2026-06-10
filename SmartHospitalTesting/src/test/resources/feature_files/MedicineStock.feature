@@ -19,7 +19,7 @@ Feature: Balamurugan S 17/05/2026 Add and manage medicines in the medicine stock
       | medicineName | status      |
       | Cetirizine   | present     |
       | Rifaximin    | not present |
-
+      | Trikafta     | not present |
   Scenario Outline: Delete a selected medicine
     Given the user is on the medicine stock page
     When the user selects the medicine "<medicineName>" from the medicine stock list
