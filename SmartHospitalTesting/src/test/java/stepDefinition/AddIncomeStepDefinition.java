@@ -173,8 +173,7 @@ public class AddIncomeStepDefinition {
         getAction().clickSaveButton();
         getAction().waitForModalToClose();
     }
-  // Data_Provider uses cell.toString() which converts numeric 5000 → "5000.0"
-    // This strips the trailing .0 so the Amount field receives "5000" not "5000.0"
+ 
     private String cleanNumericValue(String value) {
         if (value != null && value.endsWith(".0")) {
             return value.substring(0, value.length() - 2);
