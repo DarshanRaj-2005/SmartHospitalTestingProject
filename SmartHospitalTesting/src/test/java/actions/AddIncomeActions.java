@@ -92,10 +92,6 @@ public class AddIncomeActions {
         log.info("Modal closed");
     }
 
-    // =====================================================================
-    // FORM ACTIONS
-    // =====================================================================
-
     public void enterIncomeDetails(String incomeHeadValue, String nameValue,
                                    String invoiceValue, String amountValue,
                                    String descValue) {
@@ -191,12 +187,6 @@ public class AddIncomeActions {
         log.info("Save clicked without filling fields");
     }
 
-    // =====================================================================
-    // VERIFICATION — FIXED
-    // Root cause: table locator td[2] was wrong column position.
-    // Fix: refresh page, search ALL td cells, fallback to DataTable search,
-    //      final fallback to page source check.
-    // =====================================================================
 
     public boolean verifyIncomeInTable() {
         log.info("Verifying income in table — Name: " + lastSavedName);
