@@ -70,7 +70,7 @@ public class AddPatientPage {
     // Save button — button with id='formaddpabtn' inside modal-footer
     public static By saveButton =
             By.xpath("//button[@id='formaddpabtn']");
-e
+
     public static By patientListTable =
             By.xpath("//div[@class='box-body']");
 

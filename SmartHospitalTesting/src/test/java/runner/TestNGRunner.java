@@ -7,6 +7,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 		features = "src/test/resources/feature_files",
+		tags= "@bala",
         glue = { "stepDefinition", "hooks" },
         plugin = {
                 "pretty",
@@ -20,7 +21,7 @@ import io.cucumber.testng.CucumberOptions;
         monochrome = true
 )
 public class TestNGRunner extends AbstractTestNGCucumberTests {
-    @DataProvider(parallel = true)
+    @DataProvider(parallel = false)
     public Object[][] scenarios() {
         return super.scenarios();
     }
