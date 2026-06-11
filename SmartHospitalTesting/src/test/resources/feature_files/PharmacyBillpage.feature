@@ -23,6 +23,7 @@ Feature: Balamurugan S 15-04-2026 View the Pharmacy Bill page
       | Ashok       | present   |
       | praveen raj | not found |
       | victor danie| not found |
+
   @exportbill
   Scenario: Verify user can export pharmacy bill list as CSV
     When the user clicks the CSV button on the pharmacy bill page

@@ -6418,3 +6418,48 @@ Session ID: 6d1c76fad4d21ebc4f6d6e331683de0e
 [INFO ] 2026-06-02 19:35:26.041 [TestNG-PoolService-7] Hooks - Browser closed
 =======
 >>>>>>> aed6925ab96cbe1adb0c2a1847dd84f25659cc96
+[ERROR] 2026-06-11 00:59:45.562 [main] Hooks - Scenario Failed : Verify user is able to add the medicine details using datatable
+[ERROR] 2026-06-11 00:59:45.566 [main] Hooks - Screenshot Failed java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+[INFO ] 2026-06-11 00:59:45.566 [main] Hooks - Browser closed
+[ERROR] 2026-06-11 00:59:45.593 [main] Hooks - Scenario Failed : Verify validation message when medicine name field is empty when using excel
+[ERROR] 2026-06-11 00:59:45.593 [main] Hooks - Screenshot Failed java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+[INFO ] 2026-06-11 00:59:45.593 [main] Hooks - Browser closed
+[ERROR] 2026-06-11 00:59:45.615 [main] Hooks - Scenario Failed : Verify error when mandatory fields are missing
+[ERROR] 2026-06-11 00:59:45.615 [main] Hooks - Screenshot Failed java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+[INFO ] 2026-06-11 00:59:45.615 [main] Hooks - Browser closed
+[ERROR] 2026-06-11 00:59:45.672 [main] Hooks - Scenario Failed : Verify user can add a new patient from the Generate Bill page
+[ERROR] 2026-06-11 00:59:45.672 [main] Hooks - Screenshot Failed java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+[INFO ] 2026-06-11 00:59:45.672 [main] Hooks - Browser closed
+[ERROR] 2026-06-11 00:59:45.702 [main] Hooks - Scenario Failed : Verify medicine search
+[ERROR] 2026-06-11 00:59:45.702 [main] Hooks - Screenshot Failed java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+[INFO ] 2026-06-11 00:59:45.702 [main] Hooks - Browser closed
+[ERROR] 2026-06-11 00:59:45.726 [main] Hooks - Scenario Failed : Verify medicine search
+[ERROR] 2026-06-11 00:59:45.726 [main] Hooks - Screenshot Failed java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+[INFO ] 2026-06-11 00:59:45.726 [main] Hooks - Browser closed
+[ERROR] 2026-06-11 00:59:45.752 [main] Hooks - Scenario Failed : Delete a selected medicine
+[ERROR] 2026-06-11 00:59:45.752 [main] Hooks - Screenshot Failed java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+[INFO ] 2026-06-11 00:59:45.752 [main] Hooks - Browser closed
+[ERROR] 2026-06-11 00:59:45.774 [main] Hooks - Scenario Failed : Delete a selected medicine
+[ERROR] 2026-06-11 00:59:45.774 [main] Hooks - Screenshot Failed java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+[INFO ] 2026-06-11 00:59:45.775 [main] Hooks - Browser closed
+[ERROR] 2026-06-11 00:59:45.792 [main] Hooks - Scenario Failed : Verify whether the Pharmacy Bill page displays successfully
+[ERROR] 2026-06-11 00:59:45.792 [main] Hooks - Screenshot Failed java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+[INFO ] 2026-06-11 00:59:45.793 [main] Hooks - Browser closed
+[ERROR] 2026-06-11 00:59:45.809 [main] Hooks - Scenario Failed : Verify patient search functionality
+[ERROR] 2026-06-11 00:59:45.809 [main] Hooks - Screenshot Failed java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+[INFO ] 2026-06-11 00:59:45.809 [main] Hooks - Browser closed
+[ERROR] 2026-06-11 00:59:45.826 [main] Hooks - Scenario Failed : Verify patient search functionality
+[ERROR] 2026-06-11 00:59:45.826 [main] Hooks - Screenshot Failed java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+[INFO ] 2026-06-11 00:59:45.826 [main] Hooks - Browser closed
+[ERROR] 2026-06-11 00:59:45.840 [main] Hooks - Scenario Failed : Verify user can export pharmacy bill list as CSV
+[ERROR] 2026-06-11 00:59:45.840 [main] Hooks - Screenshot Failed java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+[INFO ] 2026-06-11 00:59:45.841 [main] Hooks - Browser closed
+[ERROR] 2026-06-11 00:59:45.858 [main] Hooks - Scenario Failed : Verify user is able to purchase the medicine successfully using csv
+[ERROR] 2026-06-11 00:59:45.858 [main] Hooks - Screenshot Failed java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+[INFO ] 2026-06-11 00:59:45.858 [main] Hooks - Browser closed
+[ERROR] 2026-06-11 00:59:45.873 [main] Hooks - Scenario Failed : Verify validation when mandatory fields are empty during purchase
+[ERROR] 2026-06-11 00:59:45.874 [main] Hooks - Screenshot Failed java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+[INFO ] 2026-06-11 00:59:45.874 [main] Hooks - Browser closed
+[ERROR] 2026-06-11 00:59:45.888 [main] Hooks - Scenario Failed : Verify user can export purchase list as CSV
+[ERROR] 2026-06-11 00:59:45.888 [main] Hooks - Screenshot Failed java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+[INFO ] 2026-06-11 00:59:45.888 [main] Hooks - Browser closed
