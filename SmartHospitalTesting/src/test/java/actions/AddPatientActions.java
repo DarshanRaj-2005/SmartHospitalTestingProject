@@ -22,10 +22,6 @@ public class AddPatientActions {
 
     public AddPatientActions() {}
 
-    // =====================================================================
-    // NAVIGATION ACTIONS
-    // =====================================================================
-
     public void clickPatientCategory() {
         log.info("Clicking Patient category in sidebar");
         Helper.waitForElementClickable(AddPatientPage.patientCategory);
@@ -48,10 +44,6 @@ public class AddPatientActions {
         log.info("Add Patient modal is ready");
     }
 
-    // =====================================================================
-    // FORM ACTIONS
-    // =====================================================================
-
     public void enterPatientDetails(List<Map<String, String>> patientData) {
         Map<String, String> data = patientData.get(0);
         lastPatientName = data.get("PatientName");
@@ -66,13 +58,6 @@ public class AddPatientActions {
         Helper.clearAndEnterText(AddPatientPage.address,      data.get("Address"));
         log.info("All patient details entered");
     }
-
-    // =====================================================================
-    // DOB HANDLING — FIXED
-    // age_year / age_month / age_day are READ-ONLY fields on this site.
-    // sendKeys() throws ElementNotInteractableException on read-only fields.
-    // Fix: Use JavascriptExecutor to set values; set DOB in YYYY-MM-DD format.
-    // =====================================================================
 
     public void enterDOB(String value) {
         log.info("Entering DOB: " + value);
@@ -158,10 +143,6 @@ public class AddPatientActions {
         Helper.jsClick(AddPatientPage.saveButton);
         log.info("Save button clicked");
     }
-
-    // =====================================================================
-    // VERIFICATION ACTIONS
-    // =====================================================================
 
     public boolean verifyPatientAdded() {
         log.info("Verifying patient added: " + lastPatientName);

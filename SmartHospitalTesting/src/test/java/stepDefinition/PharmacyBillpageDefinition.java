@@ -79,13 +79,11 @@ public class PharmacyBillpageDefinition {
 			System.out.println("Patient not found");
 		}
 	}
-
 	@When("the user clicks the CSV button on the pharmacy bill page")
 	public void the_user_clicks_the_csv_button_on_the_pharmacy_bill_page() {
-
-		pharmacyAction.clickCSVButton();
+	    pharmacyAction.clearDownloadsFolder(); // add this
+	    pharmacyAction.clickCSVButton();
 	}
-
 	@Then("the CSV file should be downloaded successfully")
 	public void the_csv_file_should_be_downloaded_successfully() {
 

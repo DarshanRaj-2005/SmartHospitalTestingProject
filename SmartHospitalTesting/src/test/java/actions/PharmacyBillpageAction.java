@@ -108,4 +108,17 @@ public class PharmacyBillpageAction {
 			return false;
 		}
 	}
+	public void clearDownloadsFolder() {
+	    String path = System.getProperty("user.dir") + "\\src\\test\\resources\\downloads";
+	    File folder = new File(path);
+	    File[] files = folder.listFiles();
+	    if (files != null) {
+	        for (File file : files) {
+	            if (file.getName().endsWith(".csv")) {
+	                file.delete();
+	                logger.info("Deleted old CSV: " + file.getName());
+	            }
+	        }
+	    }
+	}
 }

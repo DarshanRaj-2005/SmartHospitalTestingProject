@@ -6,7 +6,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-		features = "src/test/resources/feature_files/",
+		features = "src/test/resources/feature_files/ComponentIssueManagement.feature",
         glue = { "stepDefinition", "hooks" },
         tags="@Harini",
         plugin = {
@@ -21,7 +21,7 @@ import io.cucumber.testng.CucumberOptions;
         monochrome = true
 )
 public class TestNGRunner extends AbstractTestNGCucumberTests {
-    @DataProvider(parallel = true)
+    @DataProvider(parallel =true)
     public Object[][] scenarios() {
         return super.scenarios();
     }

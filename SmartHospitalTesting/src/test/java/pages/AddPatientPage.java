@@ -4,29 +4,16 @@ import org.openqa.selenium.By;
 
 public class AddPatientPage {
 
-    // =====================================================================
-    // NAVIGATION LOCATORS
-    // =====================================================================
-
-    // Patient link in the left sidebar menu
-    // Using child axis: finds <a> that is a child of <li> containing 'Patient' span
     public static By patientCategory =
             By.xpath("//ul[contains(@class,'sidebar-menu')]"
                    + "//li/a[.//span[normalize-space(text())='Patient']]");
 
-    // Add New Patient button on Patient List page (top right of box-header)
-    // Using ancestor axis: <a> whose ancestor is div with class box-header
     public static By addNewPatientButton =
             By.xpath("//div[contains(@class,'box-header')]"
                    + "//a[contains(@class,'addpatient') "
                    + "or contains(text(),'Add New Patient') "
                    + "or contains(text(),'Add Patient')]");
 
-    // =====================================================================
-    // MODAL LOCATORS
-    // =====================================================================
-
-    // Modal title — "Add Patient" heading inside modal-header
     public static By modalTitle =
             By.xpath("//div[contains(@class,'modal-header')]"
                    + "//h4[contains(text(),'Add Patient')]");
@@ -84,11 +71,6 @@ public class AddPatientPage {
     public static By saveButton =
             By.xpath("//button[@id='formaddpabtn']");
 
-    // =====================================================================
-    // PATIENT LIST LOCATORS (after modal closes)
-    // =====================================================================
-
-    // Patient List box body — visible after modal closes on successful save
     public static By patientListTable =
             By.xpath("//div[@class='box-body']");
 
@@ -96,12 +78,6 @@ public class AddPatientPage {
     public static By tableCells =
             By.xpath("//div[contains(@class,'box-body')]//table//tbody//td");
 
-    // =====================================================================
-    // VALIDATION LOCATORS
-    // =====================================================================
-
-    // Validation error text shown when Name is empty and Save clicked
-    // Using parent axis: finds error element that is sibling/near the name field
     public static By validationMessage =
             By.xpath("//*[@id='name-error' or @id='name_error']"
                    + " | //label[@for='name' and contains(@class,'error')]"

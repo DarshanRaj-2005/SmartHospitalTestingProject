@@ -34,6 +34,9 @@ public class AddMedicinePage {
 	public static By unitDropdown = By.name("unit");
 
 	public static By medicineNameValidationMessage = By.xpath("//div[contains(@class,'toast-message')]//p");
-	public static By medicineRows = By.xpath("//table[@id='DataTables_Table_0']//tr");
-	public static By medicineTable = By.id("DataTables_Table_0");
+	public static By medicineTableRows =
+	        By.xpath("//table[@id='DataTables_Table_0']//tbody/tr");
+
+	public static By medicineNameCells =
+	        By.xpath("//table[@id='DataTables_Table_0']//tbody/tr/td[2]");
 }
