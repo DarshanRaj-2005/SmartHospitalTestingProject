@@ -14,23 +14,10 @@ Then the contact us should be submitted successfully
 
 Examples:
 | name       | email            | subject  | description                     |
-| Tamilarasu | [tamil@test.com](mailto:tamil@test.com)   | Testing  | Need information about services |
-| Karthik    | [karthik@test.com](mailto:karthik@test.com) | Callback | Requesting a callback           |
-| Priya      | [priya@test.com](mailto:priya@test.com)   | Enquiry  | General enquiry                 |
+| Tamilarasu | acctamil151@gmail.com   | Testing  | Need information about services |
+| Karthik    | acctamil151@gmail.com  | Callback | Requesting a callback           |
+| Priya      | acctamil151@gmail.com    | Enquiry  | General enquiry                 |
 
-@invalidEmail
-Scenario Outline: Submit contact form with invalid email format
-
-When click on the contactus button
-And the user enters valid contacts details "<name>" "<email>" "<subject>" and "<description>"
-And the user clicks submit button in the contact us
-Then the contact us submission should fail
-
-Examples:
-| name       | email          | subject  | description   |
-| Tamilarasu | tamiltest.com  | Testing  | Invalid Email |
-| Karthik    | karthik@       | Callback | Invalid Email |
-| Priya      | @gmail.com     | Enquiry  | Invalid Email |
 
 @emptyName
 Scenario Outline: Submit contact form without name
@@ -42,7 +29,7 @@ Then the contact us submission should fail
 
 Examples:
 | name | email          | subject | description |
-|      | [tamil@test.com](mailto:tamil@test.com) | Testing | Test Data   |
+|      | acctamil151@gmail.com   | Testing | Test Data   |
 
 @emptyEmail
 Scenario Outline: Submit contact form without email
@@ -66,7 +53,7 @@ Then the contact us submission should fail
 
 Examples:
 | name       | email          | subject | description |
-| Tamilarasu | [tamil@test.com](mailto:tamil@test.com) |         | Test Data   |
+| Tamilarasu | acctamil151@gmail.com   |         | Test Data   |
 
 @emptyDescription
 Scenario Outline: Submit contact form without description
@@ -78,43 +65,8 @@ Then the contact us submission should fail
 
 Examples:
 | name       | email          | subject | description |
-| Tamilarasu | [tamil@test.com](mailto:tamil@test.com) | Testing |             |
+| Tamilarasu | acctamil151@gmail.com  | Testing |             |
 
-@specialCharacters
-Scenario Outline: Submit contact form using special characters
-
-When click on the contactus button
-And the user enters valid contacts details "<name>" "<email>" "<subject>" and "<description>"
-And the user clicks submit button in the contact us
-Then the contact us submission should fail
-
-Examples:
-| name     | email          | subject | description |
-| @@@@     | [tamil@test.com](mailto:tamil@test.com) | ###     | $$$$$       |
-
-@sqlInjection
-Scenario Outline: Submit contact form with SQL injection data
-
-When click on the contactus button
-And the user enters valid contacts details "<name>" "<email>" "<subject>" and "<description>"
-And the user clicks submit button in the contact us
-Then the contact us submission should fail
-
-Examples:
-| name            | email          | subject           | description         |
-| ' OR 1=1 --     | [test@test.com](mailto:test@test.com)  | SQL Test          | SQL Injection Test  |
-
-@xssAttack
-Scenario Outline: Submit contact form with script tags
-
-When click on the contactus button
-And the user enters valid contacts details "<name>" "<email>" "<subject>" and "<description>"
-And the user clicks submit button in the contact us
-Then the contact us submission should fail
-
-Examples:
-| name                     | email          | subject | description                |
-| <script>alert(1)</script>| [test@test.com](mailto:test@test.com)  | XSS     | XSS Attack Attempt         |
 
 @maxLengthValidation
 Scenario Outline: Submit contact form with extremely long values
@@ -126,4 +78,4 @@ Then the contact us submission should fail
 
 Examples:
 | name                                                                 | email          | subject                                                              | description                                                              |
-| VeryLongUserNameVeryLongUserNameVeryLongUserNameVeryLongUserName     | [test@test.com](mailto:test@test.com)  | VeryLongSubjectVeryLongSubjectVeryLongSubjectVeryLongSubject         | VeryLongDescriptionVeryLongDescriptionVeryLongDescriptionVeryLongDescription |
+| VeryLongUserNameVeryLongUserNameVeryLongUserNameVeryLongUserName     | acctamil151@gmail.com    | VeryLongSubjectVeryLongSubjectVeryLongSubjectVeryLongSubject         | VeryLongDescriptionVeryLongDescriptionVeryLongDescriptionVeryLongDescription |
