@@ -1,6 +1,7 @@
 package stepDefinition;
 
 import java.io.IOException;
+import java.util.Map;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -108,6 +109,41 @@ public class BloodIssueStepDefinition {
         bloodIssueAction.selectBloodbag();
         bloodIssueAction.selectChargeCategory(chargeCategory);
         bloodIssueAction.selectChargeName(chargeName);
+    }
+    @When("the user clicks on New Patient button")
+    public void the_user_clicks_on_new_patient_button() {
+    	 bloodIssueAction.clickNewPatientButton();
+    }
+
+    @Then("the Add Patient popup should be displayed")
+    public void the_add_patient_popup_should_be_displayed() {
+    	 Assert.assertTrue(
+                 bloodIssueAction.isAddPatientPopupDisplayed(),
+                 "Add Patient popup is not displayed");
+    }
+
+    @When("the user enters the patient details")
+    public void the_user_enters_the_patient_details(io.cucumber.datatable.DataTable dataTable) {
+    	 Map<String, String> patientData =
+                 dataTable.asMaps(String.class, String.class).get(0);
+
+         bloodIssueAction.enterPatientDetails(
+                 patientData.get("Name"),
+                 patientData.get("Year"),
+                 patientData.get("Month"),
+                 patientData.get("Day"));	
+       
+    }
+
+    @When("the user clicks on Save button")
+    public void the_user_clicks_on_save_button() {
+    	bloodIssueAction.clickPatientSaveButton();
+    }
+
+    @Then("the patient should be added successfully")
+    public void the_patient_should_be_added_successfully() {
+    	Assert.assertTrue(bloodIssueAction.isPatientAddedSuccessfully(),"Patient was not added successfully");
+
     }
 }
 

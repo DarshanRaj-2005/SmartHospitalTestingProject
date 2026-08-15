@@ -27,4 +27,11 @@ public class BloodIssuePage {
     public static By dynamicOption(String option) {
         return By.xpath("//li[contains(@class,'select2-results__option') and contains(text(),'" + option + "')]");
     }
+    public static By name=By.xpath("//label[text()='Name']/following-sibling::input");
+    public static By newPatient=By.xpath("//span[contains(text(),'New Patient')]");
+    public static By ageYear=By.cssSelector("input[placeholder='Year']");
+    public static By ageMonth=By.cssSelector  ("input[placeholder='Month']");
+    public static By ageDay=By.cssSelector ("input[placeholder='Day']");
+    public static By patientSave=By.xpath("(//button[normalize-space()='Save'])[3]");
+    public static By addPatientPopup =By.xpath("//h4[contains(text(),'Add Patient')]");
 }
