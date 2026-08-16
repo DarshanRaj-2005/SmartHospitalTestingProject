@@ -1,4 +1,5 @@
 @Darshanraj
+@login
 Feature: DarshanRaj_15-05-2026_Login Functionality
 
 Background:
