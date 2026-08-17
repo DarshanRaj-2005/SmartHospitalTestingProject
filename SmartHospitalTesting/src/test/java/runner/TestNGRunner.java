@@ -8,6 +8,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 		features = "src/test/resources/feature_files",
         glue = { "stepDefinition", "hooks" },
+		tags="@Harini",
         plugin = {
                 "pretty",
                 "html:target/cucumber-report.html",
