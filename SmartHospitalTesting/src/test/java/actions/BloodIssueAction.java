@@ -21,7 +21,7 @@ public class BloodIssueAction {
     public void clickbloodissueDetails() {
         logger.info("Navigated to Blood Issue Details Page");
         Helper.waitForElementClickable(BloodIssuePage.bloodIssuedetails);
-        Helper.click(BloodIssuePage.bloodIssuedetails);
+        Helper.jsClick(BloodIssuePage.bloodIssuedetails);   // JS click, same as DonorManagementAction
     }
 
     public boolean isbloodIssueDetailsPagedisplayed() {

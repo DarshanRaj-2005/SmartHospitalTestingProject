@@ -8,8 +8,7 @@ public class ComponentIssuePage {
             By.xpath("//a[normalize-space()='Component Issue']");
 
     public static By componentIssueHeading =
-            By.xpath("//h3[@class='box-title titlefix']");
-
+            By.xpath("//h3[@class='card-title titlefix']");  
     public static By searchBox =
             By.xpath("//input[@type='search']");
 

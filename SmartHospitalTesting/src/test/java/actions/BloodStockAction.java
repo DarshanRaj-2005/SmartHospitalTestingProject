@@ -127,7 +127,17 @@ public class BloodStockAction {
 	}
 	public List<String> getValidationMessages() {
 	    Helper.waitForVisibility(BloodStockPage.validationMessages);
-	    String text = Driver.getDriver().findElement(BloodStockPage.validationMessages).getText();
-	    return Arrays.asList(text.split("\\n"));
+
+	    String text = Driver.getDriver()
+	            .findElement(BloodStockPage.validationMessages)
+	            .getText();
+
+	    List<String> messages = Arrays.asList(text.split("\\r?\\n"));
+
+	    if (!messages.isEmpty() && messages.get(0).equalsIgnoreCase("Error")) {
+	        messages = messages.subList(1, messages.size());
+	    }
+
+	    return messages;
 	}
-}
+	}

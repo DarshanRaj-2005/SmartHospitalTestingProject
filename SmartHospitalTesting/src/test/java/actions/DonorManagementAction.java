@@ -1,7 +1,13 @@
 package actions;
 
 import java.util.Arrays;
+import java.time.Duration;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.List;
+import java.util.stream.Collectors;
+
 import Utilities.Helper;
 import driver.Driver;
 import pages.DonorManagementPage;
@@ -64,10 +70,32 @@ public class DonorManagementAction {
 		Helper.click(DonorManagementPage.saveButton);
 	}
 
+//	public List<String> getValidationMessages() {
+//		Helper.waitForVisibility(DonorManagementPage.validationMessages);
+//		String text = Driver.getDriver().findElement(DonorManagementPage.validationMessages).getText();
+//		return Arrays.asList(text.split("\\n"));
+//	}
 	public List<String> getValidationMessages() {
-		Helper.waitForVisibility(DonorManagementPage.validationMessages);
-		String text = Driver.getDriver().findElement(DonorManagementPage.validationMessages).getText();
-		return Arrays.asList(text.split("\\n"));
+
+	    WebDriverWait wait = new WebDriverWait(
+	            Driver.getDriver(),
+	            Duration.ofSeconds(10));
+
+	    wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(
+	            DonorManagementPage.validationMessages));
+
+	    List<String> messages = Driver.getDriver()
+	            .findElements(DonorManagementPage.validationMessages)
+	            .stream()
+	            .map(WebElement::getText)
+	            .flatMap(text -> Arrays.stream(text.split("\n")))
+	            .map(String::trim)
+	            .filter(t -> !t.isEmpty() && !t.equalsIgnoreCase("Error"))
+	            .distinct()
+	            .collect(Collectors.toList());
+
+	    System.out.println("Validation messages: " + messages);
+	    return messages;
 	}
 	public void searchDonorName(String donorName) {
 	    logger.info("Searching donor name: " + donorName);
