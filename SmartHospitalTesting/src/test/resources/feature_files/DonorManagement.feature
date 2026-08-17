@@ -1,4 +1,5 @@
-@Harini @DonorManagement
+@Harini 
+@DonorManagement
 Feature: Harini_13/05/26 Donor Management Functionality
 
   Background:
